@@ -272,6 +272,18 @@ I build systems where several kinds of people use the same data for different re
 
 <div align="center">
 
+<img src="https://readme-typing-svg.demolab.com?font=Sora&weight=800&size=30&duration=1&pause=99999&color=A78BFA&center=true&vCenter=true&width=400&height=46&lines=Words+to+Code+By" alt="Words to Code By" />
+
+<br />
+
+<a href="https://github.com/piyushsuthar/github-readme-quotes"><img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&border=false&quoteColor=A78BFA&authorColor=8B949E&backgroundColor=0d1117&symbolColor=8B5CF6" width="90%" alt="Quote of the day" /></a>
+
+</div>
+
+<img src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg" width="100%" />
+
+<div align="center">
+
 <img src="https://readme-typing-svg.demolab.com?font=Sora&weight=800&size=30&duration=1&pause=99999&color=A78BFA&center=true&vCenter=true&width=340&height=46&lines=Get+in+Touch" alt="Get in Touch" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Sora&weight=500&size=18&duration=2600&pause=1000&color=8B949E&center=true&vCenter=true&width=680&height=40&lines=Open+to+full-time+roles;Available+for+freelance+and+collaboration;Happy+to+talk+architecture+any+time" alt="" />
