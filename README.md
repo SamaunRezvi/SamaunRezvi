@@ -14,13 +14,13 @@
 
 <br /><br />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=1&pause=99999&color=3FB950&center=true&vCenter=true&width=300&height=34&lines=%24+whoami" alt="whoami" />
+# 👋 Hi, I'm Samaun Rezvi
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=27&duration=2600&pause=900&color=C9D1D9&center=true&vCenter=true&width=860&height=46&lines=I+build+multi-role+systems+end+to+end;Interface+%C2%B7+Data+model+%C2%B7+Permissions+%C2%B7+Deploy;Nine+roles.+Ninety+routes.+One+person." alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=2600&pause=900&color=3FB950&center=true&vCenter=true&width=860&height=44&lines=I+build+multi-role+systems+end+to+end;Interface+%C2%B7+Data+model+%C2%B7+Permissions+%C2%B7+Deploy;Nine+roles.+Ninety+routes.+One+person." alt="" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=400&size=14&duration=4000&pause=1500&color=6E7681&center=true&vCenter=true&width=700&height=28&lines=Computer+Science+%26+Engineering+%C2%B7+Daffodil+International+University;Dhaka%2C+Bangladesh" alt="" />
+<sub>Computer Science &amp; Engineering · Daffodil International University · Dhaka, Bangladesh</sub>
 
-<br />
+<br /><br />
 
 <a href="https://www.linkedin.com/in/samaun-rezvi-a17a6316a"><img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=3FB950" height="34" /></a>
 &nbsp;
@@ -42,7 +42,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=26&duration=1&pause=99999&color=3FB950&center=true&vCenter=true&width=340&height=38&lines=%24+cat+about.md" alt="About Me" />
+## 👤 About Me
 
 <br />
 
@@ -73,46 +73,44 @@
 
 <br />
 
-<pre>
-I build systems where several kinds of people use the same data for
-different reasons. An administrator, a field worker, a reviewer, and
-an end user each need a different view, different permissions, and
-different defaults. Designing that separation cleanly is the part I
-find most interesting - it's where most systems get it wrong.
-</pre>
+<p align="justify">
+
+I build systems where several kinds of people use the same data for different reasons. An administrator, a field worker, a reviewer, and an end user each need a different view, different permissions, and different defaults. Designing that separation cleanly is the part I find most interesting — it's where most systems get it wrong.
+
+</p>
 
 <br />
 
 <table align="center">
 <tr>
-<td width="50%" valign="top">
+<td width="50%" valign="top" align="left">
 
 <code>missing_data()</code>
 
-<sub>If a sensor has not reported, the interface says so. It never renders a zero, because a zero is a reading and an absence is not.</sub>
+<p align="justify"><sub>If a sensor has not reported, the interface says so. It never renders a zero, because a zero is a reading and an absence is not.</sub></p>
 
 </td>
-<td width="50%" valign="top">
+<td width="50%" valign="top" align="left">
 
 <code>scoped_permissions()</code>
 
-<sub>Scoping a user to their district is a query-layer constraint, not a filtered dropdown. If the rule only exists in the interface, it is not a rule.</sub>
+<p align="justify"><sub>Scoping a user to their district is a query-layer constraint, not a filtered dropdown. If the rule only exists in the interface, it is not a rule.</sub></p>
 
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
+<td width="50%" valign="top" align="left">
 
 <code>offline_first()</code>
 
-<sub>Field forms queue locally and sync when connectivity returns. Endpoints are idempotent, so a retry never duplicates a record.</sub>
+<p align="justify"><sub>Field forms queue locally and sync when connectivity returns. Endpoints are idempotent, so a retry never duplicates a record.</sub></p>
 
 </td>
-<td width="50%" valign="top">
+<td width="50%" valign="top" align="left">
 
 <code>deliberate_scope()</code>
 
-<sub>A monitoring platform I built has no remote control over the hardware it observes. Visibility was the goal; overriding safety logic was never in scope.</sub>
+<p align="justify"><sub>A monitoring platform I built has no remote control over the hardware it observes. Visibility was the goal; overriding safety logic was never in scope.</sub></p>
 
 </td>
 </tr>
@@ -124,7 +122,7 @@ find most interesting - it's where most systems get it wrong.
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=26&duration=1&pause=99999&color=3FB950&center=true&vCenter=true&width=280&height=38&lines=%24+ls+stack%2F" alt="Tech Stack" />
+## 🧰 Tech Stack
 
 <br />
 
@@ -149,10 +147,16 @@ find most interesting - it's where most systems get it wrong.
 
 <br />
 
-<img src="https://img.shields.io/badge/Role--based%20access%20control-0d1117?style=for-the-badge&labelColor=0d1117&color=238636" height="28" />
-<img src="https://img.shields.io/badge/Offline--first%20architecture-0d1117?style=for-the-badge&labelColor=0d1117&color=2EA043" height="28" />
-<img src="https://img.shields.io/badge/Design%20systems-0d1117?style=for-the-badge&labelColor=0d1117&color=3FB950" height="28" />
-<img src="https://img.shields.io/badge/Internationalisation-0d1117?style=for-the-badge&labelColor=0d1117&color=56D364" height="28" />
+<table align="center">
+<tr>
+<td align="center" width="50%">🔐&nbsp;<img src="https://img.shields.io/badge/Role--based%20access%20control-0d1117?style=for-the-badge&labelColor=0d1117&color=238636" height="28" /></td>
+<td align="center" width="50%">📡&nbsp;<img src="https://img.shields.io/badge/Offline--first%20architecture-0d1117?style=for-the-badge&labelColor=0d1117&color=2EA043" height="28" /></td>
+</tr>
+<tr>
+<td align="center" width="50%">🎨&nbsp;<img src="https://img.shields.io/badge/Design%20systems-0d1117?style=for-the-badge&labelColor=0d1117&color=3FB950" height="28" /></td>
+<td align="center" width="50%">🌐&nbsp;<img src="https://img.shields.io/badge/Internationalisation-0d1117?style=for-the-badge&labelColor=0d1117&color=56D364" height="28" /></td>
+</tr>
+</table>
 
 </div>
 
@@ -160,56 +164,54 @@ find most interesting - it's where most systems get it wrong.
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=26&duration=1&pause=99999&color=3FB950&center=true&vCenter=true&width=560&height=38&lines=%24+ls+-la+~%2Fprojects+--private" alt="Selected Work" />
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=400&size=13&duration=1&pause=99999&color=6E7681&center=true&vCenter=true&width=620&height=24&lines=%23+repos+are+private+%C2%B7+architecture+walkthrough+on+request" alt="" />
+## 💼 Selected Work
 
 <br />
 
 <table align="center">
 <tr>
-<td width="34%" valign="top" align="center">
+<td width="34%" valign="top" align="left">
 
 <code>iot-monitoring/</code>
 
-<sub>Real-time telemetry across a 9-role permission system and 90+ routes<br />offline-capable field apps · jurisdiction-scoped access control</sub>
+<p align="justify"><sub>Real-time telemetry across a 9-role permission system and 90+ routes. Offline-capable field apps, jurisdiction-scoped access control.</sub></p>
 
 </td>
-<td width="33%" valign="top" align="center">
+<td width="33%" valign="top" align="left">
 
 <code>competition-platform/</code>
 
-<sub>Multi-role judging pipeline blending automated scoring with manual review<br />live leaderboards · role-separated submission flow</sub>
+<p align="justify"><sub>Multi-role judging pipeline blending automated scoring with manual review. Live leaderboards, role-separated submission flow.</sub></p>
 
 </td>
-<td width="33%" valign="top" align="center">
+<td width="33%" valign="top" align="left">
 
 <code>institutional-governance/</code>
 
-<sub>Full document lifecycle management<br />review workflows · immutable audit trail · weighted contribution scoring</sub>
+<p align="justify"><sub>Full document lifecycle management: review workflows, an immutable audit trail, and weighted contribution scoring.</sub></p>
 
 </td>
 </tr>
 <tr>
-<td valign="top" align="center">
+<td valign="top" align="left">
 
 <code>data-intelligence/</code>
 
-<sub>Ingestion-to-insight pipeline<br />sentiment classification · trend comparison · dashboarded reporting</sub>
+<p align="justify"><sub>Ingestion-to-insight pipeline with sentiment classification, trend comparison, and dashboarded reporting.</sub></p>
 
 </td>
-<td valign="top" align="center">
+<td valign="top" align="left">
 
 <code>scheduling-systems/</code>
 
-<sub>Role-specific portals with approval workflows<br />availability management · calendar-synced booking</sub>
+<p align="justify"><sub>Role-specific portals with approval workflows, availability management, and calendar-synced booking.</sub></p>
 
 </td>
-<td valign="top" align="center">
+<td valign="top" align="left">
 
 <code>design-systems/</code>
 
-<sub>Component libraries and design tokens<br />consistent, accessible, responsive interfaces</sub>
+<p align="justify"><sub>Component libraries and design tokens driving consistent, accessible, responsive interfaces.</sub></p>
 
 </td>
 </tr>
@@ -221,7 +223,7 @@ find most interesting - it's where most systems get it wrong.
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=26&duration=1&pause=99999&color=3FB950&center=true&vCenter=true&width=360&height=38&lines=%24+git+log+--stat" alt="GitHub Activity" />
+## 📊 GitHub Activity
 
 <br />
 
@@ -242,7 +244,7 @@ find most interesting - it's where most systems get it wrong.
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=26&duration=1&pause=99999&color=3FB950&center=true&vCenter=true&width=460&height=38&lines=%24+.%2Fcontrib+--render+3d" alt="Contribution Landscape" />
+## 🧊 Contribution Landscape
 
 <br />
 
@@ -254,11 +256,11 @@ find most interesting - it's where most systems get it wrong.
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=26&duration=1&pause=99999&color=3FB950&center=true&vCenter=true&width=400&height=38&lines=%24+cat+trophies.json" alt="Trophies" />
+## 🏆 Trophies
 
 <br />
 
-<img src="https://github-profile-trophy.vercel.app/?username=SamaunRezvi&theme=matrix&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="" />
+<img src="https://github-profile-trophy.vercel.app/?username=SamaunRezvi&theme=matrix&no-frame=true&column=7&margin-w=8&margin-h=8" alt="" />
 
 </div>
 
@@ -266,7 +268,7 @@ find most interesting - it's where most systems get it wrong.
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=26&duration=1&pause=99999&color=3FB950&center=true&vCenter=true&width=620&height=38&lines=%24+.%2Fsnake.sh+--eat+contributions" alt="Contribution Snake" />
+## 🐍 Contribution Snake
 
 <br />
 
@@ -282,7 +284,7 @@ find most interesting - it's where most systems get it wrong.
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=26&duration=1&pause=99999&color=3FB950&center=true&vCenter=true&width=240&height=38&lines=%24+fortune" alt="Words to Code By" />
+## 💬 Words To Code By
 
 <br />
 
@@ -294,18 +296,14 @@ find most interesting - it's where most systems get it wrong.
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=26&duration=1&pause=99999&color=3FB950&center=true&vCenter=true&width=360&height=38&lines=%24+mail+--compose" alt="Get in Touch" />
+## 📬 Get In Touch
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=400&size=15&duration=2600&pause=1000&color=8B949E&center=true&vCenter=true&width=680&height=32&lines=%23+open+to+full-time+roles;%23+available+for+freelance+and+collaboration;%23+happy+to+talk+architecture+any+time" alt="" />
+<sub>Open to full-time roles · Available for freelance and collaboration · Happy to talk architecture any time</sub>
 
-<br />
+<br /><br />
 
 <a href="mailto:samaunrezvi9@gmail.com"><img src="https://img.shields.io/badge/samaunrezvi9@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=3FB950" height="36" /></a>
 &nbsp;
 <a href="https://www.linkedin.com/in/samaun-rezvi-a17a6316a"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0d1117?style=for-the-badge&logo=linkedin&logoColor=3FB950" height="36" /></a>
-
-<br /><br />
-
-<sub><code>$ exit 0</code></sub>
 
 </div>
