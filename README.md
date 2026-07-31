@@ -15,19 +15,19 @@
 <table>
 <tr>
 
-<td width="56%" valign="top" align="left">
+<td width="430" valign="top" align="left">
 
 <img src="profile.png" width="110" alt="Samaun Rezvi" />
 
 <h1>👋 Hi, I'm Samaun Rezvi</h1>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=2600&pause=900&color=3FB950&vCenter=true&width=520&height=38&lines=%C2%B7+I+build+multi-role+systems+end+to+end+%C2%B7;Interface+%C2%B7+Data+model+%C2%B7+Permissions+%C2%B7+Deploy;Nine+roles+%C2%B7+Ninety+routes+%C2%B7+One+person" alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=15&duration=2600&pause=900&color=3FB950&vCenter=true&width=430&height=32&lines=%C2%B7+I+build+multi-role+systems+end+to+end+%C2%B7;Interface+%C2%B7+Data+model+%C2%B7+Permissions+%C2%B7+Deploy;Nine+roles+%C2%B7+Ninety+routes+%C2%B7+One+person" alt="" />
 
 <sub>Computer Science &amp; Engineering · Daffodil International University · DSC, Dhaka, Bangladesh</sub>
 
 <br /><br />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="420" />
 
 <b>│ Connect with Me</b>
 
@@ -43,15 +43,15 @@
 
 <br /><br />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="420" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=13&duration=3200&pause=1400&color=6E7681&vCenter=true&width=520&height=28&lines=status-+open+to+opportunities;%C2%B7+response+time-+usually+within+a+day;%C2%B7+scroll+down+for+the+details" alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=12&duration=3200&pause=1400&color=6E7681&vCenter=true&width=420&height=26&lines=status-+open+to+opportunities;%C2%B7+response+time-+usually+within+a+day;%C2%B7+scroll+down+for+the+details" alt="" />
 
 </td>
 
-<td width="44%" valign="middle" align="center">
+<td width="330" valign="middle" align="center">
 
-<img src="./assets/banner-3d.svg" width="100%" alt="3D animated banner" />
+<img src="./assets/banner-3d.svg" width="320" alt="Animated banner" />
 
 </td>
 
@@ -159,8 +159,6 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
----
-
 <h2 align="center">🧰 Tech &amp; Tools</h2>
 
 <div align="center">
@@ -186,7 +184,6 @@ I build systems where people in different roles use the same data for different 
 <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" />
 </td>
 </tr>
-<tr><td colspan="2"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:161B22,100:0d1117&height=1" width="100%" /></td></tr>
 <tr>
 <td align="right" valign="middle">
 <img src="https://img.shields.io/badge/02-2EA043?style=flat-square&labelColor=0d1117" /><br />
@@ -203,7 +200,6 @@ I build systems where people in different roles use the same data for different 
 <img src="https://img.shields.io/badge/Leaflet-199900?logo=leaflet&logoColor=white" />
 </td>
 </tr>
-<tr><td colspan="2"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:161B22,100:0d1117&height=1" width="100%" /></td></tr>
 <tr>
 <td align="right" valign="middle">
 <img src="https://img.shields.io/badge/03-3FB950?style=flat-square&labelColor=0d1117" /><br />
@@ -220,7 +216,6 @@ I build systems where people in different roles use the same data for different 
 <img src="https://img.shields.io/badge/IndexedDB-4285F4?logo=googlechrome&logoColor=white" />
 </td>
 </tr>
-<tr><td colspan="2"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:161B22,100:0d1117&height=1" width="100%" /></td></tr>
 <tr>
 <td align="right" valign="middle">
 <img src="https://img.shields.io/badge/04-56D364?style=flat-square&labelColor=0d1117" /><br />
@@ -234,7 +229,6 @@ I build systems where people in different roles use the same data for different 
 <img src="https://img.shields.io/badge/Accessibility-7EE787" />
 </td>
 </tr>
-<tr><td colspan="2"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:161B22,100:0d1117&height=1" width="100%" /></td></tr>
 <tr>
 <td align="right" valign="middle">
 <img src="https://img.shields.io/badge/05-7EE787?style=flat-square&labelColor=0d1117" /><br />
@@ -260,8 +254,6 @@ I build systems where people in different roles use the same data for different 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=1500&color=3FB950&center=true&vCenter=true&width=600&height=30&lines=cat+philosophy.txt;the+stack+serves+the+problem%2C+not+the+resume" alt="" />
 
 </div>
-
----
 
 </div>
 
@@ -358,14 +350,14 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=SamaunRezvi&show_icons=true&hide_border=true&bg_color=0d1117&title_color=3FB950&icon_color=2EA043&text_color=8B949E&count_private=true&include_all_commits=true&hide_title=true" alt="" />
-<img height="170" src="https://streak-stats.demolab.com?user=SamaunRezvi&hide_border=true&background=0d1117&ring=3FB950&fire=56D364&currStreakLabel=3FB950&sideLabels=8B949E&sideNums=8B949E&currStreakNum=ffffff&dates=6E7681" alt="" />
+<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SamaunRezvi&theme=github_dark" alt="Profile summary" />
 
-<br /><br />
+<br />
 
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SamaunRezvi&layout=donut&hide_border=true&bg_color=0d1117&title_color=3FB950&text_color=8B949E&langs_count=6" alt="" />
+<img height="175" src="https://streak-stats.demolab.com?user=SamaunRezvi&hide_border=true&background=0d1117&ring=3FB950&fire=56D364&currStreakLabel=3FB950&sideLabels=8B949E&sideNums=8B949E&currStreakNum=ffffff&dates=6E7681" alt="Contribution streak" />
+<img height="175" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=SamaunRezvi&theme=github_dark" alt="Top languages" />
 
-<br /><br />
+<br />
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=SamaunRezvi&hide_border=true&bg_color=0d1117&color=3FB950&line=2EA043&point=ffffff&area=true&area_color=196C2E&title_color=3FB950&custom_title=Contribution%20Activity" width="98%" alt="" />
 
@@ -387,11 +379,12 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-## 🏆 Trophies
+## 🏆 Commit Habits
 
 <br />
 
-<img src="https://github-profile-trophy.vercel.app/?username=SamaunRezvi&theme=matrix&no-frame=true&column=7&margin-w=8&margin-h=8" alt="" />
+<img height="175" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=SamaunRezvi&theme=github_dark" alt="Commit stats" />
+<img height="175" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=SamaunRezvi&theme=github_dark&utcOffset=6" alt="Productive time" />
 
 </div>
 
@@ -425,9 +418,9 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=4200&pause=1200&color=3FB950&center=true&vCenter=true&random=true&width=900&height=48&lines=%22Simplicity+is+prerequisite+for+reliability.%22;%22Controlling+complexity+is+the+essence+of+computer+programming.%22;%22Programs+must+be+written+for+people+to+read.%22;%22Good+programmers+write+code+that+humans+can+understand.%22;%22Make+it+work%2C+make+it+right%2C+make+it+fast.%22" alt="Curated quotes" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=4200&pause=1200&color=3FB950&center=true&vCenter=true&random=true&width=760&height=44&lines=%22Simplicity+is+prerequisite+for+reliability.%22;%22Controlling+complexity+is+the+essence+of+computer+programming.%22;%22Programs+must+be+written+for+people+to+read.%22;%22Good+programmers+write+code+that+humans+can+understand.%22;%22Make+it+work%2C+make+it+right%2C+make+it+fast.%22" alt="Curated quotes" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=13&duration=4200&pause=1200&color=8B949E&center=true&vCenter=true&random=true&width=900&height=28&lines=Edsger+W.+Dijkstra;Brian+Kernighan;Abelson+%26+Sussman%2C+SICP;Martin+Fowler%2C+Refactoring;Kent+Beck" alt="Attributions" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=13&duration=4200&pause=1200&color=8B949E&center=true&vCenter=true&random=true&width=760&height=28&lines=Edsger+W.+Dijkstra;Brian+Kernighan;Abelson+%26+Sussman%2C+SICP;Martin+Fowler%2C+Refactoring;Kent+Beck" alt="Attributions" />
 
 <br />
 
@@ -513,5 +506,27 @@ I build systems where people in different roles use the same data for different 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=1500&color=3FB950&center=true&vCenter=true&width=620&height=30&lines=mail-+%22hello%22+samaunrezvi9;inbox+open.+recruiter+script+needed." alt="" />
 
 </div>
+
+</div>
+
+---
+
+<div align="center">
+
+<a href="./LICENSE"><img src="https://img.shields.io/badge/©%202026%20SAMAUN%20REZVI-ALL%20RIGHTS%20RESERVED-0d1117?style=for-the-badge&labelColor=238636&color=0d1117" height="30" /></a>
+<a href="./LICENSE"><img src="https://img.shields.io/badge/LICENSE-ATTRIBUTION%20REQUIRED-0d1117?style=for-the-badge&labelColor=0d1117&color=3FB950" height="30" /></a>
+
+<br /><br />
+
+<sub>
+This profile — its layout, copy and artwork — is the original work of <b>Samaun Rezvi</b>.<br />
+You may reuse or adapt it for personal, non-commercial use <b>only with visible credit</b>:<br />
+<code>Design based on the work of Samaun Rezvi · github.com/SamaunRezvi</code><br />
+Use without that credit is not licensed and infringes copyright. See <a href="./LICENSE">LICENSE</a>.
+</sub>
+
+<br /><br />
+
+<sub>Spider-Man is a trademark of Marvel Characters, Inc. The banner is original non-commercial fan art and is not endorsed by or affiliated with Marvel.</sub>
 
 </div>

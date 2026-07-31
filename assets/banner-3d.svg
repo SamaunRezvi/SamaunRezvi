@@ -1,221 +1,334 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="700" viewBox="0 0 520 700" role="img" aria-label="3D animated banner">
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="700" viewBox="0 0 520 700" role="img" aria-label="Animated 3D web-slinger banner">
+
+  <title>Samaun Rezvi — animated banner</title>
+  <desc>Copyright (c) 2026 Samaun Rezvi. All rights reserved. Reuse requires visible credit to Samaun Rezvi.</desc>
 
   <defs>
-    <radialGradient id="bg" cx="50%" cy="38%" r="78%">
-      <stop offset="0%" stop-color="#0f2a18"/>
-      <stop offset="55%" stop-color="#0d1a12"/>
+    <radialGradient id="sky" cx="50%" cy="30%" r="80%">
+      <stop offset="0%"   stop-color="#16323f"/>
+      <stop offset="55%"  stop-color="#0e1c25"/>
       <stop offset="100%" stop-color="#0d1117"/>
     </radialGradient>
 
-    <linearGradient id="faceTop" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#56D364"/>
-      <stop offset="100%" stop-color="#238636"/>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#F0455A"/>
+      <stop offset="45%"  stop-color="#D2223A"/>
+      <stop offset="100%" stop-color="#8E1122"/>
     </linearGradient>
-    <linearGradient id="faceLeft" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#238636"/>
-      <stop offset="100%" stop-color="#0f3d1e"/>
+    <linearGradient id="redSoft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#E8394F"/>
+      <stop offset="100%" stop-color="#9C1526"/>
     </linearGradient>
-    <linearGradient id="faceRight" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#2EA043"/>
-      <stop offset="100%" stop-color="#123f21"/>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#3D6FE6"/>
+      <stop offset="50%"  stop-color="#1F46B4"/>
+      <stop offset="100%" stop-color="#0E2160"/>
     </linearGradient>
-
-    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#3FB950" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#3FB950" stop-opacity="1"/>
+    <linearGradient id="lens" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%"   stop-color="#FFFFFF"/>
+      <stop offset="60%"  stop-color="#E6EEF8"/>
+      <stop offset="100%" stop-color="#AFC2D8"/>
+    </linearGradient>
+    <linearGradient id="webFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#E8F0F8" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#E8F0F8" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#3FB950" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#3FB950" stop-opacity="0.9"/>
       <stop offset="100%" stop-color="#3FB950" stop-opacity="0"/>
     </linearGradient>
 
-    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="6" result="b"/>
+    <filter id="glow" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="softglow" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="14"/>
+    <filter id="soft" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+    <filter id="drop" x="-40%" y="-40%" width="200%" height="200%">
+      <feDropShadow dx="6" dy="8" stdDeviation="7" flood-color="#000000" flood-opacity="0.55"/>
     </filter>
 
-    <clipPath id="card">
-      <rect x="1" y="1" width="518" height="698" rx="14"/>
-    </clipPath>
-    <clipPath id="floor">
-      <rect x="1" y="430" width="518" height="269"/>
-    </clipPath>
+    <clipPath id="card"><rect x="1" y="1" width="518" height="698" rx="14"/></clipPath>
+    <clipPath id="headClip"><ellipse cx="0" cy="0" rx="38" ry="44"/></clipPath>
+    <clipPath id="torsoClip"><path d="M -30,146 L -47,196 L -53,233 L 53,233 L 47,196 L 30,146 Z"/></clipPath>
   </defs>
 
-  <!-- ── card ─────────────────────────────────────────────── -->
-  <rect x="1" y="1" width="518" height="698" rx="14" fill="url(#bg)"/>
+  <rect x="1" y="1" width="518" height="698" rx="14" fill="url(#sky)"/>
 
   <g clip-path="url(#card)">
 
-    <!-- ambient light pools -->
-    <ellipse cx="260" cy="300" rx="180" ry="170" fill="#238636" opacity="0.13" filter="url(#softglow)">
-      <animate attributeName="opacity" values="0.09;0.18;0.09" dur="6s" repeatCount="indefinite"/>
+    <!-- ── moon haze ─────────────────────────────────────── -->
+    <circle cx="392" cy="126" r="52" fill="#cfe6d8" opacity="0.10" filter="url(#soft)"/>
+    <circle cx="392" cy="126" r="30" fill="#e7f3ea" opacity="0.13"/>
+    <ellipse cx="260" cy="330" rx="185" ry="200" fill="#238636" opacity="0.10" filter="url(#soft)">
+      <animate attributeName="opacity" values="0.07;0.14;0.07" dur="7s" repeatCount="indefinite"/>
     </ellipse>
 
-    <!-- ── perspective floor ──────────────────────────────── -->
-    <g clip-path="url(#floor)" opacity="0.5">
-      <!-- converging rails -->
-      <g stroke="#238636" stroke-width="1" opacity="0.45">
-        <line x1="260" y1="430" x2="-360" y2="700"/>
-        <line x1="260" y1="430" x2="-140" y2="700"/>
-        <line x1="260" y1="430" x2="20"   y2="700"/>
-        <line x1="260" y1="430" x2="150"  y2="700"/>
-        <line x1="260" y1="430" x2="260"  y2="700"/>
-        <line x1="260" y1="430" x2="370"  y2="700"/>
-        <line x1="260" y1="430" x2="500"  y2="700"/>
-        <line x1="260" y1="430" x2="660"  y2="700"/>
-        <line x1="260" y1="430" x2="880"  y2="700"/>
-      </g>
-      <!-- scan lines travelling toward the viewer -->
-      <g stroke="#3FB950" stroke-width="1.4">
-        <line x1="-400" y1="0" x2="920" y2="0" opacity="0.9">
-          <animateTransform attributeName="transform" type="translate"
-            values="0 440;0 700" dur="3.2s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0.8;0" dur="3.2s" repeatCount="indefinite"/>
-        </line>
-        <line x1="-400" y1="0" x2="920" y2="0" opacity="0.9">
-          <animateTransform attributeName="transform" type="translate"
-            values="0 440;0 700" dur="3.2s" begin="1.06s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0.8;0" dur="3.2s" begin="1.06s" repeatCount="indefinite"/>
-        </line>
-        <line x1="-400" y1="0" x2="920" y2="0" opacity="0.9">
-          <animateTransform attributeName="transform" type="translate"
-            values="0 440;0 700" dur="3.2s" begin="2.13s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0;0.8;0" dur="3.2s" begin="2.13s" repeatCount="indefinite"/>
-        </line>
-      </g>
-      <!-- horizon glow -->
-      <rect x="0" y="428" width="520" height="3" fill="url(#fade)" opacity="0.7"/>
+    <!-- ── corner web net ────────────────────────────────── -->
+    <g stroke="#8fa3b8" fill="none" opacity="0.16" stroke-width="1.1">
+      <path d="M2,2 L150,2 M2,2 L2,150 M2,2 L120,120 M2,2 L60,140 M2,2 L140,60"/>
+      <path d="M34,2 C34,20 20,34 2,34"/>
+      <path d="M66,2 C66,38 38,66 2,66"/>
+      <path d="M100,2 C100,58 58,100 2,100"/>
+      <path d="M136,2 C136,78 78,136 2,136"/>
+    </g>
+    <g stroke="#8fa3b8" fill="none" opacity="0.13" stroke-width="1.1" transform="translate(518,698) rotate(180)">
+      <path d="M2,2 L120,2 M2,2 L2,120 M2,2 L96,96 M2,2 L48,112 M2,2 L112,48"/>
+      <path d="M30,2 C30,17 17,30 2,30"/>
+      <path d="M62,2 C62,36 36,62 2,62"/>
+      <path d="M98,2 C98,56 56,98 2,98"/>
     </g>
 
-    <!-- ── orbits ─────────────────────────────────────────── -->
-    <g transform="translate(260 300)" fill="none" stroke="#2EA043" opacity="0.55">
-      <ellipse rx="190" ry="62" stroke-width="1.2">
-        <animateTransform attributeName="transform" type="rotate"
-          from="0" to="360" dur="18s" repeatCount="indefinite"/>
-      </ellipse>
-      <ellipse rx="160" ry="52" stroke-width="1" opacity="0.7">
-        <animateTransform attributeName="transform" type="rotate"
-          from="360" to="0" dur="13s" repeatCount="indefinite"/>
-      </ellipse>
-      <ellipse rx="205" ry="80" stroke-width="0.9" opacity="0.4">
-        <animateTransform attributeName="transform" type="rotate"
-          from="120" to="480" dur="26s" repeatCount="indefinite"/>
-      </ellipse>
-    </g>
-
-    <!-- orbiting satellites -->
-    <g transform="translate(260 300)">
-      <g>
-        <animateTransform attributeName="transform" type="rotate"
-          from="0" to="360" dur="7s" repeatCount="indefinite"/>
-        <circle cx="190" cy="0" r="4.5" fill="#7EE787" filter="url(#glow)"/>
-      </g>
-      <g>
-        <animateTransform attributeName="transform" type="rotate"
-          from="180" to="540" dur="10.5s" repeatCount="indefinite"/>
-        <circle cx="-160" cy="0" r="3.2" fill="#56D364" filter="url(#glow)"/>
-      </g>
-    </g>
-
-    <!-- ── rotating isometric cube ────────────────────────── -->
-    <g transform="translate(260 300)">
-      <!-- float -->
+    <!-- ── skyline (parallax) ────────────────────────────── -->
+    <g>
       <animateTransform attributeName="transform" type="translate"
-        values="260 292;260 312;260 292" dur="5.5s" repeatCount="indefinite" additive="replace"/>
+        values="-7 0;7 0;-7 0" dur="24s" repeatCount="indefinite"/>
 
-      <g>
-        <!-- full spin -->
-        <animateTransform attributeName="transform" type="rotate"
-          from="0" to="360" dur="16s" repeatCount="indefinite"/>
-
-        <!-- outer cube -->
-        <g stroke="#0d1117" stroke-width="1.5" stroke-linejoin="round">
-          <polygon points="0,-110 95,-55 0,0 -95,-55" fill="url(#faceTop)" opacity="0.92">
-            <animate attributeName="opacity" values="0.92;0.72;0.92" dur="4s" repeatCount="indefinite"/>
-          </polygon>
-          <polygon points="-95,-55 0,0 0,110 -95,55" fill="url(#faceLeft)" opacity="0.88"/>
-          <polygon points="95,-55 0,0 0,110 95,55" fill="url(#faceRight)" opacity="0.88">
-            <animate attributeName="opacity" values="0.88;0.62;0.88" dur="4s" begin="2s" repeatCount="indefinite"/>
-          </polygon>
-        </g>
-
-        <!-- wireframe over the solid -->
-        <g fill="none" stroke="#7EE787" stroke-width="1.3" opacity="0.85" filter="url(#glow)">
-          <polygon points="0,-110 95,-55 95,55 0,110 -95,55 -95,-55"/>
-          <path d="M0,-110 L0,0 M-95,-55 L0,0 M95,-55 L0,0 M0,0 L0,110"/>
-        </g>
-
-        <!-- vertex nodes -->
-        <g fill="#A2F2B0">
-          <circle cx="0" cy="-110" r="3.4"/>
-          <circle cx="95" cy="-55" r="3.4"/>
-          <circle cx="95" cy="55" r="3.4"/>
-          <circle cx="0" cy="110" r="3.4"/>
-          <circle cx="-95" cy="55" r="3.4"/>
-          <circle cx="-95" cy="-55" r="3.4"/>
-          <circle cx="0" cy="0" r="3.4"/>
-          <animate attributeName="opacity" values="1;0.45;1" dur="2.4s" repeatCount="indefinite"/>
-        </g>
+      <!-- far towers -->
+      <g fill="#0f1d26" opacity="0.9">
+        <rect x="-10" y="470" width="72" height="240"/>
+        <rect x="74"  y="516" width="54" height="194"/>
+        <rect x="140" y="452" width="46" height="258"/>
+        <rect x="356" y="486" width="62" height="224"/>
+        <rect x="430" y="440" width="58" height="270"/>
+        <rect x="498" y="510" width="34" height="200"/>
       </g>
-
-      <!-- inner counter-rotating core -->
-      <g fill="none" stroke="#3FB950" stroke-width="1.1" opacity="0.7">
-        <animateTransform attributeName="transform" type="rotate"
-          from="360" to="0" dur="9s" repeatCount="indefinite"/>
-        <polygon points="0,-46 40,-23 40,23 0,46 -40,23 -40,-23"/>
-        <path d="M0,-46 L0,0 M-40,-23 L0,0 M40,-23 L0,0"/>
+      <!-- near towers -->
+      <g fill="#0a151c">
+        <rect x="196" y="546" width="58" height="164"/>
+        <rect x="268" y="576" width="46" height="134"/>
+        <rect x="326" y="540" width="34" height="170"/>
+        <rect x="104" y="592" width="44" height="118"/>
+      </g>
+      <!-- lit windows -->
+      <g fill="#3FB950">
+        <rect x="8"   y="490" width="6" height="9" opacity="0.75"><animate attributeName="opacity" values="0.75;0.15;0.75" dur="5s" repeatCount="indefinite"/></rect>
+        <rect x="26"  y="512" width="6" height="9" opacity="0.5"/>
+        <rect x="44"  y="490" width="6" height="9" opacity="0.65"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="6.5s" repeatCount="indefinite"/></rect>
+        <rect x="8"   y="536" width="6" height="9" opacity="0.35"/>
+        <rect x="44"  y="560" width="6" height="9" opacity="0.6"/>
+        <rect x="88"  y="534" width="6" height="9" opacity="0.55"><animate attributeName="opacity" values="0.55;0.1;0.55" dur="4.2s" repeatCount="indefinite"/></rect>
+        <rect x="108" y="558" width="6" height="9" opacity="0.4"/>
+        <rect x="152" y="470" width="6" height="9" opacity="0.7"/>
+        <rect x="170" y="494" width="6" height="9" opacity="0.45"><animate attributeName="opacity" values="0.45;0.9;0.45" dur="7.5s" repeatCount="indefinite"/></rect>
+        <rect x="152" y="518" width="6" height="9" opacity="0.3"/>
+        <rect x="368" y="504" width="6" height="9" opacity="0.6"/>
+        <rect x="392" y="528" width="6" height="9" opacity="0.4"><animate attributeName="opacity" values="0.4;0.85;0.4" dur="5.6s" repeatCount="indefinite"/></rect>
+        <rect x="368" y="552" width="6" height="9" opacity="0.5"/>
+        <rect x="442" y="458" width="6" height="9" opacity="0.7"/>
+        <rect x="466" y="482" width="6" height="9" opacity="0.35"/>
+        <rect x="442" y="506" width="6" height="9" opacity="0.55"><animate attributeName="opacity" values="0.55;0.12;0.55" dur="6.1s" repeatCount="indefinite"/></rect>
+        <rect x="206" y="562" width="6" height="9" opacity="0.5"/>
+        <rect x="232" y="588" width="6" height="9" opacity="0.35"/>
+        <rect x="280" y="592" width="6" height="9" opacity="0.45"/>
+        <rect x="336" y="556" width="6" height="9" opacity="0.4"/>
       </g>
     </g>
 
-    <!-- cube shadow on the floor -->
-    <ellipse cx="260" cy="470" rx="96" ry="20" fill="#238636" opacity="0.28" filter="url(#softglow)">
-      <animate attributeName="rx" values="96;80;96" dur="5.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.3;0.18;0.3" dur="5.5s" repeatCount="indefinite"/>
-    </ellipse>
+    <!-- city haze so the figure separates from the buildings -->
+    <rect x="0" y="430" width="520" height="270" fill="#0d1117" opacity="0.45"/>
 
-    <!-- ── drifting particles ─────────────────────────────── -->
+    <!-- ── the hanging web-slinger ───────────────────────── -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="-4.5 258 6; 4.5 258 6; -4.5 258 6"
+        dur="6s" calcMode="spline"
+        keyTimes="0;0.5;1" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"
+        repeatCount="indefinite"/>
+
+      <!-- anchor web line -->
+      <path d="M258,4 L258,126" stroke="url(#webFade)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <path d="M258,4 L258,126" stroke="#ffffff" stroke-width="1" fill="none" opacity="0.35"
+            stroke-dasharray="7 9"/>
+
+      <g transform="translate(258,118)" filter="url(#drop)">
+
+        <!-- ══ legs ══ -->
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <!-- outline pass -->
+          <path d="M0,4 L18,72 L28,140" stroke="#080d12" stroke-width="32"/>
+          <path d="M-28,140 L-78,80 L-52,20" stroke="#080d12" stroke-width="32"/>
+          <!-- blue legs -->
+          <path d="M0,4 L18,72 L28,140" stroke="url(#blue)" stroke-width="25"/>
+          <path d="M-28,140 L-78,80 L-52,20" stroke="url(#blue)" stroke-width="25"/>
+          <!-- red boots -->
+          <path d="M0,2 L7,28"   stroke="#080d12" stroke-width="33"/>
+          <path d="M-52,18 L-63,42" stroke="#080d12" stroke-width="33"/>
+          <path d="M0,2 L7,28"   stroke="url(#redSoft)" stroke-width="26"/>
+          <path d="M-52,18 L-63,42" stroke="url(#redSoft)" stroke-width="26"/>
+        </g>
+
+        <!-- ══ torso ══ -->
+        <path d="M -30,146 L -47,196 L -53,233 L 53,233 L 47,196 L 30,146 Z"
+              fill="url(#red)" stroke="#080d12" stroke-width="3.5" stroke-linejoin="round"/>
+        <g clip-path="url(#torsoClip)">
+          <!-- blue hip half -->
+          <path d="M -34,140 L -45,178 L 45,178 L 34,140 Z" fill="url(#blue)" opacity="0.98"/>
+          <!-- red shoulder yoke highlight -->
+          <path d="M -53,233 L 53,233 L 49,206 L -49,206 Z" fill="#E8394F" opacity="0.35"/>
+          <!-- web pattern on the red chest -->
+          <g stroke="#5d0d1a" stroke-width="1.1" fill="none" opacity="0.55">
+            <path d="M-40,196 C-26,214 -26,226 -34,234"/>
+            <path d="M-20,194 C-10,214 -10,226 -16,234"/>
+            <path d="M0,192 L0,234"/>
+            <path d="M20,194 C10,214 10,226 16,234"/>
+            <path d="M40,196 C26,214 26,226 34,234"/>
+            <path d="M-46,206 C-20,200 20,200 46,206"/>
+            <path d="M-49,220 C-22,214 22,214 49,220"/>
+          </g>
+        </g>
+
+        <!-- spider emblem -->
+        <g transform="translate(0,206)" fill="none" stroke="#080d12" stroke-width="2.6" stroke-linecap="round">
+          <ellipse cx="0" cy="0" rx="4.6" ry="9" fill="#080d12" stroke="none"/>
+          <path d="M-3,-6 C-14,-14 -22,-16 -28,-12"/>
+          <path d="M3,-6 C14,-14 22,-16 28,-12"/>
+          <path d="M-4,-1 C-16,-4 -24,-2 -29,3"/>
+          <path d="M4,-1 C16,-4 24,-2 29,3"/>
+          <path d="M-4,4 C-15,6 -22,10 -26,16"/>
+          <path d="M4,4 C15,6 22,10 26,16"/>
+          <path d="M-3,8 C-11,14 -15,20 -16,27"/>
+          <path d="M3,8 C11,14 15,20 16,27"/>
+        </g>
+
+        <!-- ══ arms ══ -->
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <!-- relaxed right arm -->
+          <path d="M50,236 L86,300 L94,364" stroke="#080d12" stroke-width="26"/>
+          <path d="M50,236 L86,300 L94,364" stroke="url(#blue)" stroke-width="19"/>
+          <!-- web-shooting left arm -->
+          <path d="M-50,236 L-100,292 L-134,346" stroke="#080d12" stroke-width="26"/>
+          <path d="M-50,236 L-100,292 L-134,346" stroke="url(#blue)" stroke-width="19"/>
+          <!-- red gloves -->
+          <path d="M92,352 L96,372"   stroke="#080d12" stroke-width="27"/>
+          <path d="M-128,336 L-138,354" stroke="#080d12" stroke-width="27"/>
+          <path d="M92,352 L96,372"   stroke="url(#redSoft)" stroke-width="21"/>
+          <path d="M-128,336 L-138,354" stroke="url(#redSoft)" stroke-width="21"/>
+          <!-- red shoulder caps -->
+          <path d="M-46,230 L-30,236" stroke="url(#red)" stroke-width="24" opacity="0"/>
+        </g>
+
+        <!-- web burst from the left hand -->
+        <g stroke="#E8F0F8" fill="none" stroke-linecap="round" opacity="0.9">
+          <path d="M-140,358 C-184,388 -228,404 -262,412" stroke-width="2.4"
+                stroke-dasharray="210" stroke-dashoffset="210">
+            <animate attributeName="stroke-dashoffset" values="210;0;0;210" keyTimes="0;0.3;0.75;1"
+                     dur="4.6s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;0.95;0.95;0" keyTimes="0;0.3;0.75;1"
+                     dur="4.6s" repeatCount="indefinite"/>
+          </path>
+          <path d="M-140,358 C-182,382 -224,396 -258,402" stroke-width="1.2" opacity="0.5"
+                stroke-dasharray="200" stroke-dashoffset="200">
+            <animate attributeName="stroke-dashoffset" values="200;0;0;200" keyTimes="0;0.32;0.75;1"
+                     dur="4.6s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0;0.5;0.5;0" keyTimes="0;0.32;0.75;1"
+                     dur="4.6s" repeatCount="indefinite"/>
+          </path>
+          <circle cx="-140" cy="358" r="0" fill="#E8F0F8" stroke="none">
+            <animate attributeName="r" values="0;9;0" keyTimes="0;0.35;0.6" dur="4.6s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.9;0" keyTimes="0;0.6" dur="4.6s" repeatCount="indefinite"/>
+          </circle>
+        </g>
+
+        <!-- ══ neck ══ -->
+        <path d="M0,230 L0,242" stroke="#080d12" stroke-width="26" stroke-linecap="butt"/>
+        <path d="M0,230 L0,242" stroke="url(#redSoft)" stroke-width="20" stroke-linecap="butt"/>
+
+        <!-- ══ head (drawn upright, then flipped since he hangs upside down) ══ -->
+        <g transform="translate(0,286) rotate(180)">
+
+          <!-- spider-sense pulses -->
+          <g fill="none" stroke="#7EE787" stroke-width="2" opacity="0">
+            <path d="M-58,-26 A 62 62 0 0 1 -40,-58"/>
+            <path d="M-70,-18 A 76 76 0 0 1 -48,-66"/>
+            <animate attributeName="opacity" values="0;0.85;0;0;0" keyTimes="0;0.08;0.2;0.9;1"
+                     dur="5.4s" repeatCount="indefinite"/>
+          </g>
+          <g fill="none" stroke="#7EE787" stroke-width="2" opacity="0" transform="scale(-1,1)">
+            <path d="M-58,-26 A 62 62 0 0 1 -40,-58"/>
+            <path d="M-70,-18 A 76 76 0 0 1 -48,-66"/>
+            <animate attributeName="opacity" values="0;0.85;0;0;0" keyTimes="0;0.08;0.2;0.9;1"
+                     dur="5.4s" begin="0.12s" repeatCount="indefinite"/>
+          </g>
+
+          <ellipse cx="0" cy="0" rx="38" ry="44" fill="url(#red)" stroke="#080d12" stroke-width="3.5"/>
+
+          <g clip-path="url(#headClip)">
+            <g stroke="#5d0d1a" stroke-width="1.1" fill="none" opacity="0.6">
+              <path d="M0,-44 L0,44"/>
+              <path d="M0,-44 C-16,-18 -16,18 0,44"/>
+              <path d="M0,-44 C16,-18 16,18 0,44"/>
+              <path d="M0,-44 C-30,-16 -30,16 0,44"/>
+              <path d="M0,-44 C30,-16 30,16 0,44"/>
+              <path d="M-36,-16 C-12,-6 12,-6 36,-16"/>
+              <path d="M-38,0 C-13,10 13,10 38,0"/>
+              <path d="M-34,16 C-11,26 11,26 34,16"/>
+              <path d="M-28,30 C-9,38 9,38 28,30"/>
+            </g>
+            <!-- rim light -->
+            <ellipse cx="-16" cy="-12" rx="30" ry="34" fill="#ffffff" opacity="0.07"/>
+          </g>
+
+          <!-- eye lenses -->
+          <g stroke="#080d12" stroke-width="3" stroke-linejoin="round">
+            <path d="M4,-3 C7,-19 27,-25 33,-12 C36,-4 24,8 12,5 C7,4 3,1 4,-3 Z" fill="url(#lens)"/>
+            <path d="M4,-3 C7,-19 27,-25 33,-12 C36,-4 24,8 12,5 C7,4 3,1 4,-3 Z" fill="url(#lens)"
+                  transform="scale(-1,1)"/>
+          </g>
+          <!-- lens highlights -->
+          <g fill="#ffffff" opacity="0.85">
+            <ellipse cx="22" cy="-14" rx="5" ry="3" transform="rotate(-18 22 -14)">
+              <animate attributeName="opacity" values="0.85;0.25;0.85" dur="3.4s" repeatCount="indefinite"/>
+            </ellipse>
+            <ellipse cx="-22" cy="-14" rx="5" ry="3" transform="rotate(18 -22 -14)">
+              <animate attributeName="opacity" values="0.25;0.85;0.25" dur="3.4s" repeatCount="indefinite"/>
+            </ellipse>
+          </g>
+        </g>
+
+      </g>
+    </g>
+
+    <!-- ── drifting embers ──────────────────────────────── -->
     <g fill="#3FB950">
-      <circle cx="62" cy="620" r="2">
-        <animate attributeName="cy" values="640;70" dur="9s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0.9;0" dur="9s" repeatCount="indefinite"/>
+      <circle cx="60" cy="0" r="2">
+        <animate attributeName="cy" values="660;80"  dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.8;0" dur="10s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="140" cy="620" r="1.6">
-        <animate attributeName="cy" values="660;90" dur="11s" begin="1.5s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0.8;0" dur="11s" begin="1.5s" repeatCount="indefinite"/>
+      <circle cx="146" cy="0" r="1.5">
+        <animate attributeName="cy" values="680;120" dur="13s" begin="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.65;0" dur="13s" begin="2s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="392" cy="620" r="2.2">
-        <animate attributeName="cy" values="650;60" dur="10s" begin="0.8s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0.9;0" dur="10s" begin="0.8s" repeatCount="indefinite"/>
+      <circle cx="404" cy="0" r="2.1">
+        <animate attributeName="cy" values="670;90"  dur="11.5s" begin="1s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.8;0" dur="11.5s" begin="1s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="466" cy="620" r="1.5">
-        <animate attributeName="cy" values="670;110" dur="13s" begin="3s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0.7;0" dur="13s" begin="3s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="300" cy="620" r="1.4">
-        <animate attributeName="cy" values="680;140" dur="12s" begin="4.2s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0.7;0" dur="12s" begin="4.2s" repeatCount="indefinite"/>
+      <circle cx="470" cy="0" r="1.4">
+        <animate attributeName="cy" values="690;160" dur="15s" begin="3.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.6;0" dur="15s" begin="3.5s" repeatCount="indefinite"/>
       </circle>
     </g>
 
-    <!-- ── corner brackets ────────────────────────────────── -->
-    <g fill="none" stroke="#238636" stroke-width="1.6" opacity="0.8">
+    <!-- ── caption ──────────────────────────────────────── -->
+    <rect x="0" y="596" width="520" height="104" fill="#0d1117" opacity="0.82"/>
+    <rect x="60" y="600" width="400" height="1.6" fill="url(#rule)"/>
+    <g font-family="'JetBrains Mono','Fira Code',ui-monospace,monospace" text-anchor="middle">
+      <text x="260" y="632" fill="#3FB950" font-size="14" letter-spacing="4.5">SAMAUN REZVI</text>
+      <text x="260" y="656" fill="#6E7681" font-size="10" letter-spacing="1.8">NINE ROLES · NINETY ROUTES · ONE PERSON</text>
+      <text x="260" y="680" fill="#56D364" font-size="10" letter-spacing="1.4">
+        ● building
+        <animate attributeName="opacity" values="1;0.35;1" dur="2.2s" repeatCount="indefinite"/>
+      </text>
+    </g>
+
+    <!-- ── corner brackets ──────────────────────────────── -->
+    <g fill="none" stroke="#238636" stroke-width="1.6" opacity="0.75">
       <path d="M18 46 L18 18 L46 18"/>
       <path d="M474 18 L502 18 L502 46"/>
       <path d="M502 654 L502 682 L474 682"/>
       <path d="M46 682 L18 682 L18 654"/>
-    </g>
-
-    <!-- ── caption ────────────────────────────────────────── -->
-    <g font-family="'JetBrains Mono','Fira Code',ui-monospace,monospace" text-anchor="middle">
-      <text x="260" y="600" fill="#3FB950" font-size="13" letter-spacing="4">SAMAUN REZVI</text>
-      <text x="260" y="624" fill="#6E7681" font-size="10.5" letter-spacing="2.2">
-        NINE ROLES · NINETY ROUTES · ONE PERSON
-      </text>
-      <text x="260" y="652" fill="#56D364" font-size="10.5" letter-spacing="1.6" opacity="0.9">
-        ● building
-        <animate attributeName="opacity" values="0.9;0.35;0.9" dur="2.2s" repeatCount="indefinite"/>
-      </text>
     </g>
 
   </g>
