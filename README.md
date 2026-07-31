@@ -6,19 +6,30 @@
 </td></tr>
 </table>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="60%" />
+<img src="https://komarev.com/ghpvc/?username=SamaunRezvi&label=PROFILE+VIEWS&color=3FB950&style=flat-square" height="22" />
+<img src="https://img.shields.io/github/followers/SamaunRezvi?label=FOLLOWERS&style=flat-square&color=3FB950&labelColor=0d1117" height="22" />
+<img src="https://img.shields.io/github/stars/SamaunRezvi?label=STARS&style=flat-square&color=3FB950&labelColor=0d1117" height="22" />
 
 <br />
 
-<img src="profile.png" width="150" alt="Samaun Rezvi" />
+<table>
+<tr>
 
-<br /><br />
+<td width="56%" valign="top" align="left">
+
+<img src="profile.png" width="110" alt="Samaun Rezvi" />
 
 <h1>👋 Hi, I'm Samaun Rezvi</h1>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=2600&pause=900&color=3FB950&center=true&vCenter=true&width=860&height=44&lines=%C2%B7+I+build+multi-role+systems+end+to+end+%C2%B7;Interface+%C2%B7+Data+model+%C2%B7+Permissions+%C2%B7+Deploy;Nine+roles+%C2%B7+Ninety+routes+%C2%B7+One+person" alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=2600&pause=900&color=3FB950&vCenter=true&width=520&height=38&lines=%C2%B7+I+build+multi-role+systems+end+to+end+%C2%B7;Interface+%C2%B7+Data+model+%C2%B7+Permissions+%C2%B7+Deploy;Nine+roles+%C2%B7+Ninety+routes+%C2%B7+One+person" alt="" />
 
 <sub>Computer Science &amp; Engineering · Daffodil International University · DSC, Dhaka, Bangladesh</sub>
+
+<br /><br />
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="100%" />
+
+<b>│ Connect with Me</b>
 
 <br /><br />
 
@@ -30,17 +41,22 @@
 &nbsp;
 <a href="https://www.instagram.com/samaunrezvi_617/"><img src="https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=3FB950" height="34" /></a>
 
-<br />
-
-<img src="https://komarev.com/ghpvc/?username=SamaunRezvi&label=PROFILE+VIEWS&color=3FB950&style=flat-square" height="22" />
-<img src="https://img.shields.io/github/followers/SamaunRezvi?label=FOLLOWERS&style=flat-square&color=3FB950&labelColor=0d1117" height="22" />
-<img src="https://img.shields.io/github/stars/SamaunRezvi?label=STARS&style=flat-square&color=3FB950&labelColor=0d1117" height="22" />
-
 <br /><br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3200&pause=1400&color=6E7681&center=true&vCenter=true&width=620&height=30&lines=status-+open+to+opportunities;%C2%B7+response+time-+usually+within+a+day;%C2%B7+scroll+down+for+the+details" alt="" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="100%" />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="70%" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=13&duration=3200&pause=1400&color=6E7681&vCenter=true&width=520&height=28&lines=status-+open+to+opportunities;%C2%B7+response+time-+usually+within+a+day;%C2%B7+scroll+down+for+the+details" alt="" />
+
+</td>
+
+<td width="44%" valign="middle" align="center">
+
+<img src="./assets/banner-3d.svg" width="100%" alt="3D animated banner" />
+
+</td>
+
+</tr>
+</table>
 
 </div>
 
