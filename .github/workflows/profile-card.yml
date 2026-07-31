@@ -1,0 +1,53 @@
+name: Refresh Profile Details Card
+
+on:
+  schedule:
+    - cron: "30 18 * * *"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch and patch profile-details card
+        run: |
+          python3 - <<'EOF'
+          import re, urllib.request
+
+          url = ("https://github-profile-summary-cards.vercel.app/api/cards/"
+                 "profile-details?username=SamaunRezvi&theme=github_dark")
+          svg = urllib.request.urlopen(url, timeout=60).read().decode("utf-8")
+
+          # The last info line (organization) can run underneath the chart.
+          # Wrap it onto two lines that both end before the chart area.
+          m = re.search(r'(<text x="21" y="98"[^>]*>)([^<]*)(</text>)', svg)
+          if m:
+              open_tag, content = m.group(1), m.group(2).strip()
+              if len(content) > 34:
+                  parts = content.split(', ')
+                  l1, l2 = '', ''
+                  for p in parts:
+                      if l2 == '' and len(l1) + len(p) <= 34:
+                          l1 = (l1 + ', ' if l1 else '') + p
+                      else:
+                          l2 = (l2 + ', ' if l2 else '') + p
+                  o13 = open_tag.replace('font-size: 14px', 'font-size: 13px')
+                  second = o13.replace('y="98"', 'y="115"')
+                  svg = svg.replace(m.group(0),
+                                    o13 + l1 + ',' + '</text>' + second + l2 + '</text>')
+
+          with open("assets/profile-details.svg", "w", encoding="utf-8") as f:
+              f.write(svg)
+          EOF
+
+      - name: Commit updated card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/profile-details.svg
+          git diff --staged --quiet || git commit -m "chore: refresh profile details card"
+          git push
