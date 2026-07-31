@@ -21,9 +21,15 @@
 
 <h1>👋 Hi, I'm Samaun Rezvi</h1>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=15&duration=2600&pause=900&color=3FB950&vCenter=true&width=430&height=32&lines=%C2%B7+I+build+multi-role+systems+end+to+end+%C2%B7;Interface+%C2%B7+Data+model+%C2%B7+Permissions+%C2%B7+Deploy;Nine+roles+%C2%B7+Ninety+routes+%C2%B7+One+person" alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=15&duration=2600&pause=900&color=3FB950&vCenter=true&width=430&height=32&lines=Full-Stack+Web+Developer;I+build+products+end+to+end;Frontend+%C2%B7+Backend+%C2%B7+Data+%C2%B7+Deploy" alt="" />
 
 <sub>Computer Science &amp; Engineering · Daffodil International University · DSC, Dhaka, Bangladesh</sub>
+
+<br /><br />
+
+<img src="https://img.shields.io/badge/Full--Stack_Developer-0d1117?style=flat-square&logo=react&logoColor=3FB950" height="26" />
+<img src="https://img.shields.io/badge/UI/UX_Minded-0d1117?style=flat-square&logo=figma&logoColor=3FB950" height="26" />
+<img src="https://img.shields.io/badge/Open_to_Work-0d1117?style=flat-square&logo=github&logoColor=3FB950" height="26" />
 
 <br /><br />
 
@@ -44,6 +50,21 @@
 <br /><br />
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="420" />
+
+<b>│ Core Stack</b>
+
+<br /><br />
+
+<img src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=3FB950" height="26" />
+<img src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=3FB950" height="26" />
+<img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=3FB950" height="26" />
+<img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3FB950" height="26" />
+<br />
+<img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=3FB950" height="26" />
+<img src="https://img.shields.io/badge/Tailwind_CSS-0d1117?style=flat-square&logo=tailwindcss&logoColor=3FB950" height="26" />
+<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3FB950" height="26" />
+
+<br /><br />
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=12&duration=3200&pause=1400&color=6E7681&vCenter=true&width=420&height=26&lines=status-+open+to+opportunities;%C2%B7+response+time-+usually+within+a+day;%C2%B7+scroll+down+for+the+details" alt="" />
 
@@ -68,16 +89,16 @@
 <table align="center">
 <tr>
 <td align="center" width="170">
-<img src="https://img.shields.io/badge/SCALE-238636?style=flat-square" /><br />
-<h1>9</h1>
-<b>USER ROLES</b><br />
-<sub>in a single system</sub>
+<img src="https://img.shields.io/badge/WORK-238636?style=flat-square" /><br />
+<h1>6+</h1>
+<b>PROJECTS</b><br />
+<sub>across web and data</sub>
 </td>
 <td align="center" width="170">
-<img src="https://img.shields.io/badge/SURFACE-2EA043?style=flat-square" /><br />
-<h1>90+</h1>
-<b>ROUTES</b><br />
-<sub>shipped and running</sub>
+<img src="https://img.shields.io/badge/STACK-2EA043?style=flat-square" /><br />
+<h1>10+</h1>
+<b>TECHNOLOGIES</b><br />
+<sub>in active use</sub>
 </td>
 <td align="center" width="170">
 <img src="https://img.shields.io/badge/REACH-3FB950?style=flat-square" /><br />
@@ -145,7 +166,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=900&color=3FB950&center=true&vCenter=true&width=740&height=42&lines=multi-role+platforms+with+offline+sync;telemetry+pipelines+that+admit+uncertainty;interfaces+for+people+working+in+the+field;permission+models+that+hold+at+the+query+layer" alt="Currently building" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=900&color=3FB950&center=true&vCenter=true&width=740&height=42&lines=full-stack+web+platforms;dashboards+and+admin+tools;offline-capable+applications;clean+and+reliable+data+models" alt="Currently building" />
 
 <br />
 
@@ -347,10 +368,6 @@ I build systems where people in different roles use the same data for different 
 <div align="center">
 
 ## 📊 GitHub Activity
-
-<br />
-
-<img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SamaunRezvi&theme=github_dark" alt="Profile summary" />
 
 <br />
 
