@@ -17,7 +17,7 @@
 
 <td width="430" valign="top" align="left">
 
-<img src="profile.png" width="110" alt="Samaun Rezvi" />
+<p align="center"><img src="profile.png" width="120" alt="Samaun Rezvi" /></p>
 
 <h1>👋 Hi, I'm Samaun Rezvi</h1>
 
@@ -49,9 +49,9 @@
 
 </td>
 
-<td width="330" valign="middle" align="center">
+<td width="340" valign="middle" align="center">
 
-<img src="./assets/banner-3d.svg" width="320" alt="Animated banner" />
+<img src="./assets/banner-3d.svg" width="100%" alt="Animated banner" />
 
 </td>
 
@@ -518,15 +518,6 @@ I build systems where people in different roles use the same data for different 
 
 <br /><br />
 
-<sub>
-This profile — its layout, copy and artwork — is the original work of <b>Samaun Rezvi</b>.<br />
-You may reuse or adapt it for personal, non-commercial use <b>only with visible credit</b>:<br />
-<code>Design based on the work of Samaun Rezvi · github.com/SamaunRezvi</code><br />
-Use without that credit is not licensed and infringes copyright. See <a href="./LICENSE">LICENSE</a>.
-</sub>
-
-<br /><br />
-
-<sub>The character artwork in the banner is third-party art — all rights remain with its original creator; displayed for personal, non-commercial purposes only.</sub>
+<sub>Personal use only, with visible credit to <b>Samaun Rezvi</b> · banner artwork belongs to its original creator · <a href="./LICENSE">LICENSE</a></sub>
 
 </div>
