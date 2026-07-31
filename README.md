@@ -90,7 +90,7 @@
 <tr>
 <td align="center" width="170">
 <img src="https://img.shields.io/badge/WORK-238636?style=flat-square" /><br />
-<h1>6+</h1>
+<h1>15+</h1>
 <b>PROJECTS</b><br />
 <sub>across web and data</sub>
 </td>
@@ -108,7 +108,7 @@
 </td>
 <td align="center" width="170">
 <img src="https://img.shields.io/badge/OWNERSHIP-56D364?style=flat-square" /><br />
-<h1>100%</h1>
+<h1>99.9%</h1>
 <b>END TO END</b><br />
 <sub>design through deploy</sub>
 </td>
@@ -539,6 +539,6 @@ I build systems where people in different roles use the same data for different 
 
 <br /><br />
 
-<sub>Personal use only, with visible credit to <b>Samaun Rezvi</b> · banner artwork belongs to its original creator · <a href="./LICENSE">LICENSE</a></sub>
+<sub>Personal use only, with visible credit to <b>Samaun Rezvi</b> · Banner artwork belongs to its original creator · <a href="./LICENSE">LICENSE</a></sub>
 
 </div>
