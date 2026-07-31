@@ -527,6 +527,6 @@ Use without that credit is not licensed and infringes copyright. See <a href="./
 
 <br /><br />
 
-<sub>Spider-Man is a trademark of Marvel Characters, Inc. The banner is original non-commercial fan art and is not endorsed by or affiliated with Marvel.</sub>
+<sub>The character artwork in the banner is third-party art — all rights remain with its original creator; displayed for personal, non-commercial purposes only.</sub>
 
 </div>
