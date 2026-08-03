@@ -376,7 +376,7 @@ I build systems where people in different roles use the same data for different 
 <br /><br />
 
 <img height="175" src="https://streak-stats.demolab.com?user=SamaunRezvi&hide_border=true&background=0d1117&ring=3FB950&fire=56D364&currStreakLabel=3FB950&sideLabels=8B949E&sideNums=8B949E&currStreakNum=ffffff&dates=6E7681" alt="Contribution streak" />
-<img height="175" src="https://github-stats-extended.vercel.app/api/top-langs?username=SamaunRezvi&theme=github_dark&hide_border=true" alt="Top languages" />
+<img height="175" src="./assets/top-languages.svg" alt="Top languages" />
 
 <br />
 
@@ -404,7 +404,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img height="175" src="https://github-stats-extended.vercel.app/api?username=SamaunRezvi&theme=github_dark&hide_border=true&show_icons=true" alt="Commit stats" />
+<img height="175" src="./assets/commit-stats.svg" alt="Commit stats" />
 
 </div>
 

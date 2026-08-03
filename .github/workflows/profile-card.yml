@@ -1,4 +1,4 @@
-name: Refresh Profile Details Card
+name: Refresh Profile Cards
 
 on:
   schedule:
@@ -13,14 +13,31 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Fetch and patch profile-details card
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Regenerate Top Languages and Commit Stats cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+        run: python3 .github/scripts/generate_profile_cards.py
+
+      - name: Fetch and patch profile-details card (best-effort)
         run: |
           python3 - <<'EOF'
           import re, urllib.request
 
           url = ("https://github-profile-summary-cards.vercel.app/api/cards/"
                  "profile-details?username=SamaunRezvi&theme=github_dark")
-          svg = urllib.request.urlopen(url, timeout=60).read().decode("utf-8")
+          try:
+              svg = urllib.request.urlopen(url, timeout=30).read().decode("utf-8")
+          except Exception as e:
+              print(f"profile-details source unavailable, keeping cached file: {e}")
+              raise SystemExit(0)
 
           # The last info line (organization) can run underneath the chart.
           # Wrap it onto two lines that both end before the chart area.
@@ -44,10 +61,10 @@ jobs:
               f.write(svg)
           EOF
 
-      - name: Commit updated card
+      - name: Commit updated cards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/profile-details.svg
-          git diff --staged --quiet || git commit -m "chore: refresh profile details card"
+          git add assets/profile-details.svg assets/top-languages.svg assets/commit-stats.svg
+          git diff --staged --quiet || git commit -m "chore: refresh profile cards"
           git push
