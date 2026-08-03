@@ -20,10 +20,11 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Regenerate Top Languages and Commit Stats cards
+      - name: Regenerate Top Languages, Commit Stats and Productive Time cards
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+          UTC_OFFSET: "6"
         run: python3 .github/scripts/generate_profile_cards.py
 
       - name: Fetch and patch profile-details card (best-effort)
@@ -65,6 +66,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/profile-details.svg assets/top-languages.svg assets/commit-stats.svg
+          git add assets/profile-details.svg assets/top-languages.svg assets/commit-stats.svg assets/productive-time.svg
           git diff --staged --quiet || git commit -m "chore: refresh profile cards"
           git push

@@ -405,6 +405,7 @@ I build systems where people in different roles use the same data for different 
 <br />
 
 <img height="175" src="./assets/commit-stats.svg" alt="Commit stats" />
+<img height="175" src="./assets/productive-time.svg" alt="Productive time" />
 
 </div>
 

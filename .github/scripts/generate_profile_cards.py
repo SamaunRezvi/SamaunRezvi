@@ -1,12 +1,14 @@
 """
 Self-hosted, byte-for-byte reproduction of the old
-github-profile-summary-cards "Top Languages by Repo" (donut chart) and
-"Stats" cards. The public github-profile-summary-cards.vercel.app API
-that used to render these is permanently dead (crashes with
-FUNCTION_INVOCATION_FAILED on every endpoint), so this script recreates
-the exact same layout/colours from that project's open-source templates
-and writes static SVGs into assets/, refreshed daily by a workflow.
+github-profile-summary-cards "Top Languages by Repo" (donut chart),
+"Stats" and "Productive Time" cards. The public
+github-profile-summary-cards.vercel.app API that used to render these is
+permanently dead (crashes with FUNCTION_INVOCATION_FAILED on every
+endpoint), so this script recreates the exact same layout/colours from
+that project's open-source templates and writes static SVGs into
+assets/, refreshed daily by a workflow.
 """
+import datetime
 import math
 import os
 import sys
@@ -16,6 +18,7 @@ import requests
 
 USERNAME = os.environ.get("USERNAME", "SamaunRezvi")
 TOKEN = os.environ["GITHUB_TOKEN"]
+UTC_OFFSET = float(os.environ.get("UTC_OFFSET", "6"))
 
 # github_dark theme, taken from github-profile-summary-cards src/const/theme.ts
 TITLE_COLOR = "#0366d6"
@@ -132,6 +135,66 @@ def fetch_data():
     return lang_data, stats_data
 
 
+def fetch_productive_time():
+    id_query = """
+    query($login: String!) {
+      user(login: $login) { id }
+    }
+    """
+    user_id = gql(id_query, {"login": USERNAME})["user"]["id"]
+
+    until = datetime.datetime.now(datetime.timezone.utc).replace(
+        hour=0, minute=0, second=0, microsecond=0
+    ) + datetime.timedelta(days=1)
+    since = until.replace(year=until.year - 1)
+    until_s, since_s = until.isoformat(), since.isoformat()
+
+    query = """
+    query($login: String!, $userId: ID!, $until: GitTimestamp!, $since: GitTimestamp!, $from: DateTime!, $to: DateTime!) {
+      user(login: $login) {
+        contributionsCollection(from: $from, to: $to) {
+          commitContributionsByRepository(maxRepositories: 50) {
+            repository {
+              defaultBranchRef {
+                target {
+                  ... on Commit {
+                    history(first: 50, since: $since, until: $until, author: {id: $userId}) {
+                      edges { node { authoredDate } }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    """
+    data = gql(
+        query,
+        {
+            "login": USERNAME,
+            "userId": user_id,
+            "until": until_s,
+            "since": since_s,
+            "from": since_s,
+            "to": until_s,
+        },
+    )["user"]["contributionsCollection"]
+
+    chart_data = [0] * 24
+    for repo in data["commitContributionsByRepository"]:
+        ref = repo["repository"]["defaultBranchRef"]
+        if not ref:
+            continue
+        for edge in ref["target"]["history"]["edges"]:
+            authored = edge["node"]["authoredDate"]
+            hour = datetime.datetime.fromisoformat(authored.replace("Z", "+00:00")).hour
+            adjusted = int((hour + UTC_OFFSET) % 24)
+            chart_data[adjusted] += 1
+    return chart_data
+
+
 def card_shell(title, width, height, body_svg):
     stroke_pct_w = ((width - 2) / width) * 100
     stroke_pct_h = ((height - 2) / height) * 100
@@ -208,13 +271,76 @@ def build_donut_card(lang_data):
     return card_shell("Top Languages by Repo", width, height, body)
 
 
+CHART_COLOR = "#40c463"
+
+
+def build_productive_time_card(chart_data, utc_offset):
+    width, height, x_padding, y_padding = 340, 200, 30, 40
+    chart_width = width - 60
+    chart_height = 100
+    n = 24
+    padding = 0.1
+
+    step = chart_width / max(1, n - padding + padding * 2)
+    bandwidth = step * (1 - padding)
+    start_adj = (chart_width - step * (n - padding)) * 0.5
+
+    def band_x(i):
+        return start_adj + step * i
+
+    y_max = max(max(chart_data), 1)
+
+    def y(v):
+        return chart_height - (v / y_max) * chart_height
+
+    bars = []
+    for i, v in enumerate(chart_data):
+        by = y(v)
+        bars.append(
+            f'<rect x="{band_x(i):.2f}" y="{by:.2f}" width="{bandwidth:.2f}" height="{chart_height - by:.2f}" fill="{CHART_COLOR}"></rect>'
+        )
+
+    ticks = []
+    for h in (0, 6, 12, 18, 23):
+        tx = band_x(h) + bandwidth / 2
+        ticks.append(
+            f'<line x1="{tx:.2f}" y1="{chart_height}" x2="{tx:.2f}" y2="{chart_height + 6}" stroke="{TEXT_COLOR}"></line>'
+            f'<text x="{tx:.2f}" y="{chart_height + 18}" text-anchor="middle" style="fill:{TEXT_COLOR};font-size:10px;">{h}</text>'
+        )
+    x_axis_line = f'<line x1="0" y1="{chart_height}" x2="{chart_width}" y2="{chart_height}" stroke="{TEXT_COLOR}"></line>'
+
+    y_ticks = []
+    for i in range(6):
+        v = y_max * i / 5
+        ty = y(v)
+        y_ticks.append(
+            f'<line x1="-6" y1="{ty:.2f}" x2="0" y2="{ty:.2f}" stroke="{TEXT_COLOR}"></line>'
+            f'<text x="-10" y="{ty + 3:.2f}" text-anchor="end" style="fill:{TEXT_COLOR};font-size:10px;">{round(v)}</text>'
+        )
+    y_axis_line = f'<line x1="0" y1="0" x2="0" y2="{chart_height}" stroke="{TEXT_COLOR}"></line>'
+
+    label = f'<text x="220" y="130" style="fill:{TEXT_COLOR};font-size:10px;">per day hour</text>'
+
+    chart_panel = (
+        f'<g transform="translate({(width - chart_width) / 2 + 5},{y_padding / 2})">'
+        f"{''.join(bars)}{x_axis_line}{''.join(ticks)}{y_axis_line}{''.join(y_ticks)}{label}"
+        f"</g>"
+    )
+    sign = "+" if utc_offset >= 0 else ""
+    title = f"Commits (UTC {sign}{utc_offset:.2f})"
+    return card_shell(title, width, height, chart_panel)
+
+
 def main():
     lang_data, stats_data = fetch_data()
+    productive_time = fetch_productive_time()
     os.makedirs("assets", exist_ok=True)
     with open("assets/top-languages.svg", "w", encoding="utf-8") as f:
         f.write(build_donut_card(lang_data))
     with open("assets/commit-stats.svg", "w", encoding="utf-8") as f:
         f.write(build_stats_card(stats_data))
+    with open("assets/productive-time.svg", "w", encoding="utf-8") as f:
+        f.write(build_productive_time_card(productive_time, UTC_OFFSET))
 
 
 if __name__ == "__main__":
