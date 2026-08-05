@@ -380,7 +380,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=SamaunRezvi&hide_border=true&bg_color=0d1117&color=3FB950&line=2EA043&point=ffffff&area=true&area_color=196C2E&title_color=3FB950&custom_title=Contribution%20Activity" width="98%" alt="" />
+<img src="./assets/contribution-activity.svg" width="98%" alt="Contribution activity" />
 
 </div>
 

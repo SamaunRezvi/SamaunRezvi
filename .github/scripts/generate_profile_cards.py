@@ -195,6 +195,41 @@ def fetch_productive_time():
     return chart_data
 
 
+def fetch_daily_contributions(days=31):
+    until = datetime.datetime.now(datetime.timezone.utc).date() + datetime.timedelta(days=1)
+    since = until - datetime.timedelta(days=days)
+    query = """
+    query($login: String!, $from: DateTime!, $to: DateTime!) {
+      user(login: $login) {
+        contributionsCollection(from: $from, to: $to) {
+          contributionCalendar {
+            weeks { contributionDays { date contributionCount } }
+          }
+        }
+      }
+    }
+    """
+    data = gql(
+        query,
+        {
+            "login": USERNAME,
+            "from": f"{since.isoformat()}T00:00:00Z",
+            "to": f"{until.isoformat()}T00:00:00Z",
+        },
+    )["user"]["contributionsCollection"]["contributionCalendar"]
+
+    day_map = {}
+    for week in data["weeks"]:
+        for day in week["contributionDays"]:
+            day_map[day["date"]] = day["contributionCount"]
+
+    result = []
+    for i in range(days):
+        d = since + datetime.timedelta(days=i + 1)
+        result.append((d.day, day_map.get(d.isoformat(), 0)))
+    return result
+
+
 def card_shell(title, width, height, body_svg):
     stroke_pct_w = ((width - 2) / width) * 100
     stroke_pct_h = ((height - 2) / height) * 100
@@ -331,9 +366,90 @@ def build_productive_time_card(chart_data, utc_offset):
     return card_shell(title, width, height, chart_panel)
 
 
+ACTIVITY_LINE = "#2EA043"
+ACTIVITY_AREA = "#196C2E"
+ACTIVITY_POINT = "#ffffff"
+ACTIVITY_TITLE = "#3FB950"
+
+
+def build_activity_graph(daily):
+    width, height = 800, 300
+    x_padding, y_padding = 46, 55
+    plot_w = width - x_padding - 20
+    plot_h = height - y_padding - 60
+
+    values = [v for _, v in daily]
+    y_max = max(max(values), 1)
+    n = len(daily)
+    step_x = plot_w / max(1, n - 1)
+
+    def px(i):
+        return x_padding + step_x * i
+
+    def py(v):
+        return y_padding + plot_h - (v / y_max) * plot_h
+
+    points = [(px(i), py(v)) for i, (_, v) in enumerate(daily)]
+
+    line_d = "M" + " L".join(f"{x:.2f},{y:.2f}" for x, y in points)
+    area_d = (
+        line_d
+        + f" L{points[-1][0]:.2f},{y_padding + plot_h:.2f}"
+        + f" L{points[0][0]:.2f},{y_padding + plot_h:.2f} Z"
+    )
+
+    grid = []
+    y_ticks = []
+    for i in range(5):
+        v = y_max * i / 4
+        gy = py(v)
+        grid.append(
+            f'<line x1="{x_padding}" y1="{gy:.2f}" x2="{x_padding + plot_w}" y2="{gy:.2f}" '
+            f'stroke="{STROKE_COLOR}" stroke-dasharray="2,2"></line>'
+        )
+        y_ticks.append(
+            f'<text x="{x_padding - 8}" y="{gy + 3:.2f}" text-anchor="end" '
+            f'style="fill:{TEXT_COLOR};font-size:10px;">{round(v)}</text>'
+        )
+
+    x_labels = [
+        f'<text x="{px(i):.2f}" y="{y_padding + plot_h + 16}" text-anchor="middle" '
+        f'style="fill:{TEXT_COLOR};font-size:9px;">{day}</text>'
+        for i, (day, _) in enumerate(daily)
+    ]
+
+    dots = [
+        f'<circle cx="{x:.2f}" cy="{y:.2f}" r="2.5" fill="{ACTIVITY_POINT}"></circle>'
+        for x, y in points
+    ]
+
+    axis_labels = (
+        f'<text x="{x_padding + plot_w / 2:.2f}" y="{height - 10}" text-anchor="middle" '
+        f'style="fill:{ACTIVITY_TITLE};font-size:11px;">Days</text>'
+        f'<text x="14" y="{y_padding + plot_h / 2:.2f}" text-anchor="middle" '
+        f'transform="rotate(-90,14,{y_padding + plot_h / 2:.2f})" '
+        f'style="fill:{TEXT_COLOR};font-size:10px;">Contributions</text>'
+    )
+
+    body = (
+        f'<g transform="translate(0,-40)">'
+        f"{''.join(grid)}"
+        f'<path d="{area_d}" fill="{ACTIVITY_AREA}" fill-opacity="0.55" stroke="none"></path>'
+        f'<path d="{line_d}" fill="none" stroke="{ACTIVITY_LINE}" stroke-width="2"></path>'
+        f"{''.join(dots)}"
+        f"{''.join(y_ticks)}"
+        f"{''.join(x_labels)}"
+        f"{axis_labels}"
+        f"</g>"
+    )
+    svg = card_shell("Contribution Activity", width, height, body)
+    return svg.replace(f'fill:{TITLE_COLOR}', f'fill:{ACTIVITY_TITLE}')
+
+
 def main():
     lang_data, stats_data = fetch_data()
     productive_time = fetch_productive_time()
+    daily = fetch_daily_contributions(31)
     os.makedirs("assets", exist_ok=True)
     with open("assets/top-languages.svg", "w", encoding="utf-8") as f:
         f.write(build_donut_card(lang_data))
@@ -341,6 +457,8 @@ def main():
         f.write(build_stats_card(stats_data))
     with open("assets/productive-time.svg", "w", encoding="utf-8") as f:
         f.write(build_productive_time_card(productive_time, UTC_OFFSET))
+    with open("assets/contribution-activity.svg", "w", encoding="utf-8") as f:
+        f.write(build_activity_graph(daily))
 
 
 if __name__ == "__main__":
