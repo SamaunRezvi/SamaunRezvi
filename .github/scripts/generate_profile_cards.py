@@ -195,6 +195,151 @@ def fetch_productive_time():
     return chart_data
 
 
+def fetch_streak_stats():
+    meta_query = """
+    query($login: String!) {
+      user(login: $login) {
+        createdAt
+        contributionsCollection { contributionYears }
+      }
+    }
+    """
+    meta = gql(meta_query, {"login": USERNAME})["user"]
+    joined = datetime.datetime.fromisoformat(meta["createdAt"].replace("Z", "+00:00")).date()
+
+    day_map = {}
+    for year in meta["contributionsCollection"]["contributionYears"]:
+        yr_query = """
+        query($login: String!, $from: DateTime!, $to: DateTime!) {
+          user(login: $login) {
+            contributionsCollection(from: $from, to: $to) {
+              contributionCalendar {
+                weeks { contributionDays { date contributionCount } }
+              }
+            }
+          }
+        }
+        """
+        cal = gql(
+            yr_query,
+            {
+                "login": USERNAME,
+                "from": f"{year}-01-01T00:00:00Z",
+                "to": f"{year}-12-31T23:59:59Z",
+            },
+        )["user"]["contributionsCollection"]["contributionCalendar"]
+        for week in cal["weeks"]:
+            for day in week["contributionDays"]:
+                d = datetime.date.fromisoformat(day["date"])
+                if d <= datetime.date.today():
+                    day_map[d] = day["contributionCount"]
+
+    ordered = sorted(day_map.items())
+    total = sum(c for _, c in ordered)
+
+    # longest streak: max run of consecutive days with count > 0
+    longest_len, longest_range = 0, (None, None)
+    run_start, run_len = None, 0
+    prev_date = None
+    for d, c in ordered:
+        if c > 0:
+            if run_len == 0 or (prev_date and (d - prev_date).days == 1):
+                if run_len == 0:
+                    run_start = d
+                run_len += 1
+            else:
+                run_start, run_len = d, 1
+            if run_len > longest_len:
+                longest_len, longest_range = run_len, (run_start, d)
+            prev_date = d
+        else:
+            run_len = 0
+            prev_date = d
+
+    # current streak: consecutive days with count > 0 ending today (or yesterday
+    # if today has no contribution yet, since today isn't over)
+    today = datetime.date.today()
+    cur_len, cur_end = 0, None
+    for anchor in (today, today - datetime.timedelta(days=1)):
+        if day_map.get(anchor, 0) > 0:
+            cur_end = anchor
+            break
+    if cur_end:
+        d = cur_end
+        while day_map.get(d, 0) > 0:
+            cur_len += 1
+            d -= datetime.timedelta(days=1)
+        cur_start = cur_end - datetime.timedelta(days=cur_len - 1)
+    else:
+        cur_start = cur_end = None
+
+    def fmt(d):
+        return d.strftime("%b %-d, %Y") if d else "-"
+
+    return {
+        "total": total,
+        "total_range": f"{fmt(joined)} - Present",
+        "current": cur_len,
+        "current_range": f"{fmt(cur_start)} - {fmt(cur_end)}" if cur_end else "-",
+        "longest": longest_len,
+        "longest_range": f"{fmt(longest_range[0])} - {fmt(longest_range[1])}" if longest_range[0] else "-",
+    }
+
+
+STREAK_RING = "#3FB950"
+STREAK_FIRE = "#56D364"
+STREAK_CUR_NUM = "#ffffff"
+STREAK_CUR_LABEL = "#3FB950"
+STREAK_SIDE = "#8B949E"
+STREAK_DATES = "#6E7681"
+STREAK_FONT = "'Segoe UI', Ubuntu, sans-serif"
+
+
+def build_streak_card(stats):
+    width, height = 495, 195
+    mid = width / 2
+
+    def side_block(cx, num, label, date_range):
+        return (
+            f'<text x="{cx}" y="80" text-anchor="middle" fill="{STREAK_SIDE}" '
+            f'font-family="{STREAK_FONT}" font-weight="700" font-size="28px">{num}</text>'
+            f'<text x="{cx}" y="116" text-anchor="middle" fill="{STREAK_SIDE}" '
+            f'font-family="{STREAK_FONT}" font-weight="400" font-size="14px">{escape(label)}</text>'
+            f'<text x="{cx}" y="146" text-anchor="middle" fill="{STREAK_DATES}" '
+            f'font-family="{STREAK_FONT}" font-weight="400" font-size="12px">{escape(date_range)}</text>'
+        )
+
+    fire_path = (
+        "M 1.5 0.67 C 1.5 0.67 2.24 3.32 2.24 5.47 C 2.24 7.53 0.89 9.2 -1.17 9.2 C -3.23 9.2 -4.79 7.53 -4.79 5.47 "
+        "L -4.76 5.11 C -6.78 7.51 -8 10.62 -8 13.99 C -8 18.41 -4.42 22 0 22 C 4.42 22 8 18.41 8 13.99 "
+        "C 8 8.6 5.41 3.79 1.5 0.67 Z M -0.29 19 C -2.07 19 -3.51 17.6 -3.51 15.86 C -3.51 14.24 -2.46 13.1 "
+        "-0.7 12.74 C 1.07 12.38 2.9 11.53 3.92 10.16 C 4.31 11.45 4.51 12.81 4.51 14.2 C 4.51 16.85 2.36 19 -0.29 19 Z"
+    )
+
+    body = (
+        f'<line x1="165" y1="28" x2="165" y2="170" stroke="{STROKE_COLOR}" stroke-width="1"></line>'
+        f'<line x1="330" y1="28" x2="330" y2="170" stroke="{STROKE_COLOR}" stroke-width="1"></line>'
+        + side_block(82.5, stats["total"], "Total Contributions", stats["total_range"])
+        + f'<circle cx="{mid}" cy="71" r="40" fill="none" stroke="{STREAK_RING}" stroke-width="5"></circle>'
+        + f'<g transform="translate({mid},19.5)"><path d="{fire_path}" fill="{STREAK_FIRE}"></path></g>'
+        + f'<text x="{mid}" y="80" text-anchor="middle" fill="{STREAK_CUR_NUM}" '
+          f'font-family="{STREAK_FONT}" font-weight="700" font-size="28px">{stats["current"]}</text>'
+        + f'<text x="{mid}" y="140" text-anchor="middle" fill="{STREAK_CUR_LABEL}" '
+          f'font-family="{STREAK_FONT}" font-weight="700" font-size="14px">Current Streak</text>'
+        + f'<text x="{mid}" y="166" text-anchor="middle" fill="{STREAK_DATES}" '
+          f'font-family="{STREAK_FONT}" font-weight="400" font-size="12px">{escape(stats["current_range"])}</text>'
+        + side_block(412.5, stats["longest"], "Longest Streak", stats["longest_range"])
+    )
+
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">'
+        f'<rect x="0.5" y="0.5" rx="4.5" width="{width - 1}" height="{height - 1}" '
+        f'fill="{BG_COLOR}" stroke="{STROKE_COLOR}"></rect>'
+        f"{body}"
+        f"</svg>"
+    )
+
+
 def fetch_daily_contributions(days=31):
     until = datetime.datetime.now(datetime.timezone.utc).date() + datetime.timedelta(days=1)
     since = until - datetime.timedelta(days=days)
@@ -450,6 +595,7 @@ def main():
     lang_data, stats_data = fetch_data()
     productive_time = fetch_productive_time()
     daily = fetch_daily_contributions(31)
+    streak = fetch_streak_stats()
     os.makedirs("assets", exist_ok=True)
     with open("assets/top-languages.svg", "w", encoding="utf-8") as f:
         f.write(build_donut_card(lang_data))
@@ -459,6 +605,8 @@ def main():
         f.write(build_productive_time_card(productive_time, UTC_OFFSET))
     with open("assets/contribution-activity.svg", "w", encoding="utf-8") as f:
         f.write(build_activity_graph(daily))
+    with open("assets/streak-stats.svg", "w", encoding="utf-8") as f:
+        f.write(build_streak_card(streak))
 
 
 if __name__ == "__main__":
