@@ -22,7 +22,7 @@ jobs:
 
       - name: Regenerate Top Languages, Commit Stats, Productive Time, Contribution Activity and Streak Stats cards
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PROFILE_PAT }}
           USERNAME: ${{ github.repository_owner }}
           UTC_OFFSET: "6"
         run: python3 .github/scripts/generate_profile_cards.py

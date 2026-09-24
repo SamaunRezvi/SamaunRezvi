@@ -64,7 +64,7 @@ def fetch_data():
             }
           }
         }
-        contributionsCollection {
+        contributionsCollection(includePrivateContributions: true) {
           totalPullRequestContributions
           totalIssueContributions
           totalRepositoriesWithContributedCommits
@@ -89,7 +89,7 @@ def fetch_data():
         yr_query = """
         query($login: String!, $from: DateTime!, $to: DateTime!) {
           user(login: $login) {
-            contributionsCollection(from: $from, to: $to) {
+            contributionsCollection(from: $from, to: $to, includePrivateContributions: true) {
               totalCommitContributions
             }
           }
@@ -152,7 +152,7 @@ def fetch_productive_time():
     query = """
     query($login: String!, $userId: ID!, $until: GitTimestamp!, $since: GitTimestamp!, $from: DateTime!, $to: DateTime!) {
       user(login: $login) {
-        contributionsCollection(from: $from, to: $to) {
+        contributionsCollection(from: $from, to: $to, includePrivateContributions: true) {
           commitContributionsByRepository(maxRepositories: 50) {
             repository {
               defaultBranchRef {
@@ -212,7 +212,7 @@ def fetch_streak_stats():
         yr_query = """
         query($login: String!, $from: DateTime!, $to: DateTime!) {
           user(login: $login) {
-            contributionsCollection(from: $from, to: $to) {
+            contributionsCollection(from: $from, to: $to, includePrivateContributions: true) {
               contributionCalendar {
                 weeks { contributionDays { date contributionCount } }
               }
@@ -346,7 +346,7 @@ def fetch_daily_contributions(days=31):
     query = """
     query($login: String!, $from: DateTime!, $to: DateTime!) {
       user(login: $login) {
-        contributionsCollection(from: $from, to: $to) {
+        contributionsCollection(from: $from, to: $to, includePrivateContributions: true) {
           contributionCalendar {
             weeks { contributionDays { date contributionCount } }
           }
