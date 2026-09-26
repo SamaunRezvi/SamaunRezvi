@@ -3,7 +3,11 @@ name: Refresh Profile Cards
 on:
   schedule:
     - cron: "30 18 * * *"
+    - cron: "30 3 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   refresh:
