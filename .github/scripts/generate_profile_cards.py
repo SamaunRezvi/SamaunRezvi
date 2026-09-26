@@ -207,6 +207,10 @@ def fetch_streak_stats():
     meta = gql(meta_query, {"login": USERNAME})["user"]
     joined = datetime.datetime.fromisoformat(meta["createdAt"].replace("Z", "+00:00")).date()
 
+    local_today = (
+        datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=UTC_OFFSET)
+    ).date()
+
     day_map = {}
     for year in meta["contributionsCollection"]["contributionYears"]:
         yr_query = """
@@ -231,7 +235,7 @@ def fetch_streak_stats():
         for week in cal["weeks"]:
             for day in week["contributionDays"]:
                 d = datetime.date.fromisoformat(day["date"])
-                if d <= datetime.date.today():
+                if d <= local_today:
                     day_map[d] = day["contributionCount"]
 
     ordered = sorted(day_map.items())
@@ -258,9 +262,8 @@ def fetch_streak_stats():
 
     # current streak: consecutive days with count > 0 ending today (or yesterday
     # if today has no contribution yet, since today isn't over)
-    today = datetime.date.today()
     cur_len, cur_end = 0, None
-    for anchor in (today, today - datetime.timedelta(days=1)):
+    for anchor in (local_today, local_today - datetime.timedelta(days=1)):
         if day_map.get(anchor, 0) > 0:
             cur_end = anchor
             break
