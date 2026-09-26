@@ -235,8 +235,11 @@ def fetch_streak_stats():
         for week in cal["weeks"]:
             for day in week["contributionDays"]:
                 d = datetime.date.fromisoformat(day["date"])
+                if year == local_today.year and datetime.date(2026, 9, 18) <= d <= datetime.date(2026, 9, 29):
+                    print(f"DEBUG day={day['date']} count={day['contributionCount']}", file=sys.stderr)
                 if d <= local_today:
                     day_map[d] = day["contributionCount"]
+    print(f"DEBUG local_today={local_today}", file=sys.stderr)
 
     ordered = sorted(day_map.items())
     total = sum(c for _, c in ordered)
