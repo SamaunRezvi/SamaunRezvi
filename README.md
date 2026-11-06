@@ -300,11 +300,11 @@ I build systems where people in different roles use the same data for different 
 <b><code>iot-monitoring/</code></b>
 <p align="justify"><sub>Real-time telemetry across a 9-role permission system and 90+ routes. Offline-capable field apps, jurisdiction-scoped access control.</sub></p>
 <img alt="Next.js" src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" />
-<img src="https://img.shields.io/badge/Prisma-0d1117?style=flat-square&logo=prisma&logoColor=A78BFA" />
-<img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=79C0FF" />
+<img alt="Prisma" src="https://img.shields.io/badge/Prisma-0d1117?style=flat-square&logo=prisma&logoColor=A78BFA" />
+<img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=79C0FF" />
 </td>
 <td width="33%" valign="top" align="left">
-<img src="https://img.shields.io/badge/02-BC8CFF?style=flat-square&labelColor=0d1117" />
+<img alt="" src="https://img.shields.io/badge/02-BC8CFF?style=flat-square&labelColor=0d1117" />
 <br /><br />
 <b><code>competition-platform/</code></b>
 <p align="justify"><sub>Multi-role judging pipeline blending automated scoring with manual review. Live leaderboards, role-separated submission flow.</sub></p>
