@@ -329,11 +329,11 @@ I build systems where people in different roles use the same data for different 
 <b><code>data-intelligence/</code></b>
 <p align="justify"><sub>Ingestion-to-insight pipeline with sentiment classification, trend comparison, and dashboarded reporting.</sub></p>
 <img alt="Python" src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=FFD43B" />
-<img src="https://img.shields.io/badge/Vite-0d1117?style=flat-square&logo=vite&logoColor=BD93F9" />
-<img src="https://img.shields.io/badge/Recharts-0d1117?style=flat-square&logo=chartdotjs&logoColor=FF6384" />
+<img alt="Vite" src="https://img.shields.io/badge/Vite-0d1117?style=flat-square&logo=vite&logoColor=BD93F9" />
+<img alt="Recharts" src="https://img.shields.io/badge/Recharts-0d1117?style=flat-square&logo=chartdotjs&logoColor=FF6384" />
 </td>
 <td valign="top" align="left">
-<img src="https://img.shields.io/badge/05-F778BA?style=flat-square&labelColor=0d1117" />
+<img alt="" src="https://img.shields.io/badge/05-F778BA?style=flat-square&labelColor=0d1117" />
 <br /><br />
 <b><code>scheduling-systems/</code></b>
 <p align="justify"><sub>Role-specific portals with approval workflows, availability management, and calendar-synced booking.</sub></p>
