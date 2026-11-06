@@ -233,7 +233,7 @@ I build systems where people in different roles use the same data for different 
 <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" />
 <img src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white" />
 <img src="https://img.shields.io/badge/Zod-3E67B1?logo=zod&logoColor=white" />
-<img src="https://img.shields.io/badge/REST%20APIs-6DB33F" />
+<img src="https://img.shields.io/badge/REST%20APIs-E3B341" />
 <img src="https://img.shields.io/badge/IndexedDB-4285F4?logo=googlechrome&logoColor=white" />
 </td>
 </tr>
