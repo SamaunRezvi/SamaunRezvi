@@ -498,12 +498,12 @@ I build systems where people in different roles use the same data for different 
 <p align="center"><sub>Frontend, Full-Stack, and Product Engineering</sub></p>
 </td>
 <td align="center" width="33%">
-<img src="https://img.shields.io/badge/02-BC8CFF?style=flat-square&labelColor=0d1117" /><br /><br />
+<img alt="" src="https://img.shields.io/badge/02-BC8CFF?style=flat-square&labelColor=0d1117" /><br /><br />
 <b><code>Freelance</code></b>
 <p align="center"><sub>Platforms, Dashboards, <br /> and Interface Work</sub></p>
 </td>
 <td align="center" width="33%">
-<img src="https://img.shields.io/badge/03-F778BA?style=flat-square&labelColor=0d1117" /><br /><br />
+<img alt="" src="https://img.shields.io/badge/03-F778BA?style=flat-square&labelColor=0d1117" /><br /><br />
 <b><code>Collaboration</code></b>
 <p align="center"><sub>Open source, Side Builds, and Team Projects</sub></p>
 </td>
