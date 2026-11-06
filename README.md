@@ -288,18 +288,18 @@ I build systems where people in different roles use the same data for different 
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=3400&pause=1400&color=6E7681&center=true&vCenter=true&width=660&height=32&lines=work+%C2%B7+repositories+private+%C2%B7+architecture+walkthrough+on+request" alt="" />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
+<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
 <table align="center">
 <tr>
 <td width="34%" valign="top" align="left">
-<img src="https://img.shields.io/badge/01-58A6FF?style=flat-square&labelColor=0d1117" />
+<img alt="" src="https://img.shields.io/badge/01-58A6FF?style=flat-square&labelColor=0d1117" />
 <br /><br />
 <b><code>iot-monitoring/</code></b>
 <p align="justify"><sub>Real-time telemetry across a 9-role permission system and 90+ routes. Offline-capable field apps, jurisdiction-scoped access control.</sub></p>
-<img src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" />
+<img alt="Next.js" src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" />
 <img src="https://img.shields.io/badge/Prisma-0d1117?style=flat-square&logo=prisma&logoColor=A78BFA" />
 <img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=79C0FF" />
 </td>
