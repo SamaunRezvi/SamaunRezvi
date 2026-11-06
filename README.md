@@ -353,7 +353,7 @@ I build systems where people in different roles use the same data for different 
 </tr>
 </table>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
+<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
@@ -435,7 +435,7 @@ I build systems where people in different roles use the same data for different 
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=3400&pause=1400&color=6E7681&center=true&vCenter=true&width=620&height=32&lines=quotes+five+lines+I+keep+coming+back+to" alt="" />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
+<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
