@@ -217,13 +217,13 @@ I build systems where people in different roles use the same data for different 
 <img alt="Vite" src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white" />
 <img alt="Framer Motion" src="https://img.shields.io/badge/Framer%20Motion-0055FF?logo=framer&logoColor=white" />
 <img alt="Recharts" src="https://img.shields.io/badge/Recharts-FF6384?logo=chartdotjs&logoColor=white" />
-<img src="https://img.shields.io/badge/Lucide-F56565?logo=lucide&logoColor=white" />
-<img src="https://img.shields.io/badge/Leaflet-4C9BE8?logo=leaflet&logoColor=white" />
+<img alt="Lucide" src="https://img.shields.io/badge/Lucide-F56565?logo=lucide&logoColor=white" />
+<img alt="Leaflet" src="https://img.shields.io/badge/Leaflet-4C9BE8?logo=leaflet&logoColor=white" />
 </td>
 </tr>
 <tr>
 <td align="right" valign="middle">
-<img src="https://img.shields.io/badge/03-39D0D8?style=flat-square&labelColor=0d1117" /><br />
+<img alt="" src="https://img.shields.io/badge/03-39D0D8?style=flat-square&labelColor=0d1117" /><br />
 <b><code>Backend-Data</code></b>
 </td>
 <td align="left" valign="middle">
