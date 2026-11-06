@@ -62,7 +62,7 @@
 <br />
 <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=79C0FF" height="26" />
 <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-0d1117?style=flat-square&logo=tailwindcss&logoColor=38BDF8" height="26" />
-<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=FFD43B" height="26" />
+<img alt="Python" src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=FFD43B" height="26" />
 
 <br /><br />
 
@@ -89,13 +89,13 @@
 <table align="center">
 <tr>
 <td align="center" width="170">
-<img src="https://img.shields.io/badge/WORK-58A6FF?style=flat-square" /><br />
+<img alt="WORK" src="https://img.shields.io/badge/WORK-58A6FF?style=flat-square" /><br />
 <h1>15+</h1>
 <b>PROJECTS</b><br />
 <sub>across web and data</sub>
 </td>
 <td align="center" width="170">
-<img src="https://img.shields.io/badge/STACK-BC8CFF?style=flat-square" /><br />
+<img alt="STACK" src="https://img.shields.io/badge/STACK-BC8CFF?style=flat-square" /><br />
 <h1>10+</h1>
 <b>TECHNOLOGIES</b><br />
 <sub>in active use</sub>
