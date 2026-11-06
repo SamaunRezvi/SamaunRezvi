@@ -262,13 +262,13 @@ I build systems where people in different roles use the same data for different 
 <img alt="Figma" src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white" />
 <img alt="VS Code" src="https://img.shields.io/badge/VS%20Code-007ACC?logo=visualstudiocode&logoColor=white" />
 <img alt="Vitest" src="https://img.shields.io/badge/Vitest-FCC72B?logo=vitest&logoColor=white" />
-<img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white" />
-<img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black" />
+<img alt="ESLint" src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white" />
+<img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black" />
 </td>
 </tr>
 </table>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
+<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
