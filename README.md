@@ -33,7 +33,7 @@
 
 <br /><br />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="420" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="420" />
 
 <b>│ Connect with Me</b>
 
@@ -49,7 +49,7 @@
 
 <br /><br />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="420" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="420" />
 
 <b>│ Core Stack</b>
 
@@ -57,7 +57,7 @@
 
 <img src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" height="26" />
 <img src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=61DAFB" height="26" />
-<img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=7EE787" height="26" />
+<img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=C9D1D9" height="26" />
 <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=58A6FF" height="26" />
 <br />
 <img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=79C0FF" height="26" />
@@ -89,13 +89,13 @@
 <table align="center">
 <tr>
 <td align="center" width="170">
-<img src="https://img.shields.io/badge/WORK-238636?style=flat-square" /><br />
+<img src="https://img.shields.io/badge/WORK-58A6FF?style=flat-square" /><br />
 <h1>15+</h1>
 <b>PROJECTS</b><br />
 <sub>across web and data</sub>
 </td>
 <td align="center" width="170">
-<img src="https://img.shields.io/badge/STACK-2EA043?style=flat-square" /><br />
+<img src="https://img.shields.io/badge/STACK-BC8CFF?style=flat-square" /><br />
 <h1>10+</h1>
 <b>TECHNOLOGIES</b><br />
 <sub>in active use</sub>
@@ -107,7 +107,7 @@
 <sub>Bengali and English</sub>
 </td>
 <td align="center" width="170">
-<img src="https://img.shields.io/badge/OWNERSHIP-56D364?style=flat-square" /><br />
+<img src="https://img.shields.io/badge/OWNERSHIP-F0883E?style=flat-square" /><br />
 <h1>99.9%</h1>
 <b>END TO END</b><br />
 <sub>design through deploy</sub>
@@ -124,14 +124,14 @@ I build systems where people in different roles use the same data for different 
 <table align="center">
 <tr>
 <td width="50%" valign="top" align="left">
-<img src="https://img.shields.io/badge/01-238636?style=flat-square" />
+<img src="https://img.shields.io/badge/01-58A6FF?style=flat-square" />
 <br /><br />
 <b>Missing data is shown as missing</b><br />
 <sub><code>renderQualityState()</code></sub>
 <p align="justify"><sub>If a sensor has not reported, the interface says so. It never renders a zero, because a zero is a reading and an absence is not. Every value carries a quality state and an origin, so an estimate is never mistaken for a measurement.</sub></p>
 </td>
 <td width="50%" valign="top" align="left">
-<img src="https://img.shields.io/badge/02-2EA043?style=flat-square" />
+<img src="https://img.shields.io/badge/02-BC8CFF?style=flat-square" />
 <br /><br />
 <b>Permissions live where the data lives</b><br />
 <sub><code>scopeToJurisdiction()</code></sub>
@@ -147,7 +147,7 @@ I build systems where people in different roles use the same data for different 
 <p align="justify"><sub>Field forms queue locally and sync when connectivity returns. Endpoints are idempotent, so a retried submission never duplicates a record. Maps fall back to a list view when tiles fail.</sub></p>
 </td>
 <td width="50%" valign="top" align="left">
-<img src="https://img.shields.io/badge/04-56D364?style=flat-square" />
+<img src="https://img.shields.io/badge/04-F0883E?style=flat-square" />
 <br /><br />
 <b>Scope boundaries are deliberate</b><br />
 <sub><code>defineBoundary()</code></sub>
@@ -158,11 +158,11 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="70%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br /><br />
 
-<img src="https://img.shields.io/badge/●_CURRENTLY_BUILDING-238636?style=flat-square&labelColor=0d1117" height="24" />
+<img src="https://img.shields.io/badge/●_CURRENTLY_BUILDING-F0883E?style=flat-square&labelColor=0d1117" height="24" />
 
 <br />
 
@@ -170,7 +170,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="70%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 </div>
 
@@ -186,14 +186,14 @@ I build systems where people in different roles use the same data for different 
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=3400&pause=1400&color=6E7681&center=true&vCenter=true&width=620&height=32&lines=stack+%C2%B7+what+I+reach+for+and+why" alt="" />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="70%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
 <table align="center">
 <tr>
 <td align="right" valign="middle" width="200">
-<img src="https://img.shields.io/badge/01-238636?style=flat-square&labelColor=0d1117" /><br />
+<img src="https://img.shields.io/badge/01-58A6FF?style=flat-square&labelColor=0d1117" /><br />
 <b><code>Languages</code></b>
 </td>
 <td align="left" valign="middle">
@@ -207,7 +207,7 @@ I build systems where people in different roles use the same data for different 
 </tr>
 <tr>
 <td align="right" valign="middle">
-<img src="https://img.shields.io/badge/02-2EA043?style=flat-square&labelColor=0d1117" /><br />
+<img src="https://img.shields.io/badge/02-BC8CFF?style=flat-square&labelColor=0d1117" /><br />
 <b><code>Frontend</code></b>
 </td>
 <td align="left" valign="middle">
@@ -218,7 +218,7 @@ I build systems where people in different roles use the same data for different 
 <img src="https://img.shields.io/badge/Framer%20Motion-0055FF?logo=framer&logoColor=white" />
 <img src="https://img.shields.io/badge/Recharts-FF6384?logo=chartdotjs&logoColor=white" />
 <img src="https://img.shields.io/badge/Lucide-F56565?logo=lucide&logoColor=white" />
-<img src="https://img.shields.io/badge/Leaflet-199900?logo=leaflet&logoColor=white" />
+<img src="https://img.shields.io/badge/Leaflet-4C9BE8?logo=leaflet&logoColor=white" />
 </td>
 </tr>
 <tr>
@@ -227,7 +227,7 @@ I build systems where people in different roles use the same data for different 
 <b><code>Backend-Data</code></b>
 </td>
 <td align="left" valign="middle">
-<img src="https://img.shields.io/badge/Node.js-5FA04E?logo=nodedotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/Node.js-68778C?logo=nodedotjs&logoColor=white" />
 <img src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white" />
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" />
 <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" />
@@ -239,20 +239,20 @@ I build systems where people in different roles use the same data for different 
 </tr>
 <tr>
 <td align="right" valign="middle">
-<img src="https://img.shields.io/badge/04-56D364?style=flat-square&labelColor=0d1117" /><br />
+<img src="https://img.shields.io/badge/04-F0883E?style=flat-square&labelColor=0d1117" /><br />
 <b><code>Architecture</code></b>
 </td>
 <td align="left" valign="middle">
-<img src="https://img.shields.io/badge/Role--based%20Access%20Control-238636" />
-<img src="https://img.shields.io/badge/Offline--first%20Sync-2EA043" />
+<img src="https://img.shields.io/badge/Role--based%20Access%20Control-58A6FF" />
+<img src="https://img.shields.io/badge/Offline--first%20Sync-BC8CFF" />
 <img src="https://img.shields.io/badge/Design%20Systems-F778BA" />
-<img src="https://img.shields.io/badge/Internationalisation-56D364" />
-<img src="https://img.shields.io/badge/Accessibility-7EE787" />
+<img src="https://img.shields.io/badge/Internationalisation-39D0D8" />
+<img src="https://img.shields.io/badge/Accessibility-F778BA" />
 </td>
 </tr>
 <tr>
 <td align="right" valign="middle">
-<img src="https://img.shields.io/badge/05-7EE787?style=flat-square&labelColor=0d1117" /><br />
+<img src="https://img.shields.io/badge/05-F778BA?style=flat-square&labelColor=0d1117" /><br />
 <b><code>Tooling</code></b>
 </td>
 <td align="left" valign="middle">
@@ -261,14 +261,14 @@ I build systems where people in different roles use the same data for different 
 <img src="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white" />
 <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white" />
 <img src="https://img.shields.io/badge/VS%20Code-007ACC?logo=visualstudiocode&logoColor=white" />
-<img src="https://img.shields.io/badge/Vitest-6E9F18?logo=vitest&logoColor=white" />
+<img src="https://img.shields.io/badge/Vitest-FCC72B?logo=vitest&logoColor=white" />
 <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white" />
 <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black" />
 </td>
 </tr>
 </table>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="70%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
@@ -288,14 +288,14 @@ I build systems where people in different roles use the same data for different 
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=3400&pause=1400&color=6E7681&center=true&vCenter=true&width=660&height=32&lines=work+%C2%B7+repositories+private+%C2%B7+architecture+walkthrough+on+request" alt="" />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="70%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
 <table align="center">
 <tr>
 <td width="34%" valign="top" align="left">
-<img src="https://img.shields.io/badge/01-238636?style=flat-square&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/01-58A6FF?style=flat-square&labelColor=0d1117" />
 <br /><br />
 <b><code>iot-monitoring/</code></b>
 <p align="justify"><sub>Real-time telemetry across a 9-role permission system and 90+ routes. Offline-capable field apps, jurisdiction-scoped access control.</sub></p>
@@ -304,7 +304,7 @@ I build systems where people in different roles use the same data for different 
 <img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=79C0FF" />
 </td>
 <td width="33%" valign="top" align="left">
-<img src="https://img.shields.io/badge/02-2EA043?style=flat-square&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/02-BC8CFF?style=flat-square&labelColor=0d1117" />
 <br /><br />
 <b><code>competition-platform/</code></b>
 <p align="justify"><sub>Multi-role judging pipeline blending automated scoring with manual review. Live leaderboards, role-separated submission flow.</sub></p>
@@ -317,14 +317,14 @@ I build systems where people in different roles use the same data for different 
 <br /><br />
 <b><code>institutional-governance/</code></b>
 <p align="justify"><sub>Full document lifecycle management: review workflows, an immutable audit trail, and weighted contribution scoring.</sub></p>
-<img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=7EE787" />
+<img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=C9D1D9" />
 <img src="https://img.shields.io/badge/SQLite-0d1117?style=flat-square&logo=sqlite&logoColor=79C0FF" />
-<img src="https://img.shields.io/badge/Audit_Trail-0d1117?style=flat-square&labelColor=0d1117&color=238636" />
+<img src="https://img.shields.io/badge/Audit_Trail-0d1117?style=flat-square&labelColor=0d1117&color=E3B341" />
 </td>
 </tr>
 <tr>
 <td valign="top" align="left">
-<img src="https://img.shields.io/badge/04-56D364?style=flat-square&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/04-F0883E?style=flat-square&labelColor=0d1117" />
 <br /><br />
 <b><code>data-intelligence/</code></b>
 <p align="justify"><sub>Ingestion-to-insight pipeline with sentiment classification, trend comparison, and dashboarded reporting.</sub></p>
@@ -333,13 +333,13 @@ I build systems where people in different roles use the same data for different 
 <img src="https://img.shields.io/badge/Recharts-0d1117?style=flat-square&logo=chartdotjs&logoColor=FF6384" />
 </td>
 <td valign="top" align="left">
-<img src="https://img.shields.io/badge/05-7EE787?style=flat-square&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/05-F778BA?style=flat-square&labelColor=0d1117" />
 <br /><br />
 <b><code>scheduling-systems/</code></b>
 <p align="justify"><sub>Role-specific portals with approval workflows, availability management, and calendar-synced booking.</sub></p>
 <img src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" />
 <img src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwindcss&logoColor=38BDF8" />
-<img src="https://img.shields.io/badge/RBAC-0d1117?style=flat-square&labelColor=0d1117&color=238636" />
+<img src="https://img.shields.io/badge/RBAC-0d1117?style=flat-square&labelColor=0d1117&color=58A6FF" />
 </td>
 <td valign="top" align="left">
 <img src="https://img.shields.io/badge/06-A2F2B0?style=flat-square&labelColor=0d1117" />
@@ -348,12 +348,12 @@ I build systems where people in different roles use the same data for different 
 <p align="justify"><sub>Component libraries and design tokens driving consistent, accessible, responsive interfaces.</sub></p>
 <img src="https://img.shields.io/badge/Figma-0d1117?style=flat-square&logo=figma&logoColor=FF7262" />
 <img src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwindcss&logoColor=38BDF8" />
-<img src="https://img.shields.io/badge/a11y-0d1117?style=flat-square&labelColor=0d1117&color=238636" />
+<img src="https://img.shields.io/badge/a11y-0d1117?style=flat-square&labelColor=0d1117&color=F778BA" />
 </td>
 </tr>
 </table>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="70%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
@@ -392,7 +392,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="./profile-3d-contrib/profile-night-green.svg" width="100%" alt="3D contribution graph" />
+<img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution graph" />
 
 </div>
 
@@ -435,7 +435,7 @@ I build systems where people in different roles use the same data for different 
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=3400&pause=1400&color=6E7681&center=true&vCenter=true&width=620&height=32&lines=quotes+five+lines+I+keep+coming+back+to" alt="" />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="70%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
@@ -449,20 +449,20 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://img.shields.io/badge/01-238636?style=flat-square&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/01-58A6FF?style=flat-square&labelColor=0d1117" />
 <img src="https://img.shields.io/badge/Dijkstra-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
-<img src="https://img.shields.io/badge/02-2EA043?style=flat-square&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/02-BC8CFF?style=flat-square&labelColor=0d1117" />
 <img src="https://img.shields.io/badge/Kernighan-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
 <img src="https://img.shields.io/badge/03-E3B341?style=flat-square&labelColor=0d1117" />
 <img src="https://img.shields.io/badge/SICP-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
-<img src="https://img.shields.io/badge/04-56D364?style=flat-square&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/04-F0883E?style=flat-square&labelColor=0d1117" />
 <img src="https://img.shields.io/badge/Fowler-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
-<img src="https://img.shields.io/badge/05-7EE787?style=flat-square&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/05-F778BA?style=flat-square&labelColor=0d1117" />
 <img src="https://img.shields.io/badge/Beck-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
 
 <br /><br />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="70%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
@@ -482,7 +482,7 @@ I build systems where people in different roles use the same data for different 
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=3400&pause=1400&color=6E7681&center=true&vCenter=true&width=620&height=32&lines=contact+%C2%B7+usually+reply+within+a+day" alt="" />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="70%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
@@ -493,12 +493,12 @@ I build systems where people in different roles use the same data for different 
 <table align="center">
 <tr>
 <td align="center" width="33%">
-<img src="https://img.shields.io/badge/01-238636?style=flat-square&labelColor=0d1117" /><br /><br />
+<img src="https://img.shields.io/badge/01-58A6FF?style=flat-square&labelColor=0d1117" /><br /><br />
 <b><code>Full-time</code></b>
 <p align="center"><sub>Frontend, Full-Stack, and Product Engineering</sub></p>
 </td>
 <td align="center" width="33%">
-<img src="https://img.shields.io/badge/02-2EA043?style=flat-square&labelColor=0d1117" /><br /><br />
+<img src="https://img.shields.io/badge/02-BC8CFF?style=flat-square&labelColor=0d1117" /><br /><br />
 <b><code>Freelance</code></b>
 <p align="center"><sub>Platforms, Dashboards, <br /> and Interface Work</sub></p>
 </td>
@@ -520,7 +520,7 @@ I build systems where people in different roles use the same data for different 
 
 <br /><br />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:238636,100:0d1117&height=2" width="70%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
@@ -534,8 +534,8 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<a href="./LICENSE"><img src="https://img.shields.io/badge/©%202026%20SAMAUN%20REZVI-ALL%20RIGHTS%20RESERVED-0d1117?style=for-the-badge&labelColor=238636&color=0d1117" height="30" /></a>
-<a href="./LICENSE"><img src="https://img.shields.io/badge/LICENSE-ATTRIBUTION%20REQUIRED-0d1117?style=for-the-badge&labelColor=0d1117&color=3FB950" height="30" /></a>
+<a href="./LICENSE"><img src="https://img.shields.io/badge/©%202026%20SAMAUN%20REZVI-ALL%20RIGHTS%20RESERVED-0d1117?style=for-the-badge&labelColor=58A6FF&color=0d1117" height="30" /></a>
+<a href="./LICENSE"><img src="https://img.shields.io/badge/LICENSE-ATTRIBUTION%20REQUIRED-0d1117?style=for-the-badge&labelColor=0d1117&color=BC8CFF" height="30" /></a>
 
 <br /><br />
 
