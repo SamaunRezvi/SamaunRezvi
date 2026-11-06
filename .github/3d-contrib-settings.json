@@ -1,0 +1,11 @@
+{
+  "type": "normal",
+  "fileName": "profile-custom",
+  "backgroundColor": "#0d1117",
+  "foregroundColor": "#e6edf3",
+  "strongColor": "#f0883e",
+  "weakColor": "#8b949e",
+  "radarColor": "#a78bfa",
+  "growingAnimation": true,
+  "contribColors": ["#1b2130", "#4c6ef5", "#8b5cf6", "#d946ef", "#fb923c"]
+}
