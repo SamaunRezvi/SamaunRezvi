@@ -158,11 +158,11 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
+<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br /><br />
 
-<img src="https://img.shields.io/badge/●_CURRENTLY_BUILDING-F0883E?style=flat-square&labelColor=0d1117" height="24" />
+<img alt="CURRENTLY BUILDING" src="https://img.shields.io/badge/●_CURRENTLY_BUILDING-F0883E?style=flat-square&labelColor=0d1117" height="24" />
 
 <br />
 
@@ -170,7 +170,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
+<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 </div>
 
