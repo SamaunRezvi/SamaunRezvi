@@ -1,5 +1,5 @@
 {
-  "type": "normal",
+  "type": "season",
   "fileName": "profile-custom.svg",
   "backgroundColor": "#0d1117",
   "foregroundColor": "#e6edf3",
@@ -7,5 +7,8 @@
   "weakColor": "#8b949e",
   "radarColor": "#a78bfa",
   "growingAnimation": true,
-  "contribColors": ["#3a4660", "#4c6ef5", "#8b5cf6", "#d946ef", "#fb923c"]
+  "contribColors1": ["#4a2b52", "#f472b6", "#ec4899", "#d946ef", "#c026d3"],
+  "contribColors2": ["#5a3a24", "#fbbf24", "#fb923c", "#f97316", "#ef4444"],
+  "contribColors3": ["#243a66", "#38bdf8", "#4c8dff", "#6366f1", "#818cf8"],
+  "contribColors4": ["#3b2d66", "#a78bfa", "#8b5cf6", "#7c3aed", "#6d28d9"]
 }
