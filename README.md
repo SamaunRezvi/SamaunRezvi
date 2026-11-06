@@ -230,9 +230,9 @@ I build systems where people in different roles use the same data for different 
 <img alt="Node.js" src="https://img.shields.io/badge/Node.js-68778C?logo=nodedotjs&logoColor=white" />
 <img alt="Prisma" src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white" />
 <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" />
-<img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" />
-<img src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white" />
-<img src="https://img.shields.io/badge/Zod-3E67B1?logo=zod&logoColor=white" />
+<img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" />
+<img alt="SQLite" src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white" />
+<img alt="Zod" src="https://img.shields.io/badge/Zod-3E67B1?logo=zod&logoColor=white" />
 <img src="https://img.shields.io/badge/REST%20APIs-E3B341" />
 <img src="https://img.shields.io/badge/IndexedDB-4285F4?logo=googlechrome&logoColor=white" />
 </td>
