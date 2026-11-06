@@ -101,13 +101,13 @@
 <sub>in active use</sub>
 </td>
 <td align="center" width="170">
-<img src="https://img.shields.io/badge/REACH-58A6FF?style=flat-square" /><br />
+<img alt="REACH" src="https://img.shields.io/badge/REACH-58A6FF?style=flat-square" /><br />
 <h1>2</h1>
 <b>LANGUAGES</b><br />
 <sub>Bengali and English</sub>
 </td>
 <td align="center" width="170">
-<img src="https://img.shields.io/badge/OWNERSHIP-F0883E?style=flat-square" /><br />
+<img alt="OWNERSHIP" src="https://img.shields.io/badge/OWNERSHIP-F0883E?style=flat-square" /><br />
 <h1>99.9%</h1>
 <b>END TO END</b><br />
 <sub>design through deploy</sub>
@@ -124,7 +124,7 @@ I build systems where people in different roles use the same data for different 
 <table align="center">
 <tr>
 <td width="50%" valign="top" align="left">
-<img src="https://img.shields.io/badge/01-58A6FF?style=flat-square" />
+<img alt="" src="https://img.shields.io/badge/01-58A6FF?style=flat-square" />
 <br /><br />
 <b>Missing data is shown as missing</b><br />
 <sub><code>renderQualityState()</code></sub>
