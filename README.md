@@ -458,11 +458,11 @@ I build systems where people in different roles use the same data for different 
 <img alt="" src="https://img.shields.io/badge/04-F0883E?style=flat-square&labelColor=0d1117" />
 <img alt="Fowler" src="https://img.shields.io/badge/Fowler-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
 <img alt="" src="https://img.shields.io/badge/05-F778BA?style=flat-square&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Beck-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
+<img alt="Beck" src="https://img.shields.io/badge/Beck-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
 
 <br /><br />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
+<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
