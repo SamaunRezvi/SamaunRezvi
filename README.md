@@ -55,9 +55,9 @@
 
 <br /><br />
 
-<img src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" height="26" />
-<img src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=61DAFB" height="26" />
-<img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=C9D1D9" height="26" />
+<img alt="Next.js" src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" height="26" />
+<img alt="React" src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=61DAFB" height="26" />
+<img alt="Node.js" src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=C9D1D9" height="26" />
 <img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=58A6FF" height="26" />
 <br />
 <img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=79C0FF" height="26" />
