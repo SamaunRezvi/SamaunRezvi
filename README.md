@@ -313,12 +313,12 @@ I build systems where people in different roles use the same data for different 
 <img alt="Zod" src="https://img.shields.io/badge/Zod-0d1117?style=flat-square&logo=zod&logoColor=7C9CFF" />
 </td>
 <td width="33%" valign="top" align="left">
-<img src="https://img.shields.io/badge/03-F0883E?style=flat-square&labelColor=0d1117" />
+<img alt="" src="https://img.shields.io/badge/03-F0883E?style=flat-square&labelColor=0d1117" />
 <br /><br />
 <b><code>institutional-governance/</code></b>
 <p align="justify"><sub>Full document lifecycle management: review workflows, an immutable audit trail, and weighted contribution scoring.</sub></p>
-<img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=C9D1D9" />
-<img src="https://img.shields.io/badge/SQLite-0d1117?style=flat-square&logo=sqlite&logoColor=79C0FF" />
+<img alt="Node.js" src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=C9D1D9" />
+<img alt="SQLite" src="https://img.shields.io/badge/SQLite-0d1117?style=flat-square&logo=sqlite&logoColor=79C0FF" />
 <img src="https://img.shields.io/badge/Audit_Trail-0d1117?style=flat-square&labelColor=0d1117&color=E3B341" />
 </td>
 </tr>
