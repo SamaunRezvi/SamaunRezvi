@@ -233,13 +233,13 @@ I build systems where people in different roles use the same data for different 
 <img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" />
 <img alt="SQLite" src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white" />
 <img alt="Zod" src="https://img.shields.io/badge/Zod-3E67B1?logo=zod&logoColor=white" />
-<img src="https://img.shields.io/badge/REST%20APIs-E3B341" />
-<img src="https://img.shields.io/badge/IndexedDB-4285F4?logo=googlechrome&logoColor=white" />
+<img alt="REST APIs" src="https://img.shields.io/badge/REST%20APIs-E3B341" />
+<img alt="IndexedDB" src="https://img.shields.io/badge/IndexedDB-4285F4?logo=googlechrome&logoColor=white" />
 </td>
 </tr>
 <tr>
 <td align="right" valign="middle">
-<img src="https://img.shields.io/badge/04-F0883E?style=flat-square&labelColor=0d1117" /><br />
+<img alt="" src="https://img.shields.io/badge/04-F0883E?style=flat-square&labelColor=0d1117" /><br />
 <b><code>Architecture</code></b>
 </td>
 <td align="left" valign="middle">
