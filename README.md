@@ -214,9 +214,9 @@ I build systems where people in different roles use the same data for different 
 <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white" />
 <img alt="React" src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" />
 <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white" />
-<img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white" />
-<img src="https://img.shields.io/badge/Framer%20Motion-0055FF?logo=framer&logoColor=white" />
-<img src="https://img.shields.io/badge/Recharts-FF6384?logo=chartdotjs&logoColor=white" />
+<img alt="Vite" src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white" />
+<img alt="Framer Motion" src="https://img.shields.io/badge/Framer%20Motion-0055FF?logo=framer&logoColor=white" />
+<img alt="Recharts" src="https://img.shields.io/badge/Recharts-FF6384?logo=chartdotjs&logoColor=white" />
 <img src="https://img.shields.io/badge/Lucide-F56565?logo=lucide&logoColor=white" />
 <img src="https://img.shields.io/badge/Leaflet-4C9BE8?logo=leaflet&logoColor=white" />
 </td>
