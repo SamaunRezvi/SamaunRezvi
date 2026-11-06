@@ -534,8 +534,8 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<a href="./LICENSE"><img src="https://img.shields.io/badge/©%202026%20SAMAUN%20REZVI-ALL%20RIGHTS%20RESERVED-0d1117?style=for-the-badge&labelColor=58A6FF&color=0d1117" height="30" /></a>
-<a href="./LICENSE"><img src="https://img.shields.io/badge/LICENSE-ATTRIBUTION%20REQUIRED-0d1117?style=for-the-badge&labelColor=0d1117&color=BC8CFF" height="30" /></a>
+<a href="./LICENSE"><img alt="© 2026 SAMAUN REZVI: ALL RIGHTS RESERVED" src="https://img.shields.io/badge/©%202026%20SAMAUN%20REZVI-ALL%20RIGHTS%20RESERVED-0d1117?style=for-the-badge&labelColor=58A6FF&color=0d1117" height="30" /></a>
+<a href="./LICENSE"><img alt="LICENSE: ATTRIBUTION REQUIRED" src="https://img.shields.io/badge/LICENSE-ATTRIBUTION%20REQUIRED-0d1117?style=for-the-badge&labelColor=0d1117&color=BC8CFF" height="30" /></a>
 
 <br /><br />
 
