@@ -342,11 +342,11 @@ I build systems where people in different roles use the same data for different 
 <img alt="RBAC" src="https://img.shields.io/badge/RBAC-0d1117?style=flat-square&labelColor=0d1117&color=58A6FF" />
 </td>
 <td valign="top" align="left">
-<img src="https://img.shields.io/badge/06-39D0D8?style=flat-square&labelColor=0d1117" />
+<img alt="" src="https://img.shields.io/badge/06-39D0D8?style=flat-square&labelColor=0d1117" />
 <br /><br />
 <b><code>design-systems/</code></b>
 <p align="justify"><sub>Component libraries and design tokens driving consistent, accessible, responsive interfaces.</sub></p>
-<img src="https://img.shields.io/badge/Figma-0d1117?style=flat-square&logo=figma&logoColor=FF7262" />
+<img alt="Figma" src="https://img.shields.io/badge/Figma-0d1117?style=flat-square&logo=figma&logoColor=FF7262" />
 <img src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwindcss&logoColor=38BDF8" />
 <img src="https://img.shields.io/badge/a11y-0d1117?style=flat-square&labelColor=0d1117&color=F778BA" />
 </td>
