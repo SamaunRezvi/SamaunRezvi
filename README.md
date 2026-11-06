@@ -6,9 +6,9 @@
 </td></tr>
 </table>
 
-<img src="https://komarev.com/ghpvc/?username=SamaunRezvi&label=PROFILE+VIEWS&color=3FB950&style=flat-square" height="22" />
-<img src="https://img.shields.io/github/followers/SamaunRezvi?label=FOLLOWERS&style=flat-square&color=3FB950&labelColor=0d1117" height="22" />
-<img src="https://img.shields.io/github/stars/SamaunRezvi?label=STARS&style=flat-square&color=3FB950&labelColor=0d1117" height="22" />
+<img src="https://komarev.com/ghpvc/?username=SamaunRezvi&label=PROFILE+VIEWS&color=58A6FF&style=flat-square" height="22" />
+<img src="https://img.shields.io/github/followers/SamaunRezvi?label=FOLLOWERS&style=flat-square&color=BC8CFF&labelColor=0d1117" height="22" />
+<img src="https://img.shields.io/github/stars/SamaunRezvi?label=STARS&style=flat-square&color=E3B341&labelColor=0d1117" height="22" />
 
 <br />
 
@@ -21,15 +21,15 @@
 
 <h1>👋 Hi, I'm Samaun Rezvi</h1>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=15&duration=2600&pause=900&color=3FB950&vCenter=true&width=430&height=32&lines=Full-Stack+Web+Developer;I+build+products+end+to+end;Frontend+%C2%B7+Backend+%C2%B7+Data+%C2%B7+Deploy" alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=15&duration=2600&pause=900&color=58A6FF&vCenter=true&width=430&height=32&lines=Full-Stack+Web+Developer;I+build+products+end+to+end;Frontend+%C2%B7+Backend+%C2%B7+Data+%C2%B7+Deploy" alt="" />
 
 <sub>Computer Science &amp; Engineering · Daffodil International University · DSC, Dhaka, Bangladesh</sub>
 
 <br /><br />
 
-<img src="https://img.shields.io/badge/Full--Stack_Developer-0d1117?style=flat-square&logo=react&logoColor=3FB950" height="26" />
-<img src="https://img.shields.io/badge/UI/UX_Minded-0d1117?style=flat-square&logo=figma&logoColor=3FB950" height="26" />
-<img src="https://img.shields.io/badge/Open_to_Work-0d1117?style=flat-square&logo=github&logoColor=3FB950" height="26" />
+<img src="https://img.shields.io/badge/Full--Stack_Developer-0d1117?style=flat-square&logo=react&logoColor=61DAFB" height="26" />
+<img src="https://img.shields.io/badge/UI/UX_Minded-0d1117?style=flat-square&logo=figma&logoColor=FF7262" height="26" />
+<img src="https://img.shields.io/badge/Open_to_Work-0d1117?style=flat-square&logo=github&logoColor=FFFFFF" height="26" />
 
 <br /><br />
 
@@ -41,11 +41,11 @@
 
 <a href="https://www.linkedin.com/in/samaun-rezvi-a17a6316a"><img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzNGQjk1MCIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyNSAweiIvPjwvc3ZnPg==" height="34" /></a>
 &nbsp;
-<a href="mailto:samaunrezvi9@gmail.com"><img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=3FB950" height="34" /></a>
+<a href="mailto:samaunrezvi9@gmail.com"><img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=FF7B72" height="34" /></a>
 &nbsp;
-<a href="https://www.facebook.com/share/1Jun91Hjzc/"><img src="https://img.shields.io/badge/Facebook-0d1117?style=for-the-badge&logo=facebook&logoColor=3FB950" height="34" /></a>
+<a href="https://www.facebook.com/share/1Jun91Hjzc/"><img src="https://img.shields.io/badge/Facebook-0d1117?style=for-the-badge&logo=facebook&logoColor=58A6FF" height="34" /></a>
 &nbsp;
-<a href="https://www.instagram.com/samaunrezvi_617/"><img src="https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=3FB950" height="34" /></a>
+<a href="https://www.instagram.com/samaunrezvi_617/"><img src="https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=F778BA" height="34" /></a>
 
 <br /><br />
 
@@ -55,14 +55,14 @@
 
 <br /><br />
 
-<img src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=3FB950" height="26" />
-<img src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=3FB950" height="26" />
-<img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=3FB950" height="26" />
-<img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3FB950" height="26" />
+<img src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" height="26" />
+<img src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=61DAFB" height="26" />
+<img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=7EE787" height="26" />
+<img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=58A6FF" height="26" />
 <br />
-<img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=3FB950" height="26" />
-<img src="https://img.shields.io/badge/Tailwind_CSS-0d1117?style=flat-square&logo=tailwindcss&logoColor=3FB950" height="26" />
-<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3FB950" height="26" />
+<img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=79C0FF" height="26" />
+<img src="https://img.shields.io/badge/Tailwind_CSS-0d1117?style=flat-square&logo=tailwindcss&logoColor=38BDF8" height="26" />
+<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=FFD43B" height="26" />
 
 <br /><br />
 
@@ -101,7 +101,7 @@
 <sub>in active use</sub>
 </td>
 <td align="center" width="170">
-<img src="https://img.shields.io/badge/REACH-3FB950?style=flat-square" /><br />
+<img src="https://img.shields.io/badge/REACH-58A6FF?style=flat-square" /><br />
 <h1>2</h1>
 <b>LANGUAGES</b><br />
 <sub>Bengali and English</sub>
@@ -140,7 +140,7 @@ I build systems where people in different roles use the same data for different 
 </tr>
 <tr>
 <td width="50%" valign="top" align="left">
-<img src="https://img.shields.io/badge/03-3FB950?style=flat-square" />
+<img src="https://img.shields.io/badge/03-BC8CFF?style=flat-square" />
 <br /><br />
 <b>Offline is a state, not an error</b><br />
 <sub><code>queueAndSync()</code></sub>
@@ -166,7 +166,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=900&color=3FB950&center=true&vCenter=true&width=740&height=42&lines=full-stack+web+platforms;dashboards+and+admin+tools;offline-capable+applications;clean+and+reliable+data+models" alt="Currently building" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=900&color=F0883E&center=true&vCenter=true&width=740&height=42&lines=full-stack+web+platforms;dashboards+and+admin+tools;offline-capable+applications;clean+and+reliable+data+models" alt="Currently building" />
 
 <br />
 
@@ -223,7 +223,7 @@ I build systems where people in different roles use the same data for different 
 </tr>
 <tr>
 <td align="right" valign="middle">
-<img src="https://img.shields.io/badge/03-3FB950?style=flat-square&labelColor=0d1117" /><br />
+<img src="https://img.shields.io/badge/03-39D0D8?style=flat-square&labelColor=0d1117" /><br />
 <b><code>Backend-Data</code></b>
 </td>
 <td align="left" valign="middle">
@@ -245,7 +245,7 @@ I build systems where people in different roles use the same data for different 
 <td align="left" valign="middle">
 <img src="https://img.shields.io/badge/Role--based%20Access%20Control-238636" />
 <img src="https://img.shields.io/badge/Offline--first%20Sync-2EA043" />
-<img src="https://img.shields.io/badge/Design%20Systems-3FB950" />
+<img src="https://img.shields.io/badge/Design%20Systems-F778BA" />
 <img src="https://img.shields.io/badge/Internationalisation-56D364" />
 <img src="https://img.shields.io/badge/Accessibility-7EE787" />
 </td>
@@ -272,7 +272,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=1500&color=3FB950&center=true&vCenter=true&width=600&height=30&lines=cat+philosophy.txt;the+stack+serves+the+problem%2C+not+the+resume" alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=1500&color=BC8CFF&center=true&vCenter=true&width=600&height=30&lines=cat+philosophy.txt;the+stack+serves+the+problem%2C+not+the+resume" alt="" />
 
 </div>
 
@@ -299,26 +299,26 @@ I build systems where people in different roles use the same data for different 
 <br /><br />
 <b><code>iot-monitoring/</code></b>
 <p align="justify"><sub>Real-time telemetry across a 9-role permission system and 90+ routes. Offline-capable field apps, jurisdiction-scoped access control.</sub></p>
-<img src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=3FB950" />
-<img src="https://img.shields.io/badge/Prisma-0d1117?style=flat-square&logo=prisma&logoColor=3FB950" />
-<img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=3FB950" />
+<img src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" />
+<img src="https://img.shields.io/badge/Prisma-0d1117?style=flat-square&logo=prisma&logoColor=A78BFA" />
+<img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=79C0FF" />
 </td>
 <td width="33%" valign="top" align="left">
 <img src="https://img.shields.io/badge/02-2EA043?style=flat-square&labelColor=0d1117" />
 <br /><br />
 <b><code>competition-platform/</code></b>
 <p align="justify"><sub>Multi-role judging pipeline blending automated scoring with manual review. Live leaderboards, role-separated submission flow.</sub></p>
-<img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=3FB950" />
-<img src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=3FB950" />
-<img src="https://img.shields.io/badge/Zod-0d1117?style=flat-square&logo=zod&logoColor=3FB950" />
+<img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=58A6FF" />
+<img src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=61DAFB" />
+<img src="https://img.shields.io/badge/Zod-0d1117?style=flat-square&logo=zod&logoColor=7C9CFF" />
 </td>
 <td width="33%" valign="top" align="left">
-<img src="https://img.shields.io/badge/03-3FB950?style=flat-square&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/03-F0883E?style=flat-square&labelColor=0d1117" />
 <br /><br />
 <b><code>institutional-governance/</code></b>
 <p align="justify"><sub>Full document lifecycle management: review workflows, an immutable audit trail, and weighted contribution scoring.</sub></p>
-<img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=3FB950" />
-<img src="https://img.shields.io/badge/SQLite-0d1117?style=flat-square&logo=sqlite&logoColor=3FB950" />
+<img src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=7EE787" />
+<img src="https://img.shields.io/badge/SQLite-0d1117?style=flat-square&logo=sqlite&logoColor=79C0FF" />
 <img src="https://img.shields.io/badge/Audit_Trail-0d1117?style=flat-square&labelColor=0d1117&color=238636" />
 </td>
 </tr>
@@ -328,17 +328,17 @@ I build systems where people in different roles use the same data for different 
 <br /><br />
 <b><code>data-intelligence/</code></b>
 <p align="justify"><sub>Ingestion-to-insight pipeline with sentiment classification, trend comparison, and dashboarded reporting.</sub></p>
-<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3FB950" />
-<img src="https://img.shields.io/badge/Vite-0d1117?style=flat-square&logo=vite&logoColor=3FB950" />
-<img src="https://img.shields.io/badge/Recharts-0d1117?style=flat-square&logo=chartdotjs&logoColor=3FB950" />
+<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=FFD43B" />
+<img src="https://img.shields.io/badge/Vite-0d1117?style=flat-square&logo=vite&logoColor=BD93F9" />
+<img src="https://img.shields.io/badge/Recharts-0d1117?style=flat-square&logo=chartdotjs&logoColor=FF6384" />
 </td>
 <td valign="top" align="left">
 <img src="https://img.shields.io/badge/05-7EE787?style=flat-square&labelColor=0d1117" />
 <br /><br />
 <b><code>scheduling-systems/</code></b>
 <p align="justify"><sub>Role-specific portals with approval workflows, availability management, and calendar-synced booking.</sub></p>
-<img src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=3FB950" />
-<img src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwindcss&logoColor=3FB950" />
+<img src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" />
+<img src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwindcss&logoColor=38BDF8" />
 <img src="https://img.shields.io/badge/RBAC-0d1117?style=flat-square&labelColor=0d1117&color=238636" />
 </td>
 <td valign="top" align="left">
@@ -346,8 +346,8 @@ I build systems where people in different roles use the same data for different 
 <br /><br />
 <b><code>design-systems/</code></b>
 <p align="justify"><sub>Component libraries and design tokens driving consistent, accessible, responsive interfaces.</sub></p>
-<img src="https://img.shields.io/badge/Figma-0d1117?style=flat-square&logo=figma&logoColor=3FB950" />
-<img src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwindcss&logoColor=3FB950" />
+<img src="https://img.shields.io/badge/Figma-0d1117?style=flat-square&logo=figma&logoColor=FF7262" />
+<img src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwindcss&logoColor=38BDF8" />
 <img src="https://img.shields.io/badge/a11y-0d1117?style=flat-square&labelColor=0d1117&color=238636" />
 </td>
 </tr>
@@ -357,7 +357,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=1500&color=3FB950&center=true&vCenter=true&width=560&height=30&lines=git+log+--oneline+%7C+wc+-l;happy+to+walk+through+any+of+these" alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=1500&color=39D0D8&center=true&vCenter=true&width=560&height=30&lines=git+log+--oneline+%7C+wc+-l;happy+to+walk+through+any+of+these" alt="" />
 
 </div>
 
@@ -439,7 +439,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=4200&pause=1200&color=3FB950&center=true&vCenter=true&random=true&width=760&height=44&lines=%22Simplicity+is+prerequisite+for+reliability.%22;%22Controlling+complexity+is+the+essence+of+computer+programming.%22;%22Programs+must+be+written+for+people+to+read.%22;%22Good+programmers+write+code+that+humans+can+understand.%22;%22Make+it+work%2C+make+it+right%2C+make+it+fast.%22" alt="Curated quotes" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=4200&pause=1200&color=E3B341&center=true&vCenter=true&random=true&width=760&height=44&lines=%22Simplicity+is+prerequisite+for+reliability.%22;%22Controlling+complexity+is+the+essence+of+computer+programming.%22;%22Programs+must+be+written+for+people+to+read.%22;%22Good+programmers+write+code+that+humans+can+understand.%22;%22Make+it+work%2C+make+it+right%2C+make+it+fast.%22" alt="Curated quotes" />
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=13&duration=4200&pause=1200&color=8B949E&center=true&vCenter=true&random=true&width=760&height=28&lines=Edsger+W.+Dijkstra;Brian+Kernighan;Abelson+%26+Sussman%2C+SICP;Martin+Fowler%2C+Refactoring;Kent+Beck" alt="Attributions" />
 
@@ -453,7 +453,7 @@ I build systems where people in different roles use the same data for different 
 <img src="https://img.shields.io/badge/Dijkstra-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
 <img src="https://img.shields.io/badge/02-2EA043?style=flat-square&labelColor=0d1117" />
 <img src="https://img.shields.io/badge/Kernighan-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
-<img src="https://img.shields.io/badge/03-3FB950?style=flat-square&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/03-E3B341?style=flat-square&labelColor=0d1117" />
 <img src="https://img.shields.io/badge/SICP-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
 <img src="https://img.shields.io/badge/04-56D364?style=flat-square&labelColor=0d1117" />
 <img src="https://img.shields.io/badge/Fowler-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
@@ -466,7 +466,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=1500&color=3FB950&center=true&vCenter=true&width=640&height=30&lines=grep+%22simplicity%22+.;found+in+every+file+worth+keeping" alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=1500&color=F778BA&center=true&vCenter=true&width=640&height=30&lines=grep+%22simplicity%22+.;found+in+every+file+worth+keeping" alt="" />
 
 </div>
 
@@ -486,7 +486,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=1000&color=3FB950&center=true&vCenter=true&width=760&height=42&lines=Open+to+full-time+roles;Available+for+freelance+and+collaboration;Happy+to+talk+architecture+any+time;Ask+me+about+the+hard+parts" alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&width=760&height=42&lines=Open+to+full-time+roles;Available+for+freelance+and+collaboration;Happy+to+talk+architecture+any+time;Ask+me+about+the+hard+parts" alt="" />
 
 <br />
 
@@ -503,7 +503,7 @@ I build systems where people in different roles use the same data for different 
 <p align="center"><sub>Platforms, Dashboards, <br /> and Interface Work</sub></p>
 </td>
 <td align="center" width="33%">
-<img src="https://img.shields.io/badge/03-3FB950?style=flat-square&labelColor=0d1117" /><br /><br />
+<img src="https://img.shields.io/badge/03-F778BA?style=flat-square&labelColor=0d1117" /><br /><br />
 <b><code>Collaboration</code></b>
 <p align="center"><sub>Open source, Side Builds, and Team Projects</sub></p>
 </td>
@@ -514,7 +514,7 @@ I build systems where people in different roles use the same data for different 
 
 <br /><br />
 
-<a href="mailto:samaunrezvi9@gmail.com"><img src="https://img.shields.io/badge/samaunrezvi9@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=3FB950&labelColor=0d1117" height="36" /></a>
+<a href="mailto:samaunrezvi9@gmail.com"><img src="https://img.shields.io/badge/samaunrezvi9@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=FF7B72&labelColor=0d1117" height="36" /></a>
 &nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/samaun-rezvi-a17a6316a"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0d1117?style=for-the-badge&labelColor=0d1117&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzNGQjk1MCIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyNSAweiIvPjwvc3ZnPg==" height="36" /></a>
 
@@ -524,7 +524,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=1500&color=3FB950&center=true&vCenter=true&width=620&height=30&lines=mail-+%22hello%22+samaunrezvi9;inbox+open.+recruiter+script+needed." alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=1500&color=FF7B72&center=true&vCenter=true&width=620&height=30&lines=mail-+%22hello%22+samaunrezvi9;inbox+open.+recruiter+script+needed." alt="" />
 
 </div>
 
