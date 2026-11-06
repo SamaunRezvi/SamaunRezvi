@@ -319,16 +319,16 @@ I build systems where people in different roles use the same data for different 
 <p align="justify"><sub>Full document lifecycle management: review workflows, an immutable audit trail, and weighted contribution scoring.</sub></p>
 <img alt="Node.js" src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=C9D1D9" />
 <img alt="SQLite" src="https://img.shields.io/badge/SQLite-0d1117?style=flat-square&logo=sqlite&logoColor=79C0FF" />
-<img src="https://img.shields.io/badge/Audit_Trail-0d1117?style=flat-square&labelColor=0d1117&color=E3B341" />
+<img alt="Audit Trail" src="https://img.shields.io/badge/Audit_Trail-0d1117?style=flat-square&labelColor=0d1117&color=E3B341" />
 </td>
 </tr>
 <tr>
 <td valign="top" align="left">
-<img src="https://img.shields.io/badge/04-F0883E?style=flat-square&labelColor=0d1117" />
+<img alt="" src="https://img.shields.io/badge/04-F0883E?style=flat-square&labelColor=0d1117" />
 <br /><br />
 <b><code>data-intelligence/</code></b>
 <p align="justify"><sub>Ingestion-to-insight pipeline with sentiment classification, trend comparison, and dashboarded reporting.</sub></p>
-<img src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=FFD43B" />
+<img alt="Python" src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=FFD43B" />
 <img src="https://img.shields.io/badge/Vite-0d1117?style=flat-square&logo=vite&logoColor=BD93F9" />
 <img src="https://img.shields.io/badge/Recharts-0d1117?style=flat-square&logo=chartdotjs&logoColor=FF6384" />
 </td>
