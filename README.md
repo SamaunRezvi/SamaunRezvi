@@ -347,8 +347,8 @@ I build systems where people in different roles use the same data for different 
 <b><code>design-systems/</code></b>
 <p align="justify"><sub>Component libraries and design tokens driving consistent, accessible, responsive interfaces.</sub></p>
 <img alt="Figma" src="https://img.shields.io/badge/Figma-0d1117?style=flat-square&logo=figma&logoColor=FF7262" />
-<img src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwindcss&logoColor=38BDF8" />
-<img src="https://img.shields.io/badge/a11y-0d1117?style=flat-square&labelColor=0d1117&color=F778BA" />
+<img alt="Tailwind" src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwindcss&logoColor=38BDF8" />
+<img alt="a11y" src="https://img.shields.io/badge/a11y-0d1117?style=flat-square&labelColor=0d1117&color=F778BA" />
 </td>
 </tr>
 </table>
