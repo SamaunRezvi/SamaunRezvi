@@ -392,7 +392,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution graph" />
+<img src="./profile-3d-contrib/profile-custom.svg" width="100%" alt="3D contribution graph" />
 
 </div>
 
