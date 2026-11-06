@@ -131,7 +131,7 @@ I build systems where people in different roles use the same data for different 
 <p align="justify"><sub>If a sensor has not reported, the interface says so. It never renders a zero, because a zero is a reading and an absence is not. Every value carries a quality state and an origin, so an estimate is never mistaken for a measurement.</sub></p>
 </td>
 <td width="50%" valign="top" align="left">
-<img src="https://img.shields.io/badge/02-BC8CFF?style=flat-square" />
+<img alt="" src="https://img.shields.io/badge/02-BC8CFF?style=flat-square" />
 <br /><br />
 <b>Permissions live where the data lives</b><br />
 <sub><code>scopeToJurisdiction()</code></sub>
@@ -140,14 +140,14 @@ I build systems where people in different roles use the same data for different 
 </tr>
 <tr>
 <td width="50%" valign="top" align="left">
-<img src="https://img.shields.io/badge/03-BC8CFF?style=flat-square" />
+<img alt="" src="https://img.shields.io/badge/03-BC8CFF?style=flat-square" />
 <br /><br />
 <b>Offline is a state, not an error</b><br />
 <sub><code>queueAndSync()</code></sub>
 <p align="justify"><sub>Field forms queue locally and sync when connectivity returns. Endpoints are idempotent, so a retried submission never duplicates a record. Maps fall back to a list view when tiles fail.</sub></p>
 </td>
 <td width="50%" valign="top" align="left">
-<img src="https://img.shields.io/badge/04-F0883E?style=flat-square" />
+<img alt="" src="https://img.shields.io/badge/04-F0883E?style=flat-square" />
 <br /><br />
 <b>Scope boundaries are deliberate</b><br />
 <sub><code>defineBoundary()</code></sub>
