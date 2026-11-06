@@ -308,9 +308,9 @@ I build systems where people in different roles use the same data for different 
 <br /><br />
 <b><code>competition-platform/</code></b>
 <p align="justify"><sub>Multi-role judging pipeline blending automated scoring with manual review. Live leaderboards, role-separated submission flow.</sub></p>
-<img src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=58A6FF" />
-<img src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=61DAFB" />
-<img src="https://img.shields.io/badge/Zod-0d1117?style=flat-square&logo=zod&logoColor=7C9CFF" />
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=58A6FF" />
+<img alt="React" src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=61DAFB" />
+<img alt="Zod" src="https://img.shields.io/badge/Zod-0d1117?style=flat-square&logo=zod&logoColor=7C9CFF" />
 </td>
 <td width="33%" valign="top" align="left">
 <img src="https://img.shields.io/badge/03-F0883E?style=flat-square&labelColor=0d1117" />
