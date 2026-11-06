@@ -6,9 +6,9 @@
 </td></tr>
 </table>
 
-<img src="https://komarev.com/ghpvc/?username=SamaunRezvi&label=PROFILE+VIEWS&color=58A6FF&style=flat-square" height="22" />
-<img src="https://img.shields.io/github/followers/SamaunRezvi?label=FOLLOWERS&style=flat-square&color=BC8CFF&labelColor=0d1117" height="22" />
-<img src="https://img.shields.io/github/stars/SamaunRezvi?label=STARS&style=flat-square&color=E3B341&labelColor=0d1117" height="22" />
+<img alt="Profile views" src="https://komarev.com/ghpvc/?username=SamaunRezvi&label=PROFILE+VIEWS&color=58A6FF&style=flat-square" height="22" />
+<img alt="GitHub followers" src="https://img.shields.io/github/followers/SamaunRezvi?label=FOLLOWERS&style=flat-square&color=BC8CFF&labelColor=0d1117" height="22" />
+<img alt="GitHub stars" src="https://img.shields.io/github/stars/SamaunRezvi?label=STARS&style=flat-square&color=E3B341&labelColor=0d1117" height="22" />
 
 <br />
 
