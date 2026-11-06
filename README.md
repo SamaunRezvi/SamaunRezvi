@@ -337,9 +337,9 @@ I build systems where people in different roles use the same data for different 
 <br /><br />
 <b><code>scheduling-systems/</code></b>
 <p align="justify"><sub>Role-specific portals with approval workflows, availability management, and calendar-synced booking.</sub></p>
-<img src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" />
-<img src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwindcss&logoColor=38BDF8" />
-<img src="https://img.shields.io/badge/RBAC-0d1117?style=flat-square&labelColor=0d1117&color=58A6FF" />
+<img alt="Next.js" src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" />
+<img alt="Tailwind" src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwindcss&logoColor=38BDF8" />
+<img alt="RBAC" src="https://img.shields.io/badge/RBAC-0d1117?style=flat-square&labelColor=0d1117&color=58A6FF" />
 </td>
 <td valign="top" align="left">
 <img src="https://img.shields.io/badge/06-39D0D8?style=flat-square&labelColor=0d1117" />
