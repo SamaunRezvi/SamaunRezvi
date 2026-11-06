@@ -186,18 +186,18 @@ I build systems where people in different roles use the same data for different 
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=3400&pause=1400&color=6E7681&center=true&vCenter=true&width=620&height=32&lines=stack+%C2%B7+what+I+reach+for+and+why" alt="" />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
+<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
 <table align="center">
 <tr>
 <td align="right" valign="middle" width="200">
-<img src="https://img.shields.io/badge/01-58A6FF?style=flat-square&labelColor=0d1117" /><br />
+<img alt="" src="https://img.shields.io/badge/01-58A6FF?style=flat-square&labelColor=0d1117" /><br />
 <b><code>Languages</code></b>
 </td>
 <td align="left" valign="middle">
-<img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" />
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" />
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" />
 <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" />
 <img src="https://img.shields.io/badge/Java-ED8B00?logo=openjdk&logoColor=white" />
