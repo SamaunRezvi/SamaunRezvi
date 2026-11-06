@@ -452,8 +452,8 @@ I build systems where people in different roles use the same data for different 
 <img alt="" src="https://img.shields.io/badge/01-58A6FF?style=flat-square&labelColor=0d1117" />
 <img alt="Dijkstra" src="https://img.shields.io/badge/Dijkstra-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
 <img alt="" src="https://img.shields.io/badge/02-BC8CFF?style=flat-square&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Kernighan-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
-<img src="https://img.shields.io/badge/03-E3B341?style=flat-square&labelColor=0d1117" />
+<img alt="Kernighan" src="https://img.shields.io/badge/Kernighan-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
+<img alt="" src="https://img.shields.io/badge/03-E3B341?style=flat-square&labelColor=0d1117" />
 <img src="https://img.shields.io/badge/SICP-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
 <img src="https://img.shields.io/badge/04-F0883E?style=flat-square&labelColor=0d1117" />
 <img src="https://img.shields.io/badge/Fowler-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
