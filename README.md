@@ -243,9 +243,9 @@ I build systems where people in different roles use the same data for different 
 <b><code>Architecture</code></b>
 </td>
 <td align="left" valign="middle">
-<img src="https://img.shields.io/badge/Role--based%20Access%20Control-58A6FF" />
-<img src="https://img.shields.io/badge/Offline--first%20Sync-BC8CFF" />
-<img src="https://img.shields.io/badge/Design%20Systems-F778BA" />
+<img alt="Role-based Access Control" src="https://img.shields.io/badge/Role--based%20Access%20Control-58A6FF" />
+<img alt="Offline-first Sync" src="https://img.shields.io/badge/Offline--first%20Sync-BC8CFF" />
+<img alt="Design Systems" src="https://img.shields.io/badge/Design%20Systems-F778BA" />
 <img src="https://img.shields.io/badge/Internationalisation-39D0D8" />
 <img src="https://img.shields.io/badge/Accessibility-F778BA" />
 </td>
