@@ -27,9 +27,9 @@
 
 <br /><br />
 
-<img src="https://img.shields.io/badge/Full--Stack_Developer-0d1117?style=flat-square&logo=react&logoColor=61DAFB" height="26" />
-<img src="https://img.shields.io/badge/UI/UX_Minded-0d1117?style=flat-square&logo=figma&logoColor=FF7262" height="26" />
-<img src="https://img.shields.io/badge/Open_to_Work-0d1117?style=flat-square&logo=github&logoColor=FFFFFF" height="26" />
+<img alt="Full-Stack Developer" src="https://img.shields.io/badge/Full--Stack_Developer-0d1117?style=flat-square&logo=react&logoColor=61DAFB" height="26" />
+<img alt="UI/UX Minded" src="https://img.shields.io/badge/UI/UX_Minded-0d1117?style=flat-square&logo=figma&logoColor=FF7262" height="26" />
+<img alt="Open to Work" src="https://img.shields.io/badge/Open_to_Work-0d1117?style=flat-square&logo=github&logoColor=FFFFFF" height="26" />
 
 <br /><br />
 
