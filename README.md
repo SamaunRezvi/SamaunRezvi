@@ -43,13 +43,13 @@
 &nbsp;
 <a href="mailto:samaunrezvi9@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=FF7B72" height="34" /></a>
 &nbsp;
-<a href="https://www.facebook.com/share/1Jun91Hjzc/"><img src="https://img.shields.io/badge/Facebook-0d1117?style=for-the-badge&logo=facebook&logoColor=58A6FF" height="34" /></a>
+<a href="https://www.facebook.com/share/1Jun91Hjzc/"><img alt="Facebook" src="https://img.shields.io/badge/Facebook-0d1117?style=for-the-badge&logo=facebook&logoColor=58A6FF" height="34" /></a>
 &nbsp;
-<a href="https://www.instagram.com/samaunrezvi_617/"><img src="https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=F778BA" height="34" /></a>
+<a href="https://www.instagram.com/samaunrezvi_617/"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=F778BA" height="34" /></a>
 
 <br /><br />
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="420" />
+<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="420" />
 
 <b>│ Core Stack</b>
 
