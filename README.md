@@ -211,9 +211,9 @@ I build systems where people in different roles use the same data for different 
 <b><code>Frontend</code></b>
 </td>
 <td align="left" valign="middle">
-<img src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white" />
-<img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" />
-<img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white" />
+<img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white" />
+<img alt="React" src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" />
+<img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white" />
 <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white" />
 <img src="https://img.shields.io/badge/Framer%20Motion-0055FF?logo=framer&logoColor=white" />
 <img src="https://img.shields.io/badge/Recharts-FF6384?logo=chartdotjs&logoColor=white" />
