@@ -6,3 +6,4 @@ Notable changes to this profile repository.
 
 - Replaced the green accents in the README with a blue, purple, pink and orange palette.
 - Switched the 3D contribution graph to a custom season palette and tinted the base tiles.
+- Added alt text to all README images for accessibility.
