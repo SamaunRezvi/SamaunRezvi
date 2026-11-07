@@ -437,6 +437,7 @@ def arc_path(cx, cy, r_outer, r_inner, a0, a1):
 
 
 def build_donut_card(lang_data):
+    """Render the Top Languages donut card SVG."""
     width, height, x_padding, y_padding = 340, 200, 30, 40
     margin = 10
     radius = (min(width, height) - 2 * margin - y_padding) / 2
