@@ -309,6 +309,7 @@ def build_streak_card(stats):
     mid = width / 2
 
     def side_block(cx, num, label, date_range):
+        """Render one side column (number, label, date range) of the streak card."""
         return (
             f'<text x="{cx}" y="80" text-anchor="middle" fill="{STREAK_SIDE}" '
             f'font-family="{STREAK_FONT}" font-weight="700" font-size="28px">{num}</text>'
