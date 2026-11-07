@@ -537,6 +537,7 @@ ACTIVITY_TITLE = "#3FB950"
 
 
 def build_activity_graph(daily):
+    """Render the contribution activity line and area graph SVG."""
     width, height = 800, 300
     x_padding, y_padding = 46, 55
     plot_w = width - x_padding - 20
