@@ -138,6 +138,7 @@ def fetch_data():
 
 
 def fetch_productive_time():
+    """Return 24 commit counts, one per hour of day (shifted by UTC_OFFSET), for the last year."""
     id_query = """
     query($login: String!) {
       user(login: $login) { id }
