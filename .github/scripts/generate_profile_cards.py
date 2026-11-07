@@ -553,6 +553,7 @@ def build_activity_graph(daily):
         return x_padding + step_x * i
 
     def py(v):
+        """Return the y position of a contribution value on the plot."""
         return y_padding + plot_h - (v / y_max) * plot_h
 
     points = [(px(i), py(v)) for i, (_, v) in enumerate(daily)]
