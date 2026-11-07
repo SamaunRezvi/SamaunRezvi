@@ -39,6 +39,7 @@ ICONS = {
 
 
 def gql(query, variables):
+    """Run a GitHub GraphQL query and return its data payload; raise on HTTP or GraphQL errors."""
     r = requests.post(
         "https://api.github.com/graphql",
         json={"query": query, "variables": variables},
