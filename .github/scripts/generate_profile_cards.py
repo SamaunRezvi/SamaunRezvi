@@ -295,6 +295,7 @@ def fetch_streak_stats():
     }
 
 
+# Colours and font used by the streak stats card.
 STREAK_RING = "#3FB950"
 STREAK_FIRE = "#56D364"
 STREAK_CUR_NUM = "#ffffff"
