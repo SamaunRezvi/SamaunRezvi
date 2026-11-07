@@ -403,6 +403,7 @@ def card_shell(title, width, height, body_svg):
 
 
 def build_stats_card(stats_data):
+    """Render the Stats card SVG from (icon, label, value) rows."""
     width, height = 340, 200
     label_h = 14
     rows = []
