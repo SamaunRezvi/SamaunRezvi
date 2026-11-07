@@ -483,6 +483,7 @@ def build_productive_time_card(chart_data, utc_offset):
     start_adj = (chart_width - step * (n - padding)) * 0.5
 
     def band_x(i):
+        """Return the left x position of the bar for hour index i."""
         return start_adj + step * i
 
     y_max = max(max(chart_data), 1)
