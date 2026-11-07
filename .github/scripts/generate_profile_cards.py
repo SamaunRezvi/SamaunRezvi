@@ -199,6 +199,7 @@ def fetch_productive_time():
 
 
 def fetch_streak_stats():
+    """Compute total contributions plus the current and longest streaks with their date ranges."""
     meta_query = """
     query($login: String!) {
       user(login: $login) {
