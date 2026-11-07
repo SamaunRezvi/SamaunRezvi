@@ -8,3 +8,7 @@ Notable changes to this profile repository.
 - Switched the 3D contribution graph to a custom season palette and tinted the base tiles.
 - Added alt text to all README images for accessibility.
 - Added `.gitattributes`, `.editorconfig` and extra `.gitignore` rules.
+
+## 2026-11-07
+
+- Added docstrings to the card generation script.
