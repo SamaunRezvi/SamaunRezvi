@@ -614,6 +614,7 @@ def build_activity_graph(daily):
 
 
 def main():
+    """Fetch all data and write the five generated SVG cards into assets/."""
     lang_data, stats_data = fetch_data()
     productive_time = fetch_productive_time()
     daily = fetch_daily_contributions(31)
