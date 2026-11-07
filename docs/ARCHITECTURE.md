@@ -21,3 +21,7 @@ Profile views, followers, stars, tech badges, the typing animation and the divid
 ## Profile details card
 
 `assets/profile-details.svg` is fetched from a public card service by the same workflow. If the service is unavailable the step exits cleanly and the cached file is kept.
+
+## 3D contribution graph
+
+`3d-contrib.yml` runs `yoshi389111/github-profile-3d-contrib` with `.github/3d-contrib-settings.json` and commits the result to `profile-3d-contrib/`. The README embeds `profile-custom.svg`.
