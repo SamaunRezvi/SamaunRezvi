@@ -54,6 +54,7 @@ def gql(query, variables):
 
 
 def fetch_data():
+    """Fetch the top 5 languages by repo size and the stats rows (stars, commits, PRs, issues, contributed-to)."""
     query = """
     query($login: String!) {
       user(login: $login) {
