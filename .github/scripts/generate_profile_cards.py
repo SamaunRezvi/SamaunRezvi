@@ -422,6 +422,7 @@ def build_stats_card(stats_data):
 def arc_path(cx, cy, r_outer, r_inner, a0, a1):
     """Build the SVG path of one donut segment between angles a0 and a1 (radians)."""
     def pt(r, a):
+        """Convert a radius and angle to x/y coordinates around the donut centre."""
         return (cx + r * math.sin(a), cy - r * math.cos(a))
 
     x1, y1 = pt(r_outer, a0)
