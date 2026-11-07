@@ -9,6 +9,10 @@ on:
     branches:
       - main
 
+concurrency:
+  group: 3d-contrib
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
