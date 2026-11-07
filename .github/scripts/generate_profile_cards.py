@@ -387,6 +387,7 @@ def fetch_daily_contributions(days=31):
 
 
 def card_shell(title, width, height, body_svg):
+    """Wrap body SVG in the shared card frame (background, border and title)."""
     stroke_pct_w = ((width - 2) / width) * 100
     stroke_pct_h = ((height - 2) / height) * 100
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
