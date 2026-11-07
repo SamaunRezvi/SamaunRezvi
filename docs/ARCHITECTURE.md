@@ -17,3 +17,7 @@ Profile views, followers, stars, tech badges, the typing animation and the divid
 | `assets/productive-time.svg` | Commits per hour of day |
 | `assets/contribution-activity.svg` | Last 31 days of activity |
 | `assets/streak-stats.svg` | Total, current and longest streak |
+
+## Profile details card
+
+`assets/profile-details.svg` is fetched from a public card service by the same workflow. If the service is unavailable the step exits cleanly and the cached file is kept.
