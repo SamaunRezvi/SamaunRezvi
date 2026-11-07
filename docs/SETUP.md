@@ -34,3 +34,9 @@ GITHUB_TOKEN=<token> USERNAME=<your-username> UTC_OFFSET=6 python .github/script
 ```
 
 The script writes the generated SVG cards into `assets/`. `UTC_OFFSET` shifts the commit-hour chart to your local time.
+
+## Troubleshooting
+
+- **Push rejected in a workflow:** the bot commits to `main` too. The workflows already fetch and rebase before retrying.
+- **Cards look stale:** images are cached by GitHub; wait a few minutes or hard refresh.
+- **A card is empty:** check that `PROFILE_PAT` exists and has not expired.
