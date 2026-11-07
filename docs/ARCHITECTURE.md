@@ -5,3 +5,15 @@ The profile `README.md` is static markup. Everything dynamic is either fetched l
 ## Live badges
 
 Profile views, followers, stars, tech badges, the typing animation and the divider lines are image URLs rendered on request by external services. They store no data in this repository.
+
+## Generated cards
+
+`.github/scripts/generate_profile_cards.py` queries the GitHub GraphQL API and writes these files:
+
+| File | Content |
+| --- | --- |
+| `assets/top-languages.svg` | Top languages by repo size |
+| `assets/commit-stats.svg` | Stars, commits, PRs, issues |
+| `assets/productive-time.svg` | Commits per hour of day |
+| `assets/contribution-activity.svg` | Last 31 days of activity |
+| `assets/streak-stats.svg` | Total, current and longest streak |
