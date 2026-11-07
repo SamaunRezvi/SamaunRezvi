@@ -25,3 +25,7 @@ Profile views, followers, stars, tech badges, the typing animation and the divid
 ## 3D contribution graph
 
 `3d-contrib.yml` runs `yoshi389111/github-profile-3d-contrib` with `.github/3d-contrib-settings.json` and commits the result to `profile-3d-contrib/`. The README embeds `profile-custom.svg`.
+
+## Snake animation
+
+`snake.yml` renders the contribution grid snake with `Platane/snk` and publishes it to the `output` branch. The README references the files there through raw URLs.
