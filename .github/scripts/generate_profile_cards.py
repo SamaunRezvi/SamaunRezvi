@@ -471,6 +471,7 @@ CHART_COLOR = "#40c463"
 
 
 def build_productive_time_card(chart_data, utc_offset):
+    """Render the commits-per-hour bar chart card SVG."""
     width, height, x_padding, y_padding = 340, 200, 30, 40
     chart_width = width - 60
     chart_height = 100
