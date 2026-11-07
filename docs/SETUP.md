@@ -21,3 +21,7 @@ The workflows read contribution data through the GraphQL API using a personal ac
 | `snake.yml` | every 12 hours | `output` branch |
 
 All three can also be started manually (`workflow_dispatch`) and run on every push to `main`.
+
+## 3D graph colours
+
+Colours for the 3D contribution graph live in `.github/3d-contrib-settings.json`. The `season` type takes four palettes (`contribColors1` to `contribColors4`); the first colour of each palette is the tile base for that part of the year. Edit the file, push, and the workflow regenerates `profile-3d-contrib/profile-custom.svg`.
