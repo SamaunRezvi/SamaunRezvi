@@ -12,3 +12,4 @@ Notable changes to this profile repository.
 ## 2026-11-07
 
 - Added docstrings to the card generation script.
+- Added job timeouts and concurrency groups to the workflows, plus Dependabot for Actions.
