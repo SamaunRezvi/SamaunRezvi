@@ -25,3 +25,12 @@ All three can also be started manually (`workflow_dispatch`) and run on every pu
 ## 3D graph colours
 
 Colours for the 3D contribution graph live in `.github/3d-contrib-settings.json`. The `season` type takes four palettes (`contribColors1` to `contribColors4`); the first colour of each palette is the tile base for that part of the year. Edit the file, push, and the workflow regenerates `profile-3d-contrib/profile-custom.svg`.
+
+## Running the card script locally
+
+```bash
+pip install requests
+GITHUB_TOKEN=<token> USERNAME=<your-username> UTC_OFFSET=6 python .github/scripts/generate_profile_cards.py
+```
+
+The script writes the generated SVG cards into `assets/`. `UTC_OFFSET` shifts the commit-hour chart to your local time.
