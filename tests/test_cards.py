@@ -50,3 +50,7 @@ class ArcPathTests(unittest.TestCase):
     def test_starts_at_top_of_circle_for_zero_angle(self):
         d = cards.arc_path(0, 0, 10, 5, 0, math.pi / 2)
         self.assertTrue(d.startswith("M0.000,-10.000"))
+
+    def test_small_sweep_uses_small_arc_flag(self):
+        d = cards.arc_path(0, 0, 10, 5, 0, math.pi / 2)
+        self.assertIn(" 0 0 1 ", d)
