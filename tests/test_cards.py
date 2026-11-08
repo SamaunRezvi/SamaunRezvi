@@ -72,3 +72,6 @@ class CardShellTests(unittest.TestCase):
     def test_body_is_included(self):
         svg = cards.card_shell("T", 100, 50, '<circle id="x"></circle>')
         self.assertIn('<circle id="x"></circle>', svg)
+
+    def test_is_well_formed_xml(self):
+        parse(cards.card_shell("T", 100, 50, ""))
