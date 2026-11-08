@@ -68,3 +68,7 @@ class CardShellTests(unittest.TestCase):
     def test_declares_width_height_and_viewbox(self):
         svg = cards.card_shell("T", 340, 200, "")
         self.assertIn('width="340" height="200" viewBox="0 0 340 200"', svg)
+
+    def test_body_is_included(self):
+        svg = cards.card_shell("T", 100, 50, '<circle id="x"></circle>')
+        self.assertIn('<circle id="x"></circle>', svg)
