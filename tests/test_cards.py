@@ -85,3 +85,8 @@ class StatsCardTests(unittest.TestCase):
         svg = cards.build_stats_card(STATS)
         for _, label, _ in STATS:
             self.assertIn(label, svg)
+
+    def test_contains_every_value(self):
+        svg = cards.build_stats_card(STATS)
+        for _, _, value in STATS:
+            self.assertIn(f">{value}<", svg)
