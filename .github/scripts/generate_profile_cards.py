@@ -404,7 +404,7 @@ def card_shell(title: str, width: int, height: int, body_svg: str) -> str:
 </svg>'''
 
 
-def build_stats_card(stats_data):
+def build_stats_card(stats_data: list) -> str:
     """Render the Stats card SVG from (icon, label, value) rows."""
     width, height = 340, 200
     label_h = 14
