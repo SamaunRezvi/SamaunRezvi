@@ -281,7 +281,7 @@ def fetch_streak_stats() -> dict:
     else:
         cur_start = cur_end = None
 
-    def fmt(d):
+    def fmt(d: datetime.date | None) -> str:
         """Format a date such as "Nov 7, 2026", or "-" when there is no date."""
         return d.strftime("%b %-d, %Y") if d else "-"
 
