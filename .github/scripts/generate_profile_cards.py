@@ -554,7 +554,7 @@ def build_activity_graph(daily: list) -> str:
         """Return the x position of the i-th day on the plot."""
         return x_padding + step_x * i
 
-    def py(v):
+    def py(v: float) -> float:
         """Return the y position of a contribution value on the plot."""
         return y_padding + plot_h - (v / y_max) * plot_h
 
