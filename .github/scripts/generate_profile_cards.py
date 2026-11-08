@@ -472,7 +472,7 @@ def build_donut_card(lang_data: list) -> str:
 CHART_COLOR = "#40c463"
 
 
-def build_productive_time_card(chart_data, utc_offset):
+def build_productive_time_card(chart_data: list, utc_offset: float) -> str:
     """Render the commits-per-hour bar chart card SVG."""
     width, height, x_padding, y_padding = 340, 200, 30, 40
     chart_width = width - 60
