@@ -54,3 +54,7 @@ class ArcPathTests(unittest.TestCase):
     def test_small_sweep_uses_small_arc_flag(self):
         d = cards.arc_path(0, 0, 10, 5, 0, math.pi / 2)
         self.assertIn(" 0 0 1 ", d)
+
+    def test_large_sweep_uses_large_arc_flag(self):
+        d = cards.arc_path(0, 0, 10, 5, 0, math.pi * 1.5)
+        self.assertIn(" 0 1 1 ", d)
