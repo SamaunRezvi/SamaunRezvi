@@ -146,3 +146,10 @@ class ActivityGraphTests(unittest.TestCase):
 
     def test_is_well_formed_xml(self):
         parse(cards.build_activity_graph(DAILY))
+
+
+class StreakCardTests(unittest.TestCase):
+    def test_shows_current_and_longest_streak(self):
+        svg = cards.build_streak_card(STREAK)
+        self.assertIn(">4<", svg)
+        self.assertIn(">21<", svg)
