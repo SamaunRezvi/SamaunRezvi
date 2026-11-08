@@ -484,7 +484,7 @@ def build_productive_time_card(chart_data: list, utc_offset: float) -> str:
     bandwidth = step * (1 - padding)
     start_adj = (chart_width - step * (n - padding)) * 0.5
 
-    def band_x(i):
+    def band_x(i: int) -> float:
         """Return the left x position of the bar for hour index i."""
         return start_adj + step * i
 
