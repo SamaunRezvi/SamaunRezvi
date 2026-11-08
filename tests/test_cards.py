@@ -153,3 +153,8 @@ class StreakCardTests(unittest.TestCase):
         svg = cards.build_streak_card(STREAK)
         self.assertIn(">4<", svg)
         self.assertIn(">21<", svg)
+
+    def test_shows_all_labels(self):
+        svg = cards.build_streak_card(STREAK)
+        for label in ("Total Contributions", "Current Streak", "Longest Streak"):
+            self.assertIn(label, svg)
