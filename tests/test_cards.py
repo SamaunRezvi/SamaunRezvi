@@ -136,3 +136,7 @@ class ProductiveTimeCardTests(unittest.TestCase):
 class ActivityGraphTests(unittest.TestCase):
     def test_has_activity_title(self):
         self.assertIn("Contribution Activity", cards.build_activity_graph(DAILY))
+
+    def test_one_dot_per_day(self):
+        svg = cards.build_activity_graph(DAILY)
+        self.assertEqual(svg.count('r="2.5"'), len(DAILY))
