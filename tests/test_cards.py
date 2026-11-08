@@ -158,3 +158,6 @@ class StreakCardTests(unittest.TestCase):
         svg = cards.build_streak_card(STREAK)
         for label in ("Total Contributions", "Current Streak", "Longest Streak"):
             self.assertIn(label, svg)
+
+    def test_is_well_formed_xml(self):
+        parse(cards.build_streak_card(STREAK))
