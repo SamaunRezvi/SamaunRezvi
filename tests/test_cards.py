@@ -93,3 +93,8 @@ class StatsCardTests(unittest.TestCase):
 
     def test_is_well_formed_xml(self):
         parse(cards.build_stats_card(STATS))
+
+
+class DonutCardTests(unittest.TestCase):
+    def test_has_top_languages_title(self):
+        self.assertIn("Top Languages by Repo", cards.build_donut_card(LANGS))
