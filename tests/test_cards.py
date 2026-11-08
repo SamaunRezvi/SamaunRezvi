@@ -143,3 +143,6 @@ class ActivityGraphTests(unittest.TestCase):
 
     def test_all_zero_days_are_well_formed(self):
         parse(cards.build_activity_graph([(d, 0) for d in range(1, 32)]))
+
+    def test_is_well_formed_xml(self):
+        parse(cards.build_activity_graph(DAILY))
