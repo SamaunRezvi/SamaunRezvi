@@ -550,7 +550,7 @@ def build_activity_graph(daily: list) -> str:
     n = len(daily)
     step_x = plot_w / max(1, n - 1)
 
-    def px(i):
+    def px(i: int) -> float:
         """Return the x position of the i-th day on the plot."""
         return x_padding + step_x * i
 
