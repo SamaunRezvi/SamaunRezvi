@@ -80,3 +80,8 @@ class CardShellTests(unittest.TestCase):
 class StatsCardTests(unittest.TestCase):
     def test_has_stats_title(self):
         self.assertIn(">Stats<", cards.build_stats_card(STATS))
+
+    def test_contains_every_label(self):
+        svg = cards.build_stats_card(STATS)
+        for _, label, _ in STATS:
+            self.assertIn(label, svg)
