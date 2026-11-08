@@ -58,3 +58,9 @@ class ArcPathTests(unittest.TestCase):
     def test_large_sweep_uses_large_arc_flag(self):
         d = cards.arc_path(0, 0, 10, 5, 0, math.pi * 1.5)
         self.assertIn(" 0 1 1 ", d)
+
+
+class CardShellTests(unittest.TestCase):
+    def test_title_is_xml_escaped(self):
+        svg = cards.card_shell("A & B", 100, 50, "")
+        self.assertIn("A &amp; B", svg)
