@@ -102,3 +102,8 @@ class DonutCardTests(unittest.TestCase):
     def test_one_segment_per_language(self):
         svg = cards.build_donut_card(LANGS)
         self.assertEqual(svg.count("<path d=\"M"), len(LANGS))
+
+    def test_legend_lists_language_names(self):
+        svg = cards.build_donut_card(LANGS)
+        for lang in LANGS:
+            self.assertIn(lang["name"], svg)
