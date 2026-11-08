@@ -124,3 +124,7 @@ class ProductiveTimeCardTests(unittest.TestCase):
     def test_title_shows_positive_offset(self):
         svg = cards.build_productive_time_card([0] * 24, 6)
         self.assertIn("Commits (UTC +6.00)", svg)
+
+    def test_title_shows_negative_offset(self):
+        svg = cards.build_productive_time_card([0] * 24, -5)
+        self.assertIn("Commits (UTC -5.00)", svg)
