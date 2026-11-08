@@ -90,3 +90,6 @@ class StatsCardTests(unittest.TestCase):
         svg = cards.build_stats_card(STATS)
         for _, _, value in STATS:
             self.assertIn(f">{value}<", svg)
+
+    def test_is_well_formed_xml(self):
+        parse(cards.build_stats_card(STATS))
