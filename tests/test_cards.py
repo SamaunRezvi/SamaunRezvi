@@ -107,3 +107,7 @@ class DonutCardTests(unittest.TestCase):
         svg = cards.build_donut_card(LANGS)
         for lang in LANGS:
             self.assertIn(lang["name"], svg)
+
+    def test_zero_total_does_not_crash(self):
+        zero = [{"name": "A", "value": 0, "color": "#000000"}]
+        parse(cards.build_donut_card(zero))
