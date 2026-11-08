@@ -131,3 +131,8 @@ class ProductiveTimeCardTests(unittest.TestCase):
 
     def test_all_zero_data_is_well_formed(self):
         parse(cards.build_productive_time_card([0] * 24, 6))
+
+
+class ActivityGraphTests(unittest.TestCase):
+    def test_has_activity_title(self):
+        self.assertIn("Contribution Activity", cards.build_activity_graph(DAILY))
