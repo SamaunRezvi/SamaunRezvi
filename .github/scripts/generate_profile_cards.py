@@ -490,7 +490,7 @@ def build_productive_time_card(chart_data: list, utc_offset: float) -> str:
 
     y_max = max(max(chart_data), 1)
 
-    def y(v):
+    def y(v: float) -> float:
         """Map a commit count to its y position on the chart."""
         return chart_height - (v / y_max) * chart_height
 
