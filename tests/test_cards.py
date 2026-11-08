@@ -120,3 +120,7 @@ class ProductiveTimeCardTests(unittest.TestCase):
     def test_draws_24_bars(self):
         svg = cards.build_productive_time_card([1] * 24, 6)
         self.assertEqual(svg.count(f'fill="{cards.CHART_COLOR}"'), 24)
+
+    def test_title_shows_positive_offset(self):
+        svg = cards.build_productive_time_card([0] * 24, 6)
+        self.assertIn("Commits (UTC +6.00)", svg)
