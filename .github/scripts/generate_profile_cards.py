@@ -423,7 +423,7 @@ def build_stats_card(stats_data: list) -> str:
 
 def arc_path(cx: float, cy: float, r_outer: float, r_inner: float, a0: float, a1: float) -> str:
     """Build the SVG path of one donut segment between angles a0 and a1 (radians)."""
-    def pt(r, a):
+    def pt(r: float, a: float) -> tuple:
         """Convert a radius and angle to x/y coordinates around the donut centre."""
         return (cx + r * math.sin(a), cy - r * math.cos(a))
 
