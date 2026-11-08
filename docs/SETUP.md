@@ -40,3 +40,14 @@ The script writes the generated SVG cards into `assets/`. `UTC_OFFSET` shifts th
 - **Push rejected in a workflow:** the bot commits to `main` too. The workflows already fetch and rebase before retrying.
 - **Cards look stale:** images are cached by GitHub; wait a few minutes or hard refresh.
 - **A card is empty:** check that `PROFILE_PAT` exists and has not expired.
+
+## Tests
+
+The SVG builders have unit tests in `tests/`. Run them with:
+
+```bash
+pip install requests
+python -m unittest discover -s tests -v
+```
+
+The `Tests` workflow runs the same command on every push and pull request.

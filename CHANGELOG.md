@@ -13,3 +13,8 @@ Notable changes to this profile repository.
 
 - Added docstrings to the card generation script.
 - Added job timeouts and concurrency groups to the workflows, plus Dependabot for Actions.
+
+## 2026-11-08
+
+- Added type hints to the card generation script.
+- Added unit tests for the SVG card builders and a workflow that runs them.
