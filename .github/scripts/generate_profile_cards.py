@@ -138,7 +138,7 @@ def fetch_data() -> tuple:
     return lang_data, stats_data
 
 
-def fetch_productive_time():
+def fetch_productive_time() -> list:
     """Return 24 commit counts, one per hour of day (shifted by UTC_OFFSET), for the last year."""
     id_query = """
     query($login: String!) {
