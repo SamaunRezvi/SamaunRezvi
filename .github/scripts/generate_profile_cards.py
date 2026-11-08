@@ -438,7 +438,7 @@ def arc_path(cx: float, cy: float, r_outer: float, r_inner: float, a0: float, a1
     )
 
 
-def build_donut_card(lang_data):
+def build_donut_card(lang_data: list) -> str:
     """Render the Top Languages donut card SVG."""
     width, height, x_padding, y_padding = 340, 200, 30, 40
     margin = 10
