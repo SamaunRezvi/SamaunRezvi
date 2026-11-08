@@ -615,7 +615,7 @@ def build_activity_graph(daily: list) -> str:
     return svg.replace(f'fill:{TITLE_COLOR}', f'fill:{ACTIVITY_TITLE}')
 
 
-def main():
+def main() -> None:
     """Fetch all data and write the five generated SVG cards into assets/."""
     lang_data, stats_data = fetch_data()
     productive_time = fetch_productive_time()
