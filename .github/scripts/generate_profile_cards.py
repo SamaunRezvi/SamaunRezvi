@@ -54,7 +54,7 @@ def gql(query: str, variables: dict) -> dict:
     return data["data"]
 
 
-def fetch_data():
+def fetch_data() -> tuple:
     """Fetch the top 5 languages by repo size and the stats rows (stars, commits, PRs, issues, contributed-to)."""
     query = """
     query($login: String!) {
