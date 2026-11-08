@@ -199,7 +199,7 @@ def fetch_productive_time() -> list:
     return chart_data
 
 
-def fetch_streak_stats():
+def fetch_streak_stats() -> dict:
     """Compute total contributions plus the current and longest streaks with their date ranges."""
     meta_query = """
     query($login: String!) {
