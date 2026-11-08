@@ -388,7 +388,7 @@ def fetch_daily_contributions(days: int = 31) -> list:
     return result
 
 
-def card_shell(title, width, height, body_svg):
+def card_shell(title: str, width: int, height: int, body_svg: str) -> str:
     """Wrap body SVG in the shared card frame (background, border and title)."""
     stroke_pct_w = ((width - 2) / width) * 100
     stroke_pct_h = ((height - 2) / height) * 100
