@@ -352,7 +352,7 @@ def build_streak_card(stats: dict) -> str:
     )
 
 
-def fetch_daily_contributions(days=31):
+def fetch_daily_contributions(days: int = 31) -> list:
     """Return (day of month, contribution count) pairs for the last `days` days."""
     until = datetime.datetime.now(datetime.timezone.utc).date() + datetime.timedelta(days=1)
     since = until - datetime.timedelta(days=days)
