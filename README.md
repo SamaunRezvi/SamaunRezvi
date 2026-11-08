@@ -27,9 +27,9 @@
 
 <br /><br />
 
-<img alt="Full-Stack Developer" src="https://img.shields.io/badge/Full--Stack_Developer-0d1117?style=flat-square&logo=react&logoColor=61DAFB" height="26" />
-<img alt="UI/UX Minded" src="https://img.shields.io/badge/UI/UX_Minded-0d1117?style=flat-square&logo=figma&logoColor=FF7262" height="26" />
-<img alt="Open to Work" src="https://img.shields.io/badge/Open_to_Work-0d1117?style=flat-square&logo=github&logoColor=FFFFFF" height="26" />
+<img alt="Full-Stack Developer" src="assets/badges/full-stack-developer-0d1117-f24287ef.svg" height="26" />
+<img alt="UI/UX Minded" src="assets/badges/ui-ux-minded-0d1117-521c43f1.svg" height="26" />
+<img alt="Open to Work" src="assets/badges/open-to-work-0d1117-841de77a.svg" height="26" />
 
 <br /><br />
 
@@ -39,13 +39,13 @@
 
 <br /><br />
 
-<a href="https://www.linkedin.com/in/samaun-rezvi-a17a6316a"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzNGQjk1MCIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyNSAweiIvPjwvc3ZnPg==" height="34" /></a>
+<a href="https://www.linkedin.com/in/samaun-rezvi-a17a6316a"><img alt="LinkedIn" src="assets/badges/linkedin-0d1117-b5d005d4.svg" height="34" /></a>
 &nbsp;
-<a href="mailto:samaunrezvi9@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=FF7B72" height="34" /></a>
+<a href="mailto:samaunrezvi9@gmail.com"><img alt="Email" src="assets/badges/email-0d1117-698f669d.svg" height="34" /></a>
 &nbsp;
-<a href="https://www.facebook.com/share/1Jun91Hjzc/"><img alt="Facebook" src="https://img.shields.io/badge/Facebook-0d1117?style=for-the-badge&logo=facebook&logoColor=58A6FF" height="34" /></a>
+<a href="https://www.facebook.com/share/1Jun91Hjzc/"><img alt="Facebook" src="assets/badges/facebook-0d1117-bf948fbb.svg" height="34" /></a>
 &nbsp;
-<a href="https://www.instagram.com/samaunrezvi_617/"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-0d1117?style=for-the-badge&logo=instagram&logoColor=F778BA" height="34" /></a>
+<a href="https://www.instagram.com/samaunrezvi_617/"><img alt="Instagram" src="assets/badges/instagram-0d1117-f51799ba.svg" height="34" /></a>
 
 <br /><br />
 
@@ -55,14 +55,14 @@
 
 <br /><br />
 
-<img alt="Next.js" src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" height="26" />
-<img alt="React" src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=61DAFB" height="26" />
-<img alt="Node.js" src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=C9D1D9" height="26" />
-<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=58A6FF" height="26" />
+<img alt="Next.js" src="assets/badges/next-js-0d1117-852d2331.svg" height="26" />
+<img alt="React" src="assets/badges/react-0d1117-c20e2c1c.svg" height="26" />
+<img alt="Node.js" src="assets/badges/node-js-0d1117-72c45120.svg" height="26" />
+<img alt="TypeScript" src="assets/badges/typescript-0d1117-5915b376.svg" height="26" />
 <br />
-<img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=79C0FF" height="26" />
-<img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-0d1117?style=flat-square&logo=tailwindcss&logoColor=38BDF8" height="26" />
-<img alt="Python" src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=FFD43B" height="26" />
+<img alt="PostgreSQL" src="assets/badges/postgresql-0d1117-978ebdcc.svg" height="26" />
+<img alt="Tailwind CSS" src="assets/badges/tailwind-css-0d1117-3a8f0189.svg" height="26" />
+<img alt="Python" src="assets/badges/python-0d1117-2d0ca898.svg" height="26" />
 
 <br /><br />
 
@@ -89,25 +89,25 @@
 <table align="center">
 <tr>
 <td align="center" width="170">
-<img alt="WORK" src="https://img.shields.io/badge/WORK-58A6FF?style=flat-square" /><br />
+<img alt="WORK" src="assets/badges/work-58a6ff-b88cf6d9.svg" /><br />
 <h1>15+</h1>
 <b>PROJECTS</b><br />
 <sub>across web and data</sub>
 </td>
 <td align="center" width="170">
-<img alt="STACK" src="https://img.shields.io/badge/STACK-BC8CFF?style=flat-square" /><br />
+<img alt="STACK" src="assets/badges/stack-bc8cff-83e29346.svg" /><br />
 <h1>10+</h1>
 <b>TECHNOLOGIES</b><br />
 <sub>in active use</sub>
 </td>
 <td align="center" width="170">
-<img alt="REACH" src="https://img.shields.io/badge/REACH-58A6FF?style=flat-square" /><br />
+<img alt="REACH" src="assets/badges/reach-58a6ff-367641ea.svg" /><br />
 <h1>2</h1>
 <b>LANGUAGES</b><br />
 <sub>Bengali and English</sub>
 </td>
 <td align="center" width="170">
-<img alt="OWNERSHIP" src="https://img.shields.io/badge/OWNERSHIP-F0883E?style=flat-square" /><br />
+<img alt="OWNERSHIP" src="assets/badges/ownership-f0883e-f1abaa74.svg" /><br />
 <h1>99.9%</h1>
 <b>END TO END</b><br />
 <sub>design through deploy</sub>
@@ -124,14 +124,14 @@ I build systems where people in different roles use the same data for different 
 <table align="center">
 <tr>
 <td width="50%" valign="top" align="left">
-<img alt="" src="https://img.shields.io/badge/01-58A6FF?style=flat-square" />
+<img alt="" src="assets/badges/01-58a6ff-f8da95c6.svg" />
 <br /><br />
 <b>Missing data is shown as missing</b><br />
 <sub><code>renderQualityState()</code></sub>
 <p align="justify"><sub>If a sensor has not reported, the interface says so. It never renders a zero, because a zero is a reading and an absence is not. Every value carries a quality state and an origin, so an estimate is never mistaken for a measurement.</sub></p>
 </td>
 <td width="50%" valign="top" align="left">
-<img alt="" src="https://img.shields.io/badge/02-BC8CFF?style=flat-square" />
+<img alt="" src="assets/badges/02-bc8cff-0df93f88.svg" />
 <br /><br />
 <b>Permissions live where the data lives</b><br />
 <sub><code>scopeToJurisdiction()</code></sub>
@@ -140,14 +140,14 @@ I build systems where people in different roles use the same data for different 
 </tr>
 <tr>
 <td width="50%" valign="top" align="left">
-<img alt="" src="https://img.shields.io/badge/03-BC8CFF?style=flat-square" />
+<img alt="" src="assets/badges/03-bc8cff-eb6916f5.svg" />
 <br /><br />
 <b>Offline is a state, not an error</b><br />
 <sub><code>queueAndSync()</code></sub>
 <p align="justify"><sub>Field forms queue locally and sync when connectivity returns. Endpoints are idempotent, so a retried submission never duplicates a record. Maps fall back to a list view when tiles fail.</sub></p>
 </td>
 <td width="50%" valign="top" align="left">
-<img alt="" src="https://img.shields.io/badge/04-F0883E?style=flat-square" />
+<img alt="" src="assets/badges/04-f0883e-28add1ae.svg" />
 <br /><br />
 <b>Scope boundaries are deliberate</b><br />
 <sub><code>defineBoundary()</code></sub>
@@ -162,7 +162,7 @@ I build systems where people in different roles use the same data for different 
 
 <br /><br />
 
-<img alt="CURRENTLY BUILDING" src="https://img.shields.io/badge/●_CURRENTLY_BUILDING-F0883E?style=flat-square&labelColor=0d1117" height="24" />
+<img alt="CURRENTLY BUILDING" src="assets/badges/currently-building-f0883e-f4d12bb1.svg" height="24" />
 
 <br />
 
@@ -193,77 +193,77 @@ I build systems where people in different roles use the same data for different 
 <table align="center">
 <tr>
 <td align="right" valign="middle" width="200">
-<img alt="" src="https://img.shields.io/badge/01-58A6FF?style=flat-square&labelColor=0d1117" /><br />
+<img alt="" src="assets/badges/01-58a6ff-1cad464c.svg" /><br />
 <b><code>Languages</code></b>
 </td>
 <td align="left" valign="middle">
-<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" />
-<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" />
-<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" />
-<img alt="Java" src="https://img.shields.io/badge/Java-ED8B00?logo=openjdk&logoColor=white" />
-<img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" />
-<img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" />
+<img alt="TypeScript" src="assets/badges/typescript-3178c6-31bd1b98.svg" />
+<img alt="JavaScript" src="assets/badges/javascript-f7df1e-37247dd9.svg" />
+<img alt="Python" src="assets/badges/python-3776ab-cad7faa5.svg" />
+<img alt="Java" src="assets/badges/java-ed8b00-f7ed3bc4.svg" />
+<img alt="HTML5" src="assets/badges/html5-e34f26-662ba3d5.svg" />
+<img alt="CSS3" src="assets/badges/css3-1572b6-cca199c2.svg" />
 </td>
 </tr>
 <tr>
 <td align="right" valign="middle">
-<img alt="" src="https://img.shields.io/badge/02-BC8CFF?style=flat-square&labelColor=0d1117" /><br />
+<img alt="" src="assets/badges/02-bc8cff-f3b01fa8.svg" /><br />
 <b><code>Frontend</code></b>
 </td>
 <td align="left" valign="middle">
-<img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white" />
-<img alt="React" src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" />
-<img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=white" />
-<img alt="Vite" src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white" />
-<img alt="Framer Motion" src="https://img.shields.io/badge/Framer%20Motion-0055FF?logo=framer&logoColor=white" />
-<img alt="Recharts" src="https://img.shields.io/badge/Recharts-FF6384?logo=chartdotjs&logoColor=white" />
-<img alt="Lucide" src="https://img.shields.io/badge/Lucide-F56565?logo=lucide&logoColor=white" />
-<img alt="Leaflet" src="https://img.shields.io/badge/Leaflet-4C9BE8?logo=leaflet&logoColor=white" />
+<img alt="Next.js" src="assets/badges/next-js-000000-60c80ad0.svg" />
+<img alt="React" src="assets/badges/react-61dafb-ed24dda4.svg" />
+<img alt="Tailwind CSS" src="assets/badges/tailwind-css-06b6d4-88a442ca.svg" />
+<img alt="Vite" src="assets/badges/vite-646cff-b0fa2831.svg" />
+<img alt="Framer Motion" src="assets/badges/framer-motion-0055ff-540f68d0.svg" />
+<img alt="Recharts" src="assets/badges/recharts-ff6384-dff1cafc.svg" />
+<img alt="Lucide" src="assets/badges/lucide-f56565-3d25177b.svg" />
+<img alt="Leaflet" src="assets/badges/leaflet-4c9be8-3c5c5bfa.svg" />
 </td>
 </tr>
 <tr>
 <td align="right" valign="middle">
-<img alt="" src="https://img.shields.io/badge/03-39D0D8?style=flat-square&labelColor=0d1117" /><br />
+<img alt="" src="assets/badges/03-39d0d8-878a9ff8.svg" /><br />
 <b><code>Backend-Data</code></b>
 </td>
 <td align="left" valign="middle">
-<img alt="Node.js" src="https://img.shields.io/badge/Node.js-68778C?logo=nodedotjs&logoColor=white" />
-<img alt="Prisma" src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white" />
-<img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" />
-<img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" />
-<img alt="SQLite" src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white" />
-<img alt="Zod" src="https://img.shields.io/badge/Zod-3E67B1?logo=zod&logoColor=white" />
-<img alt="REST APIs" src="https://img.shields.io/badge/REST%20APIs-E3B341" />
-<img alt="IndexedDB" src="https://img.shields.io/badge/IndexedDB-4285F4?logo=googlechrome&logoColor=white" />
+<img alt="Node.js" src="assets/badges/node-js-68778c-f21e2af6.svg" />
+<img alt="Prisma" src="assets/badges/prisma-2d3748-39459060.svg" />
+<img alt="PostgreSQL" src="assets/badges/postgresql-4169e1-76d42b13.svg" />
+<img alt="MySQL" src="assets/badges/mysql-4479a1-4d5d33e2.svg" />
+<img alt="SQLite" src="assets/badges/sqlite-003b57-fe82b21c.svg" />
+<img alt="Zod" src="assets/badges/zod-3e67b1-790c0d99.svg" />
+<img alt="REST APIs" src="assets/badges/rest-apis-e3b341-07c63455.svg" />
+<img alt="IndexedDB" src="assets/badges/indexeddb-4285f4-0d2e5fce.svg" />
 </td>
 </tr>
 <tr>
 <td align="right" valign="middle">
-<img alt="" src="https://img.shields.io/badge/04-F0883E?style=flat-square&labelColor=0d1117" /><br />
+<img alt="" src="assets/badges/04-f0883e-1e37ef0f.svg" /><br />
 <b><code>Architecture</code></b>
 </td>
 <td align="left" valign="middle">
-<img alt="Role-based Access Control" src="https://img.shields.io/badge/Role--based%20Access%20Control-58A6FF" />
-<img alt="Offline-first Sync" src="https://img.shields.io/badge/Offline--first%20Sync-BC8CFF" />
-<img alt="Design Systems" src="https://img.shields.io/badge/Design%20Systems-F778BA" />
-<img alt="Internationalisation" src="https://img.shields.io/badge/Internationalisation-39D0D8" />
-<img alt="Accessibility" src="https://img.shields.io/badge/Accessibility-F778BA" />
+<img alt="Role-based Access Control" src="assets/badges/role-based-access-control-58a6ff-67516a45.svg" />
+<img alt="Offline-first Sync" src="assets/badges/offline-first-sync-bc8cff-82d4f638.svg" />
+<img alt="Design Systems" src="assets/badges/design-systems-f778ba-6b90a3df.svg" />
+<img alt="Internationalisation" src="assets/badges/internationalisation-39d0d8-f6aefbf2.svg" />
+<img alt="Accessibility" src="assets/badges/accessibility-f778ba-ad3efab8.svg" />
 </td>
 </tr>
 <tr>
 <td align="right" valign="middle">
-<img alt="" src="https://img.shields.io/badge/05-F778BA?style=flat-square&labelColor=0d1117" /><br />
+<img alt="" src="assets/badges/05-f778ba-c72a1b0c.svg" /><br />
 <b><code>Tooling</code></b>
 </td>
 <td align="left" valign="middle">
-<img alt="Git" src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" />
-<img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" />
-<img alt="Vercel" src="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white" />
-<img alt="Figma" src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white" />
-<img alt="VS Code" src="https://img.shields.io/badge/VS%20Code-007ACC?logo=visualstudiocode&logoColor=white" />
-<img alt="Vitest" src="https://img.shields.io/badge/Vitest-FCC72B?logo=vitest&logoColor=white" />
-<img alt="ESLint" src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white" />
-<img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black" />
+<img alt="Git" src="assets/badges/git-f05032-eac29139.svg" />
+<img alt="GitHub" src="assets/badges/github-181717-b2f5a59f.svg" />
+<img alt="Vercel" src="assets/badges/vercel-000000-78a8cc14.svg" />
+<img alt="Figma" src="assets/badges/figma-f24e1e-0de6374b.svg" />
+<img alt="VS Code" src="assets/badges/vs-code-007acc-75547e58.svg" />
+<img alt="Vitest" src="assets/badges/vitest-fcc72b-f21852bd.svg" />
+<img alt="ESLint" src="assets/badges/eslint-4b32c3-f43ed47d.svg" />
+<img alt="Linux" src="assets/badges/linux-fcc624-4366a6f7.svg" />
 </td>
 </tr>
 </table>
@@ -295,60 +295,60 @@ I build systems where people in different roles use the same data for different 
 <table align="center">
 <tr>
 <td width="34%" valign="top" align="left">
-<img alt="" src="https://img.shields.io/badge/01-58A6FF?style=flat-square&labelColor=0d1117" />
+<img alt="" src="assets/badges/01-58a6ff-1cad464c.svg" />
 <br /><br />
 <b><code>iot-monitoring/</code></b>
 <p align="justify"><sub>Real-time telemetry across a 9-role permission system and 90+ routes. Offline-capable field apps, jurisdiction-scoped access control.</sub></p>
-<img alt="Next.js" src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" />
-<img alt="Prisma" src="https://img.shields.io/badge/Prisma-0d1117?style=flat-square&logo=prisma&logoColor=A78BFA" />
-<img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=79C0FF" />
+<img alt="Next.js" src="assets/badges/next-js-0d1117-852d2331.svg" />
+<img alt="Prisma" src="assets/badges/prisma-0d1117-6d61a711.svg" />
+<img alt="PostgreSQL" src="assets/badges/postgresql-0d1117-978ebdcc.svg" />
 </td>
 <td width="33%" valign="top" align="left">
-<img alt="" src="https://img.shields.io/badge/02-BC8CFF?style=flat-square&labelColor=0d1117" />
+<img alt="" src="assets/badges/02-bc8cff-f3b01fa8.svg" />
 <br /><br />
 <b><code>competition-platform/</code></b>
 <p align="justify"><sub>Multi-role judging pipeline blending automated scoring with manual review. Live leaderboards, role-separated submission flow.</sub></p>
-<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-0d1117?style=flat-square&logo=typescript&logoColor=58A6FF" />
-<img alt="React" src="https://img.shields.io/badge/React-0d1117?style=flat-square&logo=react&logoColor=61DAFB" />
-<img alt="Zod" src="https://img.shields.io/badge/Zod-0d1117?style=flat-square&logo=zod&logoColor=7C9CFF" />
+<img alt="TypeScript" src="assets/badges/typescript-0d1117-5915b376.svg" />
+<img alt="React" src="assets/badges/react-0d1117-c20e2c1c.svg" />
+<img alt="Zod" src="assets/badges/zod-0d1117-6f721dc4.svg" />
 </td>
 <td width="33%" valign="top" align="left">
-<img alt="" src="https://img.shields.io/badge/03-F0883E?style=flat-square&labelColor=0d1117" />
+<img alt="" src="assets/badges/03-f0883e-46db82c7.svg" />
 <br /><br />
 <b><code>institutional-governance/</code></b>
 <p align="justify"><sub>Full document lifecycle management: review workflows, an immutable audit trail, and weighted contribution scoring.</sub></p>
-<img alt="Node.js" src="https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=C9D1D9" />
-<img alt="SQLite" src="https://img.shields.io/badge/SQLite-0d1117?style=flat-square&logo=sqlite&logoColor=79C0FF" />
-<img alt="Audit Trail" src="https://img.shields.io/badge/Audit_Trail-0d1117?style=flat-square&labelColor=0d1117&color=E3B341" />
+<img alt="Node.js" src="assets/badges/node-js-0d1117-72c45120.svg" />
+<img alt="SQLite" src="assets/badges/sqlite-0d1117-14cc7c48.svg" />
+<img alt="Audit Trail" src="assets/badges/audit-trail-0d1117-d090e3ee.svg" />
 </td>
 </tr>
 <tr>
 <td valign="top" align="left">
-<img alt="" src="https://img.shields.io/badge/04-F0883E?style=flat-square&labelColor=0d1117" />
+<img alt="" src="assets/badges/04-f0883e-1e37ef0f.svg" />
 <br /><br />
 <b><code>data-intelligence/</code></b>
 <p align="justify"><sub>Ingestion-to-insight pipeline with sentiment classification, trend comparison, and dashboarded reporting.</sub></p>
-<img alt="Python" src="https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=FFD43B" />
-<img alt="Vite" src="https://img.shields.io/badge/Vite-0d1117?style=flat-square&logo=vite&logoColor=BD93F9" />
-<img alt="Recharts" src="https://img.shields.io/badge/Recharts-0d1117?style=flat-square&logo=chartdotjs&logoColor=FF6384" />
+<img alt="Python" src="assets/badges/python-0d1117-2d0ca898.svg" />
+<img alt="Vite" src="assets/badges/vite-0d1117-6301ffdd.svg" />
+<img alt="Recharts" src="assets/badges/recharts-0d1117-4d2e9dc1.svg" />
 </td>
 <td valign="top" align="left">
-<img alt="" src="https://img.shields.io/badge/05-F778BA?style=flat-square&labelColor=0d1117" />
+<img alt="" src="assets/badges/05-f778ba-c72a1b0c.svg" />
 <br /><br />
 <b><code>scheduling-systems/</code></b>
 <p align="justify"><sub>Role-specific portals with approval workflows, availability management, and calendar-synced booking.</sub></p>
-<img alt="Next.js" src="https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs&logoColor=FFFFFF" />
-<img alt="Tailwind" src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwindcss&logoColor=38BDF8" />
-<img alt="RBAC" src="https://img.shields.io/badge/RBAC-0d1117?style=flat-square&labelColor=0d1117&color=58A6FF" />
+<img alt="Next.js" src="assets/badges/next-js-0d1117-852d2331.svg" />
+<img alt="Tailwind" src="assets/badges/tailwind-0d1117-5ebd0c90.svg" />
+<img alt="RBAC" src="assets/badges/rbac-0d1117-feb63608.svg" />
 </td>
 <td valign="top" align="left">
-<img alt="" src="https://img.shields.io/badge/06-39D0D8?style=flat-square&labelColor=0d1117" />
+<img alt="" src="assets/badges/06-39d0d8-016e1d9c.svg" />
 <br /><br />
 <b><code>design-systems/</code></b>
 <p align="justify"><sub>Component libraries and design tokens driving consistent, accessible, responsive interfaces.</sub></p>
-<img alt="Figma" src="https://img.shields.io/badge/Figma-0d1117?style=flat-square&logo=figma&logoColor=FF7262" />
-<img alt="Tailwind" src="https://img.shields.io/badge/Tailwind-0d1117?style=flat-square&logo=tailwindcss&logoColor=38BDF8" />
-<img alt="a11y" src="https://img.shields.io/badge/a11y-0d1117?style=flat-square&labelColor=0d1117&color=F778BA" />
+<img alt="Figma" src="assets/badges/figma-0d1117-153c1e67.svg" />
+<img alt="Tailwind" src="assets/badges/tailwind-0d1117-5ebd0c90.svg" />
+<img alt="a11y" src="assets/badges/a11y-0d1117-9098efe1.svg" />
 </td>
 </tr>
 </table>
@@ -449,16 +449,16 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img alt="" src="https://img.shields.io/badge/01-58A6FF?style=flat-square&labelColor=0d1117" />
-<img alt="Dijkstra" src="https://img.shields.io/badge/Dijkstra-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
-<img alt="" src="https://img.shields.io/badge/02-BC8CFF?style=flat-square&labelColor=0d1117" />
-<img alt="Kernighan" src="https://img.shields.io/badge/Kernighan-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
-<img alt="" src="https://img.shields.io/badge/03-E3B341?style=flat-square&labelColor=0d1117" />
-<img alt="SICP" src="https://img.shields.io/badge/SICP-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
-<img alt="" src="https://img.shields.io/badge/04-F0883E?style=flat-square&labelColor=0d1117" />
-<img alt="Fowler" src="https://img.shields.io/badge/Fowler-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
-<img alt="" src="https://img.shields.io/badge/05-F778BA?style=flat-square&labelColor=0d1117" />
-<img alt="Beck" src="https://img.shields.io/badge/Beck-0d1117?style=flat-square&labelColor=0d1117&color=161B22" />
+<img alt="" src="assets/badges/01-58a6ff-1cad464c.svg" />
+<img alt="Dijkstra" src="assets/badges/dijkstra-0d1117-050107bf.svg" />
+<img alt="" src="assets/badges/02-bc8cff-f3b01fa8.svg" />
+<img alt="Kernighan" src="assets/badges/kernighan-0d1117-b6239594.svg" />
+<img alt="" src="assets/badges/03-e3b341-09667728.svg" />
+<img alt="SICP" src="assets/badges/sicp-0d1117-c1e3731e.svg" />
+<img alt="" src="assets/badges/04-f0883e-1e37ef0f.svg" />
+<img alt="Fowler" src="assets/badges/fowler-0d1117-c56f792f.svg" />
+<img alt="" src="assets/badges/05-f778ba-c72a1b0c.svg" />
+<img alt="Beck" src="assets/badges/beck-0d1117-1298e14a.svg" />
 
 <br /><br />
 
@@ -493,17 +493,17 @@ I build systems where people in different roles use the same data for different 
 <table align="center">
 <tr>
 <td align="center" width="33%">
-<img alt="" src="https://img.shields.io/badge/01-58A6FF?style=flat-square&labelColor=0d1117" /><br /><br />
+<img alt="" src="assets/badges/01-58a6ff-1cad464c.svg" /><br /><br />
 <b><code>Full-time</code></b>
 <p align="center"><sub>Frontend, Full-Stack, and Product Engineering</sub></p>
 </td>
 <td align="center" width="33%">
-<img alt="" src="https://img.shields.io/badge/02-BC8CFF?style=flat-square&labelColor=0d1117" /><br /><br />
+<img alt="" src="assets/badges/02-bc8cff-f3b01fa8.svg" /><br /><br />
 <b><code>Freelance</code></b>
 <p align="center"><sub>Platforms, Dashboards, <br /> and Interface Work</sub></p>
 </td>
 <td align="center" width="33%">
-<img alt="" src="https://img.shields.io/badge/03-F778BA?style=flat-square&labelColor=0d1117" /><br /><br />
+<img alt="" src="assets/badges/03-f778ba-00ab8e11.svg" /><br /><br />
 <b><code>Collaboration</code></b>
 <p align="center"><sub>Open source, Side Builds, and Team Projects</sub></p>
 </td>
@@ -514,9 +514,9 @@ I build systems where people in different roles use the same data for different 
 
 <br /><br />
 
-<a href="mailto:samaunrezvi9@gmail.com"><img alt="samaunrezvi9@gmail.com" src="https://img.shields.io/badge/samaunrezvi9@gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=FF7B72&labelColor=0d1117" height="36" /></a>
+<a href="mailto:samaunrezvi9@gmail.com"><img alt="samaunrezvi9@gmail.com" src="assets/badges/samaunrezvi9-gmail-com-0d1117-afefadfe.svg" height="36" /></a>
 &nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/samaun-rezvi-a17a6316a"><img alt="LinkedIn" src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0d1117?style=for-the-badge&labelColor=0d1117&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzNGQjk1MCIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyNSAweiIvPjwvc3ZnPg==" height="36" /></a>
+<a href="https://www.linkedin.com/in/samaun-rezvi-a17a6316a"><img alt="LinkedIn" src="assets/badges/connect-on-linkedin-0d1117-de424a95.svg" height="36" /></a>
 
 <br /><br />
 
@@ -534,8 +534,8 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<a href="./LICENSE"><img alt="© 2026 SAMAUN REZVI: ALL RIGHTS RESERVED" src="https://img.shields.io/badge/©%202026%20SAMAUN%20REZVI-ALL%20RIGHTS%20RESERVED-0d1117?style=for-the-badge&labelColor=58A6FF&color=0d1117" height="30" /></a>
-<a href="./LICENSE"><img alt="LICENSE: ATTRIBUTION REQUIRED" src="https://img.shields.io/badge/LICENSE-ATTRIBUTION%20REQUIRED-0d1117?style=for-the-badge&labelColor=0d1117&color=BC8CFF" height="30" /></a>
+<a href="./LICENSE"><img alt="© 2026 SAMAUN REZVI: ALL RIGHTS RESERVED" src="assets/badges/2026-samaun-rezvi-all-rights-reserved-0-04d3b328.svg" height="30" /></a>
+<a href="./LICENSE"><img alt="LICENSE: ATTRIBUTION REQUIRED" src="assets/badges/license-attribution-required-0d1117-0644d405.svg" height="30" /></a>
 
 <br /><br />
 
