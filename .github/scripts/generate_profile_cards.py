@@ -310,7 +310,7 @@ def build_streak_card(stats: dict) -> str:
     width, height = 495, 195
     mid = width / 2
 
-    def side_block(cx, num, label, date_range):
+    def side_block(cx: float, num: int, label: str, date_range: str) -> str:
         """Render one side column (number, label, date range) of the streak card."""
         return (
             f'<text x="{cx}" y="80" text-anchor="middle" fill="{STREAK_SIDE}" '
