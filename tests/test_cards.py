@@ -75,3 +75,8 @@ class CardShellTests(unittest.TestCase):
 
     def test_is_well_formed_xml(self):
         parse(cards.card_shell("T", 100, 50, ""))
+
+
+class StatsCardTests(unittest.TestCase):
+    def test_has_stats_title(self):
+        self.assertIn(">Stats<", cards.build_stats_card(STATS))
