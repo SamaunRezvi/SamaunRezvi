@@ -114,3 +114,9 @@ class DonutCardTests(unittest.TestCase):
 
     def test_is_well_formed_xml(self):
         parse(cards.build_donut_card(LANGS))
+
+
+class ProductiveTimeCardTests(unittest.TestCase):
+    def test_draws_24_bars(self):
+        svg = cards.build_productive_time_card([1] * 24, 6)
+        self.assertEqual(svg.count(f'fill="{cards.CHART_COLOR}"'), 24)
