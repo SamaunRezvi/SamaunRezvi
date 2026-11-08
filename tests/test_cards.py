@@ -111,3 +111,6 @@ class DonutCardTests(unittest.TestCase):
     def test_zero_total_does_not_crash(self):
         zero = [{"name": "A", "value": 0, "color": "#000000"}]
         parse(cards.build_donut_card(zero))
+
+    def test_is_well_formed_xml(self):
+        parse(cards.build_donut_card(LANGS))
