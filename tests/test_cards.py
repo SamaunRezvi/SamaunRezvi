@@ -98,3 +98,7 @@ class StatsCardTests(unittest.TestCase):
 class DonutCardTests(unittest.TestCase):
     def test_has_top_languages_title(self):
         self.assertIn("Top Languages by Repo", cards.build_donut_card(LANGS))
+
+    def test_one_segment_per_language(self):
+        svg = cards.build_donut_card(LANGS)
+        self.assertEqual(svg.count("<path d=\"M"), len(LANGS))
