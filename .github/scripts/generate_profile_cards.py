@@ -305,7 +305,7 @@ STREAK_DATES = "#6E7681"
 STREAK_FONT = "'Segoe UI', Ubuntu, sans-serif"
 
 
-def build_streak_card(stats):
+def build_streak_card(stats: dict) -> str:
     """Render the streak stats card as an SVG string."""
     width, height = 495, 195
     mid = width / 2
