@@ -63,3 +63,17 @@ def sync(manifest, directory=BADGE_DIR, refresh=False, fetch=download):
             f.write(fetch(url))
         written.append(name)
     return written
+
+
+def check(manifest, directory=BADGE_DIR):
+    """Return a list of problems: badge files that are missing or not SVGs."""
+    problems = []
+    for name in manifest:
+        path = os.path.join(directory, name)
+        if not os.path.exists(path):
+            problems.append(f"missing: {name}")
+            continue
+        with open(path, "rb") as f:
+            if not is_svg(f.read()):
+                problems.append(f"not an SVG: {name}")
+    return problems
