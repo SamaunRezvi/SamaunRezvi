@@ -18,3 +18,7 @@ class HelperTests(unittest.TestCase):
 
     def test_is_svg_rejects_html(self):
         self.assertFalse(sync_badges.is_svg(b"<html>Too Many Requests</html>"))
+
+    def test_encode_url_leaves_ascii_urls_unchanged(self):
+        url = "https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs"
+        self.assertEqual(sync_badges.encode_url(url), url)
