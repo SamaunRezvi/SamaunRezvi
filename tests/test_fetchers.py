@@ -76,3 +76,8 @@ class DailyContributionTests(unittest.TestCase):
     def test_returns_one_entry_per_day(self):
         self.assertEqual(len(self.run_fetch([])), 31)
         self.assertEqual(len(self.run_fetch([], days=10)), 10)
+
+    def test_fills_missing_days_with_zero(self):
+        result = self.run_fetch([("2026-11-07", 4)])
+        self.assertIn((7, 4), result)
+        self.assertEqual(sum(count for _, count in result), 4)
