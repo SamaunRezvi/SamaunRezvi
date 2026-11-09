@@ -55,3 +55,8 @@ class GqlTests(unittest.TestCase):
     def test_returns_the_data_payload(self):
         with self.post({"data": {"user": {"id": "1"}}}):
             self.assertEqual(cards.gql("query", {}), {"user": {"id": "1"}})
+
+    def test_raises_on_graphql_errors(self):
+        with self.post({"errors": [{"message": "boom"}]}):
+            with self.assertRaises(RuntimeError):
+                cards.gql("query", {})
