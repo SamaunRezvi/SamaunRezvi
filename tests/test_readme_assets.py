@@ -23,3 +23,8 @@ class ReadmeAssetTests(unittest.TestCase):
     def test_local_images_exist(self):
         for source in LOCAL:
             self.assertTrue(os.path.exists(os.path.join(ROOT, source)), source)
+
+    def test_badge_files_are_svgs(self):
+        for source in BADGES:
+            with open(os.path.join(ROOT, source), "rb") as f:
+                self.assertTrue(f.read().lstrip().startswith(b"<svg"), source)
