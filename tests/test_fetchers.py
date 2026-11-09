@@ -189,3 +189,6 @@ class StreakTests(unittest.TestCase):
 
     def test_longest_streak_length(self):
         self.assertEqual(self.run_fetch(self.DAYS)["longest"], 3)
+
+    def test_longest_streak_range(self):
+        self.assertEqual(self.run_fetch(self.DAYS)["longest_range"], "Nov 1, 2026 - Nov 3, 2026")
