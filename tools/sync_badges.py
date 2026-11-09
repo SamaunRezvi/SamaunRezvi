@@ -77,3 +77,24 @@ def check(manifest, directory=BADGE_DIR):
             if not is_svg(f.read()):
                 problems.append(f"not an SVG: {name}")
     return problems
+
+
+def main(argv=None):
+    """Command line entry point; returns the process exit code."""
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("--check", action="store_true", help="only verify the files")
+    parser.add_argument("--refresh", action="store_true", help="re-download every badge")
+    args = parser.parse_args(argv)
+    manifest = load_manifest()
+    if args.check:
+        problems = check(manifest)
+        for problem in problems:
+            print(problem, file=sys.stderr)
+        return 1 if problems else 0
+    written = sync(manifest, refresh=args.refresh)
+    print(f"wrote {len(written)} badge(s)")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
