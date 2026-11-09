@@ -156,3 +156,7 @@ class FetchDataTests(unittest.TestCase):
         langs, _ = self.run_fetch([repo(0, Python=100, HTML=10), repo(0, Python=50, CSS=500)])
         self.assertEqual([lang["name"] for lang in langs], ["CSS", "Python", "HTML"])
         self.assertEqual(langs[1]["value"], 150)
+
+    def test_keeps_only_the_top_five_languages(self):
+        langs, _ = self.run_fetch([repo(0, A=7, B=6, C=5, D=4, E=3, F=2, G=1)])
+        self.assertEqual([lang["name"] for lang in langs], ["A", "B", "C", "D", "E"])
