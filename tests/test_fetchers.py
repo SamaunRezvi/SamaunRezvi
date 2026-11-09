@@ -151,3 +151,8 @@ class FetchDataTests(unittest.TestCase):
     def test_sums_commits_across_years(self):
         _, stats = self.run_fetch([repo(0, Python=1)])
         self.assertEqual({label: value for _, label, value in stats}["Total Commits:"], "20")
+
+    def test_aggregates_languages_and_sorts_by_size(self):
+        langs, _ = self.run_fetch([repo(0, Python=100, HTML=10), repo(0, Python=50, CSS=500)])
+        self.assertEqual([lang["name"] for lang in langs], ["CSS", "Python", "HTML"])
+        self.assertEqual(langs[1]["value"], 150)
