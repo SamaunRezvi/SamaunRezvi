@@ -53,3 +53,7 @@ class ReadmeAssetTests(unittest.TestCase):
     def test_every_image_has_alt_text(self):
         for tag in TAGS:
             self.assertIn("alt=", tag)
+
+    def test_no_green_accent_colours_remain(self):
+        for colour in GREENS:
+            self.assertNotIn(colour.lower(), README.lower(), colour)
