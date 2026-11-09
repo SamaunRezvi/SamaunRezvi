@@ -81,3 +81,24 @@ class DailyContributionTests(unittest.TestCase):
         result = self.run_fetch([("2026-11-07", 4)])
         self.assertIn((7, 4), result)
         self.assertEqual(sum(count for _, count in result), 4)
+
+
+def history(*dates):
+    edges = [{"node": {"authoredDate": d}} for d in dates]
+    return {"repository": {"defaultBranchRef": {"target": {"history": {"edges": edges}}}}}
+
+
+class ProductiveTimeTests(unittest.TestCase):
+    def run_fetch(self, repos, offset=6.0):
+        def fake(query, variables):
+            if "commitContributionsByRepository" in query:
+                data = {"commitContributionsByRepository": repos}
+                return {"user": {"contributionsCollection": data}}
+            return {"user": {"id": "user-id"}}
+
+        with mock.patch.object(cards, "gql", side_effect=fake):
+            with mock.patch.object(cards, "UTC_OFFSET", offset):
+                return cards.fetch_productive_time()
+
+    def test_returns_24_hourly_buckets(self):
+        self.assertEqual(len(self.run_fetch([])), 24)
