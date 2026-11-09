@@ -32,3 +32,21 @@ def encode_url(url):
 def is_svg(data):
     """Return True when the bytes look like an SVG document."""
     return data.lstrip().startswith(b"<svg")
+
+
+def download(url, retries=5, delay=2.0):
+    """Download a badge, retrying on failure, and return the SVG bytes."""
+    last = None
+    for _ in range(retries):
+        try:
+            headers = {"User-Agent": "Mozilla/5.0"}
+            request = urllib.request.Request(encode_url(url), headers=headers)
+            with urllib.request.urlopen(request, timeout=30) as response:
+                data = response.read()
+            if is_svg(data):
+                return data
+            last = ValueError("response is not an SVG")
+        except Exception as error:  # network errors are retried
+            last = error
+        time.sleep(delay)
+    raise RuntimeError(f"could not download {url}: {last}")
