@@ -22,3 +22,6 @@ jobs:
 
       - name: Run unit tests
         run: python -m unittest discover -s tests -v
+
+      - name: Check badge files
+        run: python tools/sync_badges.py --check
