@@ -50,3 +50,16 @@ def download(url, retries=5, delay=2.0):
             last = error
         time.sleep(delay)
     raise RuntimeError(f"could not download {url}: {last}")
+
+
+def sync(manifest, directory=BADGE_DIR, refresh=False, fetch=download):
+    """Download missing badges (all of them with refresh) and return the written names."""
+    written = []
+    for name, url in manifest.items():
+        path = os.path.join(directory, name)
+        if os.path.exists(path) and not refresh:
+            continue
+        with open(path, "wb") as f:
+            f.write(fetch(url))
+        written.append(name)
+    return written
