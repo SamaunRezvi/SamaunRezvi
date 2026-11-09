@@ -168,3 +168,21 @@ class FetchDataTests(unittest.TestCase):
     def test_shows_a_placeholder_when_there_are_no_repos(self):
         langs, _ = self.run_fetch([])
         self.assertEqual([lang["name"] for lang in langs], ["There are no", "repos to show"])
+
+
+class StreakTests(unittest.TestCase):
+    DAYS = [(f"2026-11-{d:02d}", c) for d, c in enumerate([1, 1, 1, 0, 1, 1, 0], start=1)]
+
+    def run_fetch(self, days):
+        def fake(query, variables):
+            if "createdAt" in query:
+                meta = {"createdAt": "2020-01-01T00:00:00Z", "contributionsCollection": {"contributionYears": [2026]}}
+                return {"user": meta}
+            return calendar(days)
+
+        with frozen_time(), mock.patch.object(cards, "UTC_OFFSET", 6.0):
+            with mock.patch.object(cards, "gql", side_effect=fake):
+                return cards.fetch_streak_stats()
+
+    def test_total_adds_every_day(self):
+        self.assertEqual(self.run_fetch(self.DAYS)["total"], 5)
