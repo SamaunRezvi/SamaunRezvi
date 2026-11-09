@@ -102,3 +102,8 @@ class ProductiveTimeTests(unittest.TestCase):
 
     def test_returns_24_hourly_buckets(self):
         self.assertEqual(len(self.run_fetch([])), 24)
+
+    def test_shifts_the_hour_by_the_utc_offset(self):
+        result = self.run_fetch([history("2026-11-01T10:00:00Z")])
+        self.assertEqual(result[16], 1)
+        self.assertEqual(sum(result), 1)
