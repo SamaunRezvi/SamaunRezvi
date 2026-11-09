@@ -27,3 +27,8 @@ def load_manifest(path=MANIFEST):
 def encode_url(url):
     """Percent-encode non-ASCII characters so urllib can request the URL."""
     return urllib.parse.quote(url, safe=":/?&=%#@,+;$!*'()~._-")
+
+
+def is_svg(data):
+    """Return True when the bytes look like an SVG document."""
+    return data.lstrip().startswith(b"<svg")
