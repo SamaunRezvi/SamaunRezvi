@@ -186,3 +186,6 @@ class StreakTests(unittest.TestCase):
 
     def test_total_adds_every_day(self):
         self.assertEqual(self.run_fetch(self.DAYS)["total"], 5)
+
+    def test_longest_streak_length(self):
+        self.assertEqual(self.run_fetch(self.DAYS)["longest"], 3)
