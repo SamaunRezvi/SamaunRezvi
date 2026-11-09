@@ -27,3 +27,12 @@ class HelperTests(unittest.TestCase):
         encoded = sync_badges.encode_url("https://img.shields.io/badge/●_LIVE-F0883E")
         self.assertTrue(encoded.isascii())
         self.assertIn("%E2%97%8F", encoded)
+
+
+class ManifestAndSyncTests(unittest.TestCase):
+    def test_load_manifest_reads_json(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = os.path.join(folder, "manifest.json")
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump({"a.svg": "https://example.com/a"}, f)
+            self.assertEqual(sync_badges.load_manifest(path), {"a.svg": "https://example.com/a"})
