@@ -60,3 +60,9 @@ class GqlTests(unittest.TestCase):
         with self.post({"errors": [{"message": "boom"}]}):
             with self.assertRaises(RuntimeError):
                 cards.gql("query", {})
+
+    def test_sends_the_bearer_token(self):
+        with self.post({"data": {}}) as client:
+            cards.gql("query", {})
+        headers = client.post.call_args.kwargs["headers"]
+        self.assertEqual(headers["Authorization"], f"Bearer {cards.TOKEN}")
