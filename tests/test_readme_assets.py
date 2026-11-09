@@ -32,3 +32,7 @@ class ReadmeAssetTests(unittest.TestCase):
     def test_every_manifest_entry_has_a_file(self):
         for name in MANIFEST:
             self.assertTrue(os.path.exists(os.path.join(BADGE_DIR, name)), name)
+
+    def test_no_badge_file_is_orphaned(self):
+        files = {name for name in os.listdir(BADGE_DIR) if name.endswith(".svg")}
+        self.assertEqual(files, set(MANIFEST))
