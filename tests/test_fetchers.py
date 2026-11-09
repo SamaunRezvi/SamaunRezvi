@@ -116,3 +116,34 @@ class ProductiveTimeTests(unittest.TestCase):
         empty = {"repository": {"defaultBranchRef": None}}
         result = self.run_fetch([empty, history("2026-11-01T10:00:00Z")])
         self.assertEqual(sum(result), 1)
+
+
+def repo(stars, **languages):
+    edges = [{"size": size, "node": {"name": name}} for name, size in languages.items()]
+    return {"stargazerCount": stars, "languages": {"edges": edges}}
+
+
+class FetchDataTests(unittest.TestCase):
+    def run_fetch(self, repos, years=(2025, 2026)):
+        summary = {
+            "totalPullRequestContributions": 3,
+            "totalIssueContributions": 2,
+            "totalRepositoriesWithContributedCommits": 5,
+            "contributionYears": list(years),
+        }
+
+        def fake(query, variables):
+            if "repositories(" in query:
+                nodes = {"nodes": repos}
+                return {"user": {"repositories": nodes, "contributionsCollection": summary}}
+            return {"user": {"contributionsCollection": {"totalCommitContributions": 10}}}
+
+        http = mock.Mock()
+        http.get.side_effect = Exception("offline")
+        with mock.patch.object(cards, "gql", side_effect=fake):
+            with mock.patch.object(cards, "requests", http):
+                return cards.fetch_data()
+
+    def test_sums_stars_across_repos(self):
+        _, stats = self.run_fetch([repo(2, Python=1), repo(3, Python=1)])
+        self.assertEqual({label: value for _, label, value in stats}["Total Stars:"], "5")
