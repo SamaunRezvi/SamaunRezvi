@@ -45,3 +45,7 @@ class ReadmeAssetTests(unittest.TestCase):
         for source in SOURCES:
             if source.startswith("https://img.shields.io"):
                 self.assertTrue("/github/followers/" in source or "/github/stars/" in source, source)
+
+    def test_manifest_urls_point_to_shields(self):
+        for url in MANIFEST.values():
+            self.assertTrue(url.startswith("https://img.shields.io/"), url)
