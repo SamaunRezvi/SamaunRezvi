@@ -1,0 +1,17 @@
+"""Unit tests for tools/sync_badges.py."""
+import json
+import os
+import sys
+import tempfile
+import unittest
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "tools"))
+
+import sync_badges  # noqa: E402
+
+SVG = b'<svg xmlns="http://www.w3.org/2000/svg"></svg>'
+
+
+class HelperTests(unittest.TestCase):
+    def test_is_svg_accepts_svg_bytes(self):
+        self.assertTrue(sync_badges.is_svg(b"  \n" + SVG))
