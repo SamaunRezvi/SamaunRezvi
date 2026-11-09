@@ -66,3 +66,13 @@ class GqlTests(unittest.TestCase):
             cards.gql("query", {})
         headers = client.post.call_args.kwargs["headers"]
         self.assertEqual(headers["Authorization"], f"Bearer {cards.TOKEN}")
+
+
+class DailyContributionTests(unittest.TestCase):
+    def run_fetch(self, rows, **kwargs):
+        with frozen_time(), mock.patch.object(cards, "gql", return_value=calendar(rows)):
+            return cards.fetch_daily_contributions(**kwargs)
+
+    def test_returns_one_entry_per_day(self):
+        self.assertEqual(len(self.run_fetch([])), 31)
+        self.assertEqual(len(self.run_fetch([], days=10)), 10)
