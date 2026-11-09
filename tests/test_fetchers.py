@@ -111,3 +111,8 @@ class ProductiveTimeTests(unittest.TestCase):
     def test_wraps_past_midnight(self):
         result = self.run_fetch([history("2026-11-01T20:00:00Z")])
         self.assertEqual(result[2], 1)
+
+    def test_skips_repos_without_a_default_branch(self):
+        empty = {"repository": {"defaultBranchRef": None}}
+        result = self.run_fetch([empty, history("2026-11-01T10:00:00Z")])
+        self.assertEqual(sum(result), 1)
