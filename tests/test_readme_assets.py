@@ -49,3 +49,7 @@ class ReadmeAssetTests(unittest.TestCase):
     def test_manifest_urls_point_to_shields(self):
         for url in MANIFEST.values():
             self.assertTrue(url.startswith("https://img.shields.io/"), url)
+
+    def test_every_image_has_alt_text(self):
+        for tag in TAGS:
+            self.assertIn("alt=", tag)
