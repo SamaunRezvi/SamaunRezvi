@@ -48,3 +48,19 @@ class ManifestAndSyncTests(unittest.TestCase):
                 f.write(b"<html></html>")
             problems = sync_badges.check({"a.svg": "u"}, folder)
         self.assertEqual(problems, ["not an SVG: a.svg"])
+
+    def test_sync_only_downloads_missing_files_unless_refreshing(self):
+        with tempfile.TemporaryDirectory() as folder:
+            with open(os.path.join(folder, "have.svg"), "wb") as f:
+                f.write(SVG)
+            manifest = {"have.svg": "u1", "need.svg": "u2"}
+            fetched = []
+
+            def fetch(url):
+                fetched.append(url)
+                return SVG
+
+            self.assertEqual(sync_badges.sync(manifest, folder, fetch=fetch), ["need.svg"])
+            self.assertEqual(fetched, ["u2"])
+            refreshed = sync_badges.sync(manifest, folder, refresh=True, fetch=fetch)
+            self.assertEqual(sorted(refreshed), ["have.svg", "need.svg"])
