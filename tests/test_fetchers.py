@@ -147,3 +147,7 @@ class FetchDataTests(unittest.TestCase):
     def test_sums_stars_across_repos(self):
         _, stats = self.run_fetch([repo(2, Python=1), repo(3, Python=1)])
         self.assertEqual({label: value for _, label, value in stats}["Total Stars:"], "5")
+
+    def test_sums_commits_across_years(self):
+        _, stats = self.run_fetch([repo(0, Python=1)])
+        self.assertEqual({label: value for _, label, value in stats}["Total Commits:"], "20")
