@@ -41,3 +41,10 @@ class ManifestAndSyncTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             problems = sync_badges.check({"a.svg": "u"}, folder)
         self.assertEqual(problems, ["missing: a.svg"])
+
+    def test_check_reports_files_that_are_not_svgs(self):
+        with tempfile.TemporaryDirectory() as folder:
+            with open(os.path.join(folder, "a.svg"), "wb") as f:
+                f.write(b"<html></html>")
+            problems = sync_badges.check({"a.svg": "u"}, folder)
+        self.assertEqual(problems, ["not an SVG: a.svg"])
