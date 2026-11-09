@@ -164,3 +164,7 @@ class FetchDataTests(unittest.TestCase):
     def test_falls_back_to_grey_when_colours_are_unavailable(self):
         langs, _ = self.run_fetch([repo(0, Python=1)])
         self.assertEqual(langs[0]["color"], "#8b949e")
+
+    def test_shows_a_placeholder_when_there_are_no_repos(self):
+        langs, _ = self.run_fetch([])
+        self.assertEqual([lang["name"] for lang in langs], ["There are no", "repos to show"])
