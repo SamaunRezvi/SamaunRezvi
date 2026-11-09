@@ -22,3 +22,8 @@ class HelperTests(unittest.TestCase):
     def test_encode_url_leaves_ascii_urls_unchanged(self):
         url = "https://img.shields.io/badge/Next.js-0d1117?style=flat-square&logo=nextdotjs"
         self.assertEqual(sync_badges.encode_url(url), url)
+
+    def test_encode_url_encodes_non_ascii_characters(self):
+        encoded = sync_badges.encode_url("https://img.shields.io/badge/●_LIVE-F0883E")
+        self.assertTrue(encoded.isascii())
+        self.assertIn("%E2%97%8F", encoded)
