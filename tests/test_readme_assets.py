@@ -28,3 +28,7 @@ class ReadmeAssetTests(unittest.TestCase):
         for source in BADGES:
             with open(os.path.join(ROOT, source), "rb") as f:
                 self.assertTrue(f.read().lstrip().startswith(b"<svg"), source)
+
+    def test_every_manifest_entry_has_a_file(self):
+        for name in MANIFEST:
+            self.assertTrue(os.path.exists(os.path.join(BADGE_DIR, name)), name)
