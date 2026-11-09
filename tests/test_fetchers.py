@@ -107,3 +107,7 @@ class ProductiveTimeTests(unittest.TestCase):
         result = self.run_fetch([history("2026-11-01T10:00:00Z")])
         self.assertEqual(result[16], 1)
         self.assertEqual(sum(result), 1)
+
+    def test_wraps_past_midnight(self):
+        result = self.run_fetch([history("2026-11-01T20:00:00Z")])
+        self.assertEqual(result[2], 1)
