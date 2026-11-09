@@ -18,3 +18,9 @@ Notable changes to this profile repository.
 
 - Added type hints to the card generation script.
 - Added unit tests for the SVG card builders and a workflow that runs them.
+
+## 2026-11-09
+
+- Self-hosted the static README badges in `assets/badges/` after shields.io rate limits broke some images.
+- Added `tools/sync_badges.py`.
+- Added tests for the data fetchers, the badge sync tool and the README assets.
