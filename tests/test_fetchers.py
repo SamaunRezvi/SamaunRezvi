@@ -160,3 +160,7 @@ class FetchDataTests(unittest.TestCase):
     def test_keeps_only_the_top_five_languages(self):
         langs, _ = self.run_fetch([repo(0, A=7, B=6, C=5, D=4, E=3, F=2, G=1)])
         self.assertEqual([lang["name"] for lang in langs], ["A", "B", "C", "D", "E"])
+
+    def test_falls_back_to_grey_when_colours_are_unavailable(self):
+        langs, _ = self.run_fetch([repo(0, Python=1)])
+        self.assertEqual(langs[0]["color"], "#8b949e")
