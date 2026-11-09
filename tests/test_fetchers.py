@@ -195,3 +195,6 @@ class StreakTests(unittest.TestCase):
 
     def test_current_streak_starts_from_yesterday_when_today_is_empty(self):
         self.assertEqual(self.run_fetch(self.DAYS)["current"], 2)
+
+    def test_current_streak_range(self):
+        self.assertEqual(self.run_fetch(self.DAYS)["current_range"], "Nov 5, 2026 - Nov 6, 2026")
