@@ -15,3 +15,6 @@ SVG = b'<svg xmlns="http://www.w3.org/2000/svg"></svg>'
 class HelperTests(unittest.TestCase):
     def test_is_svg_accepts_svg_bytes(self):
         self.assertTrue(sync_badges.is_svg(b"  \n" + SVG))
+
+    def test_is_svg_rejects_html(self):
+        self.assertFalse(sync_badges.is_svg(b"<html>Too Many Requests</html>"))
