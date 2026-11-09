@@ -22,3 +22,8 @@ def load_manifest(path=MANIFEST):
     """Return the {file name: source URL} mapping."""
     with open(path, encoding="utf-8") as f:
         return json.load(f)
+
+
+def encode_url(url):
+    """Percent-encode non-ASCII characters so urllib can request the URL."""
+    return urllib.parse.quote(url, safe=":/?&=%#@,+;$!*'()~._-")
