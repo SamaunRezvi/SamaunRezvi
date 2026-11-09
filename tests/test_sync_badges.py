@@ -36,3 +36,8 @@ class ManifestAndSyncTests(unittest.TestCase):
             with open(path, "w", encoding="utf-8") as f:
                 json.dump({"a.svg": "https://example.com/a"}, f)
             self.assertEqual(sync_badges.load_manifest(path), {"a.svg": "https://example.com/a"})
+
+    def test_check_reports_missing_files(self):
+        with tempfile.TemporaryDirectory() as folder:
+            problems = sync_badges.check({"a.svg": "u"}, folder)
+        self.assertEqual(problems, ["missing: a.svg"])
