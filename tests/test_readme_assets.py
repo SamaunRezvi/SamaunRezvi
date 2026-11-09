@@ -40,3 +40,8 @@ class ReadmeAssetTests(unittest.TestCase):
     def test_every_readme_badge_is_in_the_manifest(self):
         for source in BADGES:
             self.assertIn(os.path.basename(source), MANIFEST)
+
+    def test_only_live_shields_badges_are_remote(self):
+        for source in SOURCES:
+            if source.startswith("https://img.shields.io"):
+                self.assertTrue("/github/followers/" in source or "/github/stars/" in source, source)
