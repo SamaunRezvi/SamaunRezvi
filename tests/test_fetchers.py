@@ -198,3 +198,9 @@ class StreakTests(unittest.TestCase):
 
     def test_current_streak_range(self):
         self.assertEqual(self.run_fetch(self.DAYS)["current_range"], "Nov 5, 2026 - Nov 6, 2026")
+
+    def test_no_contributions_gives_empty_streaks(self):
+        quiet = [(f"2026-11-{d:02d}", 0) for d in range(1, 8)]
+        stats = self.run_fetch(quiet)
+        self.assertEqual((stats["current"], stats["longest"]), (0, 0))
+        self.assertEqual((stats["current_range"], stats["longest_range"]), ("-", "-"))
