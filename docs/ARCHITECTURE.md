@@ -29,3 +29,7 @@ Profile views, followers, stars, tech badges, the typing animation and the divid
 ## Snake animation
 
 `snake.yml` renders the contribution grid snake with `Platane/snk` and publishes it to the `output` branch. The README references the files there through raw URLs.
+
+## Self-hosted badges
+
+Tech stack and section badges are static, so their SVGs are stored in `assets/badges/` and referenced by relative path. The README therefore does not depend on shields.io being reachable for them. `tools/sync_badges.py` can re-download them from the URLs in `manifest.json`.

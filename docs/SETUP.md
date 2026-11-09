@@ -51,3 +51,15 @@ python -m unittest discover -s tests -v
 ```
 
 The `Tests` workflow runs the same command on every push and pull request.
+
+## Badges
+
+Static tech and section badges are self-hosted in `assets/badges/` so they keep working when shields.io is rate limited. `assets/badges/manifest.json` maps each file to its shields.io source URL.
+
+```bash
+python tools/sync_badges.py            # download badges that are missing
+python tools/sync_badges.py --refresh  # re-download every badge
+python tools/sync_badges.py --check    # verify the files exist and are SVGs
+```
+
+Only the followers and stars badges stay remote, because they show live numbers.
