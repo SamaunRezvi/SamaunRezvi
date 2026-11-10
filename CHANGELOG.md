@@ -24,3 +24,12 @@ Notable changes to this profile repository.
 - Self-hosted the static README badges in `assets/badges/` after shields.io rate limits broke some images.
 - Added `tools/sync_badges.py`.
 - Added tests for the data fetchers, the badge sync tool and the README assets.
+
+## 2026-11-10
+
+- Fixed the contribution activity graph ending on tomorrow and dropping the oldest day.
+- Fixed the productive time card undercounting commits (history was capped at 50 per repo).
+- Total PRs and issues now cover every year, not only the last 12 months.
+- One failing card query no longer stops the other cards from updating.
+- Replaced the remaining green in the cards and the snake with the README palette.
+- Added the Latest Public Projects section, generated from public repositories.

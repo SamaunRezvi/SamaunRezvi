@@ -41,6 +41,14 @@ The script writes the generated SVG cards into `assets/`. `UTC_OFFSET` shifts th
 - **Cards look stale:** images are cached by GitHub; wait a few minutes or hard refresh.
 - **A card is empty:** check that `PROFILE_PAT` exists and has not expired.
 
+## Undo
+
+Every card audit change is a separate commit and the old version is tagged. See [UNDO.md](UNDO.md).
+
+## Latest Public Projects
+
+The section between the `RECENT_PROJECTS` markers in `README.md` is rewritten by `profile-card.yml` from your public, non-fork repositories. Edit text outside the markers freely; text inside them is overwritten.
+
 ## Tests
 
 The SVG builders have unit tests in `tests/`. Run them with:
