@@ -130,3 +130,47 @@ class WidthAndStatTests(unittest.TestCase):
         svg = card_kit.render_stat(spec)
         for text in ("WORK", "15+", "PROJECTS", "across web &amp; data"):
             self.assertIn(text, svg)
+
+
+HERO = {
+    "avatar": PIXEL,
+    "name": "Hi, I’m Samaun Rezvi",
+    "taglines": ["Full-Stack Web Developer", "I build products end to end", "Frontend · Backend · Data · Deploy"],
+    "education": "Computer Science & Engineering · Daffodil International University · DSC, Dhaka, Bangladesh",
+    "roles": [(PIXEL, 100, 20), (PIXEL, 90, 20), (PIXEL, 95, 20)],
+    "status": "status: open to opportunities · response time: usually within a day",
+}
+
+
+class HeroTests(unittest.TestCase):
+    def test_hero_is_well_formed_and_has_the_expected_size(self):
+        root = ET.fromstring(card_kit.render_hero(HERO))
+        self.assertEqual((root.get("width"), root.get("height")), (str(card_kit.HERO_WIDTH), str(card_kit.HERO_HEIGHT)))
+
+    def test_hero_keeps_every_piece_of_text(self):
+        svg = card_kit.render_hero(HERO)
+        for text in HERO["taglines"] + [HERO["name"], HERO["status"]]:
+            self.assertIn(text.replace("&", "&amp;"), svg)
+        self.assertIn("Computer Science &amp; Engineering", svg)
+
+    def test_hero_draws_the_avatar_and_role_badges(self):
+        self.assertEqual(card_kit.render_hero(HERO).count("<image"), 4)
+
+    def test_every_tagline_gets_its_own_animated_line(self):
+        svg = card_kit.render_hero(HERO)
+        for i in range(3):
+            self.assertIn(f'class="t tag l{i}"', svg)
+        self.assertIn("@keyframes cycle", svg)
+
+    def test_reduced_motion_shows_only_the_first_tagline(self):
+        self.assertIn("prefers-reduced-motion", card_kit.tagline_css(3))
+
+    def test_tagline_animation_spans_all_lines(self):
+        self.assertIn("animation:cycle 9s infinite", card_kit.tagline_css(3))
+        self.assertIn("animation-delay:6s", card_kit.tagline_css(3))
+
+    def test_wide_badge_rows_are_scaled_to_fit(self):
+        wide = dict(HERO, roles=[(PIXEL, 400, 20)] * 3)
+        root = ET.fromstring(card_kit.render_hero(wide))
+        for image in root.iter("{http://www.w3.org/2000/svg}image"):
+            self.assertLessEqual(float(image.get("x", 0)) + float(image.get("width")), card_kit.HERO_WIDTH + 0.5)

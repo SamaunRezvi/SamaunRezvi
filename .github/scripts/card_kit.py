@@ -264,3 +264,80 @@ def render_stat(spec):
         f'<text class="b" x="{mid}" y="162" text-anchor="middle" font-size="13.5" fill="#9AA7BB">{escape(spec["caption"])}</text>'
         "</svg>\n"
     )
+
+
+HERO_WIDTH, HERO_HEIGHT = 440, 392
+
+
+def tagline_css(count, seconds_each=3):
+    """CSS that fades the tagline lines in and out one after another."""
+    step = 100 / count
+    fade = min(4, step / 4)
+    keyframes = (
+        f"@keyframes cycle{{0%{{opacity:0}}{fade:g}%,{step - fade:g}%{{opacity:1}}{step:g}%,100%{{opacity:0}}}}"
+    )
+    delays = "".join(f".l{i}{{animation-delay:{i * seconds_each}s}}" for i in range(1, count))
+    return (
+        f".tag{{opacity:0;animation:cycle {count * seconds_each}s infinite}}.l0{{opacity:1}}{delays}{keyframes}"
+        "@media (prefers-reduced-motion:reduce){.tag{animation:none}.l1,.l2,.l3,.l4{opacity:0}.l0{opacity:1}}"
+    )
+
+
+def render_hero(spec):
+    """Render the profile hero card: avatar, name, rotating tagline, education, role badges and status."""
+    width, height, mid = HERO_WIDTH, HERO_HEIGHT, HERO_WIDTH / 2
+    taglines = spec["taglines"]
+    inner = width - 2 * PAD - 10
+    education = wrap(spec["education"], BODY_FONT[0], 14, inner)
+    scale = 26
+    sizes = [(bw * scale / bh) for _, bw, bh in spec["roles"]]
+    total = sum(sizes) + 8 * (len(sizes) - 1)
+    shrink = min(1, (width - 2 * PAD) / total) if total else 1
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
+        f'viewBox="0 0 {width} {height}" role="img" aria-label="{escape(spec["name"])}">',
+        f"<title>{escape(spec['name'])}</title>",
+        f"<style>{font_css()}"
+        f".t{{font-family:'{TITLE_FONT[0]}',{SERIF_FALLBACK};font-weight:600;font-variant-numeric:lining-nums}}"
+        f".b{{font-family:'{BODY_FONT[0]}',{SERIF_FALLBACK};font-weight:400}}"
+        f"{tagline_css(len(taglines))}</style>",
+        "<defs>"
+        '<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">'
+        '<stop offset="0" stop-color="#151d2b"/><stop offset="1" stop-color="#0d1117"/></linearGradient>'
+        f'<radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" '
+        f'gradientTransform="translate({mid} 70) scale(250)">'
+        '<stop offset="0" stop-color="#58A6FF" stop-opacity="0.2"/>'
+        '<stop offset="1" stop-color="#58A6FF" stop-opacity="0"/></radialGradient>'
+        '<linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">'
+        '<stop offset="0" stop-color="#58A6FF"/><stop offset="0.5" stop-color="#BC8CFF"/>'
+        '<stop offset="1" stop-color="#F778BA"/></linearGradient>'
+        f'<clipPath id="clip"><rect width="{width}" height="{height}" rx="16"/></clipPath>'
+        "</defs>",
+        f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="16" fill="url(#bg)" stroke="#2b3445"/>',
+        f'<g clip-path="url(#clip)"><rect width="{width}" height="{height}" fill="url(#glow)"/>'
+        f'<rect width="{width}" height="4" fill="url(#bar)"/></g>',
+        f'<image x="{mid - 48}" y="26" width="96" height="96" href="{spec["avatar"]}"/>',
+        f'<text class="t" x="{mid}" y="170" text-anchor="middle" font-size="34" fill="#E6EDF3">{escape(spec["name"])}</text>',
+        f'<rect x="{mid - 28}" y="182" width="56" height="2" rx="1" fill="url(#bar)"/>',
+    ]
+    for i, line in enumerate(taglines):
+        parts.append(
+            f'<text class="t tag l{i}" x="{mid}" y="220" text-anchor="middle" font-size="22" '
+            f'fill="#58A6FF">{escape(line)}</text>'
+        )
+    y = 254
+    for line in education:
+        parts.append(f'<text class="b" x="{mid}" y="{y}" text-anchor="middle" font-size="14" fill="#C3CDD9">{escape(line)}</text>')
+        y += 20
+    x = (width - (total * shrink)) / 2
+    row_y = y + 8
+    for (uri, bw, bh), size in zip(spec["roles"], sizes):
+        w = size * shrink
+        parts.append(f'<image x="{x:.1f}" y="{row_y}" width="{w:.1f}" height="{scale * shrink:.1f}" href="{uri}"/>')
+        x += w + 8 * shrink
+    parts.append(f'<line x1="{PAD}" y1="{height - 52}" x2="{width - PAD}" y2="{height - 52}" stroke="#222b3a"/>')
+    parts.append(
+        f'<text class="b" x="{mid}" y="{height - 26}" text-anchor="middle" font-size="13" fill="#8794AA">{escape(spec["status"])}</text>'
+    )
+    parts.append("</svg>\n")
+    return "".join(parts)
