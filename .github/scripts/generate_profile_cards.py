@@ -639,6 +639,86 @@ def build_activity_graph(daily: list) -> str:
     return svg.replace(f'fill:{TITLE_COLOR}', f'fill:{ACTIVITY_TITLE}')
 
 
+RECENT_START = "<!-- RECENT_PROJECTS:START -->"
+RECENT_END = "<!-- RECENT_PROJECTS:END -->"
+
+
+def fetch_recent_repos(limit: int = 6) -> list:
+    """Return the most recently pushed public, non-fork repositories, without the profile repo itself."""
+    query = """
+    query($login: String!, $limit: Int!) {
+      user(login: $login) {
+        repositories(first: $limit, privacy: PUBLIC, isFork: false, ownerAffiliations: OWNER,
+                     orderBy: {field: PUSHED_AT, direction: DESC}) {
+          nodes {
+            name
+            url
+            description
+            stargazerCount
+            pushedAt
+            primaryLanguage { name }
+          }
+        }
+      }
+    }
+    """
+    nodes = gql(query, {"login": USERNAME, "limit": limit + 1})["user"]["repositories"]["nodes"]
+    return [repo for repo in nodes if repo["name"].lower() != USERNAME.lower()][:limit]
+
+
+def render_recent_repos(repos: list) -> str:
+    """Render repositories as the HTML table placed between the README markers."""
+    if not repos:
+        return "<sub>No public repositories to show yet.</sub>"
+    quote = {'"': "&quot;"}
+    cells = []
+    for repo in repos:
+        pushed = datetime.datetime.fromisoformat(repo["pushedAt"].replace("Z", "+00:00"))
+        language = (repo.get("primaryLanguage") or {}).get("name")
+        facts = [escape(language)] if language else []
+        facts.append(f"\u2605 {repo['stargazerCount']}")
+        facts.append(f"updated {pushed.strftime('%b')} {pushed.day}, {pushed.year}")
+        details = " \u00b7 ".join(facts)
+        description = escape(repo.get("description") or "No description yet.")
+        url = escape(repo["url"], quote)
+        name = escape(repo["name"])
+        cells.append(
+            '<td width="33%" valign="top" align="left">\n'
+            f'<b><a href="{url}"><code>{name}/</code></a></b>\n'
+            f"<br /><sub>{description}</sub>\n"
+            f"<br /><sub>{details}</sub>\n"
+            "</td>"
+        )
+    rows = []
+    for start in range(0, len(cells), 3):
+        row = cells[start : start + 3]
+        row += ['<td width="33%"></td>'] * (3 - len(row))
+        rows.append("<tr>\n" + "\n".join(row) + "\n</tr>")
+    return '<table align="center">\n' + "\n".join(rows) + "\n</table>"
+
+
+def update_readme(block: str, path: str = "README.md") -> bool:
+    """Replace the text between the RECENT_PROJECTS markers; return True when the file changed."""
+    with open(path, encoding="utf-8", newline="") as f:
+        text = f.read()
+    start, end = text.find(RECENT_START), text.find(RECENT_END)
+    if start == -1 or end == -1 or end < start:
+        return False
+    newline = "\r\n" if "\r\n" in text else "\n"
+    updated = (
+        text[: start + len(RECENT_START)]
+        + newline
+        + block.replace("\n", newline)
+        + newline
+        + text[end:]
+    )
+    if updated == text:
+        return False
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        f.write(updated)
+    return True
+
+
 def write_card(name: str, build) -> bool:
     """Build one card and write it to assets/; keep the previous file and return False on failure."""
     try:
@@ -675,6 +755,10 @@ def main() -> None:
     results.append(write_card("streak-stats.svg", lambda: build_streak_card(fetch_streak_stats())))
     if not any(results):
         raise RuntimeError("every card failed")
+    try:
+        update_readme(render_recent_repos(fetch_recent_repos()))
+    except Exception as error:
+        print(f"recent projects: failed, keeping the previous section: {error}", file=sys.stderr)
 
 
 if __name__ == "__main__":

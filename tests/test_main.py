@@ -14,6 +14,8 @@ class MainTests(unittest.TestCase):
             "fetch_productive_time": mock.Mock(return_value=[1] * 24),
             "fetch_daily_contributions": mock.Mock(return_value=DAILY),
             "fetch_streak_stats": mock.Mock(return_value=STREAK),
+            "fetch_recent_repos": mock.Mock(return_value=[]),
+            "update_readme": mock.Mock(return_value=False),
         }
         patches.update(overrides)
         with tempfile.TemporaryDirectory() as folder:
