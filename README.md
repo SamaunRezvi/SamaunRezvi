@@ -367,6 +367,24 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
+## 🚀 Latest Public Projects
+
+<br />
+
+<!-- RECENT_PROJECTS:START -->
+<sub>Loading the latest public repositories...</sub>
+<!-- RECENT_PROJECTS:END -->
+
+<br />
+
+<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
+
+</div>
+
+---
+
+<div align="center">
+
 ## 📊 GitHub Activity
 
 <br />

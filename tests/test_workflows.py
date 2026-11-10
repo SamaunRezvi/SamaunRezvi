@@ -21,6 +21,9 @@ class WorkflowTests(unittest.TestCase):
         text = workflow("profile-card.yml")
         self.assertIn('svg.replace("#40c463", "#BC8CFF")', text)
 
+    def test_card_workflow_commits_the_readme_section(self):
+        self.assertIn("git add README.md assets/", workflow("profile-card.yml"))
+
     def test_every_workflow_has_a_timeout(self):
         for path in glob.glob(os.path.join(ROOT, ".github", "workflows", "*.yml")):
             with open(path, encoding="utf-8") as f:

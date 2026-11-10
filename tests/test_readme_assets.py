@@ -57,3 +57,9 @@ class ReadmeAssetTests(unittest.TestCase):
     def test_no_green_accent_colours_remain(self):
         for colour in GREENS:
             self.assertNotIn(colour.lower(), README.lower(), colour)
+
+    def test_recent_projects_markers_appear_once_in_order(self):
+        start = README.count("<!-- RECENT_PROJECTS:START -->")
+        end = README.count("<!-- RECENT_PROJECTS:END -->")
+        self.assertEqual((start, end), (1, 1))
+        self.assertLess(README.index("RECENT_PROJECTS:START"), README.index("RECENT_PROJECTS:END"))
