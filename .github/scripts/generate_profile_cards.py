@@ -88,12 +88,16 @@ def fetch_data() -> tuple:
 
     cc = data["contributionsCollection"]
     total_commits = 0
+    total_prs = 0
+    total_issues = 0
     for year in cc["contributionYears"]:
         yr_query = """
         query($login: String!, $from: DateTime!, $to: DateTime!) {
           user(login: $login) {
             contributionsCollection(from: $from, to: $to) {
               totalCommitContributions
+              totalPullRequestContributions
+              totalIssueContributions
             }
           }
         }
@@ -107,6 +111,8 @@ def fetch_data() -> tuple:
             },
         )["user"]["contributionsCollection"]
         total_commits += yr_data["totalCommitContributions"]
+        total_prs += yr_data["totalPullRequestContributions"]
+        total_issues += yr_data["totalIssueContributions"]
 
     top_langs = sorted(lang_bytes.items(), key=lambda kv: kv[1], reverse=True)[:5]
 
@@ -131,8 +137,8 @@ def fetch_data() -> tuple:
     stats_data = [
         ("STAR", "Total Stars:", str(total_stars)),
         ("COMMIT", "Total Commits:", str(total_commits)),
-        ("PR", "Total PRs:", str(cc["totalPullRequestContributions"])),
-        ("ISSUE", "Total Issues:", str(cc["totalIssueContributions"])),
+        ("PR", "Total PRs:", str(total_prs)),
+        ("ISSUE", "Total Issues:", str(total_issues)),
         ("REPOS", "Contributed to:", str(cc["totalRepositoriesWithContributedCommits"])),
     ]
     return lang_data, stats_data

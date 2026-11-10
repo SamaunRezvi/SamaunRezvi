@@ -162,7 +162,12 @@ class FetchDataTests(unittest.TestCase):
             if "repositories(" in query:
                 nodes = {"nodes": repos}
                 return {"user": {"repositories": nodes, "contributionsCollection": summary}}
-            return {"user": {"contributionsCollection": {"totalCommitContributions": 10}}}
+            year_totals = {
+                "totalCommitContributions": 10,
+                "totalPullRequestContributions": 1,
+                "totalIssueContributions": 2,
+            }
+            return {"user": {"contributionsCollection": year_totals}}
 
         http = mock.Mock()
         http.get.side_effect = Exception("offline")
@@ -177,6 +182,12 @@ class FetchDataTests(unittest.TestCase):
     def test_sums_commits_across_years(self):
         _, stats = self.run_fetch([repo(0, Python=1)])
         self.assertEqual({label: value for _, label, value in stats}["Total Commits:"], "20")
+
+    def test_sums_prs_and_issues_across_years(self):
+        _, stats = self.run_fetch([repo(0, Python=1)])
+        rows = {label: value for _, label, value in stats}
+        self.assertEqual(rows["Total PRs:"], "2")
+        self.assertEqual(rows["Total Issues:"], "4")
 
     def test_aggregates_languages_and_sorts_by_size(self):
         langs, _ = self.run_fetch([repo(0, Python=100, HTML=10), repo(0, Python=50, CSS=500)])
