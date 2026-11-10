@@ -639,23 +639,42 @@ def build_activity_graph(daily: list) -> str:
     return svg.replace(f'fill:{TITLE_COLOR}', f'fill:{ACTIVITY_TITLE}')
 
 
+def write_card(name: str, build) -> bool:
+    """Build one card and write it to assets/; keep the previous file and return False on failure."""
+    try:
+        svg = build()
+    except Exception as error:
+        print(f"{name}: failed, keeping the previous file: {error}", file=sys.stderr)
+        return False
+    with open(f"assets/{name}", "w", encoding="utf-8") as f:
+        f.write(svg)
+    return True
+
+
 def main() -> None:
-    """Fetch all data and write the five generated SVG cards into assets/."""
-    lang_data, stats_data = fetch_data()
-    productive_time = fetch_productive_time()
-    daily = fetch_daily_contributions(31)
-    streak = fetch_streak_stats()
+    """Fetch all data and write the generated SVG cards into assets/; one failing card does not stop the rest."""
     os.makedirs("assets", exist_ok=True)
-    with open("assets/top-languages.svg", "w", encoding="utf-8") as f:
-        f.write(build_donut_card(lang_data))
-    with open("assets/commit-stats.svg", "w", encoding="utf-8") as f:
-        f.write(build_stats_card(stats_data))
-    with open("assets/productive-time.svg", "w", encoding="utf-8") as f:
-        f.write(build_productive_time_card(productive_time, UTC_OFFSET))
-    with open("assets/contribution-activity.svg", "w", encoding="utf-8") as f:
-        f.write(build_activity_graph(daily))
-    with open("assets/streak-stats.svg", "w", encoding="utf-8") as f:
-        f.write(build_streak_card(streak))
+    results = []
+    try:
+        lang_data, stats_data = fetch_data()
+    except Exception as error:
+        print(f"fetch_data failed, keeping the previous language and stats cards: {error}", file=sys.stderr)
+        results += [False, False]
+    else:
+        results.append(write_card("top-languages.svg", lambda: build_donut_card(lang_data)))
+        results.append(write_card("commit-stats.svg", lambda: build_stats_card(stats_data)))
+    results.append(
+        write_card(
+            "productive-time.svg",
+            lambda: build_productive_time_card(fetch_productive_time(), UTC_OFFSET),
+        )
+    )
+    results.append(
+        write_card("contribution-activity.svg", lambda: build_activity_graph(fetch_daily_contributions(31)))
+    )
+    results.append(write_card("streak-stats.svg", lambda: build_streak_card(fetch_streak_stats())))
+    if not any(results):
+        raise RuntimeError("every card failed")
 
 
 if __name__ == "__main__":
