@@ -759,7 +759,7 @@ def render_recent_repos(repos: list) -> str:
         alt = escape(f"{title}: {shorten(summary)}", quote)
         url = escape(repo["url"], quote)
         images.append(
-            f'<a href="{url}"><img alt="{alt}" src="{PROJECTS_DIR}/{project_slug(repo)}.svg" width="49%" /></a>'
+            f'<a href="{url}"><img alt="{alt}" src="{PROJECTS_DIR}/{project_slug(repo)}.svg" width="420" /></a>'
         )
     rows = ['<p align="center">\n' + "\n".join(images[i : i + 2]) + "\n</p>" for i in range(0, len(images), 2)]
     demos = [

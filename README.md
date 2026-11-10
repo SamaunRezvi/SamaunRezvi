@@ -19,7 +19,7 @@
 
 <p align="center"><img src="profile.png" width="120" alt="Samaun Rezvi" /></p>
 
-<h1><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/hero-name-dark.svg"><img alt="Hi, I’m Samaun Rezvi" src="assets/headings/hero-name-light.svg" height="70" /></picture></h1>
+<h1><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/hero-name-dark.svg"><img alt="Hi, I’m Samaun Rezvi" src="assets/headings/hero-name-light.svg" width="430" /></picture></h1>
 
 <img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=600&size=24&duration=2600&pause=900&color=58A6FF&vCenter=true&width=430&height=40&lines=Full-Stack+Web+Developer;I+build+products+end+to+end;Frontend+%C2%B7+Backend+%C2%B7+Data+%C2%B7+Deploy" alt="" />
 
@@ -83,7 +83,7 @@ Computer Science &amp; Engineering · Daffodil International University · DSC, 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/about-me-dark.svg"><img alt="About Me" src="assets/headings/about-me-light.svg" height="73" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/about-me-dark.svg"><img alt="About Me" src="assets/headings/about-me-light.svg" width="760" /></picture></h2>
 
 <!-- CARDS:stats:START -->
 <p align="center">
@@ -98,7 +98,7 @@ Computer Science &amp; Engineering · Daffodil International University · DSC, 
 I build systems where people in different roles use the same data for different purposes. An administrator, a field worker, a reviewer, and an end user each need a different view, different permissions, and different defaults. Designing that separation cleanly is the part I find most interesting, and it is where most systems get it wrong.
 </p>
 
-<h3 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/principles-dark.svg"><img alt="Principles I Build On" src="assets/headings/principles-light.svg" height="56" /></picture></h3>
+<h3 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/principles-dark.svg"><img alt="Principles I Build On" src="assets/headings/principles-light.svg" width="760" /></picture></h3>
 
 <!-- CARDS:principles:START -->
 <p align="center">
@@ -131,7 +131,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/tech-and-tools-dark.svg"><img alt="Tech &amp; Tools" src="assets/headings/tech-and-tools-light.svg" height="73" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/tech-and-tools-dark.svg"><img alt="Tech &amp; Tools" src="assets/headings/tech-and-tools-light.svg" width="760" /></picture></h2>
 
 <div align="center">
 
@@ -165,7 +165,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/selected-work-dark.svg"><img alt="Selected Work" src="assets/headings/selected-work-light.svg" height="73" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/selected-work-dark.svg"><img alt="Selected Work" src="assets/headings/selected-work-light.svg" width="760" /></picture></h2>
 
 <div align="center">
 
@@ -198,22 +198,22 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/latest-projects-dark.svg"><img alt="Latest Public Projects" src="assets/headings/latest-projects-light.svg" height="73" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/latest-projects-dark.svg"><img alt="Latest Public Projects" src="assets/headings/latest-projects-light.svg" width="760" /></picture></h2>
 
 <br />
 
 <!-- RECENT_PROJECTS:START -->
 <p align="center">
-<a href="https://github.com/SamaunRezvi/assignment_eight_s"><img alt="StudioSpace API: A secure Express and MongoDB backend for the StudioSpace marketplace. Handles studios, bookings, reviews and wishlists with HTTPOnly JWT protection…" src="assets/projects/assignment_eight_s.svg" width="49%" /></a>
-<a href="https://github.com/SamaunRezvi/assignment_eight_c"><img alt="StudioSpace: A creator-first studio rental marketplace built with Next.js. Discover photo studios, film stages, podcast lounges and music suites, book by the hour without…" src="assets/projects/assignment_eight_c.svg" width="49%" /></a>
+<a href="https://github.com/SamaunRezvi/assignment_eight_s"><img alt="StudioSpace API: A secure Express and MongoDB backend for the StudioSpace marketplace. Handles studios, bookings, reviews and wishlists with HTTPOnly JWT protection…" src="assets/projects/assignment_eight_s.svg" width="420" /></a>
+<a href="https://github.com/SamaunRezvi/assignment_eight_c"><img alt="StudioSpace: A creator-first studio rental marketplace built with Next.js. Discover photo studios, film stages, podcast lounges and music suites, book by the hour without…" src="assets/projects/assignment_eight_c.svg" width="420" /></a>
 </p>
 <p align="center">
-<a href="https://github.com/SamaunRezvi/assignment_seven"><img alt="BazarDor: A clean, Bangla-first market price tracker built with Next.js. Browse everyday essentials, compare prices across markets, follow daily price changes, and…" src="assets/projects/assignment_seven.svg" width="49%" /></a>
-<a href="https://github.com/SamaunRezvi/assignment_six"><img alt="FitLog: A dark, sleek workout library built with Next.js. Browse a curated set of lifts, lock them into today's training plan, save favorites for later, and watch…" src="assets/projects/assignment_six.svg" width="49%" /></a>
+<a href="https://github.com/SamaunRezvi/assignment_seven"><img alt="BazarDor: A clean, Bangla-first market price tracker built with Next.js. Browse everyday essentials, compare prices across markets, follow daily price changes, and…" src="assets/projects/assignment_seven.svg" width="420" /></a>
+<a href="https://github.com/SamaunRezvi/assignment_six"><img alt="FitLog: A dark, sleek workout library built with Next.js. Browse a curated set of lifts, lock them into today's training plan, save favorites for later, and watch…" src="assets/projects/assignment_six.svg" width="420" /></a>
 </p>
 <p align="center">
-<a href="https://github.com/SamaunRezvi/assignment_five"><img alt="Dev Stack Builder: A sleek, modern, and fully responsive &quot;Dev Stack Builder&quot; website to explore technologies and build your own development stack." src="assets/projects/assignment_five.svg" width="49%" /></a>
-<a href="https://github.com/SamaunRezvi/assignment_one"><img alt="DevConf 2026: A sleek, modern, and fully responsive “DevConf 2026” landing page." src="assets/projects/assignment_one.svg" width="49%" /></a>
+<a href="https://github.com/SamaunRezvi/assignment_five"><img alt="Dev Stack Builder: A sleek, modern, and fully responsive &quot;Dev Stack Builder&quot; website to explore technologies and build your own development stack." src="assets/projects/assignment_five.svg" width="420" /></a>
+<a href="https://github.com/SamaunRezvi/assignment_one"><img alt="DevConf 2026: A sleek, modern, and fully responsive “DevConf 2026” landing page." src="assets/projects/assignment_one.svg" width="420" /></a>
 </p>
 <p align="center">Live demos: <a href="https://studiospace-creators.vercel.app">StudioSpace</a> · <a href="https://assignment-seven-sigma-ten.vercel.app">BazarDor</a> · <a href="https://assignment-six-one-gamma.vercel.app">FitLog</a> · <a href="https://assignment-five-six.vercel.app">Dev Stack Builder</a></p>
 <!-- RECENT_PROJECTS:END -->
@@ -226,7 +226,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/github-activity-dark.svg"><img alt="GitHub Activity" src="assets/headings/github-activity-light.svg" height="73" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/github-activity-dark.svg"><img alt="GitHub Activity" src="assets/headings/github-activity-light.svg" width="760" /></picture></h2>
 
 <br />
 
@@ -234,8 +234,8 @@ I build systems where people in different roles use the same data for different 
 
 <br /><br />
 
-<img height="175" src="./assets/streak-stats.svg" alt="Contribution streak" />
-<img height="175" src="./assets/top-languages.svg" alt="Top languages" />
+<img width="444" src="./assets/streak-stats.svg" alt="Contribution streak" />
+<img width="297" src="./assets/top-languages.svg" alt="Top languages" />
 
 <br />
 
@@ -247,7 +247,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/contribution-landscape-dark.svg"><img alt="Contribution Landscape" src="assets/headings/contribution-landscape-light.svg" height="73" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/contribution-landscape-dark.svg"><img alt="Contribution Landscape" src="assets/headings/contribution-landscape-light.svg" width="760" /></picture></h2>
 
 <br />
 
@@ -259,12 +259,12 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/commit-habits-dark.svg"><img alt="Commit Habits" src="assets/headings/commit-habits-light.svg" height="73" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/commit-habits-dark.svg"><img alt="Commit Habits" src="assets/headings/commit-habits-light.svg" width="760" /></picture></h2>
 
 <br />
 
-<img height="175" src="./assets/commit-stats.svg" alt="Commit stats" />
-<img height="175" src="./assets/productive-time.svg" alt="Productive time" />
+<img width="297" src="./assets/commit-stats.svg" alt="Commit stats" />
+<img width="297" src="./assets/productive-time.svg" alt="Productive time" />
 
 </div>
 
@@ -272,7 +272,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/contribution-snake-dark.svg"><img alt="Contribution Snake" src="assets/headings/contribution-snake-light.svg" height="73" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/contribution-snake-dark.svg"><img alt="Contribution Snake" src="assets/headings/contribution-snake-light.svg" width="760" /></picture></h2>
 
 <br />
 
@@ -288,7 +288,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/words-to-code-by-dark.svg"><img alt="Words To Code By" src="assets/headings/words-to-code-by-light.svg" height="73" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/words-to-code-by-dark.svg"><img alt="Words To Code By" src="assets/headings/words-to-code-by-light.svg" width="760" /></picture></h2>
 
 <div align="center">
 
@@ -320,7 +320,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/get-in-touch-dark.svg"><img alt="Get In Touch" src="assets/headings/get-in-touch-light.svg" height="73" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/get-in-touch-dark.svg"><img alt="Get In Touch" src="assets/headings/get-in-touch-light.svg" width="760" /></picture></h2>
 
 <div align="center">
 
