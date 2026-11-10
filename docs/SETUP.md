@@ -74,7 +74,7 @@ The profile hero is a card (`assets/hero/hero-card.svg`) next to the banner. Edi
 
 ```bash
 python tools/make_hero.py            # rebuild the card and the README block
-python tools/make_hero.py --avatar   # also rebuild the small avatar from profile.png
+python tools/make_hero.py --avatar   # also rebuild the avatar from assets/image/SR (2).jpg
 ```
 
 The card (440px) and banner (340px) are fixed-width images in one centred paragraph, so they sit side by side on a wide screen and stack on a narrow one. The tagline rotates with an SVG animation and stays static for visitors who prefer reduced motion. `assets/banner-3d.svg` only had its viewBox cropped (its artwork is unchanged) so it matches the card height.

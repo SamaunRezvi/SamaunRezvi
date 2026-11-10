@@ -312,12 +312,14 @@ def render_hero(spec):
         '<linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">'
         '<stop offset="0" stop-color="#58A6FF"/><stop offset="0.5" stop-color="#BC8CFF"/>'
         '<stop offset="1" stop-color="#F778BA"/></linearGradient>'
+        f'<clipPath id="face"><circle cx="{mid}" cy="74" r="48"/></clipPath>'
         f'<clipPath id="clip"><rect width="{width}" height="{height}" rx="16"/></clipPath>'
         "</defs>",
         f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="16" fill="url(#bg)" stroke="#2b3445"/>',
         f'<g clip-path="url(#clip)"><rect width="{width}" height="{height}" fill="url(#glow)"/>'
         f'<rect width="{width}" height="4" fill="url(#bar)"/></g>',
-        f'<image x="{mid - 48}" y="26" width="96" height="96" href="{spec["avatar"]}"/>',
+        f'<image x="{mid - 48}" y="26" width="96" height="96" preserveAspectRatio="xMidYMid slice" clip-path="url(#face)" href="{spec["avatar"]}"/>',
+        f'<circle cx="{mid}" cy="74" r="47" fill="none" stroke="url(#bar)" stroke-width="2.5"/>',
         f'<text class="t" x="{mid}" y="170" text-anchor="middle" font-size="34" fill="#E6EDF3">{escape(spec["name"])}</text>',
         f'<rect x="{mid - 28}" y="182" width="56" height="2" rx="1" fill="url(#bar)"/>',
     ]

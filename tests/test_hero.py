@@ -37,10 +37,11 @@ class HeroContentTests(unittest.TestCase):
 
 
 class HeroFilesTests(unittest.TestCase):
-    def test_avatar_is_a_small_png(self):
+    def test_avatar_is_a_sharp_jpeg(self):
         with open(make_hero.AVATAR, "rb") as f:
             data = f.read()
-        self.assertEqual(data[:8], b"\x89PNG\r\n\x1a\n")
+        self.assertEqual(data[:3], b"\xff\xd8\xff")
+        self.assertGreater(len(data), 30_000)
         self.assertLess(len(data), 150_000)
 
     def test_card_is_well_formed(self):

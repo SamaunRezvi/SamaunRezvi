@@ -3,7 +3,7 @@
 The text lives under "hero" in .github/cards-content.json. Run:
 
     python tools/make_hero.py            # rebuild the card and the README block
-    python tools/make_hero.py --avatar   # also re-create the small avatar from profile.png
+    python tools/make_hero.py --avatar   # also re-create the avatar from assets/image/SR (2).jpg
 
 The hero is two fixed-width images in one centred paragraph (card 440px + banner 340px).
 They sit side by side on a wide screen and stack on a narrow one, because GitHub
@@ -25,8 +25,10 @@ import card_kit  # noqa: E402
 
 CONTENT = os.path.join(ROOT, ".github", "cards-content.json")
 OUT = os.path.join(ROOT, "assets", "hero")
-AVATAR = os.path.join(OUT, "avatar.png")
-SOURCE = os.path.join(ROOT, "profile.png")
+AVATAR = os.path.join(OUT, "avatar.jpg")
+SOURCE = os.path.join(ROOT, "assets", "image", "SR (2).jpg")
+# Square crop (x, y, size) around the face in the 1200x1128 source photo; no retouching.
+CROP = (160, 20, 900)
 README = os.path.join(ROOT, "README.md")
 BANNER_WIDTH = 340
 BROWSERS = [
@@ -37,8 +39,8 @@ BROWSERS = [
 ]
 
 
-def resize_avatar(size=240):
-    """Shrink profile.png to a small transparent PNG using a headless browser canvas."""
+def resize_avatar(size=480):
+    """Crop the source photo to a square around the face and shrink it to a sharp JPEG (5x the displayed size)."""
     browser = next((path for path in BROWSERS if os.path.exists(path)), None)
     if not browser:
         raise SystemExit("Install Edge or Chrome to resize the avatar.")
@@ -48,9 +50,10 @@ def resize_avatar(size=240):
         "<html><body><pre id='out'>pending</pre><script>"
         "const img=new Image();img.onload=()=>{"
         f"const c=document.createElement('canvas');c.width=c.height={size};"
-        f"c.getContext('2d').drawImage(img,0,0,{size},{size});"
-        "document.getElementById('out').textContent=c.toDataURL('image/png');};"
-        f"img.src='data:image/png;base64,{source}';</script></body></html>"
+        "const g=c.getContext('2d');g.imageSmoothingEnabled=true;g.imageSmoothingQuality='high';"
+        f"g.drawImage(img,{CROP[0]},{CROP[1]},{CROP[2]},{CROP[2]},0,0,{size},{size});"
+        "document.getElementById('out').textContent=c.toDataURL('image/jpeg',0.95);};"
+        f"img.src='data:image/jpeg;base64,{source}';</script></body></html>"
     )
     with tempfile.TemporaryDirectory() as folder:
         path = os.path.join(folder, "resize.html")
@@ -62,7 +65,7 @@ def resize_avatar(size=240):
             text=True,
             encoding="utf-8",
         )
-    match = re.search(r"data:image/png;base64,([A-Za-z0-9+/=]+)", result.stdout)
+    match = re.search(r"data:image/jpeg;base64,([A-Za-z0-9+/=]+)", result.stdout)
     if not match:
         raise SystemExit("Could not resize the avatar.")
     os.makedirs(OUT, exist_ok=True)
@@ -87,7 +90,7 @@ def badge(filename):
 def hero_spec(hero):
     """Build the card_kit spec from the hero content."""
     return {
-        "avatar": data_uri(AVATAR, "image/png"),
+        "avatar": data_uri(AVATAR, "image/jpeg"),
         "name": hero["name"],
         "taglines": hero["taglines"],
         "education": hero["education"],

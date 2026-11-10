@@ -93,3 +93,7 @@ git revert <commit>                                       # undo one of them
 ```
 
 The hero is three commits: the card renderer, the layout (card + cropped banner + `HERO` block in `README.md`) and a small gap/alignment fix.
+
+## Profile photo
+
+The hero avatar is now a square crop of `assets/image/SR (2).jpg` (480px JPEG, no retouching). To go back to the old photo: `git revert <commit>` for the "profile photo" commit, or `git checkout backup/before-avatar-2026-11-11`.
