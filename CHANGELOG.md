@@ -53,3 +53,8 @@ Notable changes to this profile repository.
 - The hero is a single centred column.
 - The contribution activity graph is narrower with larger labels.
 - The LinkedIn badge logos no longer use GitHub green.
+
+## 2026-11-10 (hero)
+
+- The hero is side by side again: a profile card (avatar, name, rotating tagline, education, role badges, status) next to the banner. It stacks on narrow screens.
+- The old typing-animation service is no longer used; the tagline is a self-hosted SVG animation.

@@ -82,3 +82,14 @@ It is split into separate commits, so you can undo only what you dislike:
 - the LinkedIn badge recolour.
 
 Reset to the tag to go back completely.
+
+# Undoing the side-by-side hero
+
+Before the hero came back as a card the repository was tagged `backup/before-hero-2026-11-10` (single-column hero).
+
+```bash
+git log --oneline backup/before-hero-2026-11-10..main    # see the changes
+git revert <commit>                                       # undo one of them
+```
+
+The hero is three commits: the card renderer, the layout (card + cropped banner + `HERO` block in `README.md`) and a small gap/alignment fix.
