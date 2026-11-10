@@ -28,7 +28,7 @@ OUT = os.path.join(ROOT, "assets", "hero")
 AVATAR = os.path.join(OUT, "avatar.jpg")
 SOURCE = os.path.join(ROOT, "assets", "image", "SR (2).jpg")
 # Square crop (x, y, size) around the face in the 1200x1128 source photo; no retouching.
-CROP = (160, 20, 900)
+CROP = (95, 50, 1030)
 README = os.path.join(ROOT, "README.md")
 BANNER_WIDTH = 340
 BROWSERS = [
