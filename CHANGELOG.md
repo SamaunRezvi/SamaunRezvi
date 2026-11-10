@@ -45,3 +45,11 @@ Notable changes to this profile repository.
 
 - Principles, Selected Work and Latest Public Projects are now rich SVG cards with embedded serif fonts, accent gradients and tech tags.
 - Project cards are generated from live repository data and show a Live demo label when a website is set.
+
+## 2026-11-10 (responsive)
+
+- About Me stats, Tech & Tools, quotes and contact are now cards; no content was removed (every stat, badge, quote and contact line is kept).
+- Headings, chart cards and project cards scale correctly on phones and tablets.
+- The hero is a single centred column.
+- The contribution activity graph is narrower with larger labels.
+- The LinkedIn badge logos no longer use GitHub green.
