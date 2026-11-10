@@ -88,3 +88,15 @@ class ReadmeAssetTests(unittest.TestCase):
 
     def test_body_text_is_not_shrunk_with_sub(self):
         self.assertNotIn("<sub>", README)
+
+    def test_badge_logos_do_not_embed_the_old_greens(self):
+        import base64
+        import glob
+
+        for path in glob.glob(os.path.join(BADGE_DIR, "*.svg")):
+            with open(path, encoding="utf-8") as f:
+                text = f.read()
+            for payload in re.findall(r"base64,([A-Za-z0-9+/=]+)", text):
+                decoded = base64.b64decode(payload).decode("utf-8", "ignore").lower()
+                for colour in GREENS:
+                    self.assertNotIn("#" + colour.lower(), decoded, os.path.basename(path))
