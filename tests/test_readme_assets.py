@@ -85,3 +85,6 @@ class ReadmeAssetTests(unittest.TestCase):
         for caption in ("what I reach for and why", "architecture walkthrough on request"):
             line = next(l for l in README.splitlines() if caption in l)
             self.assertNotIn("<sub>", line)
+
+    def test_body_text_is_not_shrunk_with_sub(self):
+        self.assertNotIn("<sub>", README)

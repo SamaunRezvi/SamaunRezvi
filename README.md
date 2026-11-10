@@ -23,7 +23,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=600&size=24&duration=2600&pause=900&color=58A6FF&vCenter=true&width=430&height=40&lines=Full-Stack+Web+Developer;I+build+products+end+to+end;Frontend+%C2%B7+Backend+%C2%B7+Data+%C2%B7+Deploy" alt="" />
 
-<sub>Computer Science &amp; Engineering · Daffodil International University · DSC, Dhaka, Bangladesh</sub>
+Computer Science &amp; Engineering · Daffodil International University · DSC, Dhaka, Bangladesh
 
 <br /><br />
 
@@ -91,25 +91,25 @@
 <img alt="WORK" src="assets/badges/work-58a6ff-b88cf6d9.svg" /><br />
 <h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/stat-projects-dark.svg"><img alt="15+" src="assets/headings/stat-projects-light.svg" height="94" /></picture></h1>
 <b>PROJECTS</b><br />
-<sub>across web and data</sub>
+across web and data
 </td>
 <td align="center" width="170">
 <img alt="STACK" src="assets/badges/stack-bc8cff-83e29346.svg" /><br />
 <h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/stat-stack-dark.svg"><img alt="10+" src="assets/headings/stat-stack-light.svg" height="94" /></picture></h1>
 <b>TECHNOLOGIES</b><br />
-<sub>in active use</sub>
+in active use
 </td>
 <td align="center" width="170">
 <img alt="REACH" src="assets/badges/reach-58a6ff-367641ea.svg" /><br />
 <h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/stat-reach-dark.svg"><img alt="2" src="assets/headings/stat-reach-light.svg" height="94" /></picture></h1>
 <b>LANGUAGES</b><br />
-<sub>Bengali and English</sub>
+Bengali and English
 </td>
 <td align="center" width="170">
 <img alt="OWNERSHIP" src="assets/badges/ownership-f0883e-f1abaa74.svg" /><br />
 <h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/stat-ownership-dark.svg"><img alt="99.9%" src="assets/headings/stat-ownership-light.svg" height="94" /></picture></h1>
 <b>END TO END</b><br />
-<sub>design through deploy</sub>
+design through deploy
 </td>
 </tr>
 </table>
@@ -126,15 +126,15 @@ I build systems where people in different roles use the same data for different 
 <img alt="" src="assets/badges/01-58a6ff-f8da95c6.svg" />
 <br /><br />
 <b>Missing data is shown as missing</b><br />
-<sub><code>renderQualityState()</code></sub>
-<p align="justify"><sub>If a sensor has not reported, the interface says so. It never renders a zero, because a zero is a reading and an absence is not. Every value carries a quality state and an origin, so an estimate is never mistaken for a measurement.</sub></p>
+<code>renderQualityState()</code>
+<p align="justify">If a sensor has not reported, the interface says so. It never renders a zero, because a zero is a reading and an absence is not. Every value carries a quality state and an origin, so an estimate is never mistaken for a measurement.</p>
 </td>
 <td width="50%" valign="top" align="left">
 <img alt="" src="assets/badges/02-bc8cff-0df93f88.svg" />
 <br /><br />
 <b>Permissions live where the data lives</b><br />
-<sub><code>scopeToJurisdiction()</code></sub>
-<p align="justify"><sub>Scoping a user to their district is a query-layer constraint, not a filtered dropdown. If the rule only exists in the interface, it is not a rule. Authorisation is re-checked inside every server action.</sub></p>
+<code>scopeToJurisdiction()</code>
+<p align="justify">Scoping a user to their district is a query-layer constraint, not a filtered dropdown. If the rule only exists in the interface, it is not a rule. Authorisation is re-checked inside every server action.</p>
 </td>
 </tr>
 <tr>
@@ -142,15 +142,15 @@ I build systems where people in different roles use the same data for different 
 <img alt="" src="assets/badges/03-bc8cff-eb6916f5.svg" />
 <br /><br />
 <b>Offline is a state, not an error</b><br />
-<sub><code>queueAndSync()</code></sub>
-<p align="justify"><sub>Field forms queue locally and sync when connectivity returns. Endpoints are idempotent, so a retried submission never duplicates a record. Maps fall back to a list view when tiles fail.</sub></p>
+<code>queueAndSync()</code>
+<p align="justify">Field forms queue locally and sync when connectivity returns. Endpoints are idempotent, so a retried submission never duplicates a record. Maps fall back to a list view when tiles fail.</p>
 </td>
 <td width="50%" valign="top" align="left">
 <img alt="" src="assets/badges/04-f0883e-28add1ae.svg" />
 <br /><br />
 <b>Scope boundaries are deliberate</b><br />
-<sub><code>defineBoundary()</code></sub>
-<p align="justify"><sub>A monitoring platform I built has no remote control over the hardware it observes. Centralising visibility was the goal; overriding on-site safety logic was never in scope, and saying so explicitly mattered more than shipping a feature.</sub></p>
+<code>defineBoundary()</code>
+<p align="justify">A monitoring platform I built has no remote control over the hardware it observes. Centralising visibility was the goal; overriding on-site safety logic was never in scope, and saying so explicitly mattered more than shipping a feature.</p>
 </td>
 </tr>
 </table>
@@ -287,7 +287,7 @@ I build systems where people in different roles use the same data for different 
 <img alt="" src="assets/badges/01-58a6ff-1cad464c.svg" />
 <br /><br />
 <b><code>iot-monitoring/</code></b>
-<p align="justify"><sub>Real-time telemetry across a 9-role permission system and 90+ routes. Offline-capable field apps, jurisdiction-scoped access control.</sub></p>
+<p align="justify">Real-time telemetry across a 9-role permission system and 90+ routes. Offline-capable field apps, jurisdiction-scoped access control.</p>
 <img alt="Next.js" src="assets/badges/next-js-0d1117-852d2331.svg" />
 <img alt="Prisma" src="assets/badges/prisma-0d1117-6d61a711.svg" />
 <img alt="PostgreSQL" src="assets/badges/postgresql-0d1117-978ebdcc.svg" />
@@ -296,7 +296,7 @@ I build systems where people in different roles use the same data for different 
 <img alt="" src="assets/badges/02-bc8cff-f3b01fa8.svg" />
 <br /><br />
 <b><code>competition-platform/</code></b>
-<p align="justify"><sub>Multi-role judging pipeline blending automated scoring with manual review. Live leaderboards, role-separated submission flow.</sub></p>
+<p align="justify">Multi-role judging pipeline blending automated scoring with manual review. Live leaderboards, role-separated submission flow.</p>
 <img alt="TypeScript" src="assets/badges/typescript-0d1117-5915b376.svg" />
 <img alt="React" src="assets/badges/react-0d1117-c20e2c1c.svg" />
 <img alt="Zod" src="assets/badges/zod-0d1117-6f721dc4.svg" />
@@ -305,7 +305,7 @@ I build systems where people in different roles use the same data for different 
 <img alt="" src="assets/badges/03-f0883e-46db82c7.svg" />
 <br /><br />
 <b><code>institutional-governance/</code></b>
-<p align="justify"><sub>Full document lifecycle management: review workflows, an immutable audit trail, and weighted contribution scoring.</sub></p>
+<p align="justify">Full document lifecycle management: review workflows, an immutable audit trail, and weighted contribution scoring.</p>
 <img alt="Node.js" src="assets/badges/node-js-0d1117-72c45120.svg" />
 <img alt="SQLite" src="assets/badges/sqlite-0d1117-14cc7c48.svg" />
 <img alt="Audit Trail" src="assets/badges/audit-trail-0d1117-d090e3ee.svg" />
@@ -316,7 +316,7 @@ I build systems where people in different roles use the same data for different 
 <img alt="" src="assets/badges/04-f0883e-1e37ef0f.svg" />
 <br /><br />
 <b><code>data-intelligence/</code></b>
-<p align="justify"><sub>Ingestion-to-insight pipeline with sentiment classification, trend comparison, and dashboarded reporting.</sub></p>
+<p align="justify">Ingestion-to-insight pipeline with sentiment classification, trend comparison, and dashboarded reporting.</p>
 <img alt="Python" src="assets/badges/python-0d1117-2d0ca898.svg" />
 <img alt="Vite" src="assets/badges/vite-0d1117-6301ffdd.svg" />
 <img alt="Recharts" src="assets/badges/recharts-0d1117-4d2e9dc1.svg" />
@@ -325,7 +325,7 @@ I build systems where people in different roles use the same data for different 
 <img alt="" src="assets/badges/05-f778ba-c72a1b0c.svg" />
 <br /><br />
 <b><code>scheduling-systems/</code></b>
-<p align="justify"><sub>Role-specific portals with approval workflows, availability management, and calendar-synced booking.</sub></p>
+<p align="justify">Role-specific portals with approval workflows, availability management, and calendar-synced booking.</p>
 <img alt="Next.js" src="assets/badges/next-js-0d1117-852d2331.svg" />
 <img alt="Tailwind" src="assets/badges/tailwind-0d1117-5ebd0c90.svg" />
 <img alt="RBAC" src="assets/badges/rbac-0d1117-feb63608.svg" />
@@ -334,7 +334,7 @@ I build systems where people in different roles use the same data for different 
 <img alt="" src="assets/badges/06-39d0d8-016e1d9c.svg" />
 <br /><br />
 <b><code>design-systems/</code></b>
-<p align="justify"><sub>Component libraries and design tokens driving consistent, accessible, responsive interfaces.</sub></p>
+<p align="justify">Component libraries and design tokens driving consistent, accessible, responsive interfaces.</p>
 <img alt="Figma" src="assets/badges/figma-0d1117-153c1e67.svg" />
 <img alt="Tailwind" src="assets/badges/tailwind-0d1117-5ebd0c90.svg" />
 <img alt="a11y" src="assets/badges/a11y-0d1117-9098efe1.svg" />
@@ -361,47 +361,47 @@ I build systems where people in different roles use the same data for different 
 <tr>
 <td width="33%" valign="top" align="left">
 <b><a href="https://github.com/SamaunRezvi/assignment_eight_s">StudioSpace API</a></b>
-<br /><sub><code>assignment_eight_s</code> · Updated Nov 5, 2026</sub>
-<br /><br /><sub>A secure Express and MongoDB backend for the StudioSpace marketplace. Handles studios, bookings, reviews and…</sub>
+<br /><code>assignment_eight_s</code> · Updated Nov 5, 2026
+<br /><br />A secure Express and MongoDB backend for the StudioSpace marketplace. Handles studios, bookings, reviews and…
 <br /><br /><code>TypeScript</code>
-<br /><br /><sub><a href="https://github.com/SamaunRezvi/assignment_eight_s">Source code</a></sub>
+<br /><br /><a href="https://github.com/SamaunRezvi/assignment_eight_s">Source code</a>
 </td>
 <td width="33%" valign="top" align="left">
 <b><a href="https://github.com/SamaunRezvi/assignment_eight_c">StudioSpace</a></b>
-<br /><sub><code>assignment_eight_c</code> · Updated Nov 5, 2026</sub>
-<br /><br /><sub>A creator-first studio rental marketplace built with Next.js. Discover photo studios, film stages, podcast…</sub>
+<br /><code>assignment_eight_c</code> · Updated Nov 5, 2026
+<br /><br />A creator-first studio rental marketplace built with Next.js. Discover photo studios, film stages, podcast…
 <br /><br /><code>TypeScript</code>
-<br /><br /><sub><a href="https://studiospace-creators.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_eight_c">Source code</a></sub>
+<br /><br /><a href="https://studiospace-creators.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_eight_c">Source code</a>
 </td>
 <td width="33%" valign="top" align="left">
 <b><a href="https://github.com/SamaunRezvi/assignment_seven">BazarDor</a></b>
-<br /><sub><code>assignment_seven</code> · Updated Oct 10, 2026</sub>
-<br /><br /><sub>A clean, Bangla-first market price tracker built with Next.js. Browse everyday essentials, compare prices…</sub>
+<br /><code>assignment_seven</code> · Updated Oct 10, 2026
+<br /><br />A clean, Bangla-first market price tracker built with Next.js. Browse everyday essentials, compare prices…
 <br /><br /><code>TypeScript</code>
-<br /><br /><sub><a href="https://assignment-seven-sigma-ten.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_seven">Source code</a></sub>
+<br /><br /><a href="https://assignment-seven-sigma-ten.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_seven">Source code</a>
 </td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="left">
 <b><a href="https://github.com/SamaunRezvi/assignment_six">FitLog</a></b>
-<br /><sub><code>assignment_six</code> · Updated Sep 27, 2026</sub>
-<br /><br /><sub>A dark, sleek workout library built with Next.js. Browse a curated set of lifts, lock them into today's…</sub>
+<br /><code>assignment_six</code> · Updated Sep 27, 2026
+<br /><br />A dark, sleek workout library built with Next.js. Browse a curated set of lifts, lock them into today's…
 <br /><br /><code>TypeScript</code>
-<br /><br /><sub><a href="https://assignment-six-one-gamma.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_six">Source code</a></sub>
+<br /><br /><a href="https://assignment-six-one-gamma.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_six">Source code</a>
 </td>
 <td width="33%" valign="top" align="left">
 <b><a href="https://github.com/SamaunRezvi/assignment_five">Dev Stack Builder</a></b>
-<br /><sub><code>assignment_five</code> · Updated Sep 13, 2026</sub>
-<br /><br /><sub>A sleek, modern, and fully responsive "Dev Stack Builder" website to explore technologies and build your own…</sub>
+<br /><code>assignment_five</code> · Updated Sep 13, 2026
+<br /><br />A sleek, modern, and fully responsive "Dev Stack Builder" website to explore technologies and build your own…
 <br /><br /><code>JavaScript</code>
-<br /><br /><sub><a href="https://assignment-five-six.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_five">Source code</a></sub>
+<br /><br /><a href="https://assignment-five-six.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_five">Source code</a>
 </td>
 <td width="33%" valign="top" align="left">
 <b><a href="https://github.com/SamaunRezvi/assignment_one">DevConf 2026</a></b>
-<br /><sub><code>assignment_one</code> · Updated Aug 21, 2026</sub>
-<br /><br /><sub>A sleek, modern, and fully responsive “DevConf 2026” landing page.</sub>
+<br /><code>assignment_one</code> · Updated Aug 21, 2026
+<br /><br />A sleek, modern, and fully responsive “DevConf 2026” landing page.
 <br /><br /><code>HTML</code>
-<br /><br /><sub><a href="https://github.com/SamaunRezvi/assignment_one">Source code</a></sub>
+<br /><br /><a href="https://github.com/SamaunRezvi/assignment_one">Source code</a>
 </td>
 </tr>
 </table>
@@ -529,17 +529,17 @@ I build systems where people in different roles use the same data for different 
 <td align="center" width="33%">
 <img alt="" src="assets/badges/01-58a6ff-1cad464c.svg" /><br /><br />
 <b><code>Full-time</code></b>
-<p align="center"><sub>Frontend, Full-Stack, and Product Engineering</sub></p>
+<p align="center">Frontend, Full-Stack, and Product Engineering</p>
 </td>
 <td align="center" width="33%">
 <img alt="" src="assets/badges/02-bc8cff-f3b01fa8.svg" /><br /><br />
 <b><code>Freelance</code></b>
-<p align="center"><sub>Platforms, Dashboards, <br /> and Interface Work</sub></p>
+<p align="center">Platforms, Dashboards, <br /> and Interface Work</p>
 </td>
 <td align="center" width="33%">
 <img alt="" src="assets/badges/03-f778ba-00ab8e11.svg" /><br /><br />
 <b><code>Collaboration</code></b>
-<p align="center"><sub>Open source, Side Builds, and Team Projects</sub></p>
+<p align="center">Open source, Side Builds, and Team Projects</p>
 </td>
 </tr>
 </table>
@@ -565,6 +565,6 @@ I build systems where people in different roles use the same data for different 
 
 <br /><br />
 
-<sub>Personal use only, with visible credit to <b>Samaun Rezvi</b> · Banner artwork belongs to its original creator · <a href="./LICENSE">LICENSE</a></sub>
+Personal use only, with visible credit to <b>Samaun Rezvi</b> · Banner artwork belongs to its original creator · <a href="./LICENSE">LICENSE</a>
 
 </div>
