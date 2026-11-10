@@ -1,5 +1,6 @@
 """Tests for the Latest Public Projects section."""
 import os
+import re
 import tempfile
 import unittest
 from unittest import mock
@@ -64,19 +65,24 @@ class RenderTests(unittest.TestCase):
 
     def test_shortens_long_descriptions(self):
         html = cards.render_recent_repos([repo(description="word " * 100)])
-        shown = html.split("<sub>")[2].split("</sub>")[0]
+        shown = re.search(r"<br /><br />([^<
+]+)", html).group(1)
         self.assertLessEqual(len(shown), cards.MAX_DESCRIPTION)
         self.assertTrue(shown.endswith("\u2026"))
 
     def test_capitalises_the_summary(self):
         html = cards.render_recent_repos([repo(description="a dark, sleek library")])
-        self.assertIn("<sub>A dark, sleek library</sub>", html)
+        self.assertIn("<br /><br />A dark, sleek library", html)
 
     def test_cuts_long_summaries_at_a_word_boundary(self):
         html = cards.render_recent_repos([repo(description="alpha " * 40)])
-        shown = html.split("<sub>")[2].split("</sub>")[0]
+        shown = re.search(r"<br /><br />([^<
+]+)", html).group(1)
         self.assertTrue(shown.endswith("…"))
         self.assertTrue(all(word.lower() == "alpha" for word in shown[:-1].split()))
+
+    def test_project_text_is_not_shrunk_with_sub(self):
+        self.assertNotIn("<sub>", cards.render_recent_repos([repo()]))
 
     def test_pads_each_row_to_three_cells(self):
         self.assertEqual(cards.render_recent_repos([repo()]).count("<td"), 3)

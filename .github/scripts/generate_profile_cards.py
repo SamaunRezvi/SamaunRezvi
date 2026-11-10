@@ -718,12 +718,12 @@ def render_project_card(repo: dict) -> str:
     lines = [
         '<td width="33%" valign="top" align="left">',
         f'<b><a href="{url}">{escape(title)}</a></b>',
-        f"<br /><sub>{meta_text}</sub>",
-        f"<br /><br /><sub>{escape(summary)}</sub>",
+        f"<br />{meta_text}",
+        f"<br /><br />{escape(summary)}",
     ]
     if chips:
         lines.append(f"<br /><br />{chips}")
-    lines.append(f"<br /><br /><sub>{link_text}</sub>")
+    lines.append(f"<br /><br />{link_text}")
     lines.append("</td>")
     return "\n".join(lines)
 
@@ -731,7 +731,7 @@ def render_project_card(repo: dict) -> str:
 def render_recent_repos(repos: list) -> str:
     """Render repositories as the HTML table placed between the README markers."""
     if not repos:
-        return "<sub>No public repositories to show yet.</sub>"
+        return "No public repositories to show yet."
     cells = [render_project_card(repo) for repo in repos]
     rows = []
     for start in range(0, len(cells), 3):
