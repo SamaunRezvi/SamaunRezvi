@@ -27,6 +27,9 @@ class WorkflowTests(unittest.TestCase):
     def test_profile_details_text_is_enlarged(self):
         self.assertIn("int(m.group(1)) + 2", workflow("profile-card.yml"))
 
+    def test_card_workflow_commits_the_project_cards(self):
+        self.assertIn("git add README.md assets/projects", workflow("profile-card.yml"))
+
     def test_card_workflow_commits_the_readme_section(self):
         self.assertIn("git add README.md assets/", workflow("profile-card.yml"))
 

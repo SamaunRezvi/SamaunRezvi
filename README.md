@@ -287,54 +287,19 @@ I build systems where people in different roles use the same data for different 
 <br />
 
 <!-- RECENT_PROJECTS:START -->
-<table align="center">
-<tr>
-<td width="33%" valign="top" align="left">
-<b><a href="https://github.com/SamaunRezvi/assignment_eight_s">StudioSpace API</a></b>
-<br /><code>assignment_eight_s</code> · Updated Nov 5, 2026
-<br /><br />A secure Express and MongoDB backend for the StudioSpace marketplace. Handles studios, bookings, reviews and…
-<br /><br /><code>TypeScript</code>
-<br /><br /><a href="https://github.com/SamaunRezvi/assignment_eight_s">Source code</a>
-</td>
-<td width="33%" valign="top" align="left">
-<b><a href="https://github.com/SamaunRezvi/assignment_eight_c">StudioSpace</a></b>
-<br /><code>assignment_eight_c</code> · Updated Nov 5, 2026
-<br /><br />A creator-first studio rental marketplace built with Next.js. Discover photo studios, film stages, podcast…
-<br /><br /><code>TypeScript</code>
-<br /><br /><a href="https://studiospace-creators.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_eight_c">Source code</a>
-</td>
-<td width="33%" valign="top" align="left">
-<b><a href="https://github.com/SamaunRezvi/assignment_seven">BazarDor</a></b>
-<br /><code>assignment_seven</code> · Updated Oct 10, 2026
-<br /><br />A clean, Bangla-first market price tracker built with Next.js. Browse everyday essentials, compare prices…
-<br /><br /><code>TypeScript</code>
-<br /><br /><a href="https://assignment-seven-sigma-ten.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_seven">Source code</a>
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top" align="left">
-<b><a href="https://github.com/SamaunRezvi/assignment_six">FitLog</a></b>
-<br /><code>assignment_six</code> · Updated Sep 27, 2026
-<br /><br />A dark, sleek workout library built with Next.js. Browse a curated set of lifts, lock them into today's…
-<br /><br /><code>TypeScript</code>
-<br /><br /><a href="https://assignment-six-one-gamma.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_six">Source code</a>
-</td>
-<td width="33%" valign="top" align="left">
-<b><a href="https://github.com/SamaunRezvi/assignment_five">Dev Stack Builder</a></b>
-<br /><code>assignment_five</code> · Updated Sep 13, 2026
-<br /><br />A sleek, modern, and fully responsive "Dev Stack Builder" website to explore technologies and build your own…
-<br /><br /><code>JavaScript</code>
-<br /><br /><a href="https://assignment-five-six.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_five">Source code</a>
-</td>
-<td width="33%" valign="top" align="left">
-<b><a href="https://github.com/SamaunRezvi/assignment_one">DevConf 2026</a></b>
-<br /><code>assignment_one</code> · Updated Aug 21, 2026
-<br /><br />A sleek, modern, and fully responsive “DevConf 2026” landing page.
-<br /><br /><code>HTML</code>
-<br /><br /><a href="https://github.com/SamaunRezvi/assignment_one">Source code</a>
-</td>
-</tr>
-</table>
+<p align="center">
+<a href="https://github.com/SamaunRezvi/assignment_eight_s"><img alt="StudioSpace API: A secure Express and MongoDB backend for the StudioSpace marketplace. Handles studios, bookings, reviews and…" src="assets/projects/assignment_eight_s.svg" width="49%" /></a>
+<a href="https://github.com/SamaunRezvi/assignment_eight_c"><img alt="StudioSpace: A creator-first studio rental marketplace built with Next.js. Discover photo studios, film stages, podcast…" src="assets/projects/assignment_eight_c.svg" width="49%" /></a>
+</p>
+<p align="center">
+<a href="https://github.com/SamaunRezvi/assignment_seven"><img alt="BazarDor: A clean, Bangla-first market price tracker built with Next.js. Browse everyday essentials, compare prices…" src="assets/projects/assignment_seven.svg" width="49%" /></a>
+<a href="https://github.com/SamaunRezvi/assignment_six"><img alt="FitLog: A dark, sleek workout library built with Next.js. Browse a curated set of lifts, lock them into today's…" src="assets/projects/assignment_six.svg" width="49%" /></a>
+</p>
+<p align="center">
+<a href="https://github.com/SamaunRezvi/assignment_five"><img alt="Dev Stack Builder: A sleek, modern, and fully responsive &quot;Dev Stack Builder&quot; website to explore technologies and build your own…" src="assets/projects/assignment_five.svg" width="49%" /></a>
+<a href="https://github.com/SamaunRezvi/assignment_one"><img alt="DevConf 2026: A sleek, modern, and fully responsive “DevConf 2026” landing page." src="assets/projects/assignment_one.svg" width="49%" /></a>
+</p>
+<p align="center">Live demos: <a href="https://studiospace-creators.vercel.app">StudioSpace</a> · <a href="https://assignment-seven-sigma-ten.vercel.app">BazarDor</a> · <a href="https://assignment-six-one-gamma.vercel.app">FitLog</a> · <a href="https://assignment-five-six.vercel.app">Dev Stack Builder</a></p>
 <!-- RECENT_PROJECTS:END -->
 
 <br />

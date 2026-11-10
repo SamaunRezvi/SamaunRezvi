@@ -17,6 +17,8 @@ from xml.sax.saxutils import escape
 
 import requests
 
+import card_kit
+
 USERNAME = os.environ.get("USERNAME", "SamaunRezvi")
 TOKEN = os.environ["GITHUB_TOKEN"]
 UTC_OFFSET = float(os.environ.get("UTC_OFFSET", "6"))
@@ -642,7 +644,7 @@ def build_activity_graph(daily: list) -> str:
 
 RECENT_START = "<!-- RECENT_PROJECTS:START -->"
 RECENT_END = "<!-- RECENT_PROJECTS:END -->"
-MAX_DESCRIPTION = 110  # keep the project cards compact
+MAX_DESCRIPTION = 160  # keep the project cards compact
 # Course-style prefixes such as "PH_B-14_A08 - " in front of a description.
 TITLE_PREFIX = re.compile(r"^\S*\d\S*\s+[-\u2013\u2014:]\s+")
 
@@ -685,60 +687,90 @@ def fetch_recent_repos(limit: int = 6) -> list:
     return [repo for repo in nodes if repo["name"].lower() != USERNAME.lower()][:limit]
 
 
-def render_project_card(repo: dict) -> str:
-    """Render one repository as a table cell: title, repo name, summary, tags and links."""
-    quote = {'"': "&quot;"}
+PROJECTS_DIR = "assets/projects"
+
+
+def project_slug(repo: dict) -> str:
+    """File-safe name for a repository's card image."""
+    return re.sub(r"[^a-z0-9._-]+", "-", repo["name"].lower()).strip("-")
+
+
+def has_live_demo(repo: dict) -> bool:
+    """True when the repository's website field holds a web link."""
+    return (repo.get("homepageUrl") or "").strip().startswith(("http://", "https://"))
+
+
+def shorten(text: str, limit: int = MAX_DESCRIPTION) -> str:
+    """Capitalise text and cut it at a word boundary with an ellipsis when it is too long."""
+    text = text[:1].upper() + text[1:]
+    if len(text) <= limit:
+        return text
+    cut = text[: limit - 1]
+    cut = cut.rsplit(" ", 1)[0] if " " in cut else cut
+    return cut.rstrip(" ,;:-") + "\u2026"
+
+
+def project_card_spec(repo: dict, index: int) -> dict:
+    """Describe one repository as a card for card_kit."""
     title, summary = split_project_text(repo)
-    summary = summary[:1].upper() + summary[1:]
-    if len(summary) > MAX_DESCRIPTION:
-        cut = summary[: MAX_DESCRIPTION - 1]
-        cut = cut.rsplit(" ", 1)[0] if " " in cut else cut
-        summary = cut.rstrip(" ,;:-") + "\u2026"
-    pushed =datetime.datetime.fromisoformat(repo["pushedAt"].replace("Z", "+00:00"))
-    updated = f"Updated {pushed.strftime('%b')} {pushed.day}, {pushed.year}"
-    tags = []
+    pushed = datetime.datetime.fromisoformat(repo["pushedAt"].replace("Z", "+00:00"))
     language = (repo.get("primaryLanguage") or {}).get("name")
-    if language:
-        tags.append(language)
     topics = (repo.get("repositoryTopics") or {}).get("nodes") or []
-    tags += [node["topic"]["name"] for node in topics]
-    tags = list(dict.fromkeys(tags))[:4]
-    chips = " ".join(f"<code>{escape(tag)}</code>" for tag in tags)
-    url = escape(repo["url"], quote)
-    links = []
-    homepage = (repo.get("homepageUrl") or "").strip()
-    if homepage.startswith(("http://", "https://")):
-        links.append(f'<a href="{escape(homepage, quote)}">Live demo</a>')
-    links.append(f'<a href="{url}">Source code</a>')
-    meta = [f"<code>{escape(repo['name'])}</code>", updated]
-    if repo.get("stargazerCount"):
-        meta.append(f"\u2605 {repo['stargazerCount']}")
-    meta_text = " \u00b7 ".join(meta)
-    link_text = " \u00b7 ".join(links)
-    lines = [
-        '<td width="33%" valign="top" align="left">',
-        f'<b><a href="{url}">{escape(title)}</a></b>',
-        f"<br />{meta_text}",
-        f"<br /><br />{escape(summary)}",
-    ]
-    if chips:
-        lines.append(f"<br /><br />{chips}")
-    lines.append(f"<br /><br />{link_text}")
-    lines.append("</td>")
-    return "\n".join(lines)
+    tags = ([language] if language else []) + [node["topic"]["name"] for node in topics]
+    return {
+        "accent": card_kit.ACCENTS[index % len(card_kit.ACCENTS)],
+        "eyebrow": language or "Repository",
+        "number": f"{index + 1:02d}",
+        "title": title,
+        "code": repo["name"],
+        "body": shorten(summary),
+        "chips": list(dict.fromkeys(tags))[:4],
+        "footer_left": f"Updated {pushed.strftime('%b')} {pushed.day}, {pushed.year}",
+        "footer_right": "Live demo \u2192" if has_live_demo(repo) else "Source code \u2192",
+    }
+
+
+def render_project_cards(repos: list) -> list:
+    """Render every repository card; cards in a row share one height."""
+    return card_kit.equalise([project_card_spec(repo, i) for i, repo in enumerate(repos)])
+
+
+def write_project_cards(repos: list, directory: str = PROJECTS_DIR) -> list:
+    """Write one SVG per repository, remove cards of repositories that are gone, return the file names."""
+    os.makedirs(directory, exist_ok=True)
+    wanted = {f"{project_slug(repo)}.svg": svg for repo, svg in zip(repos, render_project_cards(repos))}
+    for existing in os.listdir(directory):
+        if existing.endswith(".svg") and existing not in wanted:
+            os.remove(os.path.join(directory, existing))
+    for name, svg in wanted.items():
+        with open(os.path.join(directory, name), "w", encoding="utf-8", newline="\n") as f:
+            f.write(svg)
+    return sorted(wanted)
 
 
 def render_recent_repos(repos: list) -> str:
-    """Render repositories as the HTML table placed between the README markers."""
+    """Render the project cards as linked images, two per row, plus a line of live demo links."""
     if not repos:
         return "No public repositories to show yet."
-    cells = [render_project_card(repo) for repo in repos]
-    rows = []
-    for start in range(0, len(cells), 3):
-        row = cells[start : start + 3]
-        row += ['<td width="33%"></td>'] * (3 - len(row))
-        rows.append("<tr>\n" + "\n".join(row) + "\n</tr>")
-    return '<table align="center">\n' + "\n".join(rows) + "\n</table>"
+    quote = {'"': "&quot;"}
+    images = []
+    for repo in repos:
+        title, summary = split_project_text(repo)
+        alt = escape(f"{title}: {shorten(summary)}", quote)
+        url = escape(repo["url"], quote)
+        images.append(
+            f'<a href="{url}"><img alt="{alt}" src="{PROJECTS_DIR}/{project_slug(repo)}.svg" width="49%" /></a>'
+        )
+    rows = ['<p align="center">\n' + "\n".join(images[i : i + 2]) + "\n</p>" for i in range(0, len(images), 2)]
+    demos = [
+        f'<a href="{escape(repo["homepageUrl"].strip(), quote)}">{escape(split_project_text(repo)[0])}</a>'
+        for repo in repos
+        if has_live_demo(repo)
+    ]
+    separator = " \u00b7 "
+    if demos:
+        rows.append('<p align="center">Live demos: ' + separator.join(demos) + "</p>")
+    return "\n".join(rows)
 
 
 def update_readme(block: str, path: str = "README.md") -> bool:
@@ -800,7 +832,9 @@ def main() -> None:
     if not any(results):
         raise RuntimeError("every card failed")
     try:
-        update_readme(render_recent_repos(fetch_recent_repos()))
+        repos = fetch_recent_repos()
+        write_project_cards(repos)
+        update_readme(render_recent_repos(repos))
     except Exception as error:
         print(f"recent projects: failed, keeping the previous section: {error}", file=sys.stderr)
 

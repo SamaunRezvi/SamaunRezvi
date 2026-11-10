@@ -15,6 +15,7 @@ class MainTests(unittest.TestCase):
             "fetch_daily_contributions": mock.Mock(return_value=DAILY),
             "fetch_streak_stats": mock.Mock(return_value=STREAK),
             "fetch_recent_repos": mock.Mock(return_value=[]),
+            "write_project_cards": mock.Mock(return_value=[]),
             "update_readme": mock.Mock(return_value=False),
         }
         patches.update(overrides)
