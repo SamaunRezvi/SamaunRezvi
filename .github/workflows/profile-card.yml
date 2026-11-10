@@ -69,6 +69,8 @@ jobs:
 
           # Match the README palette: swap the service's green for purple.
           svg = svg.replace("#40c463", "#BC8CFF")
+          # Same serif font as the other cards.
+          svg = svg.replace("'Segoe UI', Ubuntu, \"Helvetica Neue\", Sans-Serif", "'Times New Roman', Times, 'Liberation Serif', serif")
 
           with open("assets/profile-details.svg", "w", encoding="utf-8") as f:
               f.write(svg)
