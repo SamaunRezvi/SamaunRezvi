@@ -40,3 +40,8 @@ Notable changes to this profile repository.
 - Removed the repeated gradient dividers.
 - Section headings are now serif images (Playfair Display embedded) with dark and light variants.
 - Remaining typing animations and the generated cards use a serif font.
+
+## 2026-11-10 (cards)
+
+- Principles, Selected Work and Latest Public Projects are now rich SVG cards with embedded serif fonts, accent gradients and tech tags.
+- Project cards are generated from live repository data and show a Live demo label when a website is set.
