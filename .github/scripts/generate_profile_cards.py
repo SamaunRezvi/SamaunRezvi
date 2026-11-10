@@ -320,10 +320,10 @@ def fetch_streak_stats() -> dict:
 
 
 # Colours and font used by the streak stats card.
-STREAK_RING = "#3FB950"
-STREAK_FIRE = "#56D364"
+STREAK_RING = "#58A6FF"
+STREAK_FIRE = "#F0883E"
 STREAK_CUR_NUM = "#ffffff"
-STREAK_CUR_LABEL = "#3FB950"
+STREAK_CUR_LABEL = "#F0883E"
 STREAK_SIDE = "#8B949E"
 STREAK_DATES = "#6E7681"
 STREAK_FONT = "'Segoe UI', Ubuntu, sans-serif"
@@ -493,7 +493,7 @@ def build_donut_card(lang_data: list) -> str:
     return card_shell("Top Languages by Repo", width, height, body)
 
 
-CHART_COLOR = "#40c463"
+CHART_COLOR = "#BC8CFF"
 
 
 def build_productive_time_card(chart_data: list, utc_offset: float) -> str:
@@ -556,10 +556,10 @@ def build_productive_time_card(chart_data: list, utc_offset: float) -> str:
     return card_shell(title, width, height, chart_panel)
 
 
-ACTIVITY_LINE = "#2EA043"
-ACTIVITY_AREA = "#196C2E"
+ACTIVITY_LINE = "#39D0D8"
+ACTIVITY_AREA = "#14505A"
 ACTIVITY_POINT = "#ffffff"
-ACTIVITY_TITLE = "#3FB950"
+ACTIVITY_TITLE = "#39D0D8"
 
 
 def build_activity_graph(daily: list) -> str:
