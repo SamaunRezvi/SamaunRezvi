@@ -689,9 +689,12 @@ def render_project_card(repo: dict) -> str:
     """Render one repository as a table cell: title, repo name, summary, tags and links."""
     quote = {'"': "&quot;"}
     title, summary = split_project_text(repo)
+    summary = summary[:1].upper() + summary[1:]
     if len(summary) > MAX_DESCRIPTION:
-        summary = summary[: MAX_DESCRIPTION - 1].rstrip() + "\u2026"
-    pushed = datetime.datetime.fromisoformat(repo["pushedAt"].replace("Z", "+00:00"))
+        cut = summary[: MAX_DESCRIPTION - 1]
+        cut = cut.rsplit(" ", 1)[0] if " " in cut else cut
+        summary = cut.rstrip(" ,;:-") + "\u2026"
+    pushed =datetime.datetime.fromisoformat(repo["pushedAt"].replace("Z", "+00:00"))
     updated = f"Updated {pushed.strftime('%b')} {pushed.day}, {pushed.year}"
     tags = []
     language = (repo.get("primaryLanguage") or {}).get("name")

@@ -68,6 +68,16 @@ class RenderTests(unittest.TestCase):
         self.assertLessEqual(len(shown), cards.MAX_DESCRIPTION)
         self.assertTrue(shown.endswith("\u2026"))
 
+    def test_capitalises_the_summary(self):
+        html = cards.render_recent_repos([repo(description="a dark, sleek library")])
+        self.assertIn("<sub>A dark, sleek library</sub>", html)
+
+    def test_cuts_long_summaries_at_a_word_boundary(self):
+        html = cards.render_recent_repos([repo(description="alpha " * 40)])
+        shown = html.split("<sub>")[2].split("</sub>")[0]
+        self.assertTrue(shown.endswith("…"))
+        self.assertTrue(all(word.lower() == "alpha" for word in shown[:-1].split()))
+
     def test_pads_each_row_to_three_cells(self):
         self.assertEqual(cards.render_recent_repos([repo()]).count("<td"), 3)
         self.assertEqual(cards.render_recent_repos([repo(str(i)) for i in range(4)]).count("<td"), 6)
