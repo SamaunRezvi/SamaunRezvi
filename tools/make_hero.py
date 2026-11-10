@@ -107,8 +107,8 @@ def block_html(hero):
     alt = escape(alt_text(hero), {'"': "&quot;"})
     return (
         '<p align="center">\n'
-        f'<img alt="{alt}" src="assets/hero/hero-card.svg" width="{card_kit.HERO_WIDTH}" />\n'
-        f'<img alt="Animated banner" src="./assets/banner-3d.svg" width="{BANNER_WIDTH}" />\n'
+        f'<img align="top" alt="{alt}" src="assets/hero/hero-card.svg" width="{card_kit.HERO_WIDTH}" />\n'
+        f'<img align="top" alt="Animated banner" src="./assets/banner-3d.svg" width="{BANNER_WIDTH}" />\n'
         "</p>"
     )
 

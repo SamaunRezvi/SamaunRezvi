@@ -78,5 +78,9 @@ class ResponsiveTests(unittest.TestCase):
     def test_hero_card_has_a_pixel_width(self):
         self.assertIn('src="assets/hero/hero-card.svg" width="440"', README)
 
+    def test_hero_images_are_top_aligned(self):
+        block = README.split("<!-- HERO:START -->")[1].split("<!-- HERO:END -->")[0]
+        self.assertEqual(block.count('align="top"'), 2)
+
     def test_activity_graph_is_shown_at_its_own_width(self):
         self.assertIn('<img src="./assets/contribution-activity.svg" width="640"', README)

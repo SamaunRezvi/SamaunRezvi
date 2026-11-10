@@ -14,8 +14,8 @@
 
 <!-- HERO:START -->
 <p align="center">
-<img alt="Hi, I’m Samaun Rezvi Full-Stack Web Developer / I build products end to end / Frontend · Backend · Data · Deploy. Computer Science &amp; Engineering · Daffodil International University · DSC, Dhaka, Bangladesh. Full-Stack Developer, UI/UX Minded, Open to Work. status: open to opportunities · response time: usually within a day" src="assets/hero/hero-card.svg" width="440" />
-<img alt="Animated banner" src="./assets/banner-3d.svg" width="340" />
+<img align="top" alt="Hi, I’m Samaun Rezvi Full-Stack Web Developer / I build products end to end / Frontend · Backend · Data · Deploy. Computer Science &amp; Engineering · Daffodil International University · DSC, Dhaka, Bangladesh. Full-Stack Developer, UI/UX Minded, Open to Work. status: open to opportunities · response time: usually within a day" src="assets/hero/hero-card.svg" width="440" />
+<img align="top" alt="Animated banner" src="./assets/banner-3d.svg" width="340" />
 </p>
 <!-- HERO:END -->
 

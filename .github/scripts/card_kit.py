@@ -267,6 +267,7 @@ def render_stat(spec):
 
 
 HERO_WIDTH, HERO_HEIGHT = 440, 392
+HERO_GAP = 16  # transparent strip under the card so a stacked banner does not touch it
 
 
 def tagline_css(count, seconds_each=3):
@@ -294,8 +295,8 @@ def render_hero(spec):
     total = sum(sizes) + 8 * (len(sizes) - 1)
     shrink = min(1, (width - 2 * PAD) / total) if total else 1
     parts = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
-        f'viewBox="0 0 {width} {height}" role="img" aria-label="{escape(spec["name"])}">',
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height + HERO_GAP}" '
+        f'viewBox="0 0 {width} {height + HERO_GAP}" role="img" aria-label="{escape(spec["name"])}">',
         f"<title>{escape(spec['name'])}</title>",
         f"<style>{font_css()}"
         f".t{{font-family:'{TITLE_FONT[0]}',{SERIF_FALLBACK};font-weight:600;font-variant-numeric:lining-nums}}"

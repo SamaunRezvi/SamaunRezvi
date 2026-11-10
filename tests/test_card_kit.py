@@ -145,7 +145,7 @@ HERO = {
 class HeroTests(unittest.TestCase):
     def test_hero_is_well_formed_and_has_the_expected_size(self):
         root = ET.fromstring(card_kit.render_hero(HERO))
-        self.assertEqual((root.get("width"), root.get("height")), (str(card_kit.HERO_WIDTH), str(card_kit.HERO_HEIGHT)))
+        self.assertEqual((root.get("width"), root.get("height")), (str(card_kit.HERO_WIDTH), str(card_kit.HERO_HEIGHT + card_kit.HERO_GAP)))
 
     def test_hero_keeps_every_piece_of_text(self):
         svg = card_kit.render_hero(HERO)
