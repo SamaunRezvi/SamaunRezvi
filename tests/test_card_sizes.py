@@ -35,3 +35,13 @@ class CardTextSizeTests(unittest.TestCase):
     def test_card_numbers_are_larger_than_their_labels(self):
         sizes = font_sizes(cards.build_streak_card(STREAK))
         self.assertGreater(max(sizes), 30)
+
+    def test_activity_graph_is_narrow_enough_for_phones(self):
+        svg = cards.build_activity_graph(DAILY)
+        self.assertIn('width="640"', svg)
+
+    def test_activity_graph_labels_every_third_day_and_the_last(self):
+        svg = cards.build_activity_graph(DAILY)
+        labels = re.findall(r'font-size:13px;">(\d+)</text>', svg)
+        self.assertEqual(len(labels), 11)
+        self.assertEqual(labels[-1], str(DAILY[-1][0]))

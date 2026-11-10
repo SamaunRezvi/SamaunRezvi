@@ -74,3 +74,6 @@ class ResponsiveTests(unittest.TestCase):
 
     def test_hero_banner_has_a_pixel_width(self):
         self.assertIn('src="./assets/banner-3d.svg" width="300"', README)
+
+    def test_activity_graph_is_shown_at_its_own_width(self):
+        self.assertIn('<img src="./assets/contribution-activity.svg" width="640"', README)

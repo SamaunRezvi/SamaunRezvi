@@ -227,7 +227,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="./assets/contribution-activity.svg" width="98%" alt="Contribution activity" />
+<img src="./assets/contribution-activity.svg" width="640" alt="Contribution activity" />
 
 </div>
 

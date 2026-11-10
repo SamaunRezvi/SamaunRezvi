@@ -139,7 +139,7 @@ class ActivityGraphTests(unittest.TestCase):
 
     def test_one_dot_per_day(self):
         svg = cards.build_activity_graph(DAILY)
-        self.assertEqual(svg.count('r="2.5"'), len(DAILY))
+        self.assertEqual(svg.count('r="3"'), len(DAILY))
 
     def test_all_zero_days_are_well_formed(self):
         parse(cards.build_activity_graph([(d, 0) for d in range(1, 32)]))

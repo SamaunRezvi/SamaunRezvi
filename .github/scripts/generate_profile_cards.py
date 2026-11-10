@@ -567,8 +567,8 @@ ACTIVITY_TITLE = "#39D0D8"
 
 def build_activity_graph(daily: list) -> str:
     """Render the contribution activity line and area graph SVG."""
-    width, height = 800, 300
-    x_padding, y_padding = 46, 55
+    width, height = 640, 300
+    x_padding, y_padding = 50, 55
     plot_w = width - x_padding - 20
     plot_h = height - y_padding - 60
 
@@ -604,34 +604,35 @@ def build_activity_graph(daily: list) -> str:
             f'stroke="{STROKE_COLOR}" stroke-dasharray="2,2"></line>'
         )
         y_ticks.append(
-            f'<text x="{x_padding - 8}" y="{gy + 3:.2f}" text-anchor="end" '
-            f'style="fill:{TEXT_COLOR};font-size:12px;">{round(v)}</text>'
+            f'<text x="{x_padding - 8}" y="{gy + 4:.2f}" text-anchor="end" '
+            f'style="fill:{TEXT_COLOR};font-size:14px;">{round(v)}</text>'
         )
 
     x_labels = [
         f'<text x="{px(i):.2f}" y="{y_padding + plot_h + 16}" text-anchor="middle" '
-        f'style="fill:{TEXT_COLOR};font-size:11px;">{day}</text>'
+        f'style="fill:{TEXT_COLOR};font-size:13px;">{day}</text>'
         for i, (day, _) in enumerate(daily)
+        if (i - (n - 1)) % 3 == 0  # every third day, always ending on the last one
     ]
 
     dots = [
-        f'<circle cx="{x:.2f}" cy="{y:.2f}" r="2.5" fill="{ACTIVITY_POINT}"></circle>'
+        f'<circle cx="{x:.2f}" cy="{y:.2f}" r="3" fill="{ACTIVITY_POINT}"></circle>'
         for x, y in points
     ]
 
     axis_labels = (
         f'<text x="{x_padding + plot_w / 2:.2f}" y="{height - 10}" text-anchor="middle" '
-        f'style="fill:{ACTIVITY_TITLE};font-size:13px;">Days</text>'
+        f'style="fill:{ACTIVITY_TITLE};font-size:14px;">Days</text>'
         f'<text x="14" y="{y_padding + plot_h / 2:.2f}" text-anchor="middle" '
         f'transform="rotate(-90,14,{y_padding + plot_h / 2:.2f})" '
-        f'style="fill:{TEXT_COLOR};font-size:12px;">Contributions</text>'
+        f'style="fill:{TEXT_COLOR};font-size:14px;">Contributions</text>'
     )
 
     body = (
         f'<g transform="translate(0,-40)">'
         f"{''.join(grid)}"
         f'<path d="{area_d}" fill="{ACTIVITY_AREA}" fill-opacity="0.55" stroke="none"></path>'
-        f'<path d="{line_d}" fill="none" stroke="{ACTIVITY_LINE}" stroke-width="2"></path>'
+        f'<path d="{line_d}" fill="none" stroke="{ACTIVITY_LINE}" stroke-width="2.5"></path>'
         f"{''.join(dots)}"
         f"{''.join(y_ticks)}"
         f"{''.join(x_labels)}"
