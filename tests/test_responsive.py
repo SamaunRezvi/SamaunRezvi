@@ -66,3 +66,11 @@ class ResponsiveTests(unittest.TestCase):
         for url in re.findall(r"https://readme-typing-svg[^\"]+", README):
             width = int(re.search(r"[?&]width=(\d+)", url).group(1))
             self.assertLessEqual(width, 440, url)
+
+    def test_readme_has_no_multi_column_tables(self):
+        # Side-by-side table columns overflow on phones; only the one-cell header badge may remain.
+        self.assertEqual(README.count("<table"), 1)
+        self.assertEqual(README.count("<td"), 1)
+
+    def test_hero_banner_has_a_pixel_width(self):
+        self.assertIn('src="./assets/banner-3d.svg" width="300"', README)
