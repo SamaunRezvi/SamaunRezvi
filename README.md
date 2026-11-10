@@ -375,36 +375,48 @@ I build systems where people in different roles use the same data for different 
 <table align="center">
 <tr>
 <td width="33%" valign="top" align="left">
-<b><a href="https://github.com/SamaunRezvi/assignment_eight_s"><code>assignment_eight_s/</code></a></b>
-<br /><sub>PH_B-14_A08 - StudioSpace API: A secure Express and MongoDB backend for the StudioSpace marketplace. Handles…</sub>
-<br /><sub>TypeScript · ★ 0 · updated Nov 5, 2026</sub>
+<b><a href="https://github.com/SamaunRezvi/assignment_eight_s">StudioSpace API</a></b>
+<br /><sub><code>assignment_eight_s</code> · Updated Nov 5, 2026</sub>
+<br /><br /><sub>A secure Express and MongoDB backend for the StudioSpace marketplace. Handles studios, bookings, reviews and…</sub>
+<br /><br /><code>TypeScript</code>
+<br /><br /><sub><a href="https://github.com/SamaunRezvi/assignment_eight_s">Source code</a></sub>
 </td>
 <td width="33%" valign="top" align="left">
-<b><a href="https://github.com/SamaunRezvi/assignment_eight_c"><code>assignment_eight_c/</code></a></b>
-<br /><sub>PH_B-14_A08 - StudioSpace: A creator-first studio rental marketplace built with Next.js. Discover photo studi…</sub>
-<br /><sub>TypeScript · ★ 0 · updated Nov 5, 2026</sub>
+<b><a href="https://github.com/SamaunRezvi/assignment_eight_c">StudioSpace</a></b>
+<br /><sub><code>assignment_eight_c</code> · Updated Nov 5, 2026</sub>
+<br /><br /><sub>A creator-first studio rental marketplace built with Next.js. Discover photo studios, film stages, podcast lo…</sub>
+<br /><br /><code>TypeScript</code>
+<br /><br /><sub><a href="https://studiospace-creators.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_eight_c">Source code</a></sub>
 </td>
 <td width="33%" valign="top" align="left">
-<b><a href="https://github.com/SamaunRezvi/assignment_seven"><code>assignment_seven/</code></a></b>
-<br /><sub>PH_B-14_A07 - BazarDor: A clean, Bangla-first market price tracker built with Next.js. Browse everyday essent…</sub>
-<br /><sub>TypeScript · ★ 0 · updated Oct 10, 2026</sub>
+<b><a href="https://github.com/SamaunRezvi/assignment_seven">BazarDor</a></b>
+<br /><sub><code>assignment_seven</code> · Updated Oct 10, 2026</sub>
+<br /><br /><sub>A clean, Bangla-first market price tracker built with Next.js. Browse everyday essentials, compare prices acr…</sub>
+<br /><br /><code>TypeScript</code>
+<br /><br /><sub><a href="https://assignment-seven-sigma-ten.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_seven">Source code</a></sub>
 </td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="left">
-<b><a href="https://github.com/SamaunRezvi/assignment_six"><code>assignment_six/</code></a></b>
-<br /><sub>PH_B-14_A06 - FitLog: a dark, sleek workout library built with Next.js. Browse a curated set of lifts, lock t…</sub>
-<br /><sub>TypeScript · ★ 0 · updated Sep 27, 2026</sub>
+<b><a href="https://github.com/SamaunRezvi/assignment_six">FitLog</a></b>
+<br /><sub><code>assignment_six</code> · Updated Sep 27, 2026</sub>
+<br /><br /><sub>a dark, sleek workout library built with Next.js. Browse a curated set of lifts, lock them into today's train…</sub>
+<br /><br /><code>TypeScript</code>
+<br /><br /><sub><a href="https://assignment-six-one-gamma.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_six">Source code</a></sub>
 </td>
 <td width="33%" valign="top" align="left">
-<b><a href="https://github.com/SamaunRezvi/assignment_five"><code>assignment_five/</code></a></b>
-<br /><sub>PH_B-14_A05 - A sleek, modern, and fully responsive "Dev Stack Builder" website to explore technologies and b…</sub>
-<br /><sub>JavaScript · ★ 0 · updated Sep 13, 2026</sub>
+<b><a href="https://github.com/SamaunRezvi/assignment_five">Dev Stack Builder</a></b>
+<br /><sub><code>assignment_five</code> · Updated Sep 13, 2026</sub>
+<br /><br /><sub>A sleek, modern, and fully responsive "Dev Stack Builder" website to explore technologies and build your own…</sub>
+<br /><br /><code>JavaScript</code>
+<br /><br /><sub><a href="https://assignment-five-six.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_five">Source code</a></sub>
 </td>
 <td width="33%" valign="top" align="left">
-<b><a href="https://github.com/SamaunRezvi/assignment_one"><code>assignment_one/</code></a></b>
-<br /><sub>PH_B-14_A01 - A sleek, modern, and fully responsive “DevConf 2026” landing page.</sub>
-<br /><sub>HTML · ★ 0 · updated Aug 21, 2026</sub>
+<b><a href="https://github.com/SamaunRezvi/assignment_one">DevConf 2026</a></b>
+<br /><sub><code>assignment_one</code> · Updated Aug 21, 2026</sub>
+<br /><br /><sub>A sleek, modern, and fully responsive “DevConf 2026” landing page.</sub>
+<br /><br /><code>HTML</code>
+<br /><br /><sub><a href="https://github.com/SamaunRezvi/assignment_one">Source code</a></sub>
 </td>
 </tr>
 </table>
