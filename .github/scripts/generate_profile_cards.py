@@ -11,6 +11,7 @@ assets/, refreshed daily by a workflow.
 import datetime
 import math
 import os
+import re
 import sys
 from xml.sax.saxutils import escape
 
@@ -642,6 +643,21 @@ def build_activity_graph(daily: list) -> str:
 RECENT_START = "<!-- RECENT_PROJECTS:START -->"
 RECENT_END = "<!-- RECENT_PROJECTS:END -->"
 MAX_DESCRIPTION = 110  # keep the project cards compact
+# Course-style prefixes such as "PH_B-14_A08 - " in front of a description.
+TITLE_PREFIX = re.compile(r"^\S*\d\S*\s+[-\u2013\u2014:]\s+")
+
+
+def split_project_text(repo: dict) -> tuple:
+    """Return (title, summary) for a repo, turning 'PH_B-14_A08 - Name: text' style descriptions into a clean name and summary."""
+    text = TITLE_PREFIX.sub("", (repo.get("description") or "").strip())
+    named = re.match(r"^([^:]{2,32}):\s+(.+)$", text)
+    if named:
+        return named.group(1).strip(), named.group(2).strip()
+    quoted = re.search(r'["\u201c]([^"\u201d]{2,32})["\u201d]', text)
+    if quoted:
+        return quoted.group(1).strip(), text
+    pretty = re.sub(r"[-_]+", " ", repo["name"]).strip().title()
+    return pretty, text or "No description yet."
 
 
 def fetch_recent_repos(limit: int = 6) -> list:
