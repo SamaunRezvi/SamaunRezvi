@@ -157,8 +157,6 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
-
 <br /><br />
 
 <img alt="CURRENTLY BUILDING" src="assets/badges/currently-building-f0883e-f4d12bb1.svg" height="24" />
@@ -168,8 +166,6 @@ I build systems where people in different roles use the same data for different 
 <sub>full-stack web platforms · dashboards and admin tools · offline-capable applications · clean and reliable data models</sub>
 
 <br />
-
-<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 </div>
 
@@ -184,8 +180,6 @@ I build systems where people in different roles use the same data for different 
 <div align="center">
 
 <sub>stack · what I reach for and why</sub>
-
-<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
@@ -267,8 +261,6 @@ I build systems where people in different roles use the same data for different 
 </tr>
 </table>
 
-<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
-
 <br />
 
 <sub><i>The stack serves the problem, not the resume.</i></sub>
@@ -286,8 +278,6 @@ I build systems where people in different roles use the same data for different 
 <div align="center">
 
 <sub>work · repositories private · architecture walkthrough on request</sub>
-
-<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
@@ -351,8 +341,6 @@ I build systems where people in different roles use the same data for different 
 </td>
 </tr>
 </table>
-
-<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
@@ -420,8 +408,6 @@ I build systems where people in different roles use the same data for different 
 <!-- RECENT_PROJECTS:END -->
 
 <br />
-
-<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 </div>
 
@@ -497,17 +483,11 @@ I build systems where people in different roles use the same data for different 
 
 <sub>five lines I keep coming back to</sub>
 
-<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
-
 <br />
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=4200&pause=1200&color=E3B341&center=true&vCenter=true&random=true&width=760&height=44&lines=%22Simplicity+is+prerequisite+for+reliability.%22;%22Controlling+complexity+is+the+essence+of+computer+programming.%22;%22Programs+must+be+written+for+people+to+read.%22;%22Good+programmers+write+code+that+humans+can+understand.%22;%22Make+it+work%2C+make+it+right%2C+make+it+fast.%22" alt="Curated quotes" />
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=13&duration=4200&pause=1200&color=8B949E&center=true&vCenter=true&random=true&width=760&height=28&lines=Edsger+W.+Dijkstra;Brian+Kernighan;Abelson+%26+Sussman%2C+SICP;Martin+Fowler%2C+Refactoring;Kent+Beck" alt="Attributions" />
-
-<br />
-
-<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:161B22,100:0d1117&height=1" width="60%" />
 
 <br />
 
@@ -524,10 +504,6 @@ I build systems where people in different roles use the same data for different 
 
 <br /><br />
 
-<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
-
-<br />
-
 </div>
 
 </div>
@@ -541,8 +517,6 @@ I build systems where people in different roles use the same data for different 
 <div align="center">
 
 <sub>contact · usually reply within a day</sub>
-
-<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
 
@@ -570,8 +544,6 @@ I build systems where people in different roles use the same data for different 
 </tr>
 </table>
 
-<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:161B22,100:0d1117&height=1" width="60%" />
-
 <br /><br />
 
 <a href="mailto:samaunrezvi9@gmail.com"><img alt="samaunrezvi9@gmail.com" src="assets/badges/samaunrezvi9-gmail-com-0d1117-afefadfe.svg" height="36" /></a>
@@ -579,10 +551,6 @@ I build systems where people in different roles use the same data for different 
 <a href="https://www.linkedin.com/in/samaun-rezvi-a17a6316a"><img alt="LinkedIn" src="assets/badges/connect-on-linkedin-0d1117-de424a95.svg" height="36" /></a>
 
 <br /><br />
-
-<img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
-
-<br />
 
 </div>
 
