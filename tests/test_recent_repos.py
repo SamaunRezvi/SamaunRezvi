@@ -37,6 +37,12 @@ class RenderTests(unittest.TestCase):
         html = cards.render_recent_repos([repo(description=None, primaryLanguage=None)])
         self.assertIn("No description yet.", html)
 
+    def test_shortens_long_descriptions(self):
+        html = cards.render_recent_repos([repo(description="word " * 100)])
+        shown = html.split("<sub>")[1].split("</sub>")[0]
+        self.assertLessEqual(len(shown), cards.MAX_DESCRIPTION)
+        self.assertTrue(shown.endswith("…"))
+
     def test_pads_each_row_to_three_cells(self):
         self.assertEqual(cards.render_recent_repos([repo()]).count("<td"), 3)
         self.assertEqual(cards.render_recent_repos([repo(str(i)) for i in range(4)]).count("<td"), 6)

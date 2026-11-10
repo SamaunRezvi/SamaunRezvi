@@ -641,6 +641,7 @@ def build_activity_graph(daily: list) -> str:
 
 RECENT_START = "<!-- RECENT_PROJECTS:START -->"
 RECENT_END = "<!-- RECENT_PROJECTS:END -->"
+MAX_DESCRIPTION = 110  # keep the project cards compact
 
 
 def fetch_recent_repos(limit: int = 6) -> list:
@@ -679,7 +680,10 @@ def render_recent_repos(repos: list) -> str:
         facts.append(f"\u2605 {repo['stargazerCount']}")
         facts.append(f"updated {pushed.strftime('%b')} {pushed.day}, {pushed.year}")
         details = " \u00b7 ".join(facts)
-        description = escape(repo.get("description") or "No description yet.")
+        text = repo.get("description") or "No description yet."
+        if len(text) > MAX_DESCRIPTION:
+            text = text[: MAX_DESCRIPTION - 1].rstrip() + "…"
+        description = escape(text)
         url = escape(repo["url"], quote)
         name = escape(repo["name"])
         cells.append(
