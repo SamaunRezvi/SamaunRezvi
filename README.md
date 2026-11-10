@@ -384,14 +384,14 @@ I build systems where people in different roles use the same data for different 
 <td width="33%" valign="top" align="left">
 <b><a href="https://github.com/SamaunRezvi/assignment_eight_c">StudioSpace</a></b>
 <br /><sub><code>assignment_eight_c</code> · Updated Nov 5, 2026</sub>
-<br /><br /><sub>A creator-first studio rental marketplace built with Next.js. Discover photo studios, film stages, podcast lo…</sub>
+<br /><br /><sub>A creator-first studio rental marketplace built with Next.js. Discover photo studios, film stages, podcast…</sub>
 <br /><br /><code>TypeScript</code>
 <br /><br /><sub><a href="https://studiospace-creators.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_eight_c">Source code</a></sub>
 </td>
 <td width="33%" valign="top" align="left">
 <b><a href="https://github.com/SamaunRezvi/assignment_seven">BazarDor</a></b>
 <br /><sub><code>assignment_seven</code> · Updated Oct 10, 2026</sub>
-<br /><br /><sub>A clean, Bangla-first market price tracker built with Next.js. Browse everyday essentials, compare prices acr…</sub>
+<br /><br /><sub>A clean, Bangla-first market price tracker built with Next.js. Browse everyday essentials, compare prices…</sub>
 <br /><br /><code>TypeScript</code>
 <br /><br /><sub><a href="https://assignment-seven-sigma-ten.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_seven">Source code</a></sub>
 </td>
@@ -400,7 +400,7 @@ I build systems where people in different roles use the same data for different 
 <td width="33%" valign="top" align="left">
 <b><a href="https://github.com/SamaunRezvi/assignment_six">FitLog</a></b>
 <br /><sub><code>assignment_six</code> · Updated Sep 27, 2026</sub>
-<br /><br /><sub>a dark, sleek workout library built with Next.js. Browse a curated set of lifts, lock them into today's train…</sub>
+<br /><br /><sub>A dark, sleek workout library built with Next.js. Browse a curated set of lifts, lock them into today's…</sub>
 <br /><br /><code>TypeScript</code>
 <br /><br /><sub><a href="https://assignment-six-one-gamma.vercel.app">Live demo</a> · <a href="https://github.com/SamaunRezvi/assignment_six">Source code</a></sub>
 </td>
