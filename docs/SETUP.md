@@ -41,6 +41,16 @@ The script writes the generated SVG cards into `assets/`. `UTC_OFFSET` shifts th
 - **Cards look stale:** images are cached by GitHub; wait a few minutes or hard refresh.
 - **A card is empty:** check that `PROFILE_PAT` exists and has not expired.
 
+## Headings and fonts
+
+GitHub removes CSS and font settings from README markdown, so body text always uses GitHub's own font. Section headings are therefore SVG images with the Playfair Display font embedded (a dark and a light file each) in `assets/headings/`. To change a heading or the font, edit `HEADINGS` or `FAMILY` in `tools/make_headings.py` and run:
+
+```bash
+python tools/make_headings.py
+```
+
+The generated cards use the system serif stack (Times New Roman, Times, Liberation Serif) so they render without any download.
+
 ## Undo
 
 Every card audit change is a separate commit and the old version is tagged. See [UNDO.md](UNDO.md).

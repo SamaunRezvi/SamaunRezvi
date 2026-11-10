@@ -33,3 +33,10 @@ Notable changes to this profile repository.
 - One failing card query no longer stops the other cards from updating.
 - Replaced the remaining green in the cards and the snake with the README palette.
 - Added the Latest Public Projects section, generated from public repositories.
+
+## 2026-11-10 (typography)
+
+- Cut the typing animations from 14 to 4; useful lines became static captions.
+- Removed the repeated gradient dividers.
+- Section headings are now serif images (Playfair Display embedded) with dark and light variants.
+- Remaining typing animations and the generated cards use a serif font.
