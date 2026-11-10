@@ -104,3 +104,29 @@ class RenderTests(unittest.TestCase):
     def test_lighten_mixes_towards_white(self):
         self.assertEqual(card_kit.lighten("#000000", 1.0), "#FFFFFF")
         self.assertEqual(card_kit.lighten("#112233", 0.0), "#112233")
+
+
+class WidthAndStatTests(unittest.TestCase):
+    def test_cards_can_use_a_custom_width(self):
+        root = ET.fromstring(card_kit.render(dict(SPEC, width=270)))
+        self.assertEqual(root.get("width"), "270")
+
+    def test_narrow_cards_wrap_text_into_more_lines(self):
+        wide = card_kit.natural_height(SPEC)
+        narrow = card_kit.natural_height(dict(SPEC, width=240))
+        self.assertGreater(narrow, wide)
+
+    def test_title_size_changes_the_title_font(self):
+        self.assertIn('font-size="20"', card_kit.render(dict(SPEC, title_size=20)))
+
+    def test_stat_card_is_well_formed_and_small(self):
+        spec = {"accent": "#58A6FF", "label": "Work", "number": "15+", "title": "Projects", "caption": "across web and data"}
+        root = ET.fromstring(card_kit.render_stat(spec))
+        self.assertEqual(root.get("width"), str(card_kit.STAT_WIDTH))
+        self.assertLessEqual(card_kit.STAT_WIDTH, 180)
+
+    def test_stat_card_shows_every_text(self):
+        spec = {"accent": "#58A6FF", "label": "Work", "number": "15+", "title": "Projects", "caption": "across web & data"}
+        svg = card_kit.render_stat(spec)
+        for text in ("WORK", "15+", "PROJECTS", "across web &amp; data"):
+            self.assertIn(text, svg)

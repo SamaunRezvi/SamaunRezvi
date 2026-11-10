@@ -79,16 +79,18 @@ def lighten(colour, amount=0.35):
 
 def layout(spec, min_height=0):
     """Compute positions for a card spec and return (items, height)."""
-    inner = WIDTH - 2 * PAD
+    inner = spec.get("width", WIDTH) - 2 * PAD
+    title_size = spec.get("title_size", 24)
+    line_height = round(title_size * 1.25)
     items = []
     y = PAD + 11
     items.append(("eyebrow", y, spec.get("eyebrow", "")))
     y += 36
-    title_lines = wrap(spec["title"], TITLE_FONT[0], 24, inner - 20)
+    title_lines = wrap(spec["title"], TITLE_FONT[0], title_size, inner - 20)
     for line in title_lines:
         items.append(("title", y, line))
-        y += 30
-    y -= 30
+        y += line_height
+    y -= line_height
     if spec.get("code"):
         top = y + 16
         items.append(("code", top, spec["code"]))
@@ -133,11 +135,13 @@ def natural_height(spec):
 def render(spec, min_height=0):
     """Return the SVG markup for one card spec."""
     items, height = layout(spec, min_height)
+    card_width = spec.get("width", WIDTH)
+    title_size = spec.get("title_size", 24)
     accent = spec.get("accent", ACCENTS[0])
     soft = lighten(accent)
     parts = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{height}" '
-        f'viewBox="0 0 {WIDTH} {height}" role="img" aria-label="{escape(spec["title"])}">',
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{card_width}" height="{height}" '
+        f'viewBox="0 0 {card_width} {height}" role="img" aria-label="{escape(spec["title"])}">',
         f"<title>{escape(spec['title'])}</title>",
         f"<style>{font_css()}"
         f".t{{font-family:'{TITLE_FONT[0]}',{SERIF_FALLBACK};font-weight:600;font-variant-numeric:lining-nums}}"
@@ -152,17 +156,17 @@ def render(spec, min_height=0):
         f'<stop offset="1" stop-color="{accent}" stop-opacity="0"/></radialGradient>'
         '<linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">'
         f'<stop offset="0" stop-color="{accent}"/><stop offset="1" stop-color="{soft}" stop-opacity="0.15"/></linearGradient>'
-        f'<clipPath id="clip"><rect width="{WIDTH}" height="{height}" rx="16"/></clipPath>'
+        f'<clipPath id="clip"><rect width="{card_width}" height="{height}" rx="16"/></clipPath>'
         "</defs>",
-        f'<rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{height - 1}" rx="16" fill="url(#bg)" stroke="#2b3445"/>',
+        f'<rect x="0.5" y="0.5" width="{card_width - 1}" height="{height - 1}" rx="16" fill="url(#bg)" stroke="#2b3445"/>',
         '<g clip-path="url(#clip)">',
-        f'<rect width="{WIDTH}" height="{height}" fill="url(#glow)"/>',
-        f'<rect width="{WIDTH}" height="4" fill="url(#bar)"/>',
+        f'<rect width="{card_width}" height="{height}" fill="url(#glow)"/>',
+        f'<rect width="{card_width}" height="4" fill="url(#bar)"/>',
         "</g>",
     ]
     if spec.get("number"):
         parts.append(
-            f'<text class="t" x="{WIDTH - PAD}" y="{PAD + 54}" text-anchor="end" font-size="68" '
+            f'<text class="t" x="{card_width - PAD}" y="{PAD + 54}" text-anchor="end" font-size="68" '
             f'fill="{accent}" fill-opacity="0.14">{escape(spec["number"])}</text>'
         )
     for item in items:
@@ -173,7 +177,7 @@ def render(spec, min_height=0):
                 f'fill="{accent}">{escape(item[2].upper())}</text>'
             )
         elif kind == "title":
-            parts.append(f'<text class="t" x="{PAD}" y="{y}" font-size="24" fill="#E6EDF3">{escape(item[2])}</text>')
+            parts.append(f'<text class="t" x="{PAD}" y="{y}" font-size="{title_size}" fill="#E6EDF3">{escape(item[2])}</text>')
         elif kind == "code":
             width = len(item[2]) * 7.3 + 22
             parts.append(
@@ -197,12 +201,12 @@ def render(spec, min_height=0):
             )
         elif kind == "footer":
             _, base, left, right = item
-            parts.append(f'<line x1="{PAD}" y1="{base - 22}" x2="{WIDTH - PAD}" y2="{base - 22}" stroke="#222b3a"/>')
+            parts.append(f'<line x1="{PAD}" y1="{base - 22}" x2="{card_width - PAD}" y2="{base - 22}" stroke="#222b3a"/>')
             if left:
                 parts.append(f'<text class="b" x="{PAD}" y="{base}" font-size="12.5" fill="#8794AA">{escape(left)}</text>')
             if right:
                 parts.append(
-                    f'<text class="b" x="{WIDTH - PAD}" y="{base}" text-anchor="end" font-size="13" '
+                    f'<text class="b" x="{card_width - PAD}" y="{base}" text-anchor="end" font-size="13" '
                     f'fill="{soft}">{escape(right)}</text>'
                 )
     parts.append("</svg>\n")
@@ -217,3 +221,46 @@ def equalise(specs, per_row=2):
         tallest = max(natural_height(spec) for spec in row)
         svgs += [render(spec, min_height=tallest) for spec in row]
     return svgs
+
+
+STAT_WIDTH = 168
+
+
+def render_stat(spec):
+    """Render a small centred statistic card: label, big number, title and caption."""
+    accent = spec.get("accent", ACCENTS[0])
+    soft = lighten(accent)
+    width, height, mid = STAT_WIDTH, 188, STAT_WIDTH / 2
+    label = escape(spec["label"].upper())
+    pill = text_width(spec["label"].upper(), BODY_FONT[0], 11, 1.6) + 22
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
+        f'viewBox="0 0 {width} {height}" role="img" aria-label="{escape(spec["number"])} {escape(spec["title"])}">'
+        f"<title>{escape(spec['number'])} {escape(spec['title'])}: {escape(spec['caption'])}</title>"
+        f"<style>{font_css()}"
+        f".t{{font-family:'{TITLE_FONT[0]}',{SERIF_FALLBACK};font-weight:600;font-variant-numeric:lining-nums}}"
+        f".b{{font-family:'{BODY_FONT[0]}',{SERIF_FALLBACK};font-weight:400}}</style>"
+        "<defs>"
+        '<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">'
+        '<stop offset="0" stop-color="#151d2b"/><stop offset="1" stop-color="#0d1117"/></linearGradient>'
+        f'<radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" '
+        f'gradientTransform="translate({mid} 70) scale(110)">'
+        f'<stop offset="0" stop-color="{accent}" stop-opacity="0.22"/>'
+        f'<stop offset="1" stop-color="{accent}" stop-opacity="0"/></radialGradient>'
+        '<linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">'
+        f'<stop offset="0" stop-color="{accent}"/><stop offset="1" stop-color="{soft}" stop-opacity="0.15"/></linearGradient>'
+        f'<clipPath id="clip"><rect width="{width}" height="{height}" rx="14"/></clipPath>'
+        "</defs>"
+        f'<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="14" fill="url(#bg)" stroke="#2b3445"/>'
+        f'<g clip-path="url(#clip)"><rect width="{width}" height="{height}" fill="url(#glow)"/>'
+        f'<rect width="{width}" height="4" fill="url(#bar)"/></g>'
+        f'<rect x="{mid - pill / 2:.1f}" y="20" width="{pill:.1f}" height="22" rx="11" fill="{accent}" '
+        f'fill-opacity="0.14" stroke="{accent}" stroke-opacity="0.5"/>'
+        f'<text class="b" x="{mid}" y="35" text-anchor="middle" font-size="11" letter-spacing="1.6" fill="{soft}">{label}</text>'
+        f'<text class="t" x="{mid}" y="98" text-anchor="middle" font-size="52" fill="#E6EDF3">{escape(spec["number"])}</text>'
+        f'<line x1="26" y1="114" x2="{width - 26}" y2="114" stroke="#222b3a"/>'
+        f'<text class="b" x="{mid}" y="140" text-anchor="middle" font-size="13" letter-spacing="1.4" '
+        f'fill="{soft}">{escape(spec["title"].upper())}</text>'
+        f'<text class="b" x="{mid}" y="162" text-anchor="middle" font-size="13.5" fill="#9AA7BB">{escape(spec["caption"])}</text>'
+        "</svg>\n"
+    )
