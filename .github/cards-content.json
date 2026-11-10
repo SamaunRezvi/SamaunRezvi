@@ -305,5 +305,29 @@
       "title": "Collaboration",
       "body": "Open source, Side Builds, and Team Projects"
     }
-  ]
+  ],
+  "hero": {
+    "name": "Hi, I’m Samaun Rezvi",
+    "taglines": [
+      "Full-Stack Web Developer",
+      "I build products end to end",
+      "Frontend · Backend · Data · Deploy"
+    ],
+    "education": "Computer Science & Engineering · Daffodil International University · DSC, Dhaka, Bangladesh",
+    "roles": [
+      {
+        "name": "Full-Stack Developer",
+        "file": "full-stack-developer-0d1117-f24287ef.svg"
+      },
+      {
+        "name": "UI/UX Minded",
+        "file": "ui-ux-minded-0d1117-521c43f1.svg"
+      },
+      {
+        "name": "Open to Work",
+        "file": "open-to-work-0d1117-841de77a.svg"
+      }
+    ],
+    "status": "status: open to opportunities · response time: usually within a day"
+  }
 }

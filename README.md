@@ -12,25 +12,12 @@
 
 <br />
 
-<p align="center"><img src="profile.png" width="120" alt="Samaun Rezvi" /></p>
-
-<h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/hero-name-dark.svg"><img alt="Hi, I’m Samaun Rezvi" src="assets/headings/hero-name-light.svg" width="430" /></picture></h1>
-
-<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=600&size=24&duration=2600&pause=900&color=58A6FF&vCenter=true&width=430&height=40&lines=Full-Stack+Web+Developer;I+build+products+end+to+end;Frontend+%C2%B7+Backend+%C2%B7+Data+%C2%B7+Deploy" alt="" />
-
-Computer Science &amp; Engineering · Daffodil International University · DSC, Dhaka, Bangladesh
-
-<br /><br />
-
-<img alt="Full-Stack Developer" src="assets/badges/full-stack-developer-0d1117-f24287ef.svg" height="26" />
-<img alt="UI/UX Minded" src="assets/badges/ui-ux-minded-0d1117-521c43f1.svg" height="26" />
-<img alt="Open to Work" src="assets/badges/open-to-work-0d1117-841de77a.svg" height="26" />
-
-<br /><br />
-
-<img src="./assets/banner-3d.svg" width="300" alt="Animated banner" />
-
-<br /><br />
+<!-- HERO:START -->
+<p align="center">
+<img alt="Hi, I’m Samaun Rezvi Full-Stack Web Developer / I build products end to end / Frontend · Backend · Data · Deploy. Computer Science &amp; Engineering · Daffodil International University · DSC, Dhaka, Bangladesh. Full-Stack Developer, UI/UX Minded, Open to Work. status: open to opportunities · response time: usually within a day" src="assets/hero/hero-card.svg" width="440" />
+<img alt="Animated banner" src="./assets/banner-3d.svg" width="340" />
+</p>
+<!-- HERO:END -->
 
 <img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="420" />
 
@@ -62,10 +49,6 @@ Computer Science &amp; Engineering · Daffodil International University · DSC, 
 <img alt="PostgreSQL" src="assets/badges/postgresql-0d1117-978ebdcc.svg" height="26" />
 <img alt="Tailwind CSS" src="assets/badges/tailwind-css-0d1117-3a8f0189.svg" height="26" />
 <img alt="Python" src="assets/badges/python-0d1117-2d0ca898.svg" height="26" />
-
-<br /><br />
-
-<i>status: open to opportunities · response time: usually within a day</i>
 
 </div>
 

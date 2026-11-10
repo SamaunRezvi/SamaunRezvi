@@ -32,7 +32,6 @@ FALLBACK = f"'{FAMILY}', 'Times New Roman', Times, serif"
 
 # slug, text, font size, width, anchor, accent bar
 HEADINGS = [
-    ("hero-name", "Hi, I’m Samaun Rezvi", 40, 430, "middle", True),
     ("about-me", "About Me", 42, 760, "middle", True),
     ("principles", "Principles I Build On", 30, 760, "middle", True),
     ("tech-and-tools", "Tech & Tools", 42, 760, "middle", True),

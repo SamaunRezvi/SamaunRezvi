@@ -72,7 +72,6 @@ class ReadmeAssetTests(unittest.TestCase):
 
     def test_typing_animations_use_the_serif_font(self):
         urls = re.findall(r'https://readme-typing-svg[^"]+', README)
-        self.assertTrue(urls)
         for url in urls:
             self.assertIn("font=Playfair+Display", url)
 

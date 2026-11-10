@@ -73,7 +73,10 @@ class ResponsiveTests(unittest.TestCase):
         self.assertEqual(README.count("<td"), 1)
 
     def test_hero_banner_has_a_pixel_width(self):
-        self.assertIn('src="./assets/banner-3d.svg" width="300"', README)
+        self.assertIn('src="./assets/banner-3d.svg" width="340"', README)
+
+    def test_hero_card_has_a_pixel_width(self):
+        self.assertIn('src="assets/hero/hero-card.svg" width="440"', README)
 
     def test_activity_graph_is_shown_at_its_own_width(self):
         self.assertIn('<img src="./assets/contribution-activity.svg" width="640"', README)
