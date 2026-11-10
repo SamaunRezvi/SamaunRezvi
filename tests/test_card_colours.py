@@ -36,3 +36,7 @@ class CardColourTests(unittest.TestCase):
                 text = f.read().lower()
             for colour in OLD_GREENS:
                 self.assertNotIn(colour, text, f"{os.path.basename(path)} {colour}")
+
+    def test_cards_use_a_serif_font(self):
+        self.assertIn("serif", cards.FONT)
+        self.assertIn("serif", cards.STREAK_FONT)

@@ -27,7 +27,7 @@ TEXT_COLOR = "#77909c"
 BG_COLOR = "#0d1117"
 STROKE_COLOR = "#2e343b"
 ICON_COLOR = "#8b949e"
-FONT = "'Segoe UI', Ubuntu, \"Helvetica Neue\", Sans-Serif"
+FONT = "'Times New Roman', Times, 'Liberation Serif', serif"
 
 # Octicon-style SVG paths used by the Stats card (16x16 viewBox).
 ICONS = {
@@ -327,7 +327,7 @@ STREAK_CUR_NUM = "#ffffff"
 STREAK_CUR_LABEL = "#F0883E"
 STREAK_SIDE = "#8B949E"
 STREAK_DATES = "#6E7681"
-STREAK_FONT = "'Segoe UI', Ubuntu, sans-serif"
+STREAK_FONT = "'Times New Roman', Times, 'Liberation Serif', serif"
 
 
 def build_streak_card(stats: dict) -> str:

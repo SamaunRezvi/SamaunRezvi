@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300">
-<style>* { font-family: 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif }</style>
+<style>* { font-family: 'Times New Roman', Times, 'Liberation Serif', serif }</style>
 <g>
 <rect x="1" y="1" rx="5" ry="5" width="99.75%" height="99.33333333333333%" fill="#0d1117" stroke="#2e343b" stroke-width="1" stroke-opacity="1"></rect>
 <text x="30" y="40" style="font-size:22px;fill:#39D0D8;">Contribution Activity</text>
