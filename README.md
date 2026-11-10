@@ -23,8 +23,6 @@
 
 <b>│ Connect with Me</b>
 
-<br /><br />
-
 <a href="https://www.linkedin.com/in/samaun-rezvi-a17a6316a"><img alt="LinkedIn" src="assets/badges/linkedin-0d1117-b5d005d4.svg" height="34" /></a>
 &nbsp;
 <a href="mailto:samaunrezvi9@gmail.com"><img alt="Email" src="assets/badges/email-0d1117-698f669d.svg" height="34" /></a>
@@ -33,13 +31,11 @@
 &nbsp;
 <a href="https://www.instagram.com/samaunrezvi_617/"><img alt="Instagram" src="assets/badges/instagram-0d1117-f51799ba.svg" height="34" /></a>
 
-<br /><br />
+<br />
 
 <img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="420" />
 
 <b>│ Core Stack</b>
-
-<br /><br />
 
 <img alt="Next.js" src="assets/badges/next-js-0d1117-852d2331.svg" height="26" />
 <img alt="React" src="assets/badges/react-0d1117-c20e2c1c.svg" height="26" />
