@@ -138,6 +138,10 @@ def fetch_data() -> tuple:
     return lang_data, stats_data
 
 
+# GitHub returns at most 100 commits per page; stop after this many pages per repo.
+MAX_HISTORY_PAGES = 50
+
+
 def fetch_productive_time() -> list:
     """Return 24 commit counts, one per hour of day (shifted by UTC_OFFSET), for the last year."""
     id_query = """
@@ -153,20 +157,30 @@ def fetch_productive_time() -> list:
     since = until.replace(year=until.year - 1)
     until_s, since_s = until.isoformat(), since.isoformat()
 
-    query = """
-    query($login: String!, $userId: ID!, $until: GitTimestamp!, $since: GitTimestamp!, $from: DateTime!, $to: DateTime!) {
+    repos_query = """
+    query($login: String!, $from: DateTime!, $to: DateTime!) {
       user(login: $login) {
         contributionsCollection(from: $from, to: $to) {
-          commitContributionsByRepository(maxRepositories: 50) {
-            repository {
-              defaultBranchRef {
-                target {
-                  ... on Commit {
-                    history(first: 50, since: $since, until: $until, author: {id: $userId}) {
-                      edges { node { authoredDate } }
-                    }
-                  }
-                }
+          commitContributionsByRepository(maxRepositories: 100) {
+            repository { name owner { login } }
+          }
+        }
+      }
+    }
+    """
+    collection = gql(
+        repos_query, {"login": USERNAME, "from": since_s, "to": until_s}
+    )["user"]["contributionsCollection"]
+
+    history_query = """
+    query($owner: String!, $name: String!, $userId: ID!, $since: GitTimestamp!, $until: GitTimestamp!, $after: String) {
+      repository(owner: $owner, name: $name) {
+        defaultBranchRef {
+          target {
+            ... on Commit {
+              history(first: 100, since: $since, until: $until, author: {id: $userId}, after: $after) {
+                pageInfo { hasNextPage endCursor }
+                nodes { authoredDate }
               }
             }
           }
@@ -174,28 +188,32 @@ def fetch_productive_time() -> list:
       }
     }
     """
-    data = gql(
-        query,
-        {
-            "login": USERNAME,
-            "userId": user_id,
-            "until": until_s,
-            "since": since_s,
-            "from": since_s,
-            "to": until_s,
-        },
-    )["user"]["contributionsCollection"]
-
     chart_data = [0] * 24
-    for repo in data["commitContributionsByRepository"]:
-        ref = repo["repository"]["defaultBranchRef"]
-        if not ref:
-            continue
-        for edge in ref["target"]["history"]["edges"]:
-            authored = edge["node"]["authoredDate"]
-            hour = datetime.datetime.fromisoformat(authored.replace("Z", "+00:00")).hour
-            adjusted = int((hour + UTC_OFFSET) % 24)
-            chart_data[adjusted] += 1
+    for entry in collection["commitContributionsByRepository"]:
+        repo = entry["repository"]
+        cursor = None
+        for _ in range(MAX_HISTORY_PAGES):
+            ref = gql(
+                history_query,
+                {
+                    "owner": repo["owner"]["login"],
+                    "name": repo["name"],
+                    "userId": user_id,
+                    "since": since_s,
+                    "until": until_s,
+                    "after": cursor,
+                },
+            )["repository"]["defaultBranchRef"]
+            history = ((ref or {}).get("target") or {}).get("history")
+            if not history:
+                break
+            for node in history["nodes"]:
+                authored = node["authoredDate"]
+                hour = datetime.datetime.fromisoformat(authored.replace("Z", "+00:00")).hour
+                chart_data[int((hour + UTC_OFFSET) % 24)] += 1
+            if not history["pageInfo"]["hasNextPage"]:
+                break
+            cursor = history["pageInfo"]["endCursor"]
     return chart_data
 
 

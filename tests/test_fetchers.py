@@ -88,17 +88,31 @@ class DailyContributionTests(unittest.TestCase):
         self.assertEqual(result[0][0], 8)  # 30 days earlier is 8 October
 
 
-def history(*dates):
-    edges = [{"node": {"authoredDate": d}} for d in dates]
-    return {"repository": {"defaultBranchRef": {"target": {"history": {"edges": edges}}}}}
+NO_BRANCH = {"repository": {"defaultBranchRef": None}}
+
+
+def history_page(dates, next_cursor=None):
+    page_info = {"hasNextPage": next_cursor is not None, "endCursor": next_cursor}
+    nodes = [{"authoredDate": d} for d in dates]
+    history = {"pageInfo": page_info, "nodes": nodes}
+    return {"repository": {"defaultBranchRef": {"target": {"history": history}}}}
 
 
 class ProductiveTimeTests(unittest.TestCase):
     def run_fetch(self, repos, offset=6.0):
+        """repos maps a repository name to the list of history pages GitHub would return."""
+
         def fake(query, variables):
             if "commitContributionsByRepository" in query:
-                data = {"commitContributionsByRepository": repos}
+                listing = [
+                    {"repository": {"name": name, "owner": {"login": "me"}}} for name in repos
+                ]
+                data = {"commitContributionsByRepository": listing}
                 return {"user": {"contributionsCollection": data}}
+            if "history(" in query:
+                pages = repos[variables["name"]]
+                index = 0 if variables["after"] is None else int(variables["after"])
+                return pages[index]
             return {"user": {"id": "user-id"}}
 
         with mock.patch.object(cards, "gql", side_effect=fake):
@@ -106,21 +120,28 @@ class ProductiveTimeTests(unittest.TestCase):
                 return cards.fetch_productive_time()
 
     def test_returns_24_hourly_buckets(self):
-        self.assertEqual(len(self.run_fetch([])), 24)
+        self.assertEqual(len(self.run_fetch({})), 24)
 
     def test_shifts_the_hour_by_the_utc_offset(self):
-        result = self.run_fetch([history("2026-11-01T10:00:00Z")])
+        result = self.run_fetch({"a": [history_page(["2026-11-01T10:00:00Z"])]})
         self.assertEqual(result[16], 1)
         self.assertEqual(sum(result), 1)
 
     def test_wraps_past_midnight(self):
-        result = self.run_fetch([history("2026-11-01T20:00:00Z")])
+        result = self.run_fetch({"a": [history_page(["2026-11-01T20:00:00Z"])]})
         self.assertEqual(result[2], 1)
 
     def test_skips_repos_without_a_default_branch(self):
-        empty = {"repository": {"defaultBranchRef": None}}
-        result = self.run_fetch([empty, history("2026-11-01T10:00:00Z")])
+        result = self.run_fetch(
+            {"empty": [NO_BRANCH], "a": [history_page(["2026-11-01T10:00:00Z"])]}
+        )
         self.assertEqual(sum(result), 1)
+
+    def test_follows_pagination_beyond_the_first_page(self):
+        morning = "2026-11-01T10:00:00Z"
+        pages = [history_page([morning, morning], "1"), history_page([morning])]
+        result = self.run_fetch({"a": pages})
+        self.assertEqual(result[16], 3)
 
 
 def repo(stars, **languages):
