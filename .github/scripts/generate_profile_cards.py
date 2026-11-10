@@ -435,7 +435,7 @@ def build_stats_card(stats_data: list) -> str:
     label_h = 16
     rows = []
     for i, (icon_key, name, value) in enumerate(stats_data):
-        y = label_h * i * 1.8
+        y = label_h * i * 1.7
         rows.append(
             f'<g transform="translate(0,{y})" fill="{ICON_COLOR}">{ICONS[icon_key]}</g>'
             f'<text x="{label_h * 1.5}" y="{y + label_h}" style="fill:{TEXT_COLOR};font-size:{label_h}px;">{escape(name)}</text>'
