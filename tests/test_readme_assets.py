@@ -63,3 +63,6 @@ class ReadmeAssetTests(unittest.TestCase):
         end = README.count("<!-- RECENT_PROJECTS:END -->")
         self.assertEqual((start, end), (1, 1))
         self.assertLess(README.index("RECENT_PROJECTS:START"), README.index("RECENT_PROJECTS:END"))
+
+    def test_typing_animations_are_kept_to_a_few(self):
+        self.assertLessEqual(README.count("readme-typing-svg"), 4)

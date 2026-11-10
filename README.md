@@ -66,7 +66,7 @@
 
 <br /><br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=12&duration=3200&pause=1400&color=6E7681&vCenter=true&width=420&height=26&lines=status-+open+to+opportunities;%C2%B7+response+time-+usually+within+a+day;%C2%B7+scroll+down+for+the+details" alt="" />
+<sub>status: open to opportunities · response time: usually within a day</sub>
 
 </td>
 
@@ -80,7 +80,6 @@
 </table>
 
 </div>
-
 
 <div align="center">
 
@@ -166,7 +165,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=900&color=F0883E&center=true&vCenter=true&width=740&height=42&lines=full-stack+web+platforms;dashboards+and+admin+tools;offline-capable+applications;clean+and+reliable+data+models" alt="Currently building" />
+<sub>full-stack web platforms · dashboards and admin tools · offline-capable applications · clean and reliable data models</sub>
 
 <br />
 
@@ -184,7 +183,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=3400&pause=1400&color=6E7681&center=true&vCenter=true&width=620&height=32&lines=stack+%C2%B7+what+I+reach+for+and+why" alt="" />
+<sub>stack · what I reach for and why</sub>
 
 <img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
@@ -272,7 +271,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=1500&color=BC8CFF&center=true&vCenter=true&width=600&height=30&lines=cat+philosophy.txt;the+stack+serves+the+problem%2C+not+the+resume" alt="" />
+<sub><i>The stack serves the problem, not the resume.</i></sub>
 
 </div>
 
@@ -286,7 +285,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=3400&pause=1400&color=6E7681&center=true&vCenter=true&width=660&height=32&lines=work+%C2%B7+repositories+private+%C2%B7+architecture+walkthrough+on+request" alt="" />
+<sub>work · repositories private · architecture walkthrough on request</sub>
 
 <img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
@@ -356,8 +355,6 @@ I build systems where people in different roles use the same data for different 
 <img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=1500&color=39D0D8&center=true&vCenter=true&width=560&height=30&lines=git+log+--oneline+%7C+wc+-l;happy+to+walk+through+any+of+these" alt="" />
 
 </div>
 
@@ -498,7 +495,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=3400&pause=1400&color=6E7681&center=true&vCenter=true&width=620&height=32&lines=quotes+five+lines+I+keep+coming+back+to" alt="" />
+<sub>five lines I keep coming back to</sub>
 
 <img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
@@ -531,8 +528,6 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=1500&color=F778BA&center=true&vCenter=true&width=640&height=30&lines=grep+%22simplicity%22+.;found+in+every+file+worth+keeping" alt="" />
-
 </div>
 
 </div>
@@ -545,7 +540,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=3400&pause=1400&color=6E7681&center=true&vCenter=true&width=620&height=32&lines=contact+%C2%B7+usually+reply+within+a+day" alt="" />
+<sub>contact · usually reply within a day</sub>
 
 <img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
@@ -588,8 +583,6 @@ I build systems where people in different roles use the same data for different 
 <img alt="" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,25:58A6FF,50:BC8CFF,75:F778BA,100:0d1117&height=2" width="70%" />
 
 <br />
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=3000&pause=1500&color=FF7B72&center=true&vCenter=true&width=620&height=30&lines=mail-+%22hello%22+samaunrezvi9;inbox+open.+recruiter+script+needed." alt="" />
 
 </div>
 
