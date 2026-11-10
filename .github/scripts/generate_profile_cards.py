@@ -719,7 +719,7 @@ def project_card_spec(repo: dict, index: int) -> dict:
     tags = ([language] if language else []) + [node["topic"]["name"] for node in topics]
     return {
         "accent": card_kit.ACCENTS[index % len(card_kit.ACCENTS)],
-        "eyebrow": language or "Repository",
+        "eyebrow": f"Project {index + 1:02d}",
         "number": f"{index + 1:02d}",
         "title": title,
         "code": repo["name"],

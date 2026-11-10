@@ -34,9 +34,9 @@ class ProjectCardSpecTests(unittest.TestCase):
         self.assertEqual(spec["code"], "demo")
         self.assertNotIn("PH_B-14", spec["body"])
 
-    def test_eyebrow_is_the_language(self):
-        self.assertEqual(self.spec()["eyebrow"], "TypeScript")
-        self.assertEqual(self.spec(primaryLanguage=None)["eyebrow"], "Repository")
+    def test_eyebrow_numbers_the_project(self):
+        self.assertEqual(self.spec()["eyebrow"], "Project 01")
+        self.assertEqual(self.spec(2)["eyebrow"], "Project 03")
 
     def test_chips_combine_the_language_and_topics(self):
         self.assertEqual(self.spec()["chips"], ["TypeScript", "nextjs"])
