@@ -72,6 +72,9 @@ jobs:
           # Same serif font as the other cards.
           svg = svg.replace("'Segoe UI', Ubuntu, \"Helvetica Neue\", Sans-Serif", "'Times New Roman', Times, 'Liberation Serif', serif")
 
+          # Serif text looks smaller at the same size, so add 2px everywhere.
+          svg = re.sub(r"font-size: (\d+)px", lambda m: f"font-size: {int(m.group(1)) + 2}px", svg)
+
           with open("assets/profile-details.svg", "w", encoding="utf-8") as f:
               f.write(svg)
           EOF

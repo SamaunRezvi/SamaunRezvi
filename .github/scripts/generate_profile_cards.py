@@ -339,11 +339,11 @@ def build_streak_card(stats: dict) -> str:
         """Render one side column (number, label, date range) of the streak card."""
         return (
             f'<text x="{cx}" y="80" text-anchor="middle" fill="{STREAK_SIDE}" '
-            f'font-family="{STREAK_FONT}" font-weight="700" font-size="28px">{num}</text>'
+            f'font-family="{STREAK_FONT}" font-weight="700" font-size="34px">{num}</text>'
             f'<text x="{cx}" y="116" text-anchor="middle" fill="{STREAK_SIDE}" '
-            f'font-family="{STREAK_FONT}" font-weight="400" font-size="14px">{escape(label)}</text>'
+            f'font-family="{STREAK_FONT}" font-weight="400" font-size="17px">{escape(label)}</text>'
             f'<text x="{cx}" y="146" text-anchor="middle" fill="{STREAK_DATES}" '
-            f'font-family="{STREAK_FONT}" font-weight="400" font-size="12px">{escape(date_range)}</text>'
+            f'font-family="{STREAK_FONT}" font-weight="400" font-size="13px">{escape(date_range)}</text>'
         )
 
     fire_path = (
@@ -360,11 +360,11 @@ def build_streak_card(stats: dict) -> str:
         + f'<circle cx="{mid}" cy="71" r="40" fill="none" stroke="{STREAK_RING}" stroke-width="5"></circle>'
         + f'<g transform="translate({mid},19.5)"><path d="{fire_path}" fill="{STREAK_FIRE}"></path></g>'
         + f'<text x="{mid}" y="80" text-anchor="middle" fill="{STREAK_CUR_NUM}" '
-          f'font-family="{STREAK_FONT}" font-weight="700" font-size="28px">{stats["current"]}</text>'
+          f'font-family="{STREAK_FONT}" font-weight="700" font-size="34px">{stats["current"]}</text>'
         + f'<text x="{mid}" y="140" text-anchor="middle" fill="{STREAK_CUR_LABEL}" '
-          f'font-family="{STREAK_FONT}" font-weight="700" font-size="14px">Current Streak</text>'
+          f'font-family="{STREAK_FONT}" font-weight="700" font-size="17px">Current Streak</text>'
         + f'<text x="{mid}" y="166" text-anchor="middle" fill="{STREAK_DATES}" '
-          f'font-family="{STREAK_FONT}" font-weight="400" font-size="12px">{escape(stats["current_range"])}</text>'
+          f'font-family="{STREAK_FONT}" font-weight="400" font-size="13px">{escape(stats["current_range"])}</text>'
         + side_block(412.5, stats["longest"], "Longest Streak", stats["longest_range"])
     )
 
@@ -421,7 +421,7 @@ def card_shell(title: str, width: int, height: int, body_svg: str) -> str:
 <style>* {{ font-family: {FONT} }}</style>
 <g>
 <rect x="1" y="1" rx="5" ry="5" width="{stroke_pct_w}%" height="{stroke_pct_h}%" fill="{BG_COLOR}" stroke="{STROKE_COLOR}" stroke-width="1" stroke-opacity="1"></rect>
-<text x="30" y="40" style="font-size:22px;fill:{TITLE_COLOR};">{escape(title)}</text>
+<text x="30" y="40" style="font-size:26px;fill:{TITLE_COLOR};">{escape(title)}</text>
 <g transform="translate(0,40)">
 {body_svg}
 </g>
@@ -432,14 +432,14 @@ def card_shell(title: str, width: int, height: int, body_svg: str) -> str:
 def build_stats_card(stats_data: list) -> str:
     """Render the Stats card SVG from (icon, label, value) rows."""
     width, height = 340, 200
-    label_h = 14
+    label_h = 16
     rows = []
     for i, (icon_key, name, value) in enumerate(stats_data):
         y = label_h * i * 1.8
         rows.append(
             f'<g transform="translate(0,{y})" fill="{ICON_COLOR}">{ICONS[icon_key]}</g>'
             f'<text x="{label_h * 1.5}" y="{y + label_h}" style="fill:{TEXT_COLOR};font-size:{label_h}px;">{escape(name)}</text>'
-            f'<text x="130" y="{y + label_h}" style="fill:{TEXT_COLOR};font-size:{label_h}px;">{escape(value)}</text>'
+            f'<text x="140" y="{y + label_h}" style="fill:{TEXT_COLOR};font-size:{label_h}px;">{escape(value)}</text>'
         )
     logo = f'<g transform="translate(220,20)"><g transform="scale(6)" fill="{ICON_COLOR}">{ICONS["GITHUB"]}</g></g>'
     body = f'<g transform="translate(30,20)">{"".join(rows)}</g>{logo}'
@@ -468,7 +468,7 @@ def build_donut_card(lang_data: list) -> str:
     width, height, x_padding, y_padding = 340, 200, 30, 40
     margin = 10
     radius = (min(width, height) - 2 * margin - y_padding) / 2
-    label_h = 14
+    label_h = 15
 
     total = sum(d["value"] for d in lang_data)
     legend = []
@@ -531,7 +531,7 @@ def build_productive_time_card(chart_data: list, utc_offset: float) -> str:
         tx = band_x(h) + bandwidth / 2
         ticks.append(
             f'<line x1="{tx:.2f}" y1="{chart_height}" x2="{tx:.2f}" y2="{chart_height + 6}" stroke="{TEXT_COLOR}"></line>'
-            f'<text x="{tx:.2f}" y="{chart_height + 18}" text-anchor="middle" style="fill:{TEXT_COLOR};font-size:10px;">{h}</text>'
+            f'<text x="{tx:.2f}" y="{chart_height + 20}" text-anchor="middle" style="fill:{TEXT_COLOR};font-size:12px;">{h}</text>'
         )
     x_axis_line = f'<line x1="0" y1="{chart_height}" x2="{chart_width}" y2="{chart_height}" stroke="{TEXT_COLOR}"></line>'
 
@@ -541,11 +541,11 @@ def build_productive_time_card(chart_data: list, utc_offset: float) -> str:
         ty = y(v)
         y_ticks.append(
             f'<line x1="-6" y1="{ty:.2f}" x2="0" y2="{ty:.2f}" stroke="{TEXT_COLOR}"></line>'
-            f'<text x="-10" y="{ty + 3:.2f}" text-anchor="end" style="fill:{TEXT_COLOR};font-size:10px;">{round(v)}</text>'
+            f'<text x="-10" y="{ty + 4:.2f}" text-anchor="end" style="fill:{TEXT_COLOR};font-size:12px;">{round(v)}</text>'
         )
     y_axis_line = f'<line x1="0" y1="0" x2="0" y2="{chart_height}" stroke="{TEXT_COLOR}"></line>'
 
-    label = f'<text x="220" y="130" style="fill:{TEXT_COLOR};font-size:10px;">per day hour</text>'
+    label = f'<text x="220" y="130" style="fill:{TEXT_COLOR};font-size:12px;">per day hour</text>'
 
     chart_panel = (
         f'<g transform="translate({(width - chart_width) / 2 + 5},{y_padding / 2})">'
@@ -603,12 +603,12 @@ def build_activity_graph(daily: list) -> str:
         )
         y_ticks.append(
             f'<text x="{x_padding - 8}" y="{gy + 3:.2f}" text-anchor="end" '
-            f'style="fill:{TEXT_COLOR};font-size:10px;">{round(v)}</text>'
+            f'style="fill:{TEXT_COLOR};font-size:12px;">{round(v)}</text>'
         )
 
     x_labels = [
         f'<text x="{px(i):.2f}" y="{y_padding + plot_h + 16}" text-anchor="middle" '
-        f'style="fill:{TEXT_COLOR};font-size:9px;">{day}</text>'
+        f'style="fill:{TEXT_COLOR};font-size:11px;">{day}</text>'
         for i, (day, _) in enumerate(daily)
     ]
 
@@ -619,10 +619,10 @@ def build_activity_graph(daily: list) -> str:
 
     axis_labels = (
         f'<text x="{x_padding + plot_w / 2:.2f}" y="{height - 10}" text-anchor="middle" '
-        f'style="fill:{ACTIVITY_TITLE};font-size:11px;">Days</text>'
+        f'style="fill:{ACTIVITY_TITLE};font-size:13px;">Days</text>'
         f'<text x="14" y="{y_padding + plot_h / 2:.2f}" text-anchor="middle" '
         f'transform="rotate(-90,14,{y_padding + plot_h / 2:.2f})" '
-        f'style="fill:{TEXT_COLOR};font-size:10px;">Contributions</text>'
+        f'style="fill:{TEXT_COLOR};font-size:12px;">Contributions</text>'
     )
 
     body = (
