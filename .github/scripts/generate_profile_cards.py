@@ -673,7 +673,9 @@ def fetch_recent_repos(limit: int = 6) -> list:
             description
             stargazerCount
             pushedAt
+            homepageUrl
             primaryLanguage { name }
+            repositoryTopics(first: 4) { nodes { topic { name } } }
           }
         }
       }
@@ -683,32 +685,51 @@ def fetch_recent_repos(limit: int = 6) -> list:
     return [repo for repo in nodes if repo["name"].lower() != USERNAME.lower()][:limit]
 
 
+def render_project_card(repo: dict) -> str:
+    """Render one repository as a table cell: title, repo name, summary, tags and links."""
+    quote = {'"': "&quot;"}
+    title, summary = split_project_text(repo)
+    if len(summary) > MAX_DESCRIPTION:
+        summary = summary[: MAX_DESCRIPTION - 1].rstrip() + "\u2026"
+    pushed = datetime.datetime.fromisoformat(repo["pushedAt"].replace("Z", "+00:00"))
+    updated = f"Updated {pushed.strftime('%b')} {pushed.day}, {pushed.year}"
+    tags = []
+    language = (repo.get("primaryLanguage") or {}).get("name")
+    if language:
+        tags.append(language)
+    topics = (repo.get("repositoryTopics") or {}).get("nodes") or []
+    tags += [node["topic"]["name"] for node in topics]
+    tags = list(dict.fromkeys(tags))[:4]
+    chips = " ".join(f"<code>{escape(tag)}</code>" for tag in tags)
+    url = escape(repo["url"], quote)
+    links = []
+    homepage = (repo.get("homepageUrl") or "").strip()
+    if homepage.startswith(("http://", "https://")):
+        links.append(f'<a href="{escape(homepage, quote)}">Live demo</a>')
+    links.append(f'<a href="{url}">Source code</a>')
+    meta = [f"<code>{escape(repo['name'])}</code>", updated]
+    if repo.get("stargazerCount"):
+        meta.append(f"\u2605 {repo['stargazerCount']}")
+    meta_text = " \u00b7 ".join(meta)
+    link_text = " \u00b7 ".join(links)
+    lines = [
+        '<td width="33%" valign="top" align="left">',
+        f'<b><a href="{url}">{escape(title)}</a></b>',
+        f"<br /><sub>{meta_text}</sub>",
+        f"<br /><br /><sub>{escape(summary)}</sub>",
+    ]
+    if chips:
+        lines.append(f"<br /><br />{chips}")
+    lines.append(f"<br /><br /><sub>{link_text}</sub>")
+    lines.append("</td>")
+    return "\n".join(lines)
+
+
 def render_recent_repos(repos: list) -> str:
     """Render repositories as the HTML table placed between the README markers."""
     if not repos:
         return "<sub>No public repositories to show yet.</sub>"
-    quote = {'"': "&quot;"}
-    cells = []
-    for repo in repos:
-        pushed = datetime.datetime.fromisoformat(repo["pushedAt"].replace("Z", "+00:00"))
-        language = (repo.get("primaryLanguage") or {}).get("name")
-        facts = [escape(language)] if language else []
-        facts.append(f"\u2605 {repo['stargazerCount']}")
-        facts.append(f"updated {pushed.strftime('%b')} {pushed.day}, {pushed.year}")
-        details = " \u00b7 ".join(facts)
-        text = repo.get("description") or "No description yet."
-        if len(text) > MAX_DESCRIPTION:
-            text = text[: MAX_DESCRIPTION - 1].rstrip() + "…"
-        description = escape(text)
-        url = escape(repo["url"], quote)
-        name = escape(repo["name"])
-        cells.append(
-            '<td width="33%" valign="top" align="left">\n'
-            f'<b><a href="{url}"><code>{name}/</code></a></b>\n'
-            f"<br /><sub>{description}</sub>\n"
-            f"<br /><sub>{details}</sub>\n"
-            "</td>"
-        )
+    cells = [render_project_card(repo) for repo in repos]
     rows = []
     for start in range(0, len(cells), 3):
         row = cells[start : start + 3]

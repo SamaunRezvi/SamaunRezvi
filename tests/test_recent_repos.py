@@ -11,37 +11,62 @@ def repo(name="demo", **overrides):
     data = {
         "name": name,
         "url": f"https://github.com/me/{name}",
-        "description": "A demo project",
-        "stargazerCount": 3,
+        "description": "PH_B-14_A08 - Demo App: A demo project",
+        "stargazerCount": 0,
         "pushedAt": "2026-11-09T10:00:00Z",
+        "homepageUrl": None,
         "primaryLanguage": {"name": "TypeScript"},
+        "repositoryTopics": {"nodes": [{"topic": {"name": "nextjs"}}]},
     }
     data.update(overrides)
     return data
 
 
 class RenderTests(unittest.TestCase):
-    def test_shows_name_link_and_facts(self):
+    def test_links_the_professional_title_and_shows_the_repo_name(self):
         html = cards.render_recent_repos([repo()])
-        self.assertIn('<a href="https://github.com/me/demo"><code>demo/</code></a>', html)
-        self.assertIn("TypeScript", html)
-        self.assertIn("\u2605 3", html)
-        self.assertIn("updated Nov 9, 2026", html)
+        self.assertIn('<a href="https://github.com/me/demo">Demo App</a>', html)
+        self.assertIn("<code>demo</code>", html)
+        self.assertNotIn("PH_B-14", html)
+
+    def test_shows_the_language_and_topics_as_tags(self):
+        html = cards.render_recent_repos([repo()])
+        self.assertIn("<code>TypeScript</code>", html)
+        self.assertIn("<code>nextjs</code>", html)
+
+    def test_shows_the_updated_date(self):
+        self.assertIn("Updated Nov 9, 2026", cards.render_recent_repos([repo()]))
+
+    def test_links_a_live_demo_only_when_there_is_a_homepage(self):
+        plain = cards.render_recent_repos([repo()])
+        live = cards.render_recent_repos([repo(homepageUrl="https://demo.example.com")])
+        self.assertNotIn("Live demo", plain)
+        self.assertIn('<a href="https://demo.example.com">Live demo</a>', live)
+
+    def test_ignores_homepages_that_are_not_web_links(self):
+        html = cards.render_recent_repos([repo(homepageUrl="javascript:alert(1)")])
+        self.assertNotIn("javascript:", html)
+
+    def test_hides_zero_stars_and_shows_real_ones(self):
+        self.assertNotIn("\u2605", cards.render_recent_repos([repo()]))
+        self.assertIn("\u2605 4", cards.render_recent_repos([repo(stargazerCount=4)]))
 
     def test_escapes_html_in_descriptions(self):
         html = cards.render_recent_repos([repo(description="<script>alert(1)</script>")])
         self.assertNotIn("<script>", html)
         self.assertIn("&lt;script&gt;", html)
 
-    def test_handles_missing_description_and_language(self):
-        html = cards.render_recent_repos([repo(description=None, primaryLanguage=None)])
+    def test_handles_missing_description_language_and_topics(self):
+        item = repo(description=None, primaryLanguage=None, repositoryTopics=None)
+        html = cards.render_recent_repos([item])
         self.assertIn("No description yet.", html)
+        self.assertNotIn("<code>TypeScript</code>", html)
 
     def test_shortens_long_descriptions(self):
         html = cards.render_recent_repos([repo(description="word " * 100)])
-        shown = html.split("<sub>")[1].split("</sub>")[0]
+        shown = html.split("<sub>")[2].split("</sub>")[0]
         self.assertLessEqual(len(shown), cards.MAX_DESCRIPTION)
-        self.assertTrue(shown.endswith("…"))
+        self.assertTrue(shown.endswith("\u2026"))
 
     def test_pads_each_row_to_three_cells(self):
         self.assertEqual(cards.render_recent_repos([repo()]).count("<td"), 3)
