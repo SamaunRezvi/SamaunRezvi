@@ -21,7 +21,7 @@
 
 <h1><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/hero-name-dark.svg"><img alt="Hi, I’m Samaun Rezvi" src="assets/headings/hero-name-light.svg" height="62" /></picture></h1>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=15&duration=2600&pause=900&color=58A6FF&vCenter=true&width=430&height=32&lines=Full-Stack+Web+Developer;I+build+products+end+to+end;Frontend+%C2%B7+Backend+%C2%B7+Data+%C2%B7+Deploy" alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=600&size=18&duration=2600&pause=900&color=58A6FF&vCenter=true&width=430&height=32&lines=Full-Stack+Web+Developer;I+build+products+end+to+end;Frontend+%C2%B7+Backend+%C2%B7+Data+%C2%B7+Deploy" alt="" />
 
 <sub>Computer Science &amp; Engineering · Daffodil International University · DSC, Dhaka, Bangladesh</sub>
 
@@ -485,9 +485,9 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=19&duration=4200&pause=1200&color=E3B341&center=true&vCenter=true&random=true&width=760&height=44&lines=%22Simplicity+is+prerequisite+for+reliability.%22;%22Controlling+complexity+is+the+essence+of+computer+programming.%22;%22Programs+must+be+written+for+people+to+read.%22;%22Good+programmers+write+code+that+humans+can+understand.%22;%22Make+it+work%2C+make+it+right%2C+make+it+fast.%22" alt="Curated quotes" />
+<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=500&size=20&duration=4200&pause=1200&color=E3B341&center=true&vCenter=true&random=true&width=760&height=44&lines=%22Simplicity+is+prerequisite+for+reliability.%22;%22Controlling+complexity+is+the+essence+of+computer+programming.%22;%22Programs+must+be+written+for+people+to+read.%22;%22Good+programmers+write+code+that+humans+can+understand.%22;%22Make+it+work%2C+make+it+right%2C+make+it+fast.%22" alt="Curated quotes" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=13&duration=4200&pause=1200&color=8B949E&center=true&vCenter=true&random=true&width=760&height=28&lines=Edsger+W.+Dijkstra;Brian+Kernighan;Abelson+%26+Sussman%2C+SICP;Martin+Fowler%2C+Refactoring;Kent+Beck" alt="Attributions" />
+<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=400&size=15&duration=4200&pause=1200&color=8B949E&center=true&vCenter=true&random=true&width=760&height=28&lines=Edsger+W.+Dijkstra;Brian+Kernighan;Abelson+%26+Sussman%2C+SICP;Martin+Fowler%2C+Refactoring;Kent+Beck" alt="Attributions" />
 
 <br />
 
@@ -520,7 +520,7 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&width=760&height=42&lines=Open+to+full-time+roles;Available+for+freelance+and+collaboration;Happy+to+talk+architecture+any+time;Ask+me+about+the+hard+parts" alt="" />
+<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=600&size=20&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&width=760&height=42&lines=Open+to+full-time+roles;Available+for+freelance+and+collaboration;Happy+to+talk+architecture+any+time;Ask+me+about+the+hard+parts" alt="" />
 
 <br />
 

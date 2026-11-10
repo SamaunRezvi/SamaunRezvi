@@ -69,3 +69,9 @@ class ReadmeAssetTests(unittest.TestCase):
 
     def test_decorative_gradient_dividers_are_kept_to_a_few(self):
         self.assertLessEqual(README.count("capsule-render"), 3)
+
+    def test_typing_animations_use_the_serif_font(self):
+        urls = re.findall(r'https://readme-typing-svg[^"]+', README)
+        self.assertTrue(urls)
+        for url in urls:
+            self.assertIn("font=Playfair+Display", url)
