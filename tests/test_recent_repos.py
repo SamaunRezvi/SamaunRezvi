@@ -65,8 +65,7 @@ class RenderTests(unittest.TestCase):
 
     def test_shortens_long_descriptions(self):
         html = cards.render_recent_repos([repo(description="word " * 100)])
-        shown = re.search(r"<br /><br />([^<
-]+)", html).group(1)
+        shown = re.search(r"<br /><br />([^<\n]+)", html).group(1)
         self.assertLessEqual(len(shown), cards.MAX_DESCRIPTION)
         self.assertTrue(shown.endswith("\u2026"))
 
@@ -76,8 +75,7 @@ class RenderTests(unittest.TestCase):
 
     def test_cuts_long_summaries_at_a_word_boundary(self):
         html = cards.render_recent_repos([repo(description="alpha " * 40)])
-        shown = re.search(r"<br /><br />([^<
-]+)", html).group(1)
+        shown = re.search(r"<br /><br />([^<\n]+)", html).group(1)
         self.assertTrue(shown.endswith("…"))
         self.assertTrue(all(word.lower() == "alpha" for word in shown[:-1].split()))
 
