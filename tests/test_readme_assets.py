@@ -75,3 +75,13 @@ class ReadmeAssetTests(unittest.TestCase):
         self.assertTrue(urls)
         for url in urls:
             self.assertIn("font=Playfair+Display", url)
+
+    def test_typing_animations_are_large_enough_to_read(self):
+        for url in re.findall(r'https://readme-typing-svg[^"]+', README):
+            size = int(re.search(r"[?&]size=(\d+)", url).group(1))
+            self.assertGreaterEqual(size, 19, url)
+
+    def test_static_captions_are_not_shrunk_with_sub(self):
+        for caption in ("what I reach for and why", "architecture walkthrough on request"):
+            line = next(l for l in README.splitlines() if caption in l)
+            self.assertNotIn("<sub>", line)
