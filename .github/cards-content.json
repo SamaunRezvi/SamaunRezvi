@@ -76,5 +76,234 @@
         "a11y-0d1117-9098efe1.svg"
       ]
     }
+  ],
+  "stats": [
+    {
+      "label": "WORK",
+      "number": "15+",
+      "title": "PROJECTS",
+      "caption": "across web and data"
+    },
+    {
+      "label": "STACK",
+      "number": "10+",
+      "title": "TECHNOLOGIES",
+      "caption": "in active use"
+    },
+    {
+      "label": "REACH",
+      "number": "2",
+      "title": "LANGUAGES",
+      "caption": "Bengali and English"
+    },
+    {
+      "label": "OWNERSHIP",
+      "number": "99.9%",
+      "title": "END TO END",
+      "caption": "design through deploy"
+    }
+  ],
+  "tech": [
+    {
+      "title": "Languages",
+      "badges": [
+        {
+          "name": "TypeScript",
+          "file": "typescript-3178c6-31bd1b98.svg"
+        },
+        {
+          "name": "JavaScript",
+          "file": "javascript-f7df1e-37247dd9.svg"
+        },
+        {
+          "name": "Python",
+          "file": "python-3776ab-cad7faa5.svg"
+        },
+        {
+          "name": "Java",
+          "file": "java-ed8b00-f7ed3bc4.svg"
+        },
+        {
+          "name": "HTML5",
+          "file": "html5-e34f26-662ba3d5.svg"
+        },
+        {
+          "name": "CSS3",
+          "file": "css3-1572b6-cca199c2.svg"
+        }
+      ]
+    },
+    {
+      "title": "Frontend",
+      "badges": [
+        {
+          "name": "Next.js",
+          "file": "next-js-000000-60c80ad0.svg"
+        },
+        {
+          "name": "React",
+          "file": "react-61dafb-ed24dda4.svg"
+        },
+        {
+          "name": "Tailwind CSS",
+          "file": "tailwind-css-06b6d4-88a442ca.svg"
+        },
+        {
+          "name": "Vite",
+          "file": "vite-646cff-b0fa2831.svg"
+        },
+        {
+          "name": "Framer Motion",
+          "file": "framer-motion-0055ff-540f68d0.svg"
+        },
+        {
+          "name": "Recharts",
+          "file": "recharts-ff6384-dff1cafc.svg"
+        },
+        {
+          "name": "Lucide",
+          "file": "lucide-f56565-3d25177b.svg"
+        },
+        {
+          "name": "Leaflet",
+          "file": "leaflet-4c9be8-3c5c5bfa.svg"
+        }
+      ]
+    },
+    {
+      "title": "Backend-Data",
+      "badges": [
+        {
+          "name": "Node.js",
+          "file": "node-js-68778c-f21e2af6.svg"
+        },
+        {
+          "name": "Prisma",
+          "file": "prisma-2d3748-39459060.svg"
+        },
+        {
+          "name": "PostgreSQL",
+          "file": "postgresql-4169e1-76d42b13.svg"
+        },
+        {
+          "name": "MySQL",
+          "file": "mysql-4479a1-4d5d33e2.svg"
+        },
+        {
+          "name": "SQLite",
+          "file": "sqlite-003b57-fe82b21c.svg"
+        },
+        {
+          "name": "Zod",
+          "file": "zod-3e67b1-790c0d99.svg"
+        },
+        {
+          "name": "REST APIs",
+          "file": "rest-apis-e3b341-07c63455.svg"
+        },
+        {
+          "name": "IndexedDB",
+          "file": "indexeddb-4285f4-0d2e5fce.svg"
+        }
+      ]
+    },
+    {
+      "title": "Architecture",
+      "badges": [
+        {
+          "name": "Role-based Access Control",
+          "file": "role-based-access-control-58a6ff-67516a45.svg"
+        },
+        {
+          "name": "Offline-first Sync",
+          "file": "offline-first-sync-bc8cff-82d4f638.svg"
+        },
+        {
+          "name": "Design Systems",
+          "file": "design-systems-f778ba-6b90a3df.svg"
+        },
+        {
+          "name": "Internationalisation",
+          "file": "internationalisation-39d0d8-f6aefbf2.svg"
+        },
+        {
+          "name": "Accessibility",
+          "file": "accessibility-f778ba-ad3efab8.svg"
+        }
+      ]
+    },
+    {
+      "title": "Tooling",
+      "badges": [
+        {
+          "name": "Git",
+          "file": "git-f05032-eac29139.svg"
+        },
+        {
+          "name": "GitHub",
+          "file": "github-181717-b2f5a59f.svg"
+        },
+        {
+          "name": "Vercel",
+          "file": "vercel-000000-78a8cc14.svg"
+        },
+        {
+          "name": "Figma",
+          "file": "figma-f24e1e-0de6374b.svg"
+        },
+        {
+          "name": "VS Code",
+          "file": "vs-code-007acc-75547e58.svg"
+        },
+        {
+          "name": "Vitest",
+          "file": "vitest-fcc72b-f21852bd.svg"
+        },
+        {
+          "name": "ESLint",
+          "file": "eslint-4b32c3-f43ed47d.svg"
+        },
+        {
+          "name": "Linux",
+          "file": "linux-fcc624-4366a6f7.svg"
+        }
+      ]
+    }
+  ],
+  "quotes": [
+    {
+      "quote": "Simplicity is prerequisite for reliability.",
+      "author": "Edsger W. Dijkstra"
+    },
+    {
+      "quote": "Controlling complexity is the essence of computer programming.",
+      "author": "Brian Kernighan"
+    },
+    {
+      "quote": "Programs must be written for people to read.",
+      "author": "Abelson & Sussman, SICP"
+    },
+    {
+      "quote": "Good programmers write code that humans can understand.",
+      "author": "Martin Fowler, Refactoring"
+    },
+    {
+      "quote": "Make it work, make it right, make it fast.",
+      "author": "Kent Beck"
+    }
+  ],
+  "contact": [
+    {
+      "title": "Full-time",
+      "body": "Frontend, Full-Stack, and Product Engineering"
+    },
+    {
+      "title": "Freelance",
+      "body": "Platforms, Dashboards, and Interface Work"
+    },
+    {
+      "title": "Collaboration",
+      "body": "Open source, Side Builds, and Team Projects"
+    }
   ]
 }

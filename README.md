@@ -85,34 +85,14 @@ Computer Science &amp; Engineering · Daffodil International University · DSC, 
 
 <h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/about-me-dark.svg"><img alt="About Me" src="assets/headings/about-me-light.svg" height="73" /></picture></h2>
 
-<table align="center">
-<tr>
-<td align="center" width="170">
-<img alt="WORK" src="assets/badges/work-58a6ff-b88cf6d9.svg" /><br />
-<h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/stat-projects-dark.svg"><img alt="15+" src="assets/headings/stat-projects-light.svg" height="94" /></picture></h1>
-<b>PROJECTS</b><br />
-across web and data
-</td>
-<td align="center" width="170">
-<img alt="STACK" src="assets/badges/stack-bc8cff-83e29346.svg" /><br />
-<h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/stat-stack-dark.svg"><img alt="10+" src="assets/headings/stat-stack-light.svg" height="94" /></picture></h1>
-<b>TECHNOLOGIES</b><br />
-in active use
-</td>
-<td align="center" width="170">
-<img alt="REACH" src="assets/badges/reach-58a6ff-367641ea.svg" /><br />
-<h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/stat-reach-dark.svg"><img alt="2" src="assets/headings/stat-reach-light.svg" height="94" /></picture></h1>
-<b>LANGUAGES</b><br />
-Bengali and English
-</td>
-<td align="center" width="170">
-<img alt="OWNERSHIP" src="assets/badges/ownership-f0883e-f1abaa74.svg" /><br />
-<h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/stat-ownership-dark.svg"><img alt="99.9%" src="assets/headings/stat-ownership-light.svg" height="94" /></picture></h1>
-<b>END TO END</b><br />
-design through deploy
-</td>
-</tr>
-</table>
+<!-- CARDS:stats:START -->
+<p align="center">
+<img alt="15+ PROJECTS: across web and data" src="assets/cards/stat-1.svg" width="168" />
+<img alt="10+ TECHNOLOGIES: in active use" src="assets/cards/stat-2.svg" width="168" />
+<img alt="2 LANGUAGES: Bengali and English" src="assets/cards/stat-3.svg" width="168" />
+<img alt="99.9% END TO END: design through deploy" src="assets/cards/stat-4.svg" width="168" />
+</p>
+<!-- CARDS:stats:END -->
 
 <p align="justify">
 I build systems where people in different roles use the same data for different purposes. An administrator, a field worker, a reviewer, and an end user each need a different view, different permissions, and different defaults. Designing that separation cleanly is the part I find most interesting, and it is where most systems get it wrong.
@@ -122,12 +102,12 @@ I build systems where people in different roles use the same data for different 
 
 <!-- CARDS:principles:START -->
 <p align="center">
-<img alt="Missing data is shown as missing: If a sensor has not reported, the interface says so. It never renders a zero, because a zero is a reading and an absence is not. Every value carries a quality state and an origin, so an estimate is never mistaken for a measurement." src="assets/cards/principle-1.svg" width="49%" />
-<img alt="Permissions live where the data lives: Scoping a user to their district is a query-layer constraint, not a filtered dropdown. If the rule only exists in the interface, it is not a rule. Authorisation is re-checked inside every server action." src="assets/cards/principle-2.svg" width="49%" />
+<img alt="Missing data is shown as missing: If a sensor has not reported, the interface says so. It never renders a zero, because a zero is a reading and an absence is not. Every value carries a quality state and an origin, so an estimate is never mistaken for a measurement." src="assets/cards/principle-1.svg" width="420" />
+<img alt="Permissions live where the data lives: Scoping a user to their district is a query-layer constraint, not a filtered dropdown. If the rule only exists in the interface, it is not a rule. Authorisation is re-checked inside every server action." src="assets/cards/principle-2.svg" width="420" />
 </p>
 <p align="center">
-<img alt="Offline is a state, not an error: Field forms queue locally and sync when connectivity returns. Endpoints are idempotent, so a retried submission never duplicates a record. Maps fall back to a list view when tiles fail." src="assets/cards/principle-3.svg" width="49%" />
-<img alt="Scope boundaries are deliberate: A monitoring platform I built has no remote control over the hardware it observes. Centralising visibility was the goal; overriding on-site safety logic was never in scope, and saying so explicitly mattered more than shipping a feature." src="assets/cards/principle-4.svg" width="49%" />
+<img alt="Offline is a state, not an error: Field forms queue locally and sync when connectivity returns. Endpoints are idempotent, so a retried submission never duplicates a record. Maps fall back to a list view when tiles fail." src="assets/cards/principle-3.svg" width="420" />
+<img alt="Scope boundaries are deliberate: A monitoring platform I built has no remote control over the hardware it observes. Centralising visibility was the goal; overriding on-site safety logic was never in scope, and saying so explicitly mattered more than shipping a feature." src="assets/cards/principle-4.svg" width="420" />
 </p>
 <!-- CARDS:principles:END -->
 
@@ -159,83 +139,19 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<table align="center">
-<tr>
-<td align="right" valign="middle" width="200">
-<img alt="" src="assets/badges/01-58a6ff-1cad464c.svg" /><br />
-<b><code>Languages</code></b>
-</td>
-<td align="left" valign="middle">
-<img alt="TypeScript" src="assets/badges/typescript-3178c6-31bd1b98.svg" />
-<img alt="JavaScript" src="assets/badges/javascript-f7df1e-37247dd9.svg" />
-<img alt="Python" src="assets/badges/python-3776ab-cad7faa5.svg" />
-<img alt="Java" src="assets/badges/java-ed8b00-f7ed3bc4.svg" />
-<img alt="HTML5" src="assets/badges/html5-e34f26-662ba3d5.svg" />
-<img alt="CSS3" src="assets/badges/css3-1572b6-cca199c2.svg" />
-</td>
-</tr>
-<tr>
-<td align="right" valign="middle">
-<img alt="" src="assets/badges/02-bc8cff-f3b01fa8.svg" /><br />
-<b><code>Frontend</code></b>
-</td>
-<td align="left" valign="middle">
-<img alt="Next.js" src="assets/badges/next-js-000000-60c80ad0.svg" />
-<img alt="React" src="assets/badges/react-61dafb-ed24dda4.svg" />
-<img alt="Tailwind CSS" src="assets/badges/tailwind-css-06b6d4-88a442ca.svg" />
-<img alt="Vite" src="assets/badges/vite-646cff-b0fa2831.svg" />
-<img alt="Framer Motion" src="assets/badges/framer-motion-0055ff-540f68d0.svg" />
-<img alt="Recharts" src="assets/badges/recharts-ff6384-dff1cafc.svg" />
-<img alt="Lucide" src="assets/badges/lucide-f56565-3d25177b.svg" />
-<img alt="Leaflet" src="assets/badges/leaflet-4c9be8-3c5c5bfa.svg" />
-</td>
-</tr>
-<tr>
-<td align="right" valign="middle">
-<img alt="" src="assets/badges/03-39d0d8-878a9ff8.svg" /><br />
-<b><code>Backend-Data</code></b>
-</td>
-<td align="left" valign="middle">
-<img alt="Node.js" src="assets/badges/node-js-68778c-f21e2af6.svg" />
-<img alt="Prisma" src="assets/badges/prisma-2d3748-39459060.svg" />
-<img alt="PostgreSQL" src="assets/badges/postgresql-4169e1-76d42b13.svg" />
-<img alt="MySQL" src="assets/badges/mysql-4479a1-4d5d33e2.svg" />
-<img alt="SQLite" src="assets/badges/sqlite-003b57-fe82b21c.svg" />
-<img alt="Zod" src="assets/badges/zod-3e67b1-790c0d99.svg" />
-<img alt="REST APIs" src="assets/badges/rest-apis-e3b341-07c63455.svg" />
-<img alt="IndexedDB" src="assets/badges/indexeddb-4285f4-0d2e5fce.svg" />
-</td>
-</tr>
-<tr>
-<td align="right" valign="middle">
-<img alt="" src="assets/badges/04-f0883e-1e37ef0f.svg" /><br />
-<b><code>Architecture</code></b>
-</td>
-<td align="left" valign="middle">
-<img alt="Role-based Access Control" src="assets/badges/role-based-access-control-58a6ff-67516a45.svg" />
-<img alt="Offline-first Sync" src="assets/badges/offline-first-sync-bc8cff-82d4f638.svg" />
-<img alt="Design Systems" src="assets/badges/design-systems-f778ba-6b90a3df.svg" />
-<img alt="Internationalisation" src="assets/badges/internationalisation-39d0d8-f6aefbf2.svg" />
-<img alt="Accessibility" src="assets/badges/accessibility-f778ba-ad3efab8.svg" />
-</td>
-</tr>
-<tr>
-<td align="right" valign="middle">
-<img alt="" src="assets/badges/05-f778ba-c72a1b0c.svg" /><br />
-<b><code>Tooling</code></b>
-</td>
-<td align="left" valign="middle">
-<img alt="Git" src="assets/badges/git-f05032-eac29139.svg" />
-<img alt="GitHub" src="assets/badges/github-181717-b2f5a59f.svg" />
-<img alt="Vercel" src="assets/badges/vercel-000000-78a8cc14.svg" />
-<img alt="Figma" src="assets/badges/figma-f24e1e-0de6374b.svg" />
-<img alt="VS Code" src="assets/badges/vs-code-007acc-75547e58.svg" />
-<img alt="Vitest" src="assets/badges/vitest-fcc72b-f21852bd.svg" />
-<img alt="ESLint" src="assets/badges/eslint-4b32c3-f43ed47d.svg" />
-<img alt="Linux" src="assets/badges/linux-fcc624-4366a6f7.svg" />
-</td>
-</tr>
-</table>
+<!-- CARDS:tech:START -->
+<p align="center">
+<img alt="Languages: TypeScript, JavaScript, Python, Java, HTML5, CSS3" src="assets/cards/tech-1.svg" width="420" />
+<img alt="Frontend: Next.js, React, Tailwind CSS, Vite, Framer Motion, Recharts, Lucide, Leaflet" src="assets/cards/tech-2.svg" width="420" />
+</p>
+<p align="center">
+<img alt="Backend-Data: Node.js, Prisma, PostgreSQL, MySQL, SQLite, Zod, REST APIs, IndexedDB" src="assets/cards/tech-3.svg" width="420" />
+<img alt="Architecture: Role-based Access Control, Offline-first Sync, Design Systems, Internationalisation, Accessibility" src="assets/cards/tech-4.svg" width="420" />
+</p>
+<p align="center">
+<img alt="Tooling: Git, GitHub, Vercel, Figma, VS Code, Vitest, ESLint, Linux" src="assets/cards/tech-5.svg" width="420" />
+</p>
+<!-- CARDS:tech:END -->
 
 <br />
 
@@ -259,16 +175,16 @@ I build systems where people in different roles use the same data for different 
 
 <!-- CARDS:work:START -->
 <p align="center">
-<img alt="IoT Monitoring: Real-time telemetry across a 9-role permission system and 90+ routes. Offline-capable field apps, jurisdiction-scoped access control." src="assets/cards/work-1.svg" width="49%" />
-<img alt="Competition Platform: Multi-role judging pipeline blending automated scoring with manual review. Live leaderboards, role-separated submission flow." src="assets/cards/work-2.svg" width="49%" />
+<img alt="IoT Monitoring: Real-time telemetry across a 9-role permission system and 90+ routes. Offline-capable field apps, jurisdiction-scoped access control." src="assets/cards/work-1.svg" width="420" />
+<img alt="Competition Platform: Multi-role judging pipeline blending automated scoring with manual review. Live leaderboards, role-separated submission flow." src="assets/cards/work-2.svg" width="420" />
 </p>
 <p align="center">
-<img alt="Institutional Governance: Full document lifecycle management: review workflows, an immutable audit trail, and weighted contribution scoring." src="assets/cards/work-3.svg" width="49%" />
-<img alt="Data Intelligence: Ingestion-to-insight pipeline with sentiment classification, trend comparison, and dashboarded reporting." src="assets/cards/work-4.svg" width="49%" />
+<img alt="Institutional Governance: Full document lifecycle management: review workflows, an immutable audit trail, and weighted contribution scoring." src="assets/cards/work-3.svg" width="420" />
+<img alt="Data Intelligence: Ingestion-to-insight pipeline with sentiment classification, trend comparison, and dashboarded reporting." src="assets/cards/work-4.svg" width="420" />
 </p>
 <p align="center">
-<img alt="Scheduling Systems: Role-specific portals with approval workflows, availability management, and calendar-synced booking." src="assets/cards/work-5.svg" width="49%" />
-<img alt="Design Systems: Component libraries and design tokens driving consistent, accessible, responsive interfaces." src="assets/cards/work-6.svg" width="49%" />
+<img alt="Scheduling Systems: Role-specific portals with approval workflows, availability management, and calendar-synced booking." src="assets/cards/work-5.svg" width="420" />
+<img alt="Design Systems: Component libraries and design tokens driving consistent, accessible, responsive interfaces." src="assets/cards/work-6.svg" width="420" />
 </p>
 <!-- CARDS:work:END -->
 
@@ -380,22 +296,19 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=500&size=25&duration=4200&pause=1200&color=E3B341&center=true&vCenter=true&random=true&width=880&height=54&lines=%22Simplicity+is+prerequisite+for+reliability.%22;%22Controlling+complexity+is+the+essence+of+computer+programming.%22;%22Programs+must+be+written+for+people+to+read.%22;%22Good+programmers+write+code+that+humans+can+understand.%22;%22Make+it+work%2C+make+it+right%2C+make+it+fast.%22" alt="Curated quotes" />
-
-<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=400&size=19&duration=4200&pause=1200&color=8B949E&center=true&vCenter=true&random=true&width=760&height=34&lines=Edsger+W.+Dijkstra;Brian+Kernighan;Abelson+%26+Sussman%2C+SICP;Martin+Fowler%2C+Refactoring;Kent+Beck" alt="Attributions" />
-
-<br />
-
-<img alt="" src="assets/badges/01-58a6ff-1cad464c.svg" />
-<img alt="Dijkstra" src="assets/badges/dijkstra-0d1117-050107bf.svg" />
-<img alt="" src="assets/badges/02-bc8cff-f3b01fa8.svg" />
-<img alt="Kernighan" src="assets/badges/kernighan-0d1117-b6239594.svg" />
-<img alt="" src="assets/badges/03-e3b341-09667728.svg" />
-<img alt="SICP" src="assets/badges/sicp-0d1117-c1e3731e.svg" />
-<img alt="" src="assets/badges/04-f0883e-1e37ef0f.svg" />
-<img alt="Fowler" src="assets/badges/fowler-0d1117-c56f792f.svg" />
-<img alt="" src="assets/badges/05-f778ba-c72a1b0c.svg" />
-<img alt="Beck" src="assets/badges/beck-0d1117-1298e14a.svg" />
+<!-- CARDS:quotes:START -->
+<p align="center">
+<img alt="Simplicity is prerequisite for reliability. — Edsger W. Dijkstra" src="assets/cards/quote-1.svg" width="420" />
+<img alt="Controlling complexity is the essence of computer programming. — Brian Kernighan" src="assets/cards/quote-2.svg" width="420" />
+</p>
+<p align="center">
+<img alt="Programs must be written for people to read. — Abelson &amp; Sussman, SICP" src="assets/cards/quote-3.svg" width="420" />
+<img alt="Good programmers write code that humans can understand. — Martin Fowler, Refactoring" src="assets/cards/quote-4.svg" width="420" />
+</p>
+<p align="center">
+<img alt="Make it work, make it right, make it fast. — Kent Beck" src="assets/cards/quote-5.svg" width="420" />
+</p>
+<!-- CARDS:quotes:END -->
 
 <br /><br />
 
@@ -415,29 +328,20 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=600&size=26&duration=2800&pause=1000&color=58A6FF&center=true&vCenter=true&width=760&height=52&lines=Open+to+full-time+roles;Available+for+freelance+and+collaboration;Happy+to+talk+architecture+any+time;Ask+me+about+the+hard+parts" alt="" />
+<i>Open to full-time roles<br />
+Available for freelance and collaboration<br />
+Happy to talk architecture any time<br />
+Ask me about the hard parts</i>
 
 <br />
 
-<table align="center">
-<tr>
-<td align="center" width="33%">
-<img alt="" src="assets/badges/01-58a6ff-1cad464c.svg" /><br /><br />
-<b><code>Full-time</code></b>
-<p align="center">Frontend, Full-Stack, and Product Engineering</p>
-</td>
-<td align="center" width="33%">
-<img alt="" src="assets/badges/02-bc8cff-f3b01fa8.svg" /><br /><br />
-<b><code>Freelance</code></b>
-<p align="center">Platforms, Dashboards, <br /> and Interface Work</p>
-</td>
-<td align="center" width="33%">
-<img alt="" src="assets/badges/03-f778ba-00ab8e11.svg" /><br /><br />
-<b><code>Collaboration</code></b>
-<p align="center">Open source, Side Builds, and Team Projects</p>
-</td>
-</tr>
-</table>
+<!-- CARDS:contact:START -->
+<p align="center">
+<img alt="Full-time: Frontend, Full-Stack, and Product Engineering" src="assets/cards/contact-1.svg" width="270" />
+<img alt="Freelance: Platforms, Dashboards, and Interface Work" src="assets/cards/contact-2.svg" width="270" />
+<img alt="Collaboration: Open source, Side Builds, and Team Projects" src="assets/cards/contact-3.svg" width="270" />
+</p>
+<!-- CARDS:contact:END -->
 
 <br /><br />
 

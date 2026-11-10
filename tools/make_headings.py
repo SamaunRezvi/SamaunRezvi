@@ -44,10 +44,6 @@ HEADINGS = [
     ("contribution-snake", "Contribution Snake", 42, 760, "middle", True),
     ("words-to-code-by", "Words To Code By", 42, 760, "middle", True),
     ("get-in-touch", "Get In Touch", 42, 760, "middle", True),
-    ("stat-projects", "15+", 58, 170, "middle", False),
-    ("stat-stack", "10+", 58, 170, "middle", False),
-    ("stat-reach", "2", 58, 170, "middle", False),
-    ("stat-ownership", "99.9%", 58, 170, "middle", False),
 ]
 
 
