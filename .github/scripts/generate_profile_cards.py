@@ -383,7 +383,7 @@ def fetch_daily_contributions(days: int = 31) -> list:
 
     result = []
     for i in range(days):
-        d = since + datetime.timedelta(days=i + 1)
+        d = since + datetime.timedelta(days=i)
         result.append((d.day, day_map.get(d.isoformat(), 0)))
     return result
 

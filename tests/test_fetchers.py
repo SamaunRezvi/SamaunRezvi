@@ -82,6 +82,11 @@ class DailyContributionTests(unittest.TestCase):
         self.assertIn((7, 4), result)
         self.assertEqual(sum(count for _, count in result), 4)
 
+    def test_covers_the_last_days_ending_today(self):
+        result = self.run_fetch([])
+        self.assertEqual(result[-1][0], 7)  # the frozen "today" is 7 November
+        self.assertEqual(result[0][0], 8)  # 30 days earlier is 8 October
+
 
 def history(*dates):
     edges = [{"node": {"authoredDate": d}} for d in dates]
