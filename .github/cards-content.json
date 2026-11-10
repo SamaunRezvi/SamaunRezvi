@@ -1,0 +1,80 @@
+{
+  "principles": [
+    {
+      "title": "Missing data is shown as missing",
+      "code": "renderQualityState()",
+      "body": "If a sensor has not reported, the interface says so. It never renders a zero, because a zero is a reading and an absence is not. Every value carries a quality state and an origin, so an estimate is never mistaken for a measurement."
+    },
+    {
+      "title": "Permissions live where the data lives",
+      "code": "scopeToJurisdiction()",
+      "body": "Scoping a user to their district is a query-layer constraint, not a filtered dropdown. If the rule only exists in the interface, it is not a rule. Authorisation is re-checked inside every server action."
+    },
+    {
+      "title": "Offline is a state, not an error",
+      "code": "queueAndSync()",
+      "body": "Field forms queue locally and sync when connectivity returns. Endpoints are idempotent, so a retried submission never duplicates a record. Maps fall back to a list view when tiles fail."
+    },
+    {
+      "title": "Scope boundaries are deliberate",
+      "code": "defineBoundary()",
+      "body": "A monitoring platform I built has no remote control over the hardware it observes. Centralising visibility was the goal; overriding on-site safety logic was never in scope, and saying so explicitly mattered more than shipping a feature."
+    }
+  ],
+  "work": [
+    {
+      "folder": "iot-monitoring/",
+      "body": "Real-time telemetry across a 9-role permission system and 90+ routes. Offline-capable field apps, jurisdiction-scoped access control.",
+      "badges": [
+        "next-js-0d1117-852d2331.svg",
+        "prisma-0d1117-6d61a711.svg",
+        "postgresql-0d1117-978ebdcc.svg"
+      ]
+    },
+    {
+      "folder": "competition-platform/",
+      "body": "Multi-role judging pipeline blending automated scoring with manual review. Live leaderboards, role-separated submission flow.",
+      "badges": [
+        "typescript-0d1117-5915b376.svg",
+        "react-0d1117-c20e2c1c.svg",
+        "zod-0d1117-6f721dc4.svg"
+      ]
+    },
+    {
+      "folder": "institutional-governance/",
+      "body": "Full document lifecycle management: review workflows, an immutable audit trail, and weighted contribution scoring.",
+      "badges": [
+        "node-js-0d1117-72c45120.svg",
+        "sqlite-0d1117-14cc7c48.svg",
+        "audit-trail-0d1117-d090e3ee.svg"
+      ]
+    },
+    {
+      "folder": "data-intelligence/",
+      "body": "Ingestion-to-insight pipeline with sentiment classification, trend comparison, and dashboarded reporting.",
+      "badges": [
+        "python-0d1117-2d0ca898.svg",
+        "vite-0d1117-6301ffdd.svg",
+        "recharts-0d1117-4d2e9dc1.svg"
+      ]
+    },
+    {
+      "folder": "scheduling-systems/",
+      "body": "Role-specific portals with approval workflows, availability management, and calendar-synced booking.",
+      "badges": [
+        "next-js-0d1117-852d2331.svg",
+        "tailwind-0d1117-5ebd0c90.svg",
+        "rbac-0d1117-feb63608.svg"
+      ]
+    },
+    {
+      "folder": "design-systems/",
+      "body": "Component libraries and design tokens driving consistent, accessible, responsive interfaces.",
+      "badges": [
+        "figma-0d1117-153c1e67.svg",
+        "tailwind-0d1117-5ebd0c90.svg",
+        "a11y-0d1117-9098efe1.svg"
+      ]
+    }
+  ]
+}

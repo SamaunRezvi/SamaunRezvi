@@ -120,40 +120,16 @@ I build systems where people in different roles use the same data for different 
 
 <h3 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/principles-dark.svg"><img alt="Principles I Build On" src="assets/headings/principles-light.svg" height="56" /></picture></h3>
 
-<table align="center">
-<tr>
-<td width="50%" valign="top" align="left">
-<img alt="" src="assets/badges/01-58a6ff-f8da95c6.svg" />
-<br /><br />
-<b>Missing data is shown as missing</b><br />
-<code>renderQualityState()</code>
-<p align="justify">If a sensor has not reported, the interface says so. It never renders a zero, because a zero is a reading and an absence is not. Every value carries a quality state and an origin, so an estimate is never mistaken for a measurement.</p>
-</td>
-<td width="50%" valign="top" align="left">
-<img alt="" src="assets/badges/02-bc8cff-0df93f88.svg" />
-<br /><br />
-<b>Permissions live where the data lives</b><br />
-<code>scopeToJurisdiction()</code>
-<p align="justify">Scoping a user to their district is a query-layer constraint, not a filtered dropdown. If the rule only exists in the interface, it is not a rule. Authorisation is re-checked inside every server action.</p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top" align="left">
-<img alt="" src="assets/badges/03-bc8cff-eb6916f5.svg" />
-<br /><br />
-<b>Offline is a state, not an error</b><br />
-<code>queueAndSync()</code>
-<p align="justify">Field forms queue locally and sync when connectivity returns. Endpoints are idempotent, so a retried submission never duplicates a record. Maps fall back to a list view when tiles fail.</p>
-</td>
-<td width="50%" valign="top" align="left">
-<img alt="" src="assets/badges/04-f0883e-28add1ae.svg" />
-<br /><br />
-<b>Scope boundaries are deliberate</b><br />
-<code>defineBoundary()</code>
-<p align="justify">A monitoring platform I built has no remote control over the hardware it observes. Centralising visibility was the goal; overriding on-site safety logic was never in scope, and saying so explicitly mattered more than shipping a feature.</p>
-</td>
-</tr>
-</table>
+<!-- CARDS:principles:START -->
+<p align="center">
+<img alt="Missing data is shown as missing: If a sensor has not reported, the interface says so. It never renders a zero, because a zero is a reading and an absence is not. Every value carries a quality state and an origin, so an estimate is never mistaken for a measurement." src="assets/cards/principle-1.svg" width="49%" />
+<img alt="Permissions live where the data lives: Scoping a user to their district is a query-layer constraint, not a filtered dropdown. If the rule only exists in the interface, it is not a rule. Authorisation is re-checked inside every server action." src="assets/cards/principle-2.svg" width="49%" />
+</p>
+<p align="center">
+<img alt="Offline is a state, not an error: Field forms queue locally and sync when connectivity returns. Endpoints are idempotent, so a retried submission never duplicates a record. Maps fall back to a list view when tiles fail." src="assets/cards/principle-3.svg" width="49%" />
+<img alt="Scope boundaries are deliberate: A monitoring platform I built has no remote control over the hardware it observes. Centralising visibility was the goal; overriding on-site safety logic was never in scope, and saying so explicitly mattered more than shipping a feature." src="assets/cards/principle-4.svg" width="49%" />
+</p>
+<!-- CARDS:principles:END -->
 
 <div align="center">
 
@@ -281,66 +257,20 @@ I build systems where people in different roles use the same data for different 
 
 <br />
 
-<table align="center">
-<tr>
-<td width="34%" valign="top" align="left">
-<img alt="" src="assets/badges/01-58a6ff-1cad464c.svg" />
-<br /><br />
-<b><code>iot-monitoring/</code></b>
-<p align="justify">Real-time telemetry across a 9-role permission system and 90+ routes. Offline-capable field apps, jurisdiction-scoped access control.</p>
-<img alt="Next.js" src="assets/badges/next-js-0d1117-852d2331.svg" />
-<img alt="Prisma" src="assets/badges/prisma-0d1117-6d61a711.svg" />
-<img alt="PostgreSQL" src="assets/badges/postgresql-0d1117-978ebdcc.svg" />
-</td>
-<td width="33%" valign="top" align="left">
-<img alt="" src="assets/badges/02-bc8cff-f3b01fa8.svg" />
-<br /><br />
-<b><code>competition-platform/</code></b>
-<p align="justify">Multi-role judging pipeline blending automated scoring with manual review. Live leaderboards, role-separated submission flow.</p>
-<img alt="TypeScript" src="assets/badges/typescript-0d1117-5915b376.svg" />
-<img alt="React" src="assets/badges/react-0d1117-c20e2c1c.svg" />
-<img alt="Zod" src="assets/badges/zod-0d1117-6f721dc4.svg" />
-</td>
-<td width="33%" valign="top" align="left">
-<img alt="" src="assets/badges/03-f0883e-46db82c7.svg" />
-<br /><br />
-<b><code>institutional-governance/</code></b>
-<p align="justify">Full document lifecycle management: review workflows, an immutable audit trail, and weighted contribution scoring.</p>
-<img alt="Node.js" src="assets/badges/node-js-0d1117-72c45120.svg" />
-<img alt="SQLite" src="assets/badges/sqlite-0d1117-14cc7c48.svg" />
-<img alt="Audit Trail" src="assets/badges/audit-trail-0d1117-d090e3ee.svg" />
-</td>
-</tr>
-<tr>
-<td valign="top" align="left">
-<img alt="" src="assets/badges/04-f0883e-1e37ef0f.svg" />
-<br /><br />
-<b><code>data-intelligence/</code></b>
-<p align="justify">Ingestion-to-insight pipeline with sentiment classification, trend comparison, and dashboarded reporting.</p>
-<img alt="Python" src="assets/badges/python-0d1117-2d0ca898.svg" />
-<img alt="Vite" src="assets/badges/vite-0d1117-6301ffdd.svg" />
-<img alt="Recharts" src="assets/badges/recharts-0d1117-4d2e9dc1.svg" />
-</td>
-<td valign="top" align="left">
-<img alt="" src="assets/badges/05-f778ba-c72a1b0c.svg" />
-<br /><br />
-<b><code>scheduling-systems/</code></b>
-<p align="justify">Role-specific portals with approval workflows, availability management, and calendar-synced booking.</p>
-<img alt="Next.js" src="assets/badges/next-js-0d1117-852d2331.svg" />
-<img alt="Tailwind" src="assets/badges/tailwind-0d1117-5ebd0c90.svg" />
-<img alt="RBAC" src="assets/badges/rbac-0d1117-feb63608.svg" />
-</td>
-<td valign="top" align="left">
-<img alt="" src="assets/badges/06-39d0d8-016e1d9c.svg" />
-<br /><br />
-<b><code>design-systems/</code></b>
-<p align="justify">Component libraries and design tokens driving consistent, accessible, responsive interfaces.</p>
-<img alt="Figma" src="assets/badges/figma-0d1117-153c1e67.svg" />
-<img alt="Tailwind" src="assets/badges/tailwind-0d1117-5ebd0c90.svg" />
-<img alt="a11y" src="assets/badges/a11y-0d1117-9098efe1.svg" />
-</td>
-</tr>
-</table>
+<!-- CARDS:work:START -->
+<p align="center">
+<img alt="IoT Monitoring: Real-time telemetry across a 9-role permission system and 90+ routes. Offline-capable field apps, jurisdiction-scoped access control." src="assets/cards/work-1.svg" width="49%" />
+<img alt="Competition Platform: Multi-role judging pipeline blending automated scoring with manual review. Live leaderboards, role-separated submission flow." src="assets/cards/work-2.svg" width="49%" />
+</p>
+<p align="center">
+<img alt="Institutional Governance: Full document lifecycle management: review workflows, an immutable audit trail, and weighted contribution scoring." src="assets/cards/work-3.svg" width="49%" />
+<img alt="Data Intelligence: Ingestion-to-insight pipeline with sentiment classification, trend comparison, and dashboarded reporting." src="assets/cards/work-4.svg" width="49%" />
+</p>
+<p align="center">
+<img alt="Scheduling Systems: Role-specific portals with approval workflows, availability management, and calendar-synced booking." src="assets/cards/work-5.svg" width="49%" />
+<img alt="Design Systems: Component libraries and design tokens driving consistent, accessible, responsive interfaces." src="assets/cards/work-6.svg" width="49%" />
+</p>
+<!-- CARDS:work:END -->
 
 <br />
 
