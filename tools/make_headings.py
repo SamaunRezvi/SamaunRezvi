@@ -32,22 +32,22 @@ FALLBACK = f"'{FAMILY}', 'Times New Roman', Times, serif"
 
 # slug, text, font size, width, anchor, accent bar
 HEADINGS = [
-    ("hero-name", "Hi, I’m Samaun Rezvi", 34, 430, "start", True),
-    ("about-me", "About Me", 32, 760, "middle", True),
-    ("principles", "Principles I Build On", 24, 760, "middle", True),
-    ("tech-and-tools", "Tech & Tools", 32, 760, "middle", True),
-    ("selected-work", "Selected Work", 32, 760, "middle", True),
-    ("latest-projects", "Latest Public Projects", 32, 760, "middle", True),
-    ("github-activity", "GitHub Activity", 32, 760, "middle", True),
-    ("contribution-landscape", "Contribution Landscape", 32, 760, "middle", True),
-    ("commit-habits", "Commit Habits", 32, 760, "middle", True),
-    ("contribution-snake", "Contribution Snake", 32, 760, "middle", True),
-    ("words-to-code-by", "Words To Code By", 32, 760, "middle", True),
-    ("get-in-touch", "Get In Touch", 32, 760, "middle", True),
-    ("stat-projects", "15+", 44, 170, "middle", False),
-    ("stat-stack", "10+", 44, 170, "middle", False),
-    ("stat-reach", "2", 44, 170, "middle", False),
-    ("stat-ownership", "99.9%", 44, 170, "middle", False),
+    ("hero-name", "Hi, I’m Samaun Rezvi", 40, 430, "start", True),
+    ("about-me", "About Me", 42, 760, "middle", True),
+    ("principles", "Principles I Build On", 30, 760, "middle", True),
+    ("tech-and-tools", "Tech & Tools", 42, 760, "middle", True),
+    ("selected-work", "Selected Work", 42, 760, "middle", True),
+    ("latest-projects", "Latest Public Projects", 42, 760, "middle", True),
+    ("github-activity", "GitHub Activity", 42, 760, "middle", True),
+    ("contribution-landscape", "Contribution Landscape", 42, 760, "middle", True),
+    ("commit-habits", "Commit Habits", 42, 760, "middle", True),
+    ("contribution-snake", "Contribution Snake", 42, 760, "middle", True),
+    ("words-to-code-by", "Words To Code By", 42, 760, "middle", True),
+    ("get-in-touch", "Get In Touch", 42, 760, "middle", True),
+    ("stat-projects", "15+", 58, 170, "middle", False),
+    ("stat-stack", "10+", 58, 170, "middle", False),
+    ("stat-reach", "2", 58, 170, "middle", False),
+    ("stat-ownership", "99.9%", 58, 170, "middle", False),
 ]
 
 

@@ -59,3 +59,8 @@ class GeneratedHeadingTests(unittest.TestCase):
     def test_readme_picture_sources_exist(self):
         for source in re.findall(r'srcset="(assets/[^"]+)"', README):
             self.assertTrue(os.path.exists(os.path.join(ROOT, source)), source)
+
+    def test_headings_are_large_enough_to_read(self):
+        for slug, _, size, *_ in make_headings.HEADINGS:
+            minimum = 56 if slug.startswith("stat-") else 30
+            self.assertGreaterEqual(size, minimum, slug)

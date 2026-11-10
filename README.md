@@ -19,7 +19,7 @@
 
 <p align="center"><img src="profile.png" width="120" alt="Samaun Rezvi" /></p>
 
-<h1><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/hero-name-dark.svg"><img alt="Hi, I’m Samaun Rezvi" src="assets/headings/hero-name-light.svg" height="62" /></picture></h1>
+<h1><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/hero-name-dark.svg"><img alt="Hi, I’m Samaun Rezvi" src="assets/headings/hero-name-light.svg" height="70" /></picture></h1>
 
 <img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=600&size=18&duration=2600&pause=900&color=58A6FF&vCenter=true&width=430&height=32&lines=Full-Stack+Web+Developer;I+build+products+end+to+end;Frontend+%C2%B7+Backend+%C2%B7+Data+%C2%B7+Deploy" alt="" />
 
@@ -83,31 +83,31 @@
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/about-me-dark.svg"><img alt="About Me" src="assets/headings/about-me-light.svg" height="59" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/about-me-dark.svg"><img alt="About Me" src="assets/headings/about-me-light.svg" height="73" /></picture></h2>
 
 <table align="center">
 <tr>
 <td align="center" width="170">
 <img alt="WORK" src="assets/badges/work-58a6ff-b88cf6d9.svg" /><br />
-<h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/stat-projects-dark.svg"><img alt="15+" src="assets/headings/stat-projects-light.svg" height="75" /></picture></h1>
+<h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/stat-projects-dark.svg"><img alt="15+" src="assets/headings/stat-projects-light.svg" height="94" /></picture></h1>
 <b>PROJECTS</b><br />
 <sub>across web and data</sub>
 </td>
 <td align="center" width="170">
 <img alt="STACK" src="assets/badges/stack-bc8cff-83e29346.svg" /><br />
-<h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/stat-stack-dark.svg"><img alt="10+" src="assets/headings/stat-stack-light.svg" height="75" /></picture></h1>
+<h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/stat-stack-dark.svg"><img alt="10+" src="assets/headings/stat-stack-light.svg" height="94" /></picture></h1>
 <b>TECHNOLOGIES</b><br />
 <sub>in active use</sub>
 </td>
 <td align="center" width="170">
 <img alt="REACH" src="assets/badges/reach-58a6ff-367641ea.svg" /><br />
-<h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/stat-reach-dark.svg"><img alt="2" src="assets/headings/stat-reach-light.svg" height="75" /></picture></h1>
+<h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/stat-reach-dark.svg"><img alt="2" src="assets/headings/stat-reach-light.svg" height="94" /></picture></h1>
 <b>LANGUAGES</b><br />
 <sub>Bengali and English</sub>
 </td>
 <td align="center" width="170">
 <img alt="OWNERSHIP" src="assets/badges/ownership-f0883e-f1abaa74.svg" /><br />
-<h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/stat-ownership-dark.svg"><img alt="99.9%" src="assets/headings/stat-ownership-light.svg" height="75" /></picture></h1>
+<h1 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/stat-ownership-dark.svg"><img alt="99.9%" src="assets/headings/stat-ownership-light.svg" height="94" /></picture></h1>
 <b>END TO END</b><br />
 <sub>design through deploy</sub>
 </td>
@@ -118,7 +118,7 @@
 I build systems where people in different roles use the same data for different purposes. An administrator, a field worker, a reviewer, and an end user each need a different view, different permissions, and different defaults. Designing that separation cleanly is the part I find most interesting, and it is where most systems get it wrong.
 </p>
 
-<h3 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/principles-dark.svg"><img alt="Principles I Build On" src="assets/headings/principles-light.svg" height="48" /></picture></h3>
+<h3 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/principles-dark.svg"><img alt="Principles I Build On" src="assets/headings/principles-light.svg" height="56" /></picture></h3>
 
 <table align="center">
 <tr>
@@ -175,7 +175,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/tech-and-tools-dark.svg"><img alt="Tech &amp; Tools" src="assets/headings/tech-and-tools-light.svg" height="59" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/tech-and-tools-dark.svg"><img alt="Tech &amp; Tools" src="assets/headings/tech-and-tools-light.svg" height="73" /></picture></h2>
 
 <div align="center">
 
@@ -273,7 +273,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/selected-work-dark.svg"><img alt="Selected Work" src="assets/headings/selected-work-light.svg" height="59" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/selected-work-dark.svg"><img alt="Selected Work" src="assets/headings/selected-work-light.svg" height="73" /></picture></h2>
 
 <div align="center">
 
@@ -352,7 +352,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/latest-projects-dark.svg"><img alt="Latest Public Projects" src="assets/headings/latest-projects-light.svg" height="59" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/latest-projects-dark.svg"><img alt="Latest Public Projects" src="assets/headings/latest-projects-light.svg" height="73" /></picture></h2>
 
 <br />
 
@@ -415,7 +415,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/github-activity-dark.svg"><img alt="GitHub Activity" src="assets/headings/github-activity-light.svg" height="59" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/github-activity-dark.svg"><img alt="GitHub Activity" src="assets/headings/github-activity-light.svg" height="73" /></picture></h2>
 
 <br />
 
@@ -436,7 +436,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/contribution-landscape-dark.svg"><img alt="Contribution Landscape" src="assets/headings/contribution-landscape-light.svg" height="59" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/contribution-landscape-dark.svg"><img alt="Contribution Landscape" src="assets/headings/contribution-landscape-light.svg" height="73" /></picture></h2>
 
 <br />
 
@@ -448,7 +448,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/commit-habits-dark.svg"><img alt="Commit Habits" src="assets/headings/commit-habits-light.svg" height="59" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/commit-habits-dark.svg"><img alt="Commit Habits" src="assets/headings/commit-habits-light.svg" height="73" /></picture></h2>
 
 <br />
 
@@ -461,7 +461,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/contribution-snake-dark.svg"><img alt="Contribution Snake" src="assets/headings/contribution-snake-light.svg" height="59" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/contribution-snake-dark.svg"><img alt="Contribution Snake" src="assets/headings/contribution-snake-light.svg" height="73" /></picture></h2>
 
 <br />
 
@@ -477,7 +477,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/words-to-code-by-dark.svg"><img alt="Words To Code By" src="assets/headings/words-to-code-by-light.svg" height="59" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/words-to-code-by-dark.svg"><img alt="Words To Code By" src="assets/headings/words-to-code-by-light.svg" height="73" /></picture></h2>
 
 <div align="center">
 
@@ -512,7 +512,7 @@ I build systems where people in different roles use the same data for different 
 
 <div align="center">
 
-<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/get-in-touch-dark.svg"><img alt="Get In Touch" src="assets/headings/get-in-touch-light.svg" height="59" /></picture></h2>
+<h2 align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/headings/get-in-touch-dark.svg"><img alt="Get In Touch" src="assets/headings/get-in-touch-light.svg" height="73" /></picture></h2>
 
 <div align="center">
 
