@@ -376,29 +376,29 @@ I build systems where people in different roles use the same data for different 
 <tr>
 <td width="33%" valign="top" align="left">
 <b><a href="https://github.com/SamaunRezvi/assignment_eight_s"><code>assignment_eight_s/</code></a></b>
-<br /><sub>PH_B-14_A08 - StudioSpace API: A secure Express and MongoDB backend for the StudioSpace marketplace. Handles studios, bookings, reviews and wishlists with HTTPOnly JWT protection, double-booking prevention and PDF receipts.</sub>
+<br /><sub>PH_B-14_A08 - StudioSpace API: A secure Express and MongoDB backend for the StudioSpace marketplace. Handles…</sub>
 <br /><sub>TypeScript · ★ 0 · updated Nov 5, 2026</sub>
 </td>
 <td width="33%" valign="top" align="left">
 <b><a href="https://github.com/SamaunRezvi/assignment_eight_c"><code>assignment_eight_c/</code></a></b>
-<br /><sub>PH_B-14_A08 - StudioSpace: A creator-first studio rental marketplace built with Next.js. Discover photo studios, film stages, podcast lounges and music suites, book by the hour without clashes, and manage your listings and bookings with secure sign-in.</sub>
+<br /><sub>PH_B-14_A08 - StudioSpace: A creator-first studio rental marketplace built with Next.js. Discover photo studi…</sub>
 <br /><sub>TypeScript · ★ 0 · updated Nov 5, 2026</sub>
 </td>
 <td width="33%" valign="top" align="left">
 <b><a href="https://github.com/SamaunRezvi/assignment_seven"><code>assignment_seven/</code></a></b>
-<br /><sub>PH_B-14_A07 - BazarDor: A clean, Bangla-first market price tracker built with Next.js. Browse everyday essentials, compare prices across markets, follow daily price changes, and unlock detailed insights with secure sign-in.</sub>
+<br /><sub>PH_B-14_A07 - BazarDor: A clean, Bangla-first market price tracker built with Next.js. Browse everyday essent…</sub>
 <br /><sub>TypeScript · ★ 0 · updated Oct 10, 2026</sub>
 </td>
 </tr>
 <tr>
 <td width="33%" valign="top" align="left">
 <b><a href="https://github.com/SamaunRezvi/assignment_six"><code>assignment_six/</code></a></b>
-<br /><sub>PH_B-14_A06 - FitLog: a dark, sleek workout library built with Next.js. Browse a curated set of lifts, lock them into today's training plan, save favorites for later, and watch your progress add up in real time.</sub>
+<br /><sub>PH_B-14_A06 - FitLog: a dark, sleek workout library built with Next.js. Browse a curated set of lifts, lock t…</sub>
 <br /><sub>TypeScript · ★ 0 · updated Sep 27, 2026</sub>
 </td>
 <td width="33%" valign="top" align="left">
 <b><a href="https://github.com/SamaunRezvi/assignment_five"><code>assignment_five/</code></a></b>
-<br /><sub>PH_B-14_A05 - A sleek, modern, and fully responsive "Dev Stack Builder" website to explore technologies and build your own development stack.</sub>
+<br /><sub>PH_B-14_A05 - A sleek, modern, and fully responsive "Dev Stack Builder" website to explore technologies and b…</sub>
 <br /><sub>JavaScript · ★ 0 · updated Sep 13, 2026</sub>
 </td>
 <td width="33%" valign="top" align="left">
