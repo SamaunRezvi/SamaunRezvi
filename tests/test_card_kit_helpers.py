@@ -37,3 +37,19 @@ class TextWidthTests(unittest.TestCase):
     def test_spacing_adds_per_character(self):
         base = card_kit.text_width("abc", self.family, 12)
         self.assertAlmostEqual(card_kit.text_width("abc", self.family, 12, spacing=1.5), base + 4.5)
+
+
+class WrapTests(unittest.TestCase):
+    family = card_kit.BODY_FONT[0]
+    text = "A monitoring platform with no remote control over the hardware it observes"
+
+    def test_no_line_is_wider_than_the_limit(self):
+        for line in card_kit.wrap(self.text, self.family, 16, 220):
+            self.assertLessEqual(card_kit.text_width(line, self.family, 16), 220)
+
+    def test_no_word_is_lost_or_reordered(self):
+        lines = card_kit.wrap(self.text, self.family, 16, 220)
+        self.assertEqual(" ".join(lines).split(), self.text.split())
+
+    def test_a_long_word_gets_its_own_line(self):
+        self.assertEqual(card_kit.wrap("supercalifragilistic", self.family, 16, 20), ["supercalifragilistic"])
