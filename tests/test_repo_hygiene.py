@@ -57,3 +57,11 @@ class PythonStyleTests(unittest.TestCase):
         for path in self.python_files():
             for number, line in enumerate(read(path).splitlines(), 1):
                 self.assertEqual(line, line.rstrip(), f"{path}:{number}")
+
+
+class FileEndingTests(unittest.TestCase):
+    def test_files_end_with_one_newline(self):
+        for path in text_files():
+            text = read(path)
+            self.assertTrue(text.endswith("\n"), path)
+            self.assertFalse(text.endswith("\n\n"), path)
