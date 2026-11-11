@@ -64,3 +64,16 @@ class ManifestAndSyncTests(unittest.TestCase):
             self.assertEqual(fetched, ["u2"])
             refreshed = sync_badges.sync(manifest, folder, refresh=True, fetch=fetch)
             self.assertEqual(sorted(refreshed), ["have.svg", "need.svg"])
+
+
+class ManifestShapeTests(unittest.TestCase):
+    def test_manifest_is_a_string_to_string_mapping(self):
+        manifest = sync_badges.load_manifest()
+        self.assertTrue(manifest)
+        for name, url in manifest.items():
+            self.assertTrue(name.endswith(".svg"), name)
+            self.assertTrue(url.startswith("https://"), url)
+
+    def test_file_names_have_no_path_parts(self):
+        for name in sync_badges.load_manifest():
+            self.assertEqual(os.path.basename(name), name)
