@@ -29,3 +29,12 @@ class HeroMarkerTests(unittest.TestCase):
             source = f.read()
         self.assertIn("HERO:START", source)
         self.assertIn("is missing the HERO", source)
+
+
+class CropTests(unittest.TestCase):
+    def test_crop_is_a_positive_square(self):
+        import make_hero
+        x, y, size = make_hero.CROP
+        self.assertGreaterEqual(x, 0)
+        self.assertGreaterEqual(y, 0)
+        self.assertGreater(size, 0)
