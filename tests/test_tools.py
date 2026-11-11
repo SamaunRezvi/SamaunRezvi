@@ -21,3 +21,11 @@ class CheckScriptTests(unittest.TestCase):
             for part in command:
                 if part.endswith(".py"):
                     self.assertTrue(os.path.exists(os.path.join(ROOT, part)), part)
+
+
+class HeroMarkerTests(unittest.TestCase):
+    def test_source_checks_for_both_markers(self):
+        with open(os.path.join(ROOT, "tools", "make_hero.py"), encoding="utf-8") as f:
+            source = f.read()
+        self.assertIn("HERO:START", source)
+        self.assertIn("is missing the HERO", source)
