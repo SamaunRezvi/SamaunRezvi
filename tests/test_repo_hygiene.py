@@ -99,3 +99,11 @@ class CardContentTests(unittest.TestCase):
             if isinstance(group, list):
                 titles = [c.get("title") for c in group if isinstance(c, dict) and c.get("title")]
                 self.assertEqual(len(titles), len(set(titles)), name)
+
+
+class DocLinkTests(unittest.TestCase):
+    def test_relative_links_resolve(self):
+        for path in doc_files():
+            for target in re.findall(r"\]\(([^)#:]+?)(?:#[^)]*)?\)", read(path)):
+                full = os.path.normpath(os.path.join(os.path.dirname(path), target))
+                self.assertTrue(os.path.exists(full), f"{path} -> {target}")
