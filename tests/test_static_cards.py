@@ -76,3 +76,16 @@ class GeneratedCardTests(unittest.TestCase):
             make_cards.replace_block(text, "x", "new"),
             "a\n<!-- CARDS:x:START -->\nnew\n<!-- CARDS:x:END -->\nb",
         )
+
+
+class AccentTests(unittest.TestCase):
+    def test_accent_cycles_through_the_palette(self):
+        import make_cards
+        palette = make_cards.card_kit.ACCENTS
+        self.assertEqual(make_cards.accent(0), palette[0])
+        self.assertEqual(make_cards.accent(len(palette)), palette[0])
+        self.assertEqual(make_cards.accent(len(palette) + 2), palette[2])
+
+    def test_humanize_keeps_known_acronyms_upper_case(self):
+        import make_cards
+        self.assertEqual(make_cards.humanize("ui-ux-api/"), "UI UX API")
