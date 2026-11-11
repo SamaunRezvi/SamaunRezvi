@@ -130,6 +130,8 @@ def main():
     newline = "\r\n" if "\r\n" in text else "\n"
     text = text.replace("\r\n", "\n")
     start, end = "<!-- HERO:START -->", "<!-- HERO:END -->"
+    if start not in text or end not in text:
+        raise SystemExit("README.md is missing the HERO:START or HERO:END marker.")
     a, b = text.index(start) + len(start), text.index(end)
     text = text[:a] + "\n" + block_html(hero) + "\n" + text[b:]
     with open(README, "w", encoding="utf-8", newline="") as f:
