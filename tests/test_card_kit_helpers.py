@@ -18,3 +18,13 @@ class MetricsTests(unittest.TestCase):
     def test_font_files_exist(self):
         for _, _, filename in (card_kit.TITLE_FONT, card_kit.BODY_FONT):
             self.assertTrue(os.path.exists(os.path.join(card_kit.FONT_DIR, filename)), filename)
+
+
+class TextWidthTests(unittest.TestCase):
+    family = card_kit.BODY_FONT[0]
+
+    def test_unknown_character_counts_as_055_em(self):
+        self.assertAlmostEqual(card_kit.text_width("\U0010FFFF", self.family, 20), 11.0)
+
+    def test_empty_text_has_no_width(self):
+        self.assertEqual(card_kit.text_width("", self.family, 20), 0)
