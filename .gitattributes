@@ -1,3 +1,7 @@
 * text=auto
 *.svg text eol=lf
 *.png binary
+*.jpg binary
+*.woff2 binary
+assets/**/*.svg linguist-generated
+profile-3d-contrib/*.svg linguist-generated
