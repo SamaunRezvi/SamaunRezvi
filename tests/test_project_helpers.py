@@ -18,3 +18,15 @@ class SlugTests(unittest.TestCase):
 
     def test_trims_separators_at_the_ends(self):
         self.assertEqual(gen.project_slug({"name": "!!demo!!"}), "demo")
+
+
+class LiveDemoTests(unittest.TestCase):
+    def test_https_and_http_links_count(self):
+        self.assertTrue(gen.has_live_demo({"homepageUrl": "https://demo.dev"}))
+        self.assertTrue(gen.has_live_demo({"homepageUrl": " http://demo.dev"}))
+
+    def test_missing_or_odd_values_do_not(self):
+        self.assertFalse(gen.has_live_demo({}))
+        self.assertFalse(gen.has_live_demo({"homepageUrl": None}))
+        self.assertFalse(gen.has_live_demo({"homepageUrl": "ftp://files.dev"}))
+        self.assertFalse(gen.has_live_demo({"homepageUrl": "demo.dev"}))
