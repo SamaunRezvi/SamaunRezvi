@@ -73,3 +73,21 @@ class ScriptEntryTests(unittest.TestCase):
         self.assertTrue(scripts)
         for path in scripts:
             self.assertIn('if __name__ == "__main__":', read(path), path)
+
+
+class CardContentTests(unittest.TestCase):
+    def strings(self, value):
+        if isinstance(value, str):
+            yield value
+        elif isinstance(value, dict):
+            for item in value.values():
+                yield from self.strings(item)
+        elif isinstance(value, list):
+            for item in value:
+                yield from self.strings(item)
+
+    def test_no_empty_or_padded_strings(self):
+        data = json.loads(read(".github/cards-content.json"))
+        for text in self.strings(data):
+            self.assertTrue(text, "empty string")
+            self.assertEqual(text, text.strip(), repr(text))
