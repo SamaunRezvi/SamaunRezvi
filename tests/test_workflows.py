@@ -48,3 +48,12 @@ class ActionVersionTests(unittest.TestCase):
                     match = re.search(r"uses:\s*(\S+)", line)
                     if match:
                         self.assertRegex(match.group(1), r"@[\w.]+$", f"{os.path.basename(path)}: {line.strip()}")
+
+
+class WorkflowShapeTests(unittest.TestCase):
+    def test_every_workflow_has_a_name_and_a_trigger(self):
+        for path in glob.glob(os.path.join(ROOT, ".github", "workflows", "*.yml")):
+            with open(path, encoding="utf-8") as f:
+                text = f.read()
+            self.assertTrue(text.startswith("name:"), os.path.basename(path))
+            self.assertIn("\non:", text, os.path.basename(path))
