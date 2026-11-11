@@ -98,6 +98,8 @@ python -m unittest discover -s tests -v
 
 The `Tests` workflow runs the same command on every push and pull request.
 
+To run the tests and the badge check together before committing, use `python tools/check.py`.
+
 ## Badges
 
 Static tech and section badges are self-hosted in `assets/badges/` so they keep working when shields.io is rate limited. `assets/badges/manifest.json` maps each file to its shields.io source URL.
