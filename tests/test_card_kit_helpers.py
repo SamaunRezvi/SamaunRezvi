@@ -28,3 +28,12 @@ class TextWidthTests(unittest.TestCase):
 
     def test_empty_text_has_no_width(self):
         self.assertEqual(card_kit.text_width("", self.family, 20), 0)
+
+    def test_width_is_proportional_to_size(self):
+        small = card_kit.text_width("Samaun", self.family, 10)
+        large = card_kit.text_width("Samaun", self.family, 20)
+        self.assertAlmostEqual(large, small * 2)
+
+    def test_spacing_adds_per_character(self):
+        base = card_kit.text_width("abc", self.family, 12)
+        self.assertAlmostEqual(card_kit.text_width("abc", self.family, 12, spacing=1.5), base + 4.5)
