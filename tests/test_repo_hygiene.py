@@ -107,3 +107,10 @@ class DocLinkTests(unittest.TestCase):
             for target in re.findall(r"\]\(([^)#:]+?)(?:#[^)]*)?\)", read(path)):
                 full = os.path.normpath(os.path.join(os.path.dirname(path), target))
                 self.assertTrue(os.path.exists(full), f"{path} -> {target}")
+
+
+class ChangelogTests(unittest.TestCase):
+    def test_dates_are_in_order(self):
+        dates = re.findall(r"^## (\d{4}-\d{2}-\d{2})", read("CHANGELOG.md"), re.M)
+        self.assertTrue(dates)
+        self.assertEqual(dates, sorted(dates))
