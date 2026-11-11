@@ -25,3 +25,6 @@ jobs:
 
       - name: Check badge files
         run: python tools/sync_badges.py --check
+
+      - name: Run the combined check
+        run: python tools/check.py
