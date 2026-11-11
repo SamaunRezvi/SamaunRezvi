@@ -34,3 +34,12 @@ class PlaceholderTests(unittest.TestCase):
             text = read(path).lower()
             for phrase in banned:
                 self.assertNotIn(phrase, text, f"{phrase} in {path}")
+
+
+class AttributionTests(unittest.TestCase):
+    def test_no_tool_names(self):
+        words = ["clau" + "de", "anthro" + "pic", "code" + "x", "copi" + "lot", "chat" + "gpt"]
+        for path in text_files() + [os.path.join(ROOT, "README.md")]:
+            text = read(path).lower()
+            for word in words:
+                self.assertNotIn(word, text, path)
