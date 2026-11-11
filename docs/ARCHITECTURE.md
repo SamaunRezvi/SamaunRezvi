@@ -33,3 +33,7 @@ Profile views, followers, stars, tech badges, the typing animation and the divid
 ## Self-hosted badges
 
 Tech stack and section badges are static, so their SVGs are stored in `assets/badges/` and referenced by relative path. The README therefore does not depend on shields.io being reachable for them. `tools/sync_badges.py` can re-download them from the URLs in `manifest.json`.
+
+## Hero
+
+The top of the README is two fixed-width images in one centred paragraph: `assets/hero/hero-card.svg` (440px) and `assets/banner-3d.svg` (340px). `tools/make_hero.py` renders the card from the `hero` entry of `.github/cards-content.json` and rewrites the block between the `HERO` markers. The avatar is a square crop of `assets/image/SR (2).jpg`, clipped to a circle inside the card.
