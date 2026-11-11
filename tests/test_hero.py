@@ -75,3 +75,41 @@ class HeroLayoutTests(unittest.TestCase):
     def test_the_old_hero_pieces_are_not_duplicated_in_the_readme(self):
         self.assertNotIn("readme-typing-svg", README)
         self.assertNotIn("hero-name", README)
+
+
+class AvatarQualityTests(unittest.TestCase):
+    def jpeg_size(self):
+        import struct
+        with open(make_hero.AVATAR, "rb") as f:
+            data = f.read()
+        i = 2
+        while i < len(data):
+            marker = data[i + 1]
+            if marker in (0xC0, 0xC2):
+                height, width = struct.unpack(">HH", data[i + 5 : i + 9])
+                return width, height
+            i += 2 + struct.unpack(">H", data[i + 2 : i + 4])[0]
+        self.fail("no frame header")
+
+    def test_avatar_is_square(self):
+        width, height = self.jpeg_size()
+        self.assertEqual(width, height)
+
+    def test_avatar_has_at_least_four_times_the_displayed_pixels(self):
+        width, _ = self.jpeg_size()
+        self.assertGreaterEqual(width, 96 * 4)
+
+    def test_crop_stays_inside_the_source_photo(self):
+        import struct
+        with open(make_hero.SOURCE, "rb") as f:
+            data = f.read()
+        i = 2
+        while i < len(data):
+            marker = data[i + 1]
+            if marker in (0xC0, 0xC2):
+                src_h, src_w = struct.unpack(">HH", data[i + 5 : i + 9])
+                break
+            i += 2 + struct.unpack(">H", data[i + 2 : i + 4])[0]
+        x, y, size = make_hero.CROP
+        self.assertLessEqual(x + size, src_w)
+        self.assertLessEqual(y + size, src_h)
