@@ -30,3 +30,17 @@ class LiveDemoTests(unittest.TestCase):
         self.assertFalse(gen.has_live_demo({"homepageUrl": None}))
         self.assertFalse(gen.has_live_demo({"homepageUrl": "ftp://files.dev"}))
         self.assertFalse(gen.has_live_demo({"homepageUrl": "demo.dev"}))
+
+
+class ShortenTests(unittest.TestCase):
+    def test_short_text_is_only_capitalised(self):
+        self.assertEqual(gen.shorten("a small tool"), "A small tool")
+
+    def test_long_text_ends_with_an_ellipsis_inside_the_limit(self):
+        out = gen.shorten("word " * 80, limit=40)
+        self.assertLessEqual(len(out), 40)
+        self.assertTrue(out.endswith("\u2026"))
+
+    def test_cut_happens_between_words(self):
+        out = gen.shorten("alpha beta gamma delta", limit=14)
+        self.assertEqual(out, "Alpha beta\u2026")
