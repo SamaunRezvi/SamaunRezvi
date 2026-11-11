@@ -114,3 +114,13 @@ class ChangelogTests(unittest.TestCase):
         dates = re.findall(r"^## (\d{4}-\d{2}-\d{2})", read("CHANGELOG.md"), re.M)
         self.assertTrue(dates)
         self.assertEqual(dates, sorted(dates))
+
+
+class RepoFilesTests(unittest.TestCase):
+    def test_standard_files_exist(self):
+        for name in ("LICENSE", "SECURITY.md", "CHANGELOG.md", ".editorconfig", ".gitattributes", ".gitignore"):
+            self.assertTrue(os.path.exists(os.path.join(ROOT, name)), name)
+
+    def test_original_photos_are_kept(self):
+        for name in ("SR (2).jpg", "sr.jpg"):
+            self.assertTrue(os.path.exists(os.path.join(ROOT, "assets", "image", name)), name)
