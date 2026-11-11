@@ -79,3 +79,22 @@ class EqualiseTests(unittest.TestCase):
         svgs = card_kit.equalise(self.specs())
         for i, svg in enumerate(svgs):
             self.assertIn(f"Card {i}", svg)
+
+
+class HeroEscapeTests(unittest.TestCase):
+    def test_markup_in_the_name_is_escaped(self):
+        import base64
+        import xml.etree.ElementTree as ET
+        pixel = "data:image/svg+xml;base64," + base64.b64encode(b"<svg xmlns='http://www.w3.org/2000/svg'/>").decode()
+        spec = {
+            "avatar": pixel,
+            "name": "<b>Name</b> & co",
+            "taglines": ["One", "Two"],
+            "education": "School",
+            "roles": [(pixel, 90, 20)],
+            "status": "ok",
+        }
+        svg = card_kit.render_hero(spec)
+        ET.fromstring(svg)
+        self.assertNotIn("<b>Name</b>", svg)
+        self.assertIn("&lt;b&gt;Name&lt;/b&gt; &amp; co", svg)
