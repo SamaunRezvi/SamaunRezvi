@@ -53,3 +53,15 @@ class WrapTests(unittest.TestCase):
 
     def test_a_long_word_gets_its_own_line(self):
         self.assertEqual(card_kit.wrap("supercalifragilistic", self.family, 16, 20), ["supercalifragilistic"])
+
+
+class LightenTests(unittest.TestCase):
+    def test_zero_keeps_the_colour(self):
+        self.assertEqual(card_kit.lighten("#58A6FF", 0), "#58A6FF")
+
+    def test_one_gives_white(self):
+        self.assertEqual(card_kit.lighten("#58A6FF", 1), "#FFFFFF")
+
+    def test_every_accent_stays_a_hex_colour(self):
+        for colour in card_kit.ACCENTS:
+            self.assertRegex(card_kit.lighten(colour), r"^#[0-9A-F]{6}$")
