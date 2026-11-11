@@ -113,3 +113,16 @@ class AvatarQualityTests(unittest.TestCase):
         x, y, size = make_hero.CROP
         self.assertLessEqual(x + size, src_w)
         self.assertLessEqual(y + size, src_h)
+
+
+class HeroCardMarkupTests(unittest.TestCase):
+    def setUp(self):
+        with open(os.path.join(ROOT, "assets", "hero", "hero-card.svg"), encoding="utf-8") as f:
+            self.svg = f.read()
+
+    def test_card_has_a_title(self):
+        self.assertIn("<title>", self.svg)
+
+    def test_avatar_is_clipped_to_a_circle(self):
+        self.assertIn('id="face"', self.svg)
+        self.assertIn('clip-path="url(#face)"', self.svg)
