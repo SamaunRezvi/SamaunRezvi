@@ -126,3 +126,12 @@ class HeroCardMarkupTests(unittest.TestCase):
     def test_avatar_is_clipped_to_a_circle(self):
         self.assertIn('id="face"', self.svg)
         self.assertIn('clip-path="url(#face)"', self.svg)
+
+
+class BannerTests(unittest.TestCase):
+    def test_view_box_matches_the_size(self):
+        with open(os.path.join(ROOT, "assets", "banner-3d.svg"), encoding="utf-8") as f:
+            head = f.read(700)
+        width, height = re.search(r'width="(\d+)" height="(\d+)" viewBox', head).groups()
+        box = re.search(r'viewBox="[\d.]+ [\d.]+ ([\d.]+) ([\d.]+)"', head).groups()
+        self.assertEqual((width, height), (box[0].rstrip("0").rstrip("."), box[1].rstrip("0").rstrip(".")) if "." in box[0] + box[1] else box)
