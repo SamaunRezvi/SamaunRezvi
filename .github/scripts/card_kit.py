@@ -266,6 +266,7 @@ def render_stat(spec):
     )
 
 
+# 440 + the 340px banner + a small gap fit side by side on a wide screen and wrap on a narrow one
 HERO_WIDTH, HERO_HEIGHT = 440, 392
 HERO_GAP = 16  # transparent strip under the card so a stacked banner does not touch it
 
