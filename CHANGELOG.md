@@ -58,3 +58,7 @@ Notable changes to this profile repository.
 
 - The hero is side by side again: a profile card (avatar, name, rotating tagline, education, role badges, status) next to the banner. It stacks on narrow screens.
 - The old typing-animation service is no longer used; the tagline is a self-hosted SVG animation.
+
+## 2026-11-11
+
+- The hero avatar now comes from a new high-resolution photo, cropped square and clipped to a circle, with the collar and tie visible.
