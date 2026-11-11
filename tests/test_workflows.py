@@ -37,3 +37,14 @@ class WorkflowTests(unittest.TestCase):
         for path in glob.glob(os.path.join(ROOT, ".github", "workflows", "*.yml")):
             with open(path, encoding="utf-8") as f:
                 self.assertIn("timeout-minutes", f.read(), os.path.basename(path))
+
+
+class ActionVersionTests(unittest.TestCase):
+    def test_every_action_is_pinned_to_a_version(self):
+        import re
+        for path in glob.glob(os.path.join(ROOT, ".github", "workflows", "*.yml")):
+            with open(path, encoding="utf-8") as f:
+                for line in f:
+                    match = re.search(r"uses:\s*(\S+)", line)
+                    if match:
+                        self.assertRegex(match.group(1), r"@[\w.]+$", f"{os.path.basename(path)}: {line.strip()}")
