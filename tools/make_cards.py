@@ -179,6 +179,8 @@ def grid_html(prefix, specs, items, width, per_row):
 def replace_block(text, name, html):
     """Replace the text between the CARDS markers of one block."""
     start, end = f"<!-- CARDS:{name}:START -->", f"<!-- CARDS:{name}:END -->"
+    if start not in text or end not in text:
+        raise ValueError(f"README.md is missing the {name} card markers")
     a, b = text.index(start) + len(start), text.index(end)
     return text[:a] + "\n" + html + "\n" + text[b:]
 
