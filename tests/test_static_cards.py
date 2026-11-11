@@ -89,3 +89,10 @@ class AccentTests(unittest.TestCase):
     def test_humanize_keeps_known_acronyms_upper_case(self):
         import make_cards
         self.assertEqual(make_cards.humanize("ui-ux-api/"), "UI UX API")
+
+
+class MissingMarkerTests(unittest.TestCase):
+    def test_missing_markers_raise(self):
+        import make_cards
+        with self.assertRaises(ValueError):
+            make_cards.replace_block("no markers here", "work", "<p></p>")
