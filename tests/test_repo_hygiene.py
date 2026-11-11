@@ -43,3 +43,17 @@ class AttributionTests(unittest.TestCase):
             text = read(path).lower()
             for word in words:
                 self.assertNotIn(word, text, path)
+
+
+class PythonStyleTests(unittest.TestCase):
+    def python_files(self):
+        return [p for p in text_files() if p.endswith(".py")]
+
+    def test_no_tabs(self):
+        for path in self.python_files():
+            self.assertNotIn("\t", read(path), path)
+
+    def test_no_trailing_whitespace(self):
+        for path in self.python_files():
+            for number, line in enumerate(read(path).splitlines(), 1):
+                self.assertEqual(line, line.rstrip(), f"{path}:{number}")
