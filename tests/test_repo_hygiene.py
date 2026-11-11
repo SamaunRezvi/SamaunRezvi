@@ -65,3 +65,11 @@ class FileEndingTests(unittest.TestCase):
             text = read(path)
             self.assertTrue(text.endswith("\n"), path)
             self.assertFalse(text.endswith("\n\n"), path)
+
+
+class ScriptEntryTests(unittest.TestCase):
+    def test_scripts_have_a_main_guard(self):
+        scripts = glob.glob(os.path.join(ROOT, "tools", "*.py")) + glob.glob(os.path.join(ROOT, ".github", "scripts", "generate_*.py"))
+        self.assertTrue(scripts)
+        for path in scripts:
+            self.assertIn('if __name__ == "__main__":', read(path), path)
