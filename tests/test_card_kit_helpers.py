@@ -65,3 +65,17 @@ class LightenTests(unittest.TestCase):
     def test_every_accent_stays_a_hex_colour(self):
         for colour in card_kit.ACCENTS:
             self.assertRegex(card_kit.lighten(colour), r"^#[0-9A-F]{6}$")
+
+
+class EqualiseTests(unittest.TestCase):
+    def specs(self):
+        base = {"accent": "#58A6FF", "eyebrow": "Principle", "number": "01", "code": "run()"}
+        return [dict(base, title=f"Card {i}", body="word " * (10 + i * 25)) for i in range(4)]
+
+    def test_returns_one_svg_per_spec(self):
+        self.assertEqual(len(card_kit.equalise(self.specs())), 4)
+
+    def test_titles_stay_in_order(self):
+        svgs = card_kit.equalise(self.specs())
+        for i, svg in enumerate(svgs):
+            self.assertIn(f"Card {i}", svg)
