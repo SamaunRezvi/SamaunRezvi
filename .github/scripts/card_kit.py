@@ -18,8 +18,8 @@ BODY_FONT = ("Source Serif 4", 400, "sourceserif-400.woff2")
 MONO = "ui-monospace, 'SFMono-Regular', Consolas, 'Liberation Mono', monospace"
 SERIF_FALLBACK = "'Times New Roman', Times, serif"
 
-WIDTH = 420
-PAD = 26
+WIDTH = 420  # matches the width attribute the README gives each card image
+PAD = 26  # inner margin of a card
 ACCENTS = ["#58A6FF", "#BC8CFF", "#F778BA", "#F0883E", "#E3B341", "#39D0D8"]
 
 _cache = {}
