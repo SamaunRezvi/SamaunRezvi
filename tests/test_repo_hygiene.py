@@ -91,3 +91,11 @@ class CardContentTests(unittest.TestCase):
         for text in self.strings(data):
             self.assertTrue(text, "empty string")
             self.assertEqual(text, text.strip(), repr(text))
+
+
+    def test_titles_are_unique_per_group(self):
+        data = json.loads(read(".github/cards-content.json"))
+        for name, group in data.items():
+            if isinstance(group, list):
+                titles = [c.get("title") for c in group if isinstance(c, dict) and c.get("title")]
+                self.assertEqual(len(titles), len(set(titles)), name)
