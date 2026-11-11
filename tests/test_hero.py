@@ -135,3 +135,15 @@ class BannerTests(unittest.TestCase):
         width, height = re.search(r'width="(\d+)" height="(\d+)" viewBox', head).groups()
         box = re.search(r'viewBox="[\d.]+ [\d.]+ ([\d.]+) ([\d.]+)"', head).groups()
         self.assertEqual((width, height), (box[0].rstrip("0").rstrip("."), box[1].rstrip("0").rstrip(".")) if "." in box[0] + box[1] else box)
+
+
+class BlockHtmlTests(unittest.TestCase):
+    def test_both_images_are_top_aligned(self):
+        block = make_hero.block_html(HERO)
+        self.assertEqual(block.count('align="top"'), 2)
+
+    def test_alt_text_is_quote_safe(self):
+        hero = dict(HERO, name='Say "hi"')
+        block = make_hero.block_html(hero)
+        self.assertIn("&quot;hi&quot;", block)
+        self.assertNotIn('alt="Say "hi""', block)
