@@ -97,3 +97,11 @@ class CardDimensionTests(unittest.TestCase):
                     head = f.read(400)
                 self.assertRegex(head, r'width="\d+"', path)
                 self.assertRegex(head, r'height="\d+"', path)
+
+
+class BadgeNameTests(unittest.TestCase):
+    def test_names_are_lowercase_with_no_spaces(self):
+        import re
+        for path in files("assets/badges/*.svg"):
+            name = os.path.basename(path)
+            self.assertRegex(name, r"^[a-z0-9._-]+$", name)
