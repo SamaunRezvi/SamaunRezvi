@@ -147,3 +147,13 @@ class BlockHtmlTests(unittest.TestCase):
         block = make_hero.block_html(hero)
         self.assertIn("&quot;hi&quot;", block)
         self.assertNotIn('alt="Say "hi""', block)
+
+
+class AltOrderTests(unittest.TestCase):
+    def test_roles_appear_in_content_order(self):
+        alt = make_hero.alt_text(HERO)
+        positions = [alt.index(role["name"]) for role in HERO["roles"]]
+        self.assertEqual(positions, sorted(positions))
+
+    def test_name_comes_first(self):
+        self.assertTrue(make_hero.alt_text(HERO).startswith(HERO["name"]))
