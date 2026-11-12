@@ -126,3 +126,11 @@ class MinHeightTests(unittest.TestCase):
         natural = card_kit.natural_height(self.spec)
         root = ET.fromstring(card_kit.render(self.spec, min_height=10))
         self.assertEqual(int(float(root.get("height"))), natural)
+
+
+class StatWidthTests(unittest.TestCase):
+    def test_width_attribute_matches_the_constant(self):
+        import xml.etree.ElementTree as ET
+        stat = {"accent": "#F0883E", "label": "Work", "number": "15+", "title": "Projects", "caption": "across web"}
+        root = ET.fromstring(card_kit.render_stat(stat))
+        self.assertEqual(root.get("width"), str(card_kit.STAT_WIDTH))
