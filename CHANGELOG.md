@@ -62,3 +62,5 @@ Notable changes to this profile repository.
 ## 2026-11-11
 
 - The hero avatar now comes from a new high-resolution photo, cropped square and clipped to a circle, with the collar and tie visible.
+- Added tests for asset sizes, fonts, workflow settings, README structure and renderer behaviour.
+- Added guides for colours, fonts, responsive rules and workflows under `docs/`.
