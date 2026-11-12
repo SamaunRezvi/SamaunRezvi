@@ -159,3 +159,11 @@ class PolicyTests(unittest.TestCase):
 
     def test_licence_names_the_owner(self):
         self.assertIn("Samaun Rezvi", read("LICENSE"))
+
+
+class StrayFileTests(unittest.TestCase):
+    def test_no_backup_files_are_tracked(self):
+        import subprocess
+        out = subprocess.run(["git", "ls-files"], cwd=ROOT, capture_output=True, text=True).stdout.split("\n")
+        for name in out:
+            self.assertFalse(name.endswith((".bak", ".tmp", ".orig", ".rej", "~")), name)
