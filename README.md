@@ -182,7 +182,6 @@ I build systems where people in different roles use the same data for different 
 <a href="https://github.com/SamaunRezvi/assignment_five"><img alt="Dev Stack Builder: A sleek, modern, and fully responsive &quot;Dev Stack Builder&quot; website to explore technologies and build your own development stack." src="assets/projects/assignment_five.svg" width="420" /></a>
 <a href="https://github.com/SamaunRezvi/assignment_one"><img alt="DevConf 2026: A sleek, modern, and fully responsive “DevConf 2026” landing page." src="assets/projects/assignment_one.svg" width="420" /></a>
 </p>
-<p align="center">Live demos: <a href="https://studiospace-creators.vercel.app">StudioSpace</a> · <a href="https://assignment-seven-sigma-ten.vercel.app">BazarDor</a> · <a href="https://assignment-six-one-gamma.vercel.app">FitLog</a> · <a href="https://assignment-five-six.vercel.app">Dev Stack Builder</a></p>
 <!-- RECENT_PROJECTS:END -->
 
 <br />

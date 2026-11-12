@@ -750,7 +750,7 @@ def write_project_cards(repos: list, directory: str = PROJECTS_DIR) -> list:
 
 
 def render_recent_repos(repos: list) -> str:
-    """Render the project cards as linked images, two per row, plus a line of live demo links."""
+    """Render the project cards as linked images, two per row."""
     if not repos:
         return "No public repositories to show yet."
     quote = {'"': "&quot;"}
@@ -763,14 +763,6 @@ def render_recent_repos(repos: list) -> str:
             f'<a href="{url}"><img alt="{alt}" src="{PROJECTS_DIR}/{project_slug(repo)}.svg" width="420" /></a>'
         )
     rows = ['<p align="center">\n' + "\n".join(images[i : i + 2]) + "\n</p>" for i in range(0, len(images), 2)]
-    demos = [
-        f'<a href="{escape(repo["homepageUrl"].strip(), quote)}">{escape(split_project_text(repo)[0])}</a>'
-        for repo in repos
-        if has_live_demo(repo)
-    ]
-    separator = " \u00b7 "
-    if demos:
-        rows.append('<p align="center">Live demos: ' + separator.join(demos) + "</p>")
     return "\n".join(rows)
 
 

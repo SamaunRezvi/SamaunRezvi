@@ -89,11 +89,10 @@ class RenderTests(unittest.TestCase):
         html = cards.render_recent_repos([repo(str(i)) for i in range(3)])
         self.assertEqual(html.count('<p align="center">'), 2)
 
-    def test_lists_live_demos_only_when_present(self):
-        plain = cards.render_recent_repos([repo()])
+    def test_no_separate_live_demo_line(self):
         live = cards.render_recent_repos([repo(homepageUrl="https://demo.example.com")])
-        self.assertNotIn("Live demos", plain)
-        self.assertIn('Live demos: <a href="https://demo.example.com">Demo App</a>', live)
+        self.assertNotIn("Live demos", live)
+        self.assertEqual(live.count("<p "), 1)
 
     def test_alt_text_is_escaped(self):
         html = cards.render_recent_repos([repo(description='<b>"x"</b>')])
