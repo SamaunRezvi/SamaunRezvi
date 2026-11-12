@@ -109,3 +109,20 @@ class DeterminismTests(unittest.TestCase):
     def test_stat_render_is_repeatable(self):
         stat = {"accent": "#BC8CFF", "label": "Work", "number": "15+", "title": "Projects", "caption": "across web"}
         self.assertEqual(card_kit.render_stat(stat), card_kit.render_stat(stat))
+
+
+class MinHeightTests(unittest.TestCase):
+    spec = {"accent": "#58A6FF", "eyebrow": "Principle", "number": "01", "title": "Min height", "code": "run()", "body": "Short."}
+
+    def test_natural_height_is_the_smallest_height(self):
+        import xml.etree.ElementTree as ET
+        natural = card_kit.natural_height(self.spec)
+        for extra in (0, 40):
+            root = ET.fromstring(card_kit.render(self.spec, min_height=natural + extra))
+            self.assertEqual(int(float(root.get("height"))), natural + extra)
+
+    def test_a_smaller_minimum_does_not_shrink_the_card(self):
+        import xml.etree.ElementTree as ET
+        natural = card_kit.natural_height(self.spec)
+        root = ET.fromstring(card_kit.render(self.spec, min_height=10))
+        self.assertEqual(int(float(root.get("height"))), natural)
