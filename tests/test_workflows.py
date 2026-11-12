@@ -89,3 +89,9 @@ class PermissionTests(unittest.TestCase):
                 self.assertIn("git push", text + "git push" if "push" in text else text, os.path.basename(path))
             if "git push" in text:
                 self.assertIn("contents: write", text, os.path.basename(path))
+
+
+class ManualRunTests(unittest.TestCase):
+    def test_generators_have_workflow_dispatch(self):
+        for name in ("3d-contrib.yml", "profile-card.yml", "snake.yml"):
+            self.assertIn("workflow_dispatch", workflow(name), name)
