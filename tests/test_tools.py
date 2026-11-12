@@ -38,3 +38,17 @@ class CropTests(unittest.TestCase):
         self.assertGreaterEqual(x, 0)
         self.assertGreaterEqual(y, 0)
         self.assertGreater(size, 0)
+
+
+class IssueTemplateTests(unittest.TestCase):
+    def test_bug_template_has_front_matter(self):
+        path = os.path.join(ROOT, ".github", "ISSUE_TEMPLATE", "bug_report.md")
+        with open(path, encoding="utf-8") as f:
+            text = f.read()
+        self.assertTrue(text.startswith("---\nname:"))
+        self.assertEqual(text.count("---"), 2)
+
+    def test_security_contact_link_points_at_the_policy(self):
+        path = os.path.join(ROOT, ".github", "ISSUE_TEMPLATE", "config.yml")
+        with open(path, encoding="utf-8") as f:
+            self.assertIn("SECURITY.md", f.read())
