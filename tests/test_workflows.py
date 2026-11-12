@@ -57,3 +57,14 @@ class WorkflowShapeTests(unittest.TestCase):
                 text = f.read()
             self.assertTrue(text.startswith("name:"), os.path.basename(path))
             self.assertIn("\non:", text, os.path.basename(path))
+
+
+class ConcurrencyTests(unittest.TestCase):
+    def test_groups_are_unique(self):
+        import re
+        groups = []
+        for path in glob.glob(os.path.join(ROOT, ".github", "workflows", "*.yml")):
+            match = re.search(r"group:\s*(\S+)", open(path, encoding="utf-8").read())
+            if match:
+                groups.append(match.group(1))
+        self.assertEqual(len(groups), len(set(groups)))
