@@ -25,3 +25,5 @@ What the tests cover:
 | `test_workflows.py` | the GitHub Actions workflows |
 
 Tests never call the GitHub API.
+
+`check.py` also scans tracked text files (except the README, whose design is fixed) for long dashes and emoji.
