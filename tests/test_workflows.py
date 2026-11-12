@@ -95,3 +95,12 @@ class ManualRunTests(unittest.TestCase):
     def test_generators_have_workflow_dispatch(self):
         for name in ("3d-contrib.yml", "profile-card.yml", "snake.yml"):
             self.assertIn("workflow_dispatch", workflow(name), name)
+
+
+class DependabotTests(unittest.TestCase):
+    def test_github_actions_are_tracked(self):
+        path = os.path.join(ROOT, ".github", "dependabot.yml")
+        with open(path, encoding="utf-8") as f:
+            text = f.read()
+        self.assertIn("github-actions", text)
+        self.assertIn("interval", text)
