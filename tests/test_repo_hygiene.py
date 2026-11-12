@@ -140,3 +140,12 @@ class LinkSchemeTests(unittest.TestCase):
         text = read("README.md")
         for url in re.findall(r'(?:href|src)="(http://[^"]+)"', text):
             self.fail(f"plain http link: {url}")
+
+
+class HeadingTests(unittest.TestCase):
+    def test_section_headings_are_image_headings_with_alt_text(self):
+        text = read("README.md")
+        headings = re.findall(r"<h2[^>]*>(.*?)</h2>", text, re.S)
+        self.assertTrue(headings)
+        for body in headings:
+            self.assertRegex(body, r'alt="[^"]+"')
