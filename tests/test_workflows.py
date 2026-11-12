@@ -68,3 +68,14 @@ class ConcurrencyTests(unittest.TestCase):
             if match:
                 groups.append(match.group(1))
         self.assertEqual(len(groups), len(set(groups)))
+
+
+class CronTests(unittest.TestCase):
+    def test_cron_has_five_fields(self):
+        import re
+        found = 0
+        for path in glob.glob(os.path.join(ROOT, ".github", "workflows", "*.yml")):
+            for expr in re.findall(r'cron:\s*"([^"]+)"', open(path, encoding="utf-8").read()):
+                found += 1
+                self.assertEqual(len(expr.split()), 5, expr)
+        self.assertGreater(found, 0)
