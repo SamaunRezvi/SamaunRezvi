@@ -26,3 +26,9 @@ class CardSizeTests(unittest.TestCase):
 
     def test_the_hero_card_is_under_250_kb(self):
         self.assertLess(os.path.getsize(os.path.join(ROOT, "assets", "hero", "hero-card.svg")), 250_000)
+
+
+class HeadingSizeTests(unittest.TestCase):
+    def test_each_heading_is_under_10_kb(self):
+        for path in files("assets/headings/*.svg"):
+            self.assertLess(os.path.getsize(path), 10_000, path)
