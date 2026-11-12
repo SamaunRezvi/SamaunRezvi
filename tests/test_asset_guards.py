@@ -75,3 +75,14 @@ class SelfHostedTests(unittest.TestCase):
                 self.assertNotIn('href="http', text, path)
                 self.assertNotIn("url(http", text, path)
                 self.assertNotIn("@import", text, path)
+
+
+class NoScriptTests(unittest.TestCase):
+    def test_svgs_have_no_script_tags_or_event_handlers(self):
+        for pattern in ("assets/cards/*.svg", "assets/headings/*.svg", "assets/hero/*.svg", "assets/projects/*.svg", "assets/badges/*.svg"):
+            for path in files(pattern):
+                with open(path, encoding="utf-8") as f:
+                    text = f.read().lower()
+                self.assertNotIn("<script", text, path)
+                self.assertNotIn(" onload=", text, path)
+                self.assertNotIn(" onclick=", text, path)
