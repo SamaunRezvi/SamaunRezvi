@@ -10,3 +10,4 @@
 - [Fonts](FONTS.md): fonts and metrics.
 - [Responsive layout](RESPONSIVE.md): rules that keep the README readable on any screen.
 - [Workflows](WORKFLOWS.md): what each automation commits.
+- [Contributing](../CONTRIBUTING.md): how to make a change.
