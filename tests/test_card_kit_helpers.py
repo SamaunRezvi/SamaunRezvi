@@ -159,3 +159,12 @@ class AccentPaletteTests(unittest.TestCase):
         for colour in card_kit.ACCENTS:
             r, g, b = (int(colour[i : i + 2], 16) for i in (1, 3, 5))
             self.assertFalse(g > r + 40 and g > b + 40, colour)
+
+
+class LongTitleTests(unittest.TestCase):
+    def test_width_does_not_change_with_a_long_title(self):
+        import xml.etree.ElementTree as ET
+        spec = {"accent": "#58A6FF", "eyebrow": "Principle", "number": "01", "code": "run()", "body": "Body.",
+                "title": "A very long card title that should wrap onto several lines instead of stretching"}
+        root = ET.fromstring(card_kit.render(spec))
+        self.assertEqual(root.get("width"), str(card_kit.WIDTH))
