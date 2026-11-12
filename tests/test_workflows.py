@@ -110,3 +110,10 @@ class OwnerTests(unittest.TestCase):
     def test_codeowners_has_a_catch_all_owner(self):
         with open(os.path.join(ROOT, ".github", "CODEOWNERS"), encoding="utf-8") as f:
             self.assertTrue(f.read().startswith("* @"))
+
+
+class TestsWorkflowTriggerTests(unittest.TestCase):
+    def test_triggers(self):
+        text = workflow("tests.yml")
+        for trigger in ("workflow_dispatch", "push:", "pull_request"):
+            self.assertIn(trigger, text)
