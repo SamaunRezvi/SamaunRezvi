@@ -77,3 +77,14 @@ class ManifestShapeTests(unittest.TestCase):
     def test_file_names_have_no_path_parts(self):
         for name in sync_badges.load_manifest():
             self.assertEqual(os.path.basename(name), name)
+
+
+class IsSvgEdgeTests(unittest.TestCase):
+    def test_empty_bytes_are_not_svg(self):
+        self.assertFalse(sync_badges.is_svg(b""))
+
+    def test_plain_text_is_not_svg(self):
+        self.assertFalse(sync_badges.is_svg(b"rate limit exceeded"))
+
+    def test_json_is_not_svg(self):
+        self.assertFalse(sync_badges.is_svg(b'{"message": "error"}'))
