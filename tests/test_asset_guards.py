@@ -64,3 +64,14 @@ class MetricsFileTests(unittest.TestCase):
         for family, widths in table.items():
             for char in "abcxyzABCXYZ0129 .,":
                 self.assertIn(char, widths, f"{family} {char!r}")
+
+
+class SelfHostedTests(unittest.TestCase):
+    def test_no_remote_image_or_font_references(self):
+        for pattern in ("assets/cards/*.svg", "assets/headings/*.svg", "assets/hero/*.svg", "assets/projects/*.svg"):
+            for path in files(pattern):
+                with open(path, encoding="utf-8") as f:
+                    text = f.read()
+                self.assertNotIn('href="http', text, path)
+                self.assertNotIn("url(http", text, path)
+                self.assertNotIn("@import", text, path)
