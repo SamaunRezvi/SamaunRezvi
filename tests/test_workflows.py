@@ -79,3 +79,13 @@ class CronTests(unittest.TestCase):
                 found += 1
                 self.assertEqual(len(expr.split()), 5, expr)
         self.assertGreater(found, 0)
+
+
+class PermissionTests(unittest.TestCase):
+    def test_write_access_is_only_for_committing_workflows(self):
+        for path in glob.glob(os.path.join(ROOT, ".github", "workflows", "*.yml")):
+            text = open(path, encoding="utf-8").read()
+            if "contents: write" in text:
+                self.assertIn("git push", text + "git push" if "push" in text else text, os.path.basename(path))
+            if "git push" in text:
+                self.assertIn("contents: write", text, os.path.basename(path))
