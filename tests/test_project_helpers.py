@@ -62,3 +62,10 @@ class ColourConstantTests(unittest.TestCase):
         self.assertTrue(names)
         for name in names:
             self.assertRegex(getattr(gen, name), r"^#[0-9A-Fa-f]{6}$", name)
+
+
+class ShortenLimitTests(unittest.TestCase):
+    def test_result_fits_for_many_limits(self):
+        text = "The quick brown fox jumps over the lazy dog and keeps running far away"
+        for limit in range(10, len(text)):
+            self.assertLessEqual(len(gen.shorten(text, limit)), limit, limit)
