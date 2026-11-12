@@ -44,3 +44,12 @@ class ShortenTests(unittest.TestCase):
     def test_cut_happens_between_words(self):
         out = gen.shorten("alpha beta gamma delta", limit=14)
         self.assertEqual(out, "Alpha beta\u2026")
+
+
+class LimitTests(unittest.TestCase):
+    def test_description_limit_is_a_positive_number(self):
+        self.assertGreater(gen.MAX_DESCRIPTION, 40)
+
+    def test_history_page_limit_is_bounded(self):
+        self.assertGreater(gen.MAX_HISTORY_PAGES, 0)
+        self.assertLessEqual(gen.MAX_HISTORY_PAGES, 200)
