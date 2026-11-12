@@ -98,3 +98,14 @@ class HeroEscapeTests(unittest.TestCase):
         ET.fromstring(svg)
         self.assertNotIn("<b>Name</b>", svg)
         self.assertIn("&lt;b&gt;Name&lt;/b&gt; &amp; co", svg)
+
+
+class DeterminismTests(unittest.TestCase):
+    spec = {"accent": "#58A6FF", "eyebrow": "Principle", "number": "01", "title": "Stable output", "code": "run()", "body": "Same input, same bytes."}
+
+    def test_render_is_repeatable(self):
+        self.assertEqual(card_kit.render(self.spec), card_kit.render(self.spec))
+
+    def test_stat_render_is_repeatable(self):
+        stat = {"accent": "#BC8CFF", "label": "Work", "number": "15+", "title": "Projects", "caption": "across web"}
+        self.assertEqual(card_kit.render_stat(stat), card_kit.render_stat(stat))
