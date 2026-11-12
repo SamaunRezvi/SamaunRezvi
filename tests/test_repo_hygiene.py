@@ -133,3 +133,10 @@ class MarkerBalanceTests(unittest.TestCase):
         ends = re.findall(r"<!-- ([A-Z_]+(?::[a-z]+)?):END -->", text)
         self.assertTrue(starts)
         self.assertEqual(sorted(starts), sorted(ends))
+
+
+class LinkSchemeTests(unittest.TestCase):
+    def test_no_plain_http_links(self):
+        text = read("README.md")
+        for url in re.findall(r'(?:href|src)="(http://[^"]+)"', text):
+            self.fail(f"plain http link: {url}")
