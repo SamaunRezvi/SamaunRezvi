@@ -146,3 +146,16 @@ class TaglineTimingTests(unittest.TestCase):
         css = card_kit.tagline_css(3)
         for i in range(3):
             self.assertIn(f".l{i}", css)
+
+
+class AccentPaletteTests(unittest.TestCase):
+    def test_colours_are_unique_hex(self):
+        import re
+        self.assertEqual(len(card_kit.ACCENTS), len(set(card_kit.ACCENTS)))
+        for colour in card_kit.ACCENTS:
+            self.assertRegex(colour, r"^#[0-9A-F]{6}$")
+
+    def test_no_accent_is_a_green(self):
+        for colour in card_kit.ACCENTS:
+            r, g, b = (int(colour[i : i + 2], 16) for i in (1, 3, 5))
+            self.assertFalse(g > r + 40 and g > b + 40, colour)
