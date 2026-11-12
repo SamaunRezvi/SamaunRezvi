@@ -1,6 +1,7 @@
 """Run every local check before committing.
 
-    python tools/check.py
+    python tools/check.py          # everything
+    python tools/check.py --fast   # unit tests only
 
 It runs the unit tests and the badge check, then scans for long dashes and emoji
 in tracked text files. It exits with 1 if anything fails.
@@ -17,10 +18,12 @@ STEPS = [
 ]
 
 
-def main():
-    """Run each step and report which ones failed."""
+def main(argv=None):
+    """Run each step and report which ones failed. --fast runs only the unit tests."""
+    argv = sys.argv[1:] if argv is None else argv
+    steps = STEPS[:1] if "--fast" in argv else STEPS
     failed = []
-    for name, command in STEPS:
+    for name, command in steps:
         print(f"== {name}")
         if subprocess.run(command, cwd=ROOT).returncode:
             failed.append(name)
