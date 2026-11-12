@@ -53,3 +53,12 @@ class LimitTests(unittest.TestCase):
     def test_history_page_limit_is_bounded(self):
         self.assertGreater(gen.MAX_HISTORY_PAGES, 0)
         self.assertLessEqual(gen.MAX_HISTORY_PAGES, 200)
+
+
+class ColourConstantTests(unittest.TestCase):
+    def test_named_colours_are_hex(self):
+        import re
+        names = [n for n in dir(gen) if n.isupper() and isinstance(getattr(gen, n), str) and getattr(gen, n).startswith("#")]
+        self.assertTrue(names)
+        for name in names:
+            self.assertRegex(getattr(gen, name), r"^#[0-9A-Fa-f]{6}$", name)
