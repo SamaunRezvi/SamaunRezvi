@@ -124,3 +124,12 @@ class RepoFilesTests(unittest.TestCase):
     def test_original_photos_are_kept(self):
         for name in ("SR (2).jpg", "sr.jpg"):
             self.assertTrue(os.path.exists(os.path.join(ROOT, "assets", "image", name)), name)
+
+
+class MarkerBalanceTests(unittest.TestCase):
+    def test_every_start_marker_has_an_end(self):
+        text = read("README.md")
+        starts = re.findall(r"<!-- ([A-Z_]+(?::[a-z]+)?):START -->", text)
+        ends = re.findall(r"<!-- ([A-Z_]+(?::[a-z]+)?):END -->", text)
+        self.assertTrue(starts)
+        self.assertEqual(sorted(starts), sorted(ends))
