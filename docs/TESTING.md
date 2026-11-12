@@ -6,7 +6,7 @@ Run everything:
 python tools/check.py
 ```
 
-or the unit tests alone:
+`python tools/check.py --fast` runs only the unit tests. Or run them directly:
 
 ```bash
 python -m unittest discover -s tests -v
