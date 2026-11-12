@@ -149,3 +149,13 @@ class HeadingTests(unittest.TestCase):
         self.assertTrue(headings)
         for body in headings:
             self.assertRegex(body, r'alt="[^"]+"')
+
+
+class PolicyTests(unittest.TestCase):
+    def test_security_policy_has_a_contact(self):
+        text = read("SECURITY.md")
+        self.assertIn("@", text)
+        self.assertIn("secret", text)
+
+    def test_licence_names_the_owner(self):
+        self.assertIn("Samaun Rezvi", read("LICENSE"))
