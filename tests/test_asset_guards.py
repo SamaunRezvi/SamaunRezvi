@@ -16,3 +16,13 @@ class BadgeSizeTests(unittest.TestCase):
         self.assertTrue(badges)
         for path in badges:
             self.assertLess(os.path.getsize(path), 20_000, os.path.basename(path))
+
+
+class CardSizeTests(unittest.TestCase):
+    def test_each_card_is_under_120_kb(self):
+        for pattern in ("assets/cards/*.svg", "assets/projects/*.svg"):
+            for path in files(pattern):
+                self.assertLess(os.path.getsize(path), 120_000, path)
+
+    def test_the_hero_card_is_under_250_kb(self):
+        self.assertLess(os.path.getsize(os.path.join(ROOT, "assets", "hero", "hero-card.svg")), 250_000)
