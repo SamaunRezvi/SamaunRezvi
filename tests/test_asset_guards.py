@@ -86,3 +86,14 @@ class NoScriptTests(unittest.TestCase):
                 self.assertNotIn("<script", text, path)
                 self.assertNotIn(" onload=", text, path)
                 self.assertNotIn(" onclick=", text, path)
+
+
+class CardDimensionTests(unittest.TestCase):
+    def test_root_has_width_and_height(self):
+        import re
+        for pattern in ("assets/cards/*.svg", "assets/projects/*.svg", "assets/hero/*.svg"):
+            for path in files(pattern):
+                with open(path, encoding="utf-8") as f:
+                    head = f.read(400)
+                self.assertRegex(head, r'width="\d+"', path)
+                self.assertRegex(head, r'height="\d+"', path)
