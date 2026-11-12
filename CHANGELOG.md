@@ -64,3 +64,7 @@ Notable changes to this profile repository.
 - The hero avatar now comes from a new high-resolution photo, cropped square and clipped to a circle, with the collar and tie visible.
 - Added tests for asset sizes, fonts, workflow settings, README structure and renderer behaviour.
 - Added guides for colours, fonts, responsive rules and workflows under `docs/`.
+
+## 2026-11-13
+
+- Removed the separate Live demos line under the project cards. Each card still shows its Live demo or Source code label.
