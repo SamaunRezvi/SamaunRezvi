@@ -96,3 +96,13 @@ class MissingMarkerTests(unittest.TestCase):
         import make_cards
         with self.assertRaises(ValueError):
             make_cards.replace_block("no markers here", "work", "<p></p>")
+
+
+class HumanizeEdgeTests(unittest.TestCase):
+    def test_extra_separators_are_ignored(self):
+        import make_cards
+        self.assertEqual(make_cards.humanize("--smart__home//"), "Smart Home")
+
+    def test_single_word(self):
+        import make_cards
+        self.assertEqual(make_cards.humanize("portfolio/"), "Portfolio")
