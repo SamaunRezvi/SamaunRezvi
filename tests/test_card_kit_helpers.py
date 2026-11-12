@@ -134,3 +134,15 @@ class StatWidthTests(unittest.TestCase):
         stat = {"accent": "#F0883E", "label": "Work", "number": "15+", "title": "Projects", "caption": "across web"}
         root = ET.fromstring(card_kit.render_stat(stat))
         self.assertEqual(root.get("width"), str(card_kit.STAT_WIDTH))
+
+
+class TaglineTimingTests(unittest.TestCase):
+    def test_total_duration_is_lines_times_seconds(self):
+        css = card_kit.tagline_css(4, seconds_each=2)
+        self.assertIn("animation:cycle 8s infinite", css)
+        self.assertIn("animation-delay:6s", css)
+
+    def test_each_line_has_a_delay_rule(self):
+        css = card_kit.tagline_css(3)
+        for i in range(3):
+            self.assertIn(f".l{i}", css)
