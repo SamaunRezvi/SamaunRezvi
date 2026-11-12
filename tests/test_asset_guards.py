@@ -45,3 +45,22 @@ class FontFileTests(unittest.TestCase):
     def test_each_font_subset_is_under_100_kb(self):
         for path in files("assets/fonts/*.woff2"):
             self.assertLess(os.path.getsize(path), 100_000, path)
+
+
+class MetricsFileTests(unittest.TestCase):
+    def test_widths_are_positive_numbers(self):
+        import json
+        with open(os.path.join(ROOT, "assets", "fonts", "metrics.json"), encoding="utf-8") as f:
+            table = json.load(f)
+        for family, widths in table.items():
+            self.assertTrue(widths, family)
+            for char, width in widths.items():
+                self.assertGreater(width, 0, f"{family} {char!r}")
+
+    def test_basic_latin_is_covered(self):
+        import json
+        with open(os.path.join(ROOT, "assets", "fonts", "metrics.json"), encoding="utf-8") as f:
+            table = json.load(f)
+        for family, widths in table.items():
+            for char in "abcxyzABCXYZ0129 .,":
+                self.assertIn(char, widths, f"{family} {char!r}")
