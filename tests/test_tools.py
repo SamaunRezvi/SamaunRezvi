@@ -52,3 +52,25 @@ class IssueTemplateTests(unittest.TestCase):
         path = os.path.join(ROOT, ".github", "ISSUE_TEMPLATE", "config.yml")
         with open(path, encoding="utf-8") as f:
             self.assertIn("SECURITY.md", f.read())
+
+
+class FastFlagTests(unittest.TestCase):
+    def test_fast_uses_only_the_first_step(self):
+        from unittest import mock
+        with mock.patch.object(check.subprocess, "run") as fake:
+            fake.return_value.returncode = 0
+            self.assertEqual(check.main(["--fast"]), 0)
+            self.assertEqual(fake.call_count, 1)
+
+    def test_default_runs_every_step(self):
+        from unittest import mock
+        with mock.patch.object(check.subprocess, "run") as fake:
+            fake.return_value.returncode = 0
+            self.assertEqual(check.main([]), 0)
+            self.assertEqual(fake.call_count, len(check.STEPS))
+
+    def test_failure_returns_one(self):
+        from unittest import mock
+        with mock.patch.object(check.subprocess, "run") as fake:
+            fake.return_value.returncode = 1
+            self.assertEqual(check.main(["--fast"]), 1)
