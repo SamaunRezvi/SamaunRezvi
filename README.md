@@ -171,16 +171,16 @@ I build systems where people in different roles use the same data for different 
 
 <!-- RECENT_PROJECTS:START -->
 <p align="center">
+<a href="https://github.com/SamaunRezvi/assignment_nine_c"><img alt="Assignment Nine C: No description yet." src="assets/projects/assignment_nine_c.svg" width="420" /></a>
+<a href="https://github.com/SamaunRezvi/assignment_nine_s"><img alt="Assignment Nine S: No description yet." src="assets/projects/assignment_nine_s.svg" width="420" /></a>
+</p>
+<p align="center">
 <a href="https://github.com/SamaunRezvi/assignment_eight_s"><img alt="StudioSpace API: A secure Express and MongoDB backend for the StudioSpace marketplace. Handles studios, bookings, reviews and wishlists with HTTPOnly JWT protection…" src="assets/projects/assignment_eight_s.svg" width="420" /></a>
 <a href="https://github.com/SamaunRezvi/assignment_eight_c"><img alt="StudioSpace: A creator-first studio rental marketplace built with Next.js. Discover photo studios, film stages, podcast lounges and music suites, book by the hour without…" src="assets/projects/assignment_eight_c.svg" width="420" /></a>
 </p>
 <p align="center">
 <a href="https://github.com/SamaunRezvi/assignment_seven"><img alt="BazarDor: A clean, Bangla-first market price tracker built with Next.js. Browse everyday essentials, compare prices across markets, follow daily price changes, and…" src="assets/projects/assignment_seven.svg" width="420" /></a>
 <a href="https://github.com/SamaunRezvi/assignment_six"><img alt="FitLog: A dark, sleek workout library built with Next.js. Browse a curated set of lifts, lock them into today's training plan, save favorites for later, and watch…" src="assets/projects/assignment_six.svg" width="420" /></a>
-</p>
-<p align="center">
-<a href="https://github.com/SamaunRezvi/assignment_five"><img alt="Dev Stack Builder: A sleek, modern, and fully responsive &quot;Dev Stack Builder&quot; website to explore technologies and build your own development stack." src="assets/projects/assignment_five.svg" width="420" /></a>
-<a href="https://github.com/SamaunRezvi/assignment_one"><img alt="DevConf 2026: A sleek, modern, and fully responsive “DevConf 2026” landing page." src="assets/projects/assignment_one.svg" width="420" /></a>
 </p>
 <!-- RECENT_PROJECTS:END -->
 
