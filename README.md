@@ -171,8 +171,8 @@ I build systems where people in different roles use the same data for different 
 
 <!-- RECENT_PROJECTS:START -->
 <p align="center">
-<a href="https://github.com/SamaunRezvi/assignment_nine_c"><img alt="Assignment Nine C: No description yet." src="assets/projects/assignment_nine_c.svg" width="420" /></a>
-<a href="https://github.com/SamaunRezvi/assignment_nine_s"><img alt="Assignment Nine S: No description yet." src="assets/projects/assignment_nine_s.svg" width="420" /></a>
+<a href="https://github.com/SamaunRezvi/assignment_nine_c"><img alt="FixMate: A device and appliance repair marketplace built with Next.js. Discover verified technicians, book repairs, track job progress, pay securely and share feedback…" src="assets/projects/assignment_nine_c.svg" width="420" /></a>
+<a href="https://github.com/SamaunRezvi/assignment_nine_s"><img alt="FixMate API: A secure Express and MongoDB backend for the FixMate repair marketplace. Handles role-based access, service approvals, booking workflows, Stripe payments…" src="assets/projects/assignment_nine_s.svg" width="420" /></a>
 </p>
 <p align="center">
 <a href="https://github.com/SamaunRezvi/assignment_eight_s"><img alt="StudioSpace API: A secure Express and MongoDB backend for the StudioSpace marketplace. Handles studios, bookings, reviews and wishlists with HTTPOnly JWT protection…" src="assets/projects/assignment_eight_s.svg" width="420" /></a>
